@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -26,13 +27,21 @@ public class player : MonoBehaviour
     private bool isDashing;
     private bool grounded;
     private bool canDash = true;
-
+    private bool isInvicible=false;
     // Update is called once per frame
+
+    private void Start()
+    {
+        instance = this;
+        prb = GetComponent<Rigidbody2D>();
+        hp=maxHp;
+    }
     void FixedUpdate()
     {
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
         grounded = Physics2D.OverlapCircle(transform.position, 0.9f, ground);
 
+        hp = Mathf.Clamp(hp, 0, maxHp);
     }
     // Input System
     public void OnMove(InputAction.CallbackContext context)
@@ -74,5 +83,24 @@ public class player : MonoBehaviour
     {
         prb.linearVelocity = new Vector2(prb.linearVelocityX, -fastFallForce);
     }
-    
+    public void takeDamage(float damage)
+    {
+        if (isInvicible) return;
+        hp -= damage;
+        if (hp <= 0)
+        {
+            die();
+        }
+        StartCoroutine(invincibility());
+    }
+    private IEnumerator invincibility()
+    {
+        isInvicible = true;
+        yield return new WaitForSeconds(1);
+        isInvicible=false;
+    }
+    public void die()
+    {
+        Debug.Log("Player Died");
+    }
 }
