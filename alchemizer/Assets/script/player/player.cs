@@ -8,6 +8,7 @@ public class player : MonoBehaviour
     public static player instance;
     public Rigidbody2D prb;
     public LayerMask ground;
+    public LayerMask enemyLayer;
     [Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
@@ -27,7 +28,9 @@ public class player : MonoBehaviour
     private bool isDashing;
     private bool grounded;
     private bool canDash = true;
+    private bool canAttack = true;
     private bool isInvicible=false;
+    private Vector2 facingDirection;
     // Update is called once per frame
 
     private void Start()
@@ -62,6 +65,10 @@ public class player : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+    }
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        attack();
     }
 
     private IEnumerator Dash()
@@ -99,8 +106,33 @@ public class player : MonoBehaviour
         yield return new WaitForSeconds(1);
         isInvicible=false;
     }
+    private IEnumerator attackCD()
+    {
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
     public void die()
     {
         Debug.Log("Player Died");
+    }
+    public void attack()
+    {
+        if (!canAttack) return;
+        canAttack = false;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction(), attackRange, enemyLayer);
+        Debug.DrawRay(transform.position,direction()*attackRange,Color.blue,1);
+        if (hit.collider != null)
+        {
+            hit.collider.GetComponent<enemy>().takeDamage(attackDamage);
+            Debug.Log("hitted");
+        }
+        Debug.Log("attacking");
+        StartCoroutine(attackCD());
+    }
+    public Vector2 direction()
+    {
+        if (prb.linearVelocity.x > 0) facingDirection=Vector2.right;
+        if (prb.linearVelocity.x < 0) facingDirection=Vector2.left;
+        return facingDirection;
     }
 }

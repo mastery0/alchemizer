@@ -266,6 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 310582041}
+  - component: {fileID: 310582042}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -288,6 +289,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &310582042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310582040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb3e7ee1725a6145904825c34bb9610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::essenceManager
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +722,9 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
   moveSpeed: 5
   jumpForce: 5
   fastFallForce: 3
@@ -718,7 +734,7 @@ MonoBehaviour:
   hp: 0
   maxHp: 100
   attackDamage: 10
-  attackRange: 1
+  attackRange: 5
   attackCooldown: 0.5
 --- !u!114 &1645553681
 MonoBehaviour:
@@ -766,7 +782,19 @@ MonoBehaviour:
     m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
     m_ActionName: 'Player/Look[/DualShock4GamepadHID/rightStick,/Mouse/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1645553680}
+        m_TargetAssemblyTypeName: player, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: 'Player/Attack[/DualShock4GamepadHID/buttonWest,/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
@@ -859,9 +887,73 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
-      propertyPath: damage
-      value: 30
+      propertyPath: maxHp
+      value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: maxDrop
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: minDrop
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: essenceDrop.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: essencePrefab.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essenceDrop.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essenceDrop.Array.data[1]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essenceDrop.Array.data[2]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3646967437449870817, guid: 8f04c56df8ce1b741821205b9f4f4ba1, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2971225300013227375, guid: 438a08a6648b27f43a3db472aad317b7, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3246601395341463390, guid: a721702457b33354482f655b965b249e, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[3]'
+      value: 
+      objectReference: {fileID: 549591662669806626, guid: ac05578d281505a479e8c73defd63a65, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[4]'
+      value: 
+      objectReference: {fileID: 789208012357798432, guid: ab980ebd957dd7842a90bf49313e465e, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[6]'
+      value: 
+      objectReference: {fileID: 789208012357798432, guid: ab980ebd957dd7842a90bf49313e465e, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[7]'
+      value: 
+      objectReference: {fileID: 2971225300013227375, guid: 438a08a6648b27f43a3db472aad317b7, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[8]'
+      value: 
+      objectReference: {fileID: 549591662669806626, guid: ac05578d281505a479e8c73defd63a65, type: 3}
+    - target: {fileID: 1347099750053251632, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
+      propertyPath: 'essencePrefab.Array.data[9]'
+      value: 
+      objectReference: {fileID: 3246601395341463390, guid: a721702457b33354482f655b965b249e, type: 3}
     - target: {fileID: 2124090226440834923, guid: d6003cae8616c3c4590260aa81400f5f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.16

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4654923322689114420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patrolB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6950413114944976211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: patrolA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 692797002517909691}
   - component: {fileID: 5040685643969513960}
   - component: {fileID: 1347099750053251632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,5 +240,5 @@ MonoBehaviour:
   direction: 0
   maxHp: 5
   speed: 2
-  damage: 0
+  damage: 30
   range: 3

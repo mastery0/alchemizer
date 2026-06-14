@@ -8,6 +8,7 @@ public abstract class enemy : MonoBehaviour
     protected Vector3[] patrolPositions;
     protected bool following;
     public int direction;
+    public GameObject[] essencePrefab;
     protected int currentPoint=0;
 
     protected GameObject player;
@@ -23,6 +24,11 @@ public abstract class enemy : MonoBehaviour
     public float speed;
     public float damage;
     public float range;
+
+    [Header("drops")]
+    public essenceManager.essenceTypes[] essenceDrop;
+    public int minDrop;
+    public int maxDrop;
     protected virtual void Awake()
     {
         erb = GetComponent<Rigidbody2D>();
@@ -41,14 +47,25 @@ public abstract class enemy : MonoBehaviour
             patrolPositions[i]=patrolPoints[i].position;
         }
     }
-    protected virtual void takeDamage(float damage)
+    public virtual void takeDamage(float damage)
     {
         hp -= damage;
         if (hp <= 0) die();
     }
     protected virtual void die()
     {
+        dropEssence();
         Destroy(gameObject);
+    }
+
+    protected virtual void dropEssence()
+    {
+        foreach (var essence in essenceDrop)
+        {
+            Vector2 pos=new Vector2(Random.Range(transform.position.x-1.2f,transform.position.x+1.2f),transform.position.y);
+            var instance=Instantiate(essencePrefab[(int)essence],pos,Quaternion.identity);
+            instance.GetComponent<essenceScript>().amount = Random.Range(minDrop, maxDrop);
+        }
     }
 
     protected virtual void groundPatrol()
