@@ -29,12 +29,4 @@ public class essenceManager : MonoBehaviour
     {
         essenceInv[type] += amount;
     }
-
-    private void Update()
-    {
-        foreach(var essence in essenceInv)
-        {
-            Debug.Log(essence);
-        }
-    }
 }

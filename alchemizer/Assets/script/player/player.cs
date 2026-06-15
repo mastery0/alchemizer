@@ -12,10 +12,12 @@ public class player : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
+    public int jumpAmount = 1;
     public float fastFallForce = 3f;
     public float dashForce = 5f;
     public float dashTime = 0.2f;
     public float dashCooldown = 1f;
+    public bool dashInvincibility = false;
     [Header("Combat")]
     public float hp;
     public float maxHp = 100f;
