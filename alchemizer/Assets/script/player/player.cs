@@ -9,6 +9,7 @@ public class player : MonoBehaviour
     public Rigidbody2D prb;
     public LayerMask ground;
     public LayerMask enemyLayer;
+    public GameObject inv;
     [Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
@@ -17,19 +18,27 @@ public class player : MonoBehaviour
     public float dashForce = 5f;
     public float dashTime = 0.2f;
     public float dashCooldown = 1f;
-    public bool dashInvincibility = false;
     [Header("Combat")]
     public float hp;
     public float maxHp = 100f;
+    public float defense = 0f;
     public float attackDamage = 10f;
     public float attackRange = 1f;
-    public float attackCooldown = 0.5f;
+    public float attackCooldown = 1f;
+
+
+    //unlocks
+    private bool canDash = true;
+    [HideInInspector]public bool coreInstability = false;
+    [HideInInspector]public bool dashInvincibility = false;
 
 
     private float moveX;
     private bool isDashing;
+    private coreInstability core;
     private bool grounded;
-    private bool canDash = true;
+    public float timeSinceAttack;
+    public float timeSinceHit;
     private bool canAttack = true;
     private bool isInvicible=false;
     private Vector2 facingDirection;
@@ -39,13 +48,14 @@ public class player : MonoBehaviour
     {
         instance = this;
         prb = GetComponent<Rigidbody2D>();
+        core = prb.GetComponent<coreInstability>();
         hp=maxHp;
     }
     void FixedUpdate()
     {
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
         grounded = Physics2D.OverlapCircle(transform.position, 0.9f, ground);
-
+        
         hp = Mathf.Clamp(hp, 0, maxHp);
     }
     // Input System
@@ -72,7 +82,12 @@ public class player : MonoBehaviour
     {
         attack();
     }
+    public void OnOpenInv(InputAction.CallbackContext context)
+    {
+        inv.SetActive(!inv.activeSelf);
+    }
 
+    //movement
     private IEnumerator Dash()
     {
         Debug.Log("Dashing");
@@ -92,14 +107,25 @@ public class player : MonoBehaviour
     {
         prb.linearVelocity = new Vector2(prb.linearVelocityX, -fastFallForce);
     }
+    public Vector2 direction()
+    {
+        if (prb.linearVelocity.x > 0) facingDirection = Vector2.right;
+        if (prb.linearVelocity.x < 0) facingDirection = Vector2.left;
+        return facingDirection;
+    }
+
+
     public void takeDamage(float damage)
     {
         if (isInvicible) return;
-        hp -= damage;
+        hp -= damage-damage*defense;
+        timeSinceHit = 0f;
+        core.currentPressure += 10;
         if (hp <= 0)
         {
             die();
         }
+        
         StartCoroutine(invincibility());
     }
     private IEnumerator invincibility()
@@ -126,15 +152,11 @@ public class player : MonoBehaviour
         if (hit.collider != null)
         {
             hit.collider.GetComponent<enemy>().takeDamage(attackDamage);
+            timeSinceAttack = 0f;
+            core.currentPressure += 10;
             Debug.Log("hitted");
         }
         Debug.Log("attacking");
         StartCoroutine(attackCD());
-    }
-    public Vector2 direction()
-    {
-        if (prb.linearVelocity.x > 0) facingDirection=Vector2.right;
-        if (prb.linearVelocity.x < 0) facingDirection=Vector2.left;
-        return facingDirection;
     }
 }

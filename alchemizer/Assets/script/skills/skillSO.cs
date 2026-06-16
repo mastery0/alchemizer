@@ -12,21 +12,27 @@ public class skillSO : ScriptableObject
         public int amount;
     }
     [Header("skill info")]
-    public int skillID;
-    public string skillName;
-    public string skillDescription;
-    public skillSO[] requiredSkill;
-    public bool skipRequirement;
+        public int skillID;
+        public string skillName;
+        public string skillDescription;
+        public skillSO[] requiredSkill;
+        public bool skipRequirement;
+        public essence[] essences = null;
+
 
     [Header("statsUP")]
-    public float hpMult=1f;
-    public float atkMult = 1f;
-    public float dashMult = 1f;
-    public bool dashInv = false;
-    public float essenceMult = 1f;
-    public float rangMult = 1f;
-    public essence[] essences = null;
+        public float hpMult=1f;
+        public float atkMult = 1f;
+        public float dashMult = 1f;
+        public float essenceMult = 1f;
+        public float rangMult = 1f;
+        public float atkCDmult = 1f;
+    
 
+    [Header("unlocks")]
+        public bool dashInv = false;
+        public bool coreinstability=false;
+        public bool glassCannon=false;
     [HideInInspector]
     public bool isUnlocked = false;
 
@@ -47,7 +53,10 @@ public class skillSO : ScriptableObject
             player.instance.attackDamage *= atkMult;
             player.instance.dashForce *= dashMult;
             player.instance.attackRange *= rangMult;
+            player.instance.attackCooldown /= atkCDmult;
             if (dashInv) player.instance.dashInvincibility = true;
+            if (coreinstability) player.instance.coreInstability = true;
+            if(glassCannon) coreInstability.instance.glassCannon = true;
             Debug.Log("unlocked:" + skillName);
             isUnlocked = true;
             //essenceMult to do

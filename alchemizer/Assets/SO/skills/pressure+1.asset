@@ -10,16 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
-  m_Name: atk+1
+  m_Name: pressure+1
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
-  skillName: attack+1
-  skillDescription: Increases attack dmg by 50%
+  skillID: 0
+  skillName: 
+  skillDescription: 
+  requiredSkill: []
+  skipRequirement: 0
+  essences: []
   hpMult: 1
-  atkMult: 1.5
+  atkMult: 1
   dashMult: 1
-  dashInv: 0
   essenceMult: 1
   rangMult: 1
-  essences:
-  - type: 1
-    amount: 3
+  atkCDmult: 1
+  dashInv: 0
+  coreinstability: 0
+  glassCannon: 0
+  isUnlocked: 0

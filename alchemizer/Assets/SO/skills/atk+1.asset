@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
+  m_Name: atk+1
+  m_EditorClassIdentifier: Assembly-CSharp::skillSO
+  skillID: 1
+  skillName: Alchemist's Strength
+  skillDescription: Increases attack dmg by 10%
+  requiredSkill:
+  - {fileID: 11400000, guid: 74b196e70e2c16949a41be2150d5c4e2, type: 2}
+  skipRequirement: 0
+  essences:
+  - type: 1
+    amount: 25
+  hpMult: 1
+  atkMult: 1.1
+  dashMult: 1
+  essenceMult: 1
+  rangMult: 1
+  atkCDmult: 1
+  dashInv: 0
+  coreInstability: 0
+  isUnlocked: 0

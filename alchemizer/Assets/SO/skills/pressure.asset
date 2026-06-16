@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
-  m_Name: catalyst
+  m_Name: pressure
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
   skillID: 0
-  skillName: Catalyst
-  skillDescription: An old catalyst,can use essences to give new strength to the
-    user
+  skillName: 
+  skillDescription: 
   requiredSkill: []
   skipRequirement: 0
+  essences: []
   hpMult: 1
   atkMult: 1
   dashMult: 1
-  dashInv: 0
   essenceMult: 1
   rangMult: 1
-  essences: []
+  atkCDmult: 1
+  dashInv: 0
+  coreInstability: 0
   isUnlocked: 0
