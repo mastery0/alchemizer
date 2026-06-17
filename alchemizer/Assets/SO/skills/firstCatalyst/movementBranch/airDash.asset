@@ -10,20 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
-  m_Name: pressure
+  m_Name: airDash
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
-  skillID: 0
-  skillName: 
-  skillDescription: 
-  requiredSkill: []
+  skillID: 6
+  skillName: Air Dash
+  skillDescription: Grants the ability to dash while in air
+  requiredSkill:
+  - {fileID: 11400000, guid: 0176098aa59151243b898c95b2e85f92, type: 2}
   skipRequirement: 0
-  essences: []
+  essences:
+  - type: 0
+    amount: 50
   hpMult: 1
   atkMult: 1
   dashMult: 1
   essenceMult: 1
   rangMult: 1
   atkCDmult: 1
+  speedMult: 1
+  dashCDmult: 1
   dashInv: 0
-  coreInstability: 0
+  coreinstability: 0
+  glassCannon: 0
+  airDash: 1
   isUnlocked: 0

@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743baa61e958bbb4cab6e475b7c7de4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::skillButton
-  skill: {fileID: 11400000, guid: d72470432be7ade45a09ddc537aca8cd, type: 2}
+  skill: {fileID: 0}
   skillName: {fileID: 6400438904538903822}
   overMenu: {fileID: 8937841179177087128}
 --- !u!1 &8937841179177087128

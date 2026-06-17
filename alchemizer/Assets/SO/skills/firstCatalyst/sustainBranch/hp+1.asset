@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
-  m_Name: pressure+1
+  m_Name: hp+1
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
-  skillID: 0
-  skillName: 
-  skillDescription: 
-  requiredSkill: []
+  skillID: 5
+  skillName: Health+1
+  skillDescription: Increases Health by 30%
+  requiredSkill:
+  - {fileID: 11400000}
   skipRequirement: 0
-  essences: []
-  hpMult: 1
+  essences:
+  - type: 3
+    amount: 5
+  hpMult: 1.3
   atkMult: 1
   dashMult: 1
   essenceMult: 1

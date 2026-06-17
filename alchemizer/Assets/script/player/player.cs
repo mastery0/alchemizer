@@ -18,6 +18,7 @@ public class player : MonoBehaviour
     public float dashForce = 5f;
     public float dashTime = 0.2f;
     public float dashCooldown = 1f;
+    public float glideFallSpeed = 2f;
     [Header("Combat")]
     public float hp;
     public float maxHp = 100f;
@@ -28,13 +29,16 @@ public class player : MonoBehaviour
 
 
     //unlocks
-    private bool canDash = true;
+    [HideInInspector] public bool hasDash = false;
     [HideInInspector]public bool coreInstability = false;
     [HideInInspector]public bool dashInvincibility = false;
-
+    [HideInInspector]public bool airDash = false;
+    public bool hasGlider = true;
 
     private float moveX;
+    private bool jumpHeld;
     private bool isDashing;
+    private bool dashCD;
     private coreInstability core;
     private bool grounded;
     public float timeSinceAttack;
@@ -55,25 +59,29 @@ public class player : MonoBehaviour
     {
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
         grounded = Physics2D.OverlapCircle(transform.position, 0.9f, ground);
+        glide();
         
         hp = Mathf.Clamp(hp, 0, maxHp);
     }
     // Input System
     public void OnMove(InputAction.CallbackContext context)
     {
-        moveX = context.ReadValue<Vector2>().x;
-        if (context.ReadValue<Vector2>().y > 0 && grounded)
+        Vector2 moveInput = context.ReadValue<Vector2>();
+        bool isJumpHeld = moveInput.y > 0;
+        moveX = moveInput.x;
+        if (isJumpHeld && !jumpHeld && grounded)
         {
             jump();
         }
-        if (context.ReadValue<Vector2>().y < 0)
+        jumpHeld = isJumpHeld;
+        if (moveInput.y < 0)
         {
             fastFall();
         }
     }
     public void OnDash(InputAction.CallbackContext context)
     {
-        if (context.started && canDash)
+        if (context.started && dashCheck())
         {
             StartCoroutine(Dash());
         }
@@ -90,14 +98,21 @@ public class player : MonoBehaviour
     //movement
     private IEnumerator Dash()
     {
-        Debug.Log("Dashing");
         isDashing = true;
-        canDash = false;
+        dashCD = true;
         prb.linearVelocity=new Vector2(moveX * dashForce, 0);
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);
-        canDash = true;
+        dashCD = false;
+    }
+    public bool dashCheck()
+    {
+        if (!hasDash) return false;
+        if (isDashing) return false;
+        if(!grounded) if(!airDash)return false;
+        if (dashCD) return false;
+        return true;
     }
     public void jump()
     {
@@ -106,6 +121,15 @@ public class player : MonoBehaviour
     public void fastFall()
     {
         prb.linearVelocity = new Vector2(prb.linearVelocityX, -fastFallForce);
+    }
+    private void glide()
+    {
+        if (!hasGlider) return;
+        if (!jumpHeld) return;
+        if (grounded) return;
+        if (prb.linearVelocityY >= -glideFallSpeed) return;
+
+        prb.linearVelocity = new Vector2(prb.linearVelocityX, -glideFallSpeed);
     }
     public Vector2 direction()
     {

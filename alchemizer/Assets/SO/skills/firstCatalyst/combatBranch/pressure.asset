@@ -10,23 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
-  m_Name: hp+1
+  m_Name: pressure
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
-  skillID: 2
-  skillName: Health+1
-  skillDescription: Increases Health by 30%
+  skillID: 3
+  skillName: Core Instability
+  skillDescription: Pressure increases as you fight aggressively or take hits. The
+    higher it gets, the stronger you become but also more vulnerable.
   requiredSkill:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 6ed2e21121c0c224db7fcaba86f3b01b, type: 2}
   skipRequirement: 0
   essences:
-  - type: 3
-    amount: 5
-  hpMult: 1.3
+  - type: 1
+    amount: 50
+  hpMult: 1
   atkMult: 1
   dashMult: 1
   essenceMult: 1
   rangMult: 1
   atkCDmult: 1
+  speedMult: 1
+  dashCDmult: 1
   dashInv: 0
-  coreInstability: 0
+  coreinstability: 1
+  glassCannon: 0
+  airDash: 0
   isUnlocked: 0

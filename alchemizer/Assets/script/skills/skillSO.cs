@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static essenceManager;
 
@@ -27,12 +28,15 @@ public class skillSO : ScriptableObject
         public float essenceMult = 1f;
         public float rangMult = 1f;
         public float atkCDmult = 1f;
-    
+        public float speedMult = 1f;
+        public float dashCDmult = 1f;
 
     [Header("unlocks")]
         public bool dashInv = false;
         public bool coreinstability=false;
         public bool glassCannon=false;
+        public bool airDash = false;
+        public bool glider=false;
     [HideInInspector]
     public bool isUnlocked = false;
 
@@ -44,6 +48,14 @@ public class skillSO : ScriptableObject
     {
         if (canUnlock()&&!isUnlocked)
         {
+            if (skillID == 6)
+            {
+                if (!player.instance.hasDash)
+                {
+                    Debug.Log("dash Required");
+                    return;
+                }
+            }
             foreach (essence s in essences)
             {
                 essenceManager.instance.essenceInv[s.type] -= s.amount;
@@ -54,9 +66,13 @@ public class skillSO : ScriptableObject
             player.instance.dashForce *= dashMult;
             player.instance.attackRange *= rangMult;
             player.instance.attackCooldown /= atkCDmult;
+            player.instance.moveSpeed *= speedMult;
+            player.instance.dashCooldown/=dashCDmult;
             if (dashInv) player.instance.dashInvincibility = true;
             if (coreinstability) player.instance.coreInstability = true;
             if(glassCannon) coreInstability.instance.glassCannon = true;
+            if(airDash) player.instance.airDash = true;
+            if(glider)player.instance.hasGlider = true;
             Debug.Log("unlocked:" + skillName);
             isUnlocked = true;
             //essenceMult to do
