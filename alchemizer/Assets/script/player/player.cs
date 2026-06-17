@@ -29,15 +29,17 @@ public class player : MonoBehaviour
 
 
     //unlocks
-    [HideInInspector] public bool hasDash = false;
-    [HideInInspector]public bool coreInstability = false;
-    [HideInInspector]public bool dashInvincibility = false;
-    [HideInInspector]public bool airDash = false;
+    [System.NonSerialized] public bool hasDash = true;
+    [System.NonSerialized] public bool coreInstability = false;
+    [System.NonSerialized] public bool dashInvincibility = false;
+    [System.NonSerialized] public bool airDash = true;
+    [System.NonSerialized] public int dashCount = 1;
     public bool hasGlider = true;
 
     private float moveX;
     private bool jumpHeld;
     private bool isDashing;
+    private int currentDash;
     private bool dashCD;
     private coreInstability core;
     private bool grounded;
@@ -59,6 +61,7 @@ public class player : MonoBehaviour
     {
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
         grounded = Physics2D.OverlapCircle(transform.position, 0.9f, ground);
+        if (grounded) currentDash = dashCount;
         glide();
         
         hp = Mathf.Clamp(hp, 0, maxHp);
@@ -100,6 +103,7 @@ public class player : MonoBehaviour
     {
         isDashing = true;
         dashCD = true;
+        currentDash--;
         prb.linearVelocity=new Vector2(moveX * dashForce, 0);
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
@@ -108,10 +112,11 @@ public class player : MonoBehaviour
     }
     public bool dashCheck()
     {
-        if (!hasDash) return false;
-        if (isDashing) return false;
-        if(!grounded) if(!airDash)return false;
-        if (dashCD) return false;
+        if (!hasDash) {Debug.Log("1"); return false;}
+        if (isDashing) { Debug.Log("2"); return false; }
+        if (!grounded) if(!airDash) { Debug.Log("3"); return false; }
+        if (dashCD) { Debug.Log("4"); return false; }
+        if (currentDash<=0) { Debug.Log("5"); return false; }
         return true;
     }
     public void jump()

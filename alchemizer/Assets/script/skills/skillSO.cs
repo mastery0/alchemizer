@@ -30,7 +30,7 @@ public class skillSO : ScriptableObject
         public float atkCDmult = 1f;
         public float speedMult = 1f;
         public float dashCDmult = 1f;
-
+        public int dashCount = 0;
     [Header("unlocks")]
         public bool dashInv = false;
         public bool coreinstability=false;
@@ -68,6 +68,7 @@ public class skillSO : ScriptableObject
             player.instance.attackCooldown /= atkCDmult;
             player.instance.moveSpeed *= speedMult;
             player.instance.dashCooldown/=dashCDmult;
+            player.instance.dashCount += dashCount;
             if (dashInv) player.instance.dashInvincibility = true;
             if (coreinstability) player.instance.coreInstability = true;
             if(glassCannon) coreInstability.instance.glassCannon = true;
