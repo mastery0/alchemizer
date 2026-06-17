@@ -27,8 +27,8 @@ public abstract class enemy : MonoBehaviour
 
     [Header("drops")]
     public essenceManager.essenceTypes[] essenceDrop;
-    public int minDrop;
-    public int maxDrop;
+    public Vector2Int minMaxEssence;
+    public GameObject heals;
     protected virtual void Awake()
     {
         erb = GetComponent<Rigidbody2D>();
@@ -62,11 +62,21 @@ public abstract class enemy : MonoBehaviour
     {
         foreach (var essence in essenceDrop)
         {
-            Vector2 pos=new Vector2(Random.Range(transform.position.x-1.2f,transform.position.x+1.2f),transform.position.y);
-            var instance=Instantiate(essencePrefab[(int)essence],pos,Quaternion.identity);
-            instance.GetComponent<essenceScript>().amount = Random.Range(minDrop, maxDrop);
+            int amount = Random.Range(minMaxEssence.x, minMaxEssence.y);
+            if (amount == 0) continue;
+            Vector2 pos = new Vector2(Random.Range(transform.position.x - 1.2f, transform.position.x + 1.2f), transform.position.y);
+            var instance = Instantiate(essencePrefab[(int)essence], pos, Quaternion.identity);
+            instance.GetComponent<essenceScript>().amount = amount;
         }
+        if (playerScript.enemiesHeal)
+            if (Random.Range(0, 10) == 9)
+            {
+                {
+                    Instantiate(heals, new Vector2(Random.Range(transform.position.x - 1.2f, transform.position.x + 1.2f), transform.position.y), Quaternion.identity);
+                }
+            }
     }
+
 
     protected virtual void groundPatrol()
     {

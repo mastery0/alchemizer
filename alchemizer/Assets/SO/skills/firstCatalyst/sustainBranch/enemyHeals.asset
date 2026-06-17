@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
-  m_Name: hp+1
+  m_Name: enemyHeals
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
-  skillID: 9
-  skillName: Vitality
-  skillDescription: Your body adapts to the flow of essence, increasing your maximum
-    health by 30%
+  skillID: 10
+  skillName: Blooming  Heals
+  skillDescription: Life orbs may blooms where your enemies fall,collect them to
+    heal yourself
   requiredSkill:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: d72470432be7ade45a09ddc537aca8cd, type: 2}
   skipRequirement: 0
   essences:
   - type: 2
-    amount: 25
-  hpMult: 1.3
+    amount: 50
+  hpMult: 1
   atkMult: 1
   dashMult: 1
   essenceMult: 1
@@ -38,5 +38,5 @@ MonoBehaviour:
   glassCannon: 0
   airDash: 0
   glider: 0
-  enemyHeals: 0
+  enemyHeals: 1
   isUnlocked: 0

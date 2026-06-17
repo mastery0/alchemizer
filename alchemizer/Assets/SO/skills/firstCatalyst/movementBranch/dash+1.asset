@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc237c9a59eeae408e02326c3fe34f0, type: 3}
   m_Name: dash+1
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
-  skillID: 0
-  skillName: 
-  skillDescription: 
-  requiredSkill: []
+  skillID: 8
+  skillName: Gale Step
+  skillDescription: give a second dash usable on air
+  requiredSkill:
+  - {fileID: 11400000, guid: 10396e9a357cd954bb3b9807c0268f29, type: 2}
   skipRequirement: 0
-  essences: []
+  essences:
+  - type: 0
+    amount: 100
   hpMult: 1
   atkMult: 1
   dashMult: 1
@@ -26,6 +29,7 @@ MonoBehaviour:
   atkCDmult: 1
   speedMult: 1
   dashCDmult: 1
+  dashCount: 1
   dashInv: 0
   coreinstability: 0
   glassCannon: 0

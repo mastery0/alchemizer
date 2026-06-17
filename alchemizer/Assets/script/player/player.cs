@@ -22,11 +22,12 @@ public class player : MonoBehaviour
     [Header("Combat")]
     public float hp;
     public float maxHp = 100f;
+    public float healMult = 1f;
     public float defense = 0f;
     public float attackDamage = 10f;
     public float attackRange = 1f;
     public float attackCooldown = 1f;
-
+    public float iFrames = 0.1f;
 
     //unlocks
     [System.NonSerialized] public bool hasDash = true;
@@ -34,6 +35,7 @@ public class player : MonoBehaviour
     [System.NonSerialized] public bool dashInvincibility = false;
     [System.NonSerialized] public bool airDash = true;
     [System.NonSerialized] public int dashCount = 1;
+    [System.NonSerialized] public bool enemiesHeal = false;
     public bool hasGlider = true;
 
     private float moveX;
@@ -160,7 +162,7 @@ public class player : MonoBehaviour
     private IEnumerator invincibility()
     {
         isInvicible = true;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(iFrames);
         isInvicible=false;
     }
     private IEnumerator attackCD()
@@ -187,5 +189,19 @@ public class player : MonoBehaviour
         }
         Debug.Log("attacking");
         StartCoroutine(attackCD());
+    }
+    public void heal(float amount1)
+    {
+        float overflow = 0f;
+        float amount=amount1*healMult;
+        if (hp + amount<maxHp)
+        {
+            hp += amount;
+        }
+        else
+        {
+            hp = maxHp;
+            overflow = (hp + amount) - maxHp;
+        }
     }
 }

@@ -31,12 +31,15 @@ public class skillSO : ScriptableObject
         public float speedMult = 1f;
         public float dashCDmult = 1f;
         public int dashCount = 0;
+        public float iFrames = 0; 
+        public float healMult = 0f;
     [Header("unlocks")]
         public bool dashInv = false;
         public bool coreinstability=false;
         public bool glassCannon=false;
         public bool airDash = false;
         public bool glider=false;
+        public bool enemyHeals=false;
     [HideInInspector]
     public bool isUnlocked = false;
 
@@ -69,11 +72,14 @@ public class skillSO : ScriptableObject
             player.instance.moveSpeed *= speedMult;
             player.instance.dashCooldown/=dashCDmult;
             player.instance.dashCount += dashCount;
+            player.instance.iFrames += iFrames;
+            player.instance.healMult+= healMult;
             if (dashInv) player.instance.dashInvincibility = true;
             if (coreinstability) player.instance.coreInstability = true;
             if(glassCannon) coreInstability.instance.glassCannon = true;
             if(airDash) player.instance.airDash = true;
             if(glider)player.instance.hasGlider = true;
+            if(enemyHeals)player.instance.enemiesHeal = true;
             Debug.Log("unlocked:" + skillName);
             isUnlocked = true;
             //essenceMult to do
