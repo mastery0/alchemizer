@@ -1,6 +1,6 @@
 ﻿# ALCHEMIZER — Diario di Sviluppo
 
-> Aggiornato al termine del **Giorno 5**.
+> Aggiornato al termine del **Giorno 6**.
 
 ---
 
@@ -119,4 +119,21 @@ Combattimento → Drop Essenze → Raccolta → Skill Tree → Upgrade statistic
 
 **Risultato:** sistema di combattimento più profondo, albero espanso, base testabile.
 
+---
+### Giorno 6
+**Focus:** espansione Skill Tree — rami Movimento (Air) e Cura (Water)
+
+Ramo Movimento:
+- **Air Dash:** sblocca la possibilità di eseguire il dash in aria
+- **Gale Step:** concede un secondo dash utilizzabile in aria
+- **Wind Flow:** riduce il cooldown tra i dash
+- **Swift Step:** aumenta la velocità di movimento del 10%
+
+Ramo Cura:
+- **Blooming Heals:** alla morte dei nemici possono comparire orb di vita; raccoglierli cura il giocatore
+- **Flowing Health:** amplifica l'effetto di ogni cura ricevuta
+- **Vitality:** aumenta gli HP massimi del 30%
+- **Fluid Body:** Water's essence softens the aftermath of a blow. extending your invulnerability
+
+**Risultato:** Skill Tree ampliato con due nuovi rami tematici (mobilità aerea e sostegno/cura), che si aggiungono al ramo offensivo introdotto al Giorno 5.
 ---

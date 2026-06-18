@@ -74,9 +74,9 @@ GameObject:
   - component: {fileID: 2214628593062794015}
   - component: {fileID: 692797002517909691}
   - component: {fileID: 5040685643969513960}
-  - component: {fileID: 1347099750053251632}
+  - component: {fileID: -7216708556110471524}
   m_Layer: 6
-  m_Name: slime
+  m_Name: charger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.51870775, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -222,7 +222,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1347099750053251632
+--- !u!114 &-7216708556110471524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,9 +231,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5875749033156400525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb7b60643d4fdf429dd487da94cfa40, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ba935900d455db4490f719bc4f0108d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::slime
+  m_EditorClassIdentifier: Assembly-CSharp::charger
   patrolPoints:
   - {fileID: 6950413114944976211}
   - {fileID: 4654923322689114420}
@@ -253,10 +253,14 @@ MonoBehaviour:
   groundCheckDistance: 0.35
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
-  maxHp: 15
-  speed: 2
-  damage: 30
-  range: 3
-  essenceDrop: 02000000
+  maxHp: 30
+  speed: 1.5
+  damage: 20
+  range: 4
+  essenceDrop: 01000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
+  dashRange: 2
+  CD: 2
+  dashTime: 0
+  dashForce: 25

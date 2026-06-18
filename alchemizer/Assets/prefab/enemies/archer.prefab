@@ -74,9 +74,9 @@ GameObject:
   - component: {fileID: 2214628593062794015}
   - component: {fileID: 692797002517909691}
   - component: {fileID: 5040685643969513960}
-  - component: {fileID: 1347099750053251632}
+  - component: {fileID: 5441574329510163182}
   m_Layer: 6
-  m_Name: slime
+  m_Name: archer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.9683118, b: 0.25, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -222,7 +222,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1347099750053251632
+--- !u!114 &5441574329510163182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,9 +231,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5875749033156400525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb7b60643d4fdf429dd487da94cfa40, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b8d7a69aacf164881623ff1dfb03bf, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::slime
+  m_EditorClassIdentifier: Assembly-CSharp::archer
   patrolPoints:
   - {fileID: 6950413114944976211}
   - {fileID: 4654923322689114420}
@@ -246,17 +246,21 @@ MonoBehaviour:
   - {fileID: 789208012357798432, guid: ab980ebd957dd7842a90bf49313e465e, type: 3}
   sightMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 136
   groundMask:
     serializedVersion: 2
     m_Bits: 8
   groundCheckDistance: 0.35
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
-  maxHp: 15
-  speed: 2
-  damage: 30
-  range: 3
-  essenceDrop: 02000000
+  maxHp: 10
+  speed: 5
+  damage: 25
+  range: 4
+  essenceDrop: 00000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
+  shooterRange: 8
+  projectile: {fileID: 6097620132809743584, guid: 9bb7c608ada77394bba5d3ad124797a7, type: 3}
+  projSpeed: 7
+  shootCD: 0
