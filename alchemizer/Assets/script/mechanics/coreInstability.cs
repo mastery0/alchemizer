@@ -6,7 +6,7 @@ public class coreInstability : MonoBehaviour
     //pressure goes up as the player continue hitting enemy and taking dmg and slowly goes down when he stop,reset on heal
     public player player;
     public static coreInstability instance;
-
+    public pressureBar pressureBar;
 
     public int currentPressure = 0;
     public int pressureDelta = 10;
@@ -30,8 +30,10 @@ public class coreInstability : MonoBehaviour
     }
     private void Update()
     {
+        if (!player.coreInstability) return;
         int newTier=0;
         currentPressure=Mathf.Clamp(currentPressure, 0, maxPressure);
+        pressureBar.setAmount(currentPressure,maxPressure);
         player.timeSinceHit += Time.deltaTime;
         player.timeSinceAttack += Time.deltaTime;
         if ((player.timeSinceAttack > 3f && player.timeSinceHit > 3f)&&!isDecreasing) StartCoroutine(decreasePressure());

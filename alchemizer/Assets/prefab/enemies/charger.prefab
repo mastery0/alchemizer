@@ -256,7 +256,7 @@ MonoBehaviour:
   maxHp: 30
   speed: 1.5
   damage: 20
-  range: 4
+  range: 15
   essenceDrop: 01000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}

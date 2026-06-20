@@ -5,8 +5,11 @@ public class projScript : MonoBehaviour
     float atk;
     private void Start()
     {
-        float atk=GetComponentInParent<enemy>().damage;
         Destroy(gameObject,3f);
+    }
+    public void setDamage(float damage)
+    {
+        atk=damage;
     }
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {

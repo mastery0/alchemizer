@@ -235,8 +235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::archer
   patrolPoints:
-  - {fileID: 6950413114944976211}
-  - {fileID: 4654923322689114420}
+  - {fileID: 0}
+  - {fileID: 0}
   direction: 0
   essencePrefab:
   - {fileID: 3646967437449870817, guid: 8f04c56df8ce1b741821205b9f4f4ba1, type: 3}
@@ -250,9 +250,9 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 8
-  groundCheckDistance: 0.35
-  edgeCheckAhead: 0.45
-  footCheckOffset: 0.05
+  groundCheckDistance: 0.7
+  edgeCheckAhead: 1
+  footCheckOffset: 0.1
   maxHp: 10
   speed: 5
   damage: 25
@@ -262,5 +262,5 @@ MonoBehaviour:
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
   shooterRange: 8
   projectile: {fileID: 6097620132809743584, guid: 9bb7c608ada77394bba5d3ad124797a7, type: 3}
-  projSpeed: 7
+  projSpeed: 30
   shootCD: 0

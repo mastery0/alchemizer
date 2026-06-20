@@ -1,6 +1,6 @@
 ﻿# ALCHEMIZER — Diario di Sviluppo
 
-> Aggiornato al termine del **Giorno 6**.
+> Aggiornato al termine del **Giorno 8**.
 
 ---
 
@@ -136,4 +136,25 @@ Ramo Cura:
 - **Fluid Body:** Water's essence softens the aftermath of a blow. extending your invulnerability
 
 **Risultato:** Skill Tree ampliato con due nuovi rami tematici (mobilità aerea e sostegno/cura), che si aggiungono al ramo offensivo introdotto al Giorno 5.
+
 ---
+### Giorno 7
+**Focus:** creazione nemico 2 e nemico 3
+nemico 2 (crusher):effetua un dash quando abbastanza vicino al player
+nemico 3 (archier):quando in range spara un proiettile,invece di avvicinarsi si allontana del player man mano che esso si avvicina
+
+tweak:aggiunto controllo che evita ai nemici di cadere
+**Risultato:** ia nemici piu sviluppata e combat piu vario
+
+---
+
+### Giorno 8
+**Focus:** UI
+
+- **barra hp animata**
+- **barra pressure**
+- **livello di test**
+- **hit stop**
+
+**Risultato:** ui integrata con i sistemi di gioco e piu reattività nel combat
+

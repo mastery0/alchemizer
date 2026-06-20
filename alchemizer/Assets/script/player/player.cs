@@ -10,7 +10,9 @@ public class player : MonoBehaviour
     public LayerMask ground;
     public LayerMask enemyLayer;
     public GameObject inv;
+    public fillBar hpBar;
     [Header("Movement")]
+    public int respawnAltar;
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public int jumpAmount = 1;
@@ -31,7 +33,7 @@ public class player : MonoBehaviour
 
     //unlocks
     [System.NonSerialized] public bool hasDash = true;
-    [System.NonSerialized] public bool coreInstability = false;
+    [System.NonSerialized] public bool coreInstability = true;
     [System.NonSerialized] public bool dashInvincibility = false;
     [System.NonSerialized] public bool airDash = true;
     [System.NonSerialized] public int dashCount = 1;
@@ -43,7 +45,7 @@ public class player : MonoBehaviour
     private bool isDashing;
     private int currentDash;
     private bool dashCD;
-    private coreInstability core;
+    [System.NonSerialized] public coreInstability core;
     private bool grounded;
     public float timeSinceAttack;
     public float timeSinceHit;
@@ -58,6 +60,7 @@ public class player : MonoBehaviour
         prb = GetComponent<Rigidbody2D>();
         core = prb.GetComponent<coreInstability>();
         hp=maxHp;
+        hpBar.setAmount(hp, maxHp);
     }
     void FixedUpdate()
     {
@@ -150,8 +153,10 @@ public class player : MonoBehaviour
     {
         if (isInvicible) return;
         hp -= damage-damage*defense;
+        hpBar.setAmount(hp,maxHp);
         timeSinceHit = 0f;
         core.currentPressure += 10;
+        hitStopManager.instance.stopTime(0.08f);
         if (hp <= 0)
         {
             die();
@@ -185,6 +190,7 @@ public class player : MonoBehaviour
             hit.collider.GetComponent<enemy>().takeDamage(attackDamage);
             timeSinceAttack = 0f;
             core.currentPressure += 10;
+            hitStopManager.instance.stopTime(0.08f);
             Debug.Log("hitted");
         }
         Debug.Log("attacking");
@@ -203,5 +209,6 @@ public class player : MonoBehaviour
             hp = maxHp;
             overflow = (hp + amount) - maxHp;
         }
+        hpBar.setAmount(hp,maxHp);
     }
 }

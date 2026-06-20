@@ -155,7 +155,7 @@ public abstract class enemy : MonoBehaviour
         );
 
         RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, groundCheckDistance, groundMask);
-        Debug.DrawRay(origin, Vector2.down * groundCheckDistance, hit.collider ? Color.green : Color.yellow);
+        Debug.DrawRay(origin, Vector2.down * groundCheckDistance,Color.yellow);
 
         return hit.collider != null;
     }
@@ -163,7 +163,7 @@ public abstract class enemy : MonoBehaviour
     protected void StopAtEdge()
     {
         float xVelocity = erb.linearVelocity.x;
-
+        Debug.Log("stopped");
         if (Mathf.Approximately(xVelocity, 0f)) return;
 
         if (!HasGroundAhead(Mathf.Sign(xVelocity)))
