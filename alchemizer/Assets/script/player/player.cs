@@ -57,6 +57,7 @@ public class player : MonoBehaviour
     private void Start()
     {
         instance = this;
+        saveManager.instance.load();
         prb = GetComponent<Rigidbody2D>();
         core = prb.GetComponent<coreInstability>();
         hp=maxHp;

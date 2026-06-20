@@ -1,6 +1,6 @@
 ﻿# ALCHEMIZER — Diario di Sviluppo
 
-> Aggiornato al termine del **Giorno 8**.
+> Aggiornato al termine del **Giorno 9**.
 
 ---
 
@@ -39,8 +39,8 @@ Cinque tipologie: `Air` `Fire` `Water` `Light` `Dark`
 Nodo radice della progressione. Attuale nodo: `Catalyst Base`.
 Roadmap: evolversi in stadi, sbloccare nuove sezioni dell'albero, rappresentare i milestone principali.
 
-### Decisione Aperta
-Le abilità di movimento si sbloccano tramite Skill Tree o tramite progressione/esplorazione?
+### Decisione Risolta (Giorno 6)
+Le abilità di movimento si sbloccano tramite **Skill Tree** (ramo Movimento: Air Dash, Gale Step, Wind Flow, Swift Step).
 
 ---
 
@@ -133,18 +133,21 @@ Ramo Cura:
 - **Blooming Heals:** alla morte dei nemici possono comparire orb di vita; raccoglierli cura il giocatore
 - **Flowing Health:** amplifica l'effetto di ogni cura ricevuta
 - **Vitality:** aumenta gli HP massimi del 30%
-- **Fluid Body:** Water's essence softens the aftermath of a blow. extending your invulnerability
+- **Fluid Body:** l'essenza dell'acqua attutisce le conseguenze di un colpo, estendendo l'invulnerabilità
+
+**Decisione:** Le skill dash,double jump etc.. che servono per la progressione metroidvania verrano sbloccate tramite esplorazione e migliorate dalle skill nel tree,
 
 **Risultato:** Skill Tree ampliato con due nuovi rami tematici (mobilità aerea e sostegno/cura), che si aggiungono al ramo offensivo introdotto al Giorno 5.
 
 ---
 ### Giorno 7
-**Focus:** creazione nemico 2 e nemico 3
-nemico 2 (crusher):effetua un dash quando abbastanza vicino al player
-nemico 3 (archier):quando in range spara un proiettile,invece di avvicinarsi si allontana del player man mano che esso si avvicina
+**Focus:** creazione Nemico 2 e Nemico 3
 
-tweak:aggiunto controllo che evita ai nemici di cadere
-**Risultato:** ia nemici piu sviluppata e combat piu vario
+- **Nemico 2 (Crusher):** effettua un dash quando è abbastanza vicino al player
+- **Nemico 3 (Archer):** quando in range spara un proiettile; invece di avvicinarsi, si allontana dal player man mano che esso si avvicina
+- **Tweak:** aggiunto controllo che evita ai nemici di cadere
+
+**Risultato:** IA nemici più sviluppata e combat più vario.
 
 ---
 
@@ -158,3 +161,13 @@ tweak:aggiunto controllo che evita ai nemici di cadere
 
 **Risultato:** ui integrata con i sistemi di gioco e piu reattività nel combat
 
+---
+
+### Giorno 9
+**Focus:** Save System
+
+- **Funzione Save:** attivata tramite context menu; salva vita, punto di respawn (non ancora integrato), skill possedute e numero di essenze
+- **Funzione Load:** chiamata nello Start del player; carica i dati salvati
+- **Funzione ToDefault:** attivata tramite context menu; riporta i dati ai valori default
+
+**Risultato:** sistema di salvataggio base funzionante, in attesa dell'integrazione del punto di respawn.

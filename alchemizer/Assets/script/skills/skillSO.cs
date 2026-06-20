@@ -49,50 +49,20 @@ public class skillSO : ScriptableObject
     }
     public void Unlock()
     {
-        if (canUnlock()&&!isUnlocked)
+        if (canUnlock())
         {
-            if (skillID == 6)
-            {
-                if (!player.instance.hasDash)
-                {
-                    Debug.Log("dash Required");
-                    return;
-                }
-            }
-            foreach (essence s in essences)
-            {
-                essenceManager.instance.essenceInv[s.type] -= s.amount;
-            }
-            player.instance.maxHp *= hpMult;
-            if(hpMult!=1)player.instance.hp=player.instance.maxHp;
-            player.instance.attackDamage *= atkMult;
-            player.instance.dashForce *= dashMult;
-            player.instance.attackRange *= rangMult;
-            player.instance.attackCooldown /= atkCDmult;
-            player.instance.moveSpeed *= speedMult;
-            player.instance.dashCooldown/=dashCDmult;
-            player.instance.dashCount += dashCount;
-            player.instance.iFrames += iFrames;
-            player.instance.healMult+= healMult;
-            if (dashInv) player.instance.dashInvincibility = true;
-            if (coreinstability) player.instance.coreInstability = true;
-            if(glassCannon) coreInstability.instance.glassCannon = true;
-            if(airDash) player.instance.airDash = true;
-            if(glider)player.instance.hasGlider = true;
-            if(enemyHeals)player.instance.enemiesHeal = true;
-            Debug.Log("unlocked:" + skillName);
-            isUnlocked = true;
-            //essenceMult to do
+            payEssences();
+            applyEffects();
         }
-        else if(isUnlocked)
-        {
-            Debug.Log("Already Unlocked");
-        }
-
     }
     public bool canUnlock()
     {
         bool unlocked = true;
+        if (isUnlocked)
+        {
+            Debug.Log("already unlocked");
+            unlocked = false;
+        }
         if (!skipRequirement)
         {
             foreach (skillSO parent in requiredSkill)
@@ -108,10 +78,49 @@ public class skillSO : ScriptableObject
         {
             if (essenceManager.instance.essenceInv[s.type] < s.amount)
             {
-                Debug.Log("required:" + s.type.ToString() +" essences,you have"+ essenceManager.instance.essenceInv[s.type].ToString()+"essences");
+                Debug.Log("required: " + s.type.ToString() +" essences,you have "+ essenceManager.instance.essenceInv[s.type].ToString()+" essences");
                 unlocked = false;
             }
         }
+        if (skillID == 6) //this skill require dash if that skill id is changed change this accordingly
+        {
+            if (!player.instance.hasDash)
+            {
+                Debug.Log("dash Required");
+                unlocked=false;
+            }
+        }
         return unlocked;
+    }
+    public void payEssences()
+    {
+        foreach (essence s in essences)
+        {
+            essenceManager.instance.essenceInv[s.type] -= s.amount;
+        }
+    }
+    public void applyEffects()
+    {
+        if (isUnlocked) return;
+        player.instance.maxHp *= hpMult;
+        if (hpMult != 1) player.instance.hp = player.instance.maxHp;
+        player.instance.attackDamage *= atkMult;
+        player.instance.dashForce *= dashMult;
+        player.instance.attackRange *= rangMult;
+        player.instance.attackCooldown /= atkCDmult;
+        player.instance.moveSpeed *= speedMult;
+        player.instance.dashCooldown /= dashCDmult;
+        player.instance.dashCount += dashCount;
+        player.instance.iFrames += iFrames;
+        player.instance.healMult += healMult;
+        if (dashInv) player.instance.dashInvincibility = true;
+        if (coreinstability) player.instance.coreInstability = true;
+        if (glassCannon) coreInstability.instance.glassCannon = true;
+        if (airDash) player.instance.airDash = true;
+        if (glider) player.instance.hasGlider = true;
+        if (enemyHeals) player.instance.enemiesHeal = true;
+        Debug.Log("unlocked:" + skillName);
+        isUnlocked = true;
+        //essenceMult to do
     }
 }
