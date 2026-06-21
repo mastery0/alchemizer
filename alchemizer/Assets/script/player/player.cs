@@ -2,7 +2,7 @@ using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.SceneManagement;
 public class player : MonoBehaviour
 {
     public static player instance;
@@ -50,6 +50,7 @@ public class player : MonoBehaviour
     public float timeSinceAttack;
     public float timeSinceHit;
     private bool canAttack = true;
+    private bool isAlive = true;
     private bool isInvicible=false;
     private Vector2 facingDirection;
     // Update is called once per frame
@@ -57,6 +58,8 @@ public class player : MonoBehaviour
     private void Start()
     {
         instance = this;
+        isAlive = true;
+        Time.timeScale = 1f;
         saveManager.instance.load();
         prb = GetComponent<Rigidbody2D>();
         core = prb.GetComponent<coreInstability>();
@@ -75,6 +78,7 @@ public class player : MonoBehaviour
     // Input System
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (!isAlive) return;
         Vector2 moveInput = context.ReadValue<Vector2>();
         bool isJumpHeld = moveInput.y > 0;
         moveX = moveInput.x;
@@ -90,6 +94,7 @@ public class player : MonoBehaviour
     }
     public void OnDash(InputAction.CallbackContext context)
     {
+        if (!isAlive) return;
         if (context.started && dashCheck())
         {
             StartCoroutine(Dash());
@@ -97,10 +102,12 @@ public class player : MonoBehaviour
     }
     public void OnAttack(InputAction.CallbackContext context)
     {
+        if (!isAlive) return;
         attack();
     }
     public void OnOpenInv(InputAction.CallbackContext context)
     {
+        if (!isAlive) return;
         inv.SetActive(!inv.activeSelf);
     }
 
@@ -148,8 +155,6 @@ public class player : MonoBehaviour
         if (prb.linearVelocity.x < 0) facingDirection = Vector2.left;
         return facingDirection;
     }
-
-
     public void takeDamage(float damage)
     {
         if (isInvicible) return;
@@ -178,7 +183,9 @@ public class player : MonoBehaviour
     }
     public void die()
     {
-        Debug.Log("Player Died");
+        Time.timeScale = 0f;
+        isAlive = false;
+        SceneManager.LoadSceneAsync(gameObject.scene.buildIndex);
     }
     public void attack()
     {
