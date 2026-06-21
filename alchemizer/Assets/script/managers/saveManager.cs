@@ -10,7 +10,7 @@ public class saveManager : MonoBehaviour
     public class SaveData
     {
         public float maxHp;
-        public int respawnAltar;
+        public Vector2 respawnAltar;
 
         public int airEss;
         public int waterEss;
@@ -63,6 +63,7 @@ public class saveManager : MonoBehaviour
 
             player.instance.maxHp = data.maxHp;
             player.instance.respawnAltar = data.respawnAltar;
+            player.instance.transform.position = data.respawnAltar;
             essenceManager.instance.essenceInv[essenceManager.essenceTypes.air]=data.airEss;
             essenceManager.instance.essenceInv[essenceManager.essenceTypes.water]=data.waterEss;
             essenceManager.instance.essenceInv[essenceManager.essenceTypes.fire]=data.fireEss;
@@ -85,7 +86,7 @@ public class saveManager : MonoBehaviour
     public void toDefault()
     {
         player.instance.maxHp = 100;
-        player.instance.respawnAltar = 0;
+        player.instance.respawnAltar = new Vector2(0,0);
         essenceManager.instance.essenceInv[essenceManager.essenceTypes.air] = 0;
         essenceManager.instance.essenceInv[essenceManager.essenceTypes.water] = 0;
         essenceManager.instance.essenceInv[essenceManager.essenceTypes.fire] = 0;

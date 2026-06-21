@@ -171,3 +171,13 @@ Ramo Cura:
 - **Funzione ToDefault:** attivata tramite context menu; riporta i dati ai valori default
 
 **Risultato:** sistema di salvataggio base funzionante, in attesa dell'integrazione del punto di respawn.
+
+---
+
+### Giorno 10
+ **Focus:** implementazione checkpoint
+
+ -**checkpoint:** una volta cliccati settano il punto di respawn e chiamano la funzione load()
+ -**Da discutere:** funzionamento save,cosa salvare e cosa ricaricare alla morte,argomento di design importante
+
+ **Risultato:** si respawna alla morte

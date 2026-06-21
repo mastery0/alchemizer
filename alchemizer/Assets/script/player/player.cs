@@ -12,7 +12,7 @@ public class player : MonoBehaviour
     public GameObject inv;
     public fillBar hpBar;
     [Header("Movement")]
-    public int respawnAltar;
+    public Vector2 respawnAltar;
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public int jumpAmount = 1;
