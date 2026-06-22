@@ -63,6 +63,7 @@ public abstract class enemy : MonoBehaviour
     }
     protected virtual void Update()
     {
+        if (!playerScript.isAlive) return;
         hasSight();
         if (sight) groundFollow();
         else groundPatrol();

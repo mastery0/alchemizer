@@ -181,3 +181,15 @@ Ramo Cura:
  -**Da discutere:** funzionamento save,cosa salvare e cosa ricaricare alla morte,argomento di design importante
 
  **Risultato:** si respawna alla morte
+
+ ---
+
+ ### Giorno 11
+ **Focus:** implementazione finale save system
+ 
+ -**Creazione GDD:** documento contenente le informazioni sul gameplay,da sviluppare quando richiesto dal planning giornaliero
+ -**fall death:** quando si cade dalle piattaforme si torna al checkpoint come in caso di moprte standard
+ -**perdita di essenza:** quando si muore si perde il 20% delle essenze totali e si torna al checkpoint
+ -**modifiche attacco:** tramite un line renderer quando si attacca viene visualizzato il raggio (da migliorare in futuro)
+
+ **Risultato:** polishing di cose già esistenti,niente sistemi nuovi

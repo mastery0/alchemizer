@@ -1,0 +1,7 @@
+Core Loop Design
+in Alchemizer si ottengono essenze uccidendo nemici,a seconda del tipo di nemico ucciso.
+quando il player muore il 20% di esse viene perso,in futuro se necessario potrebbe essere aggiunta una valuta per effettuare scambi con npc
+le essenze permettono di sbloccare abilità per il catalizzatore,l'arma del protagonista,il catalizzatore ha dei tier che crescono comprando abilità,tier piu alti contengono 
+ abilita piu forti,nel primo tree ci sono tre branch uno per l'attacco uno per la mobility e uno per il sustain
+ le principali abilità di progressione si sbloccano comunque tramite esplorazione,dando un senso di metroidvania
+ al respawn viene ricaricata la scena e si torna all'ultimo checkpoint

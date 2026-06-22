@@ -1,16 +1,19 @@
 using System.Collections.Generic;
+using System.Collections;
 using System.IO;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class saveManager : MonoBehaviour
 {
     public skillSO[] allSkills;
     public static saveManager instance;
+    private static SaveData pendingLoadData;
     [System.Serializable]
     public class SaveData
     {
         public float maxHp;
         public Vector2 respawnAltar;
+        public int respawnscene;
 
         public int airEss;
         public int waterEss;
@@ -24,13 +27,21 @@ public class saveManager : MonoBehaviour
     {
         instance = this;
     }
+
+    private void Start()
+    {
+        if (pendingLoadData != null)
+        {
+            StartCoroutine(ApplyPendingLoadWhenReady());
+        }
+    }
     [ContextMenu("save")]
     public void save()
     {
         SaveData data = new SaveData();
         data.maxHp=player.instance.maxHp;
         data.respawnAltar=player.instance.respawnAltar;
-
+        data.respawnscene=player.instance.respawnScene;
 
         data.airEss = essenceManager.instance.essenceInv[essenceManager.essenceTypes.air];
         data.waterEss = essenceManager.instance.essenceInv[essenceManager.essenceTypes.water];
@@ -60,25 +71,59 @@ public class saveManager : MonoBehaviour
         {
             string json = File.ReadAllText(path);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
+            pendingLoadData = data;
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(data.respawnscene);
+        }
+    }
 
-            player.instance.maxHp = data.maxHp;
-            player.instance.respawnAltar = data.respawnAltar;
-            player.instance.transform.position = data.respawnAltar;
-            essenceManager.instance.essenceInv[essenceManager.essenceTypes.air]=data.airEss;
-            essenceManager.instance.essenceInv[essenceManager.essenceTypes.water]=data.waterEss;
-            essenceManager.instance.essenceInv[essenceManager.essenceTypes.fire]=data.fireEss;
-            essenceManager.instance.essenceInv[essenceManager.essenceTypes.light]=data.lightEss;
-            essenceManager.instance.essenceInv[essenceManager.essenceTypes.dark] = data.darkEss;
+    public void applyPendingLoad()
+    {
+        if (pendingLoadData == null) return;
+        if (!CanApplyData()) return;
 
-            foreach (skillSO skill in allSkills)
+        ApplyData(pendingLoadData);
+        pendingLoadData = null;
+    }
+
+    private IEnumerator ApplyPendingLoadWhenReady()
+    {
+        while (pendingLoadData != null && !CanApplyData())
+        {
+            yield return null;
+        }
+
+        applyPendingLoad();
+    }
+
+    private bool CanApplyData()
+    {
+        return player.instance != null && essenceManager.instance != null && coreInstability.instance != null;
+    }
+
+    private void ApplyData(SaveData data)
+    {
+        player.instance.maxHp = data.maxHp;
+        player.instance.hp = data.maxHp;
+        player.instance.respawnScene = data.respawnscene;
+        player.instance.respawnAltar = data.respawnAltar;
+        player.instance.transform.position = data.respawnAltar;
+        player.instance.isAlive = true;
+
+        essenceManager.instance.essenceInv[essenceManager.essenceTypes.air]=data.airEss;
+        essenceManager.instance.essenceInv[essenceManager.essenceTypes.water]=data.waterEss;
+        essenceManager.instance.essenceInv[essenceManager.essenceTypes.fire]=data.fireEss;
+        essenceManager.instance.essenceInv[essenceManager.essenceTypes.light]=data.lightEss;
+        essenceManager.instance.essenceInv[essenceManager.essenceTypes.dark] = data.darkEss;
+
+        foreach (skillSO skill in allSkills)
+        {
+            skill.isUnlocked= false;
+            foreach (int id in data.unlockedSkillIDs)
             {
-                skill.isUnlocked= false;
-                foreach (int id in data.unlockedSkillIDs)
-                {
-                    if (id != skill.skillID) continue;
-                    skill.applyEffects();
-                    break;
-                }
+                if (id != skill.skillID) continue;
+                skill.applyEffects();
+                break;
             }
         }
     }

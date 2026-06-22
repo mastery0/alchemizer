@@ -24,7 +24,7 @@ public class archer : enemy
 
     protected override void Update()
     {
-        //hasSight();
+        if (!playerScript.isAlive) return;
         shootSight();
         inRange = (Mathf.Abs(player.transform.position.x - transform.position.x) <= shooterRange && !isShooting);
 

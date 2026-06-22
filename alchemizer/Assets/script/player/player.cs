@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Runtime.CompilerServices;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -11,8 +12,13 @@ public class player : MonoBehaviour
     public LayerMask enemyLayer;
     public GameObject inv;
     public fillBar hpBar;
-    [Header("Movement")]
+    public GameObject deathPanel;
+
     public Vector2 respawnAltar;
+    public int respawnScene;
+
+
+    [Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public int jumpAmount = 1;
@@ -50,20 +56,24 @@ public class player : MonoBehaviour
     public float timeSinceAttack;
     public float timeSinceHit;
     private bool canAttack = true;
-    private bool isAlive = true;
+    [System.NonSerialized] public bool isAlive = true;
     private bool isInvicible=false;
     private Vector2 facingDirection;
-    // Update is called once per frame
-
+    private LineRenderer rayEffect;
     private void Start()
     {
         instance = this;
         isAlive = true;
         Time.timeScale = 1f;
-        saveManager.instance.load();
         prb = GetComponent<Rigidbody2D>();
+        rayEffect = GetComponent<LineRenderer>();
         core = prb.GetComponent<coreInstability>();
         hp=maxHp;
+        hpBar.setAmount(hp, maxHp);
+        if (saveManager.instance != null)
+        {
+            saveManager.instance.applyPendingLoad();
+        }
         hpBar.setAmount(hp, maxHp);
     }
     void FixedUpdate()
@@ -157,6 +167,7 @@ public class player : MonoBehaviour
     }
     public void takeDamage(float damage)
     {
+        if (!isAlive) return;
         if (isInvicible) return;
         hp -= damage-damage*defense;
         hpBar.setAmount(hp,maxHp);
@@ -183,16 +194,56 @@ public class player : MonoBehaviour
     }
     public void die()
     {
-        Time.timeScale = 0f;
+        if (!isAlive) return;
+
         isAlive = false;
-        SceneManager.LoadSceneAsync(gameObject.scene.buildIndex);
+        removeEssence();
+        if (hitStopManager.instance != null)
+        {
+            hitStopManager.instance.StopAllCoroutines();
+        }
+
+        Time.timeScale = 0f;
+
+        Image img = deathPanel.GetComponent<Image>();
+        Color c = img.color;
+        c.a = 0f;
+        img.color = c;
+        deathPanel.SetActive(true);
+
+        StartCoroutine(FadeDeathPanel(img));
+    }
+
+    public void respawn()
+    {
+        if (saveManager.instance != null)
+        {
+            saveManager.instance.load();
+        }
+    }
+
+    private IEnumerator FadeDeathPanel(Image img)
+    {
+        Color c = img.color;
+        while (c.a < 1f)
+        {
+            c.a = Mathf.MoveTowards(c.a, 1f, 2f * Time.unscaledDeltaTime);
+            img.color = c;
+            yield return null;
+        }
     }
     public void attack()
     {
         if (!canAttack) return;
         canAttack = false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction(), attackRange, enemyLayer);
-        Debug.DrawRay(transform.position,direction()*attackRange,Color.blue,1);
+
+        Vector2 dir = direction();
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, attackRange, enemyLayer);
+        Vector2 endPoint;
+        if (hit.collider == null) endPoint = (Vector2)transform.position + dir * attackRange;
+        else endPoint = hit.point;
+        StartCoroutine(showRay(endPoint));
+
         if (hit.collider != null)
         {
             hit.collider.GetComponent<enemy>().takeDamage(attackDamage);
@@ -218,5 +269,22 @@ public class player : MonoBehaviour
             overflow = (hp + amount) - maxHp;
         }
         hpBar.setAmount(hp,maxHp);
+    }
+    public void removeEssence()
+    {
+        essenceManager.instance.modifyAmount(essenceManager.essenceTypes.air, -(int)(essenceManager.instance.essenceInv[essenceManager.essenceTypes.air]*0.2));
+        essenceManager.instance.modifyAmount(essenceManager.essenceTypes.water, -(int)(essenceManager.instance.essenceInv[essenceManager.essenceTypes.water] * 0.2));
+        essenceManager.instance.modifyAmount(essenceManager.essenceTypes.fire, -(int)(essenceManager.instance.essenceInv[essenceManager.essenceTypes.fire] * 0.2));
+        essenceManager.instance.modifyAmount(essenceManager.essenceTypes.light, -(int)(essenceManager.instance.essenceInv[essenceManager.essenceTypes.light] * 0.2));
+        essenceManager.instance.modifyAmount(essenceManager.essenceTypes.dark, -(int)(essenceManager.instance.essenceInv[essenceManager.essenceTypes.dark] * 0.2));
+    }
+
+    public IEnumerator showRay(Vector2 endPoint)
+    {
+        rayEffect.enabled = true;
+        rayEffect.SetPosition(0,transform.position);
+        rayEffect.SetPosition(1,endPoint);
+        yield return new WaitForSeconds(0.2f);
+        rayEffect.enabled = false;
     }
 }

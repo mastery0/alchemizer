@@ -26,7 +26,7 @@ public class checkPoint : MonoBehaviour, IPointerEnterHandler,IPointerExitHandle
     public void OnPointerDown(PointerEventData data)
     {
         player.instance.respawnAltar=checkPointPos;
-        
+        player.instance.respawnScene=gameObject.scene.buildIndex;
         saveManager.instance.save();
     }
 }

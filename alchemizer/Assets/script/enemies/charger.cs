@@ -19,6 +19,7 @@ public class charger : enemy
     }
     protected override void Update()
     {
+        if (!playerScript.isAlive) return;
         hasSight();
         inRange = (Mathf.Abs(player.transform.position.x - transform.position.x) <= dashRange && Mathf.Abs(player.transform.position.y - transform.position.y) <= 1f);
         if (inRange && canDash)
