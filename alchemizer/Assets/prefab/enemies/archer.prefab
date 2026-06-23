@@ -260,6 +260,8 @@ MonoBehaviour:
   essenceDrop: 00000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
+  flashDuration: 0.3
+  flashColor: {r: 1, g: 1, b: 1, a: 1}
   shooterRange: 8
   projectile: {fileID: 6097620132809743584, guid: 9bb7c608ada77394bba5d3ad124797a7, type: 3}
   projSpeed: 30

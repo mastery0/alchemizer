@@ -260,3 +260,5 @@ MonoBehaviour:
   essenceDrop: 02000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
+  flashDuration: 0.3
+  flashColor: {r: 1, g: 1, b: 1, a: 1}

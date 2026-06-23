@@ -13,6 +13,8 @@ public class player : MonoBehaviour
     public GameObject inv;
     public fillBar hpBar;
     public GameObject deathPanel;
+    public GameObject bp;
+
 
     public Vector2 respawnAltar;
     public int respawnScene;
@@ -75,6 +77,13 @@ public class player : MonoBehaviour
             saveManager.instance.applyPendingLoad();
         }
         hpBar.setAmount(hp, maxHp);
+        Image img = bp.GetComponent<Image>();
+        Color c = img.color;
+        c.a = 1f;
+        img.color = c;
+        bp.SetActive(true);
+
+        StartCoroutine(FadeDeathPanel(img, 0f,true));
     }
     void FixedUpdate()
     {
@@ -211,7 +220,7 @@ public class player : MonoBehaviour
         img.color = c;
         deathPanel.SetActive(true);
 
-        StartCoroutine(FadeDeathPanel(img));
+        StartCoroutine(FadeDeathPanel(img,1f));
     }
 
     public void respawn()
@@ -222,15 +231,17 @@ public class player : MonoBehaviour
         }
     }
 
-    private IEnumerator FadeDeathPanel(Image img)
+    private IEnumerator FadeDeathPanel(Image img, float t, bool disable = false)
     {
         Color c = img.color;
-        while (c.a < 1f)
+        yield return new WaitForSecondsRealtime(0.01f);
+        while (!Mathf.Approximately(c.a,t))
         {
-            c.a = Mathf.MoveTowards(c.a, 1f, 2f * Time.unscaledDeltaTime);
+            c.a = Mathf.MoveTowards(c.a, t, 0.5f * Time.unscaledDeltaTime);
             img.color = c;
             yield return null;
         }
+        if(disable&&img.color.a==t)img.gameObject.SetActive(false);
     }
     public void attack()
     {

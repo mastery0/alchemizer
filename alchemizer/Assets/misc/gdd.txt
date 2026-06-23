@@ -1,7 +1,92 @@
-Core Loop Design
+﻿Core Loop Design
+Alchemizer è un platformer 2D con elementi metroidvania e RPG ma progressione piu lineare per gli standard del genere
+il giocatore è un alchimista che ha trovato un antico catalizzatore che gli permette di estrarre essenze dai nemici uccisi
 in Alchemizer si ottengono essenze uccidendo nemici,a seconda del tipo di nemico ucciso.
-quando il player muore il 20% di esse viene perso,in futuro se necessario potrebbe essere aggiunta una valuta per effettuare scambi con npc
-le essenze permettono di sbloccare abilit� per il catalizzatore,l'arma del protagonista,il catalizzatore ha dei tier che crescono comprando abilit�,tier piu alti contengono 
- abilita piu forti,nel primo tree ci sono tre branch uno per l'attacco uno per la mobility e uno per il sustain
- le principali abilit� di progressione si sbloccano comunque tramite esplorazione,dando un senso di metroidvania
- al respawn viene ricaricata la scena e si torna all'ultimo checkpoint
+in futuro se necessario potrebbe essere aggiunta una valuta per effettuare scambi con npc
+le principali abilità di progressione si sbloccano  tramite esplorazione,dando un senso di metroidvania
+il loop del gioco cosiste nel arrivare in una zona seguendo la quest,perdersi esplorando,lootando,sbloccare abilità quando si possiedono le essenze e cercare i checkpoint per salvare
+ 
+Essenze e skill tree
+le essenze permettono di sbloccare abilità per il catalizzatore,l'arma del protagonista,il catalizzatore ha dei tier che crescono comprando abilità,tier piu alti contengono 
+abilita piu forti,nel primo tree ci sono tre branch uno per l'attacco uno per la mobility e uno per il sustain,le abilità sbloccate dal'esplorazione sono migliorate da evenutali skill (esempio CD diminuiti)
+
+Core Instability(meccanica esclusiva di gameplay,nessun impatto nella lore,esclusiva del protagonista)
+una volta sbloccata la skill dallo skill tree si sblocca questo sistema in cui,finchè il player continua a fare danni o a subirne,una barra si carica
+al raggiungimento di certi valori soglia il player ottiene buff al costo di subire piu danni
+se il player smette di subire o fare danni si ha un decay della presusre
+è prevista l'implementazione nei futuri tree di buff o modifiche a questa meccanica
+
+Pozioni(da implementare)
+le pozioni una volta comprate dalla erborista sono cambiabili e ricaricabili ai checkpoint esse curano il player e/o forniscono modificatori
+esempi:
+pozione base: hp+40% reset pressure qta 3
+pozione 1:hp +25% mantiene la pressure qta 5
+pozione 2:hp -5% danni aumentati qta 2
+
+Morte
+quando il player muore il 20% delle essenze transportato esse viene perso,al respawn viene ricaricata la scena e si torna all'ultimo checkpoint
+
+
+SaveData attuale
+respawnPoint
+maxHp
+essenze possedute
+skillSbloccate
+
+Possibili abilità metroidvania
+doubleJump
+wallJump
+groundSlam
+
+Mappa demo
+(le frecce indicano da dove si sblocca il primo accesso ad esempio la prima volta bisogna andare per forza dalla palude al bosco e non il contrario)
+(vedere immagine attaccata)
+            palude di grovigli    
+			↑				↓
+casa→ forestaIncantata→ bosco profondo → torre del guardiano
+  ∟    →    ↓	→ laboratorio sepolto
+			↓
+nucleo della corruzione(finale demo)
+
+Trama
+Premessa:
+le essenze danno vita e anima a tutto,per qualche motivo l'ordine si è spezzato e le essenze si stanno corrompendo e con loro tutto cio che è animato
+mc è un alchimista che studia in un laboratorio ereditato da suo padre fuori immerso nella forestaIncantata
+
+Prologo/Casa-lab
+-Una notte sente un boato e il cielo si tinge di rosso,spaventato scende nel seminterrato dove apre una cassa con scritto "aprire solo in caso di emergenza" e trova il catalizzatore
+e un antico libro che gli spiega come funziona,risalendo sente rumori e capisce che c'è un problema,in casa non trova piu sua sorella,esce di casa e si addentra nella foresta incantata a cercarla
+-dopo aver salvato la sorella si torna a casa con una transizione,qui il mc capisce che grazie al catalizzatore deve farsi carico del gestire la calamità,riparte quindi all'esplorazione
+
+Foresta Incantata
+prima posto tranquillo pieno di fauna tranquilla,ora presenta mostri che vagano aggressivi,
+si imbatte nell'erborista,una donna che lavora le piante tramite la quale puo comprare diverse pozioni
+boss main slime gigante che aveva rapito la sorella,nessun drop principale solo avanzamento in trama
+boss secondario golem delle radici,protegge ingresso palude di grovigli
+boss secondario alchimista corrotto,sblocca il dash,richiesto per andare avanti,qualche rivelazioni di lore sulla corruzione 
+
+Palude di grovigli
+zona dove la corruzione è molto avanzata(acqua nera) e meccanica per cui passare tempo nella zona fa accumulare debuff al player
+i nemici sono lenti ma applicano debuff,un nemico potrebbe rubare essenze al player
+incontro con un ricercatore quasi pazzo dalle sue ricerche in un posto ostile esso a fine della sua quest diventa il 
+boss della zona,completamente pazzo e fuso con le essenze corrotte
+il passaggio in questa zona non è obbligatorio ma consente scoperte nuove e potenziamenti(da stabilire)
+
+Bosco Profondo
+spazio molto verticale,piu strutturalmente elaborato della foresta
+piattaforme mobili,zone bloccate da radici
+wall jump nascosto ma richiesto per accedere a torre del guardiano
+vero skill check sul platforming con combat piu semplici della palude
+i nemici sono agili e veloci,puniscono l'aggressività eccessiva
+boss da decidere sul nome ma boss che non si muove e attacca il player con attacchi che lo costringono ad imparare come posizionarsi bene nel campo di battaglia
+
+
+must to do
+romance quest tra due npc(solo se ci sta bene)
+skill tree con due tier
+quest system
+dialogues system
+buon quantitavo di trama con finale demo di suspance
+buon sviluppo di tutte le zone presenti
+comparto artistico
+comparto audio

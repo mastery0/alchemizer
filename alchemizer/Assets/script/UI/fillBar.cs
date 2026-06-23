@@ -3,8 +3,11 @@ using UnityEngine.UI;
 public class fillBar : MonoBehaviour
 {
     public Image bar;
+    public static pressureBar instance;
     public float fillSpeed;
     protected float target;
+
+    
     public void setAmount(float stat,float maxStat)
     {
         stat=Mathf.Clamp(stat,0,maxStat);

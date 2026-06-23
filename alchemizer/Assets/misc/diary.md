@@ -193,3 +193,14 @@ Ramo Cura:
  -**modifiche attacco:** tramite un line renderer quando si attacca viene visualizzato il raggio (da migliorare in futuro)
 
  **Risultato:** polishing di cose già esistenti,niente sistemi nuovi
+
+ ---
+ ### Giorno 12
+ **Focus:** polishing vecchie feature
+
+ -**Pressure:** adesso la barra fa un flash al cambio tier e aggiunto post processing della saturazione man mano che aumenta
+ -**nemici:** i nemici adesso fanno un flash bianco quando colpiti
+ -**morte:** fade out e fade in quando si muore e respawna
+ -**GDD:** sviluppo delle prime aree di gioco e idea di trama a grandi linee
+
+ **Risultato:** sistemi rifiniti e bozza di trama

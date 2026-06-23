@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class enemy : MonoBehaviour
@@ -37,6 +39,14 @@ public abstract class enemy : MonoBehaviour
     public essenceManager.essenceTypes[] essenceDrop;
     public Vector2Int minMaxEssence;
     public GameObject heals;
+
+    [Header("hit flash")]
+    public float flashDuration;
+    public Color flashColor= Color.white;
+
+    protected SpriteRenderer[] sr;
+    protected Color[] originalcolors;
+    protected bool isFlashing;
     protected virtual void Awake()
     {
         erb = GetComponent<Rigidbody2D>();
@@ -44,6 +54,9 @@ public abstract class enemy : MonoBehaviour
         prb= player.GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<player>();
         enemyCollider = GetComponent<Collider2D>();
+        sr=GetComponentsInChildren<SpriteRenderer>();
+        originalcolors=new Color[sr.Length];
+        for(int i=0; i<sr.Length; i++)originalcolors[i]=sr[i].color;
         hp = maxHp;
         patrolPositions = new Vector3[patrolPoints.Length];
         for (int i = 0; i < patrolPoints.Length; i++)
@@ -55,6 +68,11 @@ public abstract class enemy : MonoBehaviour
     {
         hp -= damage;
         if (hp <= 0) die();
+        else
+        {
+            if (isFlashing) StopCoroutine(hitFlash());
+            StartCoroutine(hitFlash());
+        }
     }
     protected virtual void die()
     {
@@ -171,5 +189,14 @@ public abstract class enemy : MonoBehaviour
         {
             erb.linearVelocity = new Vector2(0f, erb.linearVelocity.y);
         }
+    }
+
+    IEnumerator hitFlash()
+    {
+        isFlashing = true;
+        for (int i = 0; i < sr.Length; i++) sr[i].color = flashColor;
+        yield return new WaitForSeconds(flashDuration);
+        for(int i=0;i < sr.Length;i++)sr[i].color = originalcolors[i];
+        isFlashing=false;
     }
 }
