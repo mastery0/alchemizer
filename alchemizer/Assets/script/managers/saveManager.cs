@@ -8,6 +8,7 @@ public class saveManager : MonoBehaviour
     public skillSO[] allSkills;
     public static saveManager instance;
     private static SaveData pendingLoadData;
+    private List<string> seenDialogue=new List<string>();
     [System.Serializable]
     public class SaveData
     {
@@ -22,6 +23,7 @@ public class saveManager : MonoBehaviour
         public int darkEss;
 
         public int[] unlockedSkillIDs;
+        public string[] seenDialogueIDs;
     }
     private void Awake()
     {
@@ -33,6 +35,17 @@ public class saveManager : MonoBehaviour
         if (pendingLoadData != null)
         {
             StartCoroutine(ApplyPendingLoadWhenReady());
+        }
+    }
+    public bool hasSeenDialogue(string dialogueID)
+    {
+        return seenDialogue.Contains(dialogueID);
+    }
+    public void markDialogueSeen(string dialogueID)
+    {
+        if (!seenDialogue.Contains(dialogueID))
+        {
+            seenDialogue.Add(dialogueID);
         }
     }
     [ContextMenu("save")]
@@ -58,7 +71,7 @@ public class saveManager : MonoBehaviour
             }
         }
         data.unlockedSkillIDs = unlocked.ToArray();
-
+        data.seenDialogueIDs = seenDialogue.ToArray();
 
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
@@ -126,6 +139,11 @@ public class saveManager : MonoBehaviour
                 break;
             }
         }
+        seenDialogue.Clear();
+        foreach (string dialogueID in data.seenDialogueIDs)
+        {
+            seenDialogue.Add(dialogueID);
+        }
     }
     [ContextMenu("reset")]
     public void toDefault()
@@ -137,6 +155,8 @@ public class saveManager : MonoBehaviour
         essenceManager.instance.essenceInv[essenceManager.essenceTypes.fire] = 0;
         essenceManager.instance.essenceInv[essenceManager.essenceTypes.light] = 0;
         essenceManager.instance.essenceInv[essenceManager.essenceTypes.dark] = 0;
+
+        seenDialogue.Clear();
 
         foreach (skillSO skill in allSkills)
         {

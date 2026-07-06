@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.daniel-geo.unityhackatime": "https://github.com/daniel-geo/unity-hackatime.git#package",
+    "com.ibra.ibralogue": "https://github.com/Ibralogue/Ibralogue.git",
     "com.unity.2d.animation": "13.0.4",
     "com.unity.2d.aseprite": "3.0.1",
     "com.unity.2d.psdimporter": "12.0.1",

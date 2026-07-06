@@ -204,3 +204,7 @@ Ramo Cura:
  -**GDD:** sviluppo delle prime aree di gioco e idea di trama a grandi linee
 
  **Risultato:** sistemi rifiniti e bozza di trama
+
+ ---
+### Giorno 13
+-**tileset:** creazione di un livello di test con tileset e piattaforme
