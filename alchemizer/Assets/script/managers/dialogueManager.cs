@@ -31,10 +31,11 @@ public class dialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        if(dialogue.oneTimeOnly && saveManager.instance.hasSeenDialogue(dialogue.dialogueID))
+        if (dialogue.oneTimeOnly && saveManager.instance.hasSeenDialogue(dialogue.dialogueID))
         {
             return;
         }
+        saveManager.instance.markDialogueSeen(dialogue.dialogueID);
         canvas.SetActive(true);
         isDialogueActive = true;
         dialogue.shown = true;

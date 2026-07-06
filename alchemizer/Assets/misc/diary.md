@@ -208,3 +208,12 @@ Ramo Cura:
  ---
 ### Giorno 13
 -**tileset:** creazione di un livello di test con tileset e piattaforme
+
+---
+
+### Giorno 14
+-**dialogue system:** implementazione sistema di dialogo con textbox e salvataggio dialoghi già visti
+
+### Giorno 15
+-**Main menu:** quando viene aperto il gioco si apre il main menu con tasti play e quit
+-**Esc menu:** quabndo viene premuto esc si apre un menu che pernette du accedere a skillTree,inventario(da fare) e quittare il gioco
