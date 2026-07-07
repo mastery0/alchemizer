@@ -9,6 +9,8 @@ public class saveManager : MonoBehaviour
     public static saveManager instance;
     private static SaveData pendingLoadData;
     private List<string> seenDialogue=new List<string>();
+    private List<string> openedChest = new List<string>();
+    private List<itemStack> inventory = new List<itemStack>();
     [System.Serializable]
     public class SaveData
     {
@@ -24,6 +26,8 @@ public class saveManager : MonoBehaviour
 
         public int[] unlockedSkillIDs;
         public string[] seenDialogueIDs;
+        public string[] openedChestIDs;
+        public itemStack[] inventory;
     }
     private void Awake()
     {
@@ -46,6 +50,17 @@ public class saveManager : MonoBehaviour
         if (!seenDialogue.Contains(dialogueID))
         {
             seenDialogue.Add(dialogueID);
+        }
+    }
+    public bool hasOpenedChest(string chestID)
+    {
+        return openedChest.Contains(chestID);
+    }
+    public void markChestOpened(string chestID)
+    {
+        if (!openedChest.Contains(chestID))
+        {
+            openedChest.Add(chestID);
         }
     }
     [ContextMenu("save")]
@@ -72,7 +87,8 @@ public class saveManager : MonoBehaviour
         }
         data.unlockedSkillIDs = unlocked.ToArray();
         data.seenDialogueIDs = seenDialogue.ToArray();
-
+        data.openedChestIDs = openedChest.ToArray();
+        data.inventory = inventory.ToArray();
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
     }
@@ -144,6 +160,16 @@ public class saveManager : MonoBehaviour
         {
             seenDialogue.Add(dialogueID);
         }
+        openedChest.Clear();
+        foreach (string chestID in data.openedChestIDs)
+        {
+            openedChest.Add(chestID);
+        }
+        inventory.Clear();
+        foreach (itemStack stack in data.inventory)
+        {
+            inventory.Add(stack);
+        }
     }
     [ContextMenu("reset")]
     public void toDefault()
@@ -157,7 +183,8 @@ public class saveManager : MonoBehaviour
         essenceManager.instance.essenceInv[essenceManager.essenceTypes.dark] = 0;
 
         seenDialogue.Clear();
-
+        openedChest.Clear();
+        inventory.Clear();
         foreach (skillSO skill in allSkills)
         {
             skill.isUnlocked= false;
