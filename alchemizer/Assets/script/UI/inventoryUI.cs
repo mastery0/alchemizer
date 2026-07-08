@@ -8,9 +8,25 @@ public class inventoryUI : MonoBehaviour
     public GameObject itemPanel;
     public Sprite inventorySlotPrefab;
 
+    private ScrollRect inventoryScrollRect;
+    private ScrollRect itemScrollRect;
+    private bool syncingScroll;
+
+    private void Awake()
+    {
+        FindScrollRects();
+    }
+
     private void OnEnable()
     {
+        FindScrollRects();
+        RegisterScrollSync();
         buildInvUI();
+    }
+
+    private void OnDisable()
+    {
+        UnregisterScrollSync();
     }
 
     public void buildInvUI()
@@ -47,6 +63,77 @@ public class inventoryUI : MonoBehaviour
             amountRect.offsetMin = Vector2.zero;
             amountRect.offsetMax = Vector2.zero;
         }
+    }
+
+    private void FindScrollRects()
+    {
+        if (inventoryPanel == null || itemPanel == null)
+        {
+            return;
+        }
+
+        ScrollRect[] scrollRects = GetComponentsInChildren<ScrollRect>(true);
+        foreach (ScrollRect scrollRect in scrollRects)
+        {
+            if (scrollRect.content == inventoryPanel.transform)
+            {
+                inventoryScrollRect = scrollRect;
+            }
+            else if (scrollRect.content == itemPanel.transform)
+            {
+                itemScrollRect = scrollRect;
+            }
+        }
+    }
+
+    private void RegisterScrollSync()
+    {
+        UnregisterScrollSync();
+
+        if (inventoryScrollRect != null)
+        {
+            inventoryScrollRect.onValueChanged.AddListener(SyncFromInventoryScroll);
+        }
+
+        if (itemScrollRect != null)
+        {
+            itemScrollRect.onValueChanged.AddListener(SyncFromItemScroll);
+        }
+    }
+
+    private void UnregisterScrollSync()
+    {
+        if (inventoryScrollRect != null)
+        {
+            inventoryScrollRect.onValueChanged.RemoveListener(SyncFromInventoryScroll);
+        }
+
+        if (itemScrollRect != null)
+        {
+            itemScrollRect.onValueChanged.RemoveListener(SyncFromItemScroll);
+        }
+    }
+
+    private void SyncFromInventoryScroll(Vector2 position)
+    {
+        SyncScroll(itemScrollRect, position);
+    }
+
+    private void SyncFromItemScroll(Vector2 position)
+    {
+        SyncScroll(inventoryScrollRect, position);
+    }
+
+    private void SyncScroll(ScrollRect target, Vector2 position)
+    {
+        if (syncingScroll || target == null)
+        {
+            return;
+        }
+
+        syncingScroll = true;
+        target.normalizedPosition = position;
+        syncingScroll = false;
     }
 
     private void ClearChildren(Transform parent, Transform childToKeep = null)

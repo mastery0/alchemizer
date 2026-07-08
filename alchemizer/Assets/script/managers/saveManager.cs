@@ -10,6 +10,8 @@ public class saveManager : MonoBehaviour
     private static SaveData pendingLoadData;
     private List<string> seenDialogue=new List<string>();
     private List<string> openedChest = new List<string>();
+    private List<string> activeQuestsID = new List<string>();
+    private List<string> completedQuestsID = new List<string>();
     private List<itemStack> inventory = new List<itemStack>();
     [System.Serializable]
     public class SaveData
@@ -28,6 +30,8 @@ public class saveManager : MonoBehaviour
         public string[] seenDialogueIDs;
         public string[] openedChestIDs;
         public itemStack[] inventory;
+        public string[] activeQuestsIDs;
+        public string[] completedQuestsIDs;
     }
     private void Awake()
     {
@@ -63,6 +67,29 @@ public class saveManager : MonoBehaviour
             openedChest.Add(chestID);
         }
     }
+    public void addQuest(string newQuest)
+    {
+        if (!activeQuestsID.Contains(newQuest) && !completedQuestsID.Contains(newQuest))
+        {
+            activeQuestsID.Add(newQuest);
+        }
+    }
+    public void completeQuest(string completedQuestID)
+    {
+        if (activeQuestsID.Contains(completedQuestID))
+        {
+            activeQuestsID.Remove(completedQuestID);
+            completedQuestsID.Add(completedQuestID);
+        }
+    }
+    public bool isQuestActive(string questToCheck)
+    {
+        return activeQuestsID.Contains(questToCheck);
+    }
+    public bool isQuestCompleted(string questToCheck)
+    {
+        return completedQuestsID.Contains(questToCheck);
+    }
     [ContextMenu("save")]
     public void save()
     {
@@ -89,6 +116,8 @@ public class saveManager : MonoBehaviour
         data.seenDialogueIDs = seenDialogue.ToArray();
         data.openedChestIDs = openedChest.ToArray();
         data.inventory = inventory.ToArray();
+        data.activeQuestsIDs = activeQuestsID.ToArray();
+        data.completedQuestsIDs = completedQuestsID.ToArray();
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
     }
@@ -155,20 +184,35 @@ public class saveManager : MonoBehaviour
                 break;
             }
         }
+
         seenDialogue.Clear();
         foreach (string dialogueID in data.seenDialogueIDs)
         {
             seenDialogue.Add(dialogueID);
         }
+
         openedChest.Clear();
         foreach (string chestID in data.openedChestIDs)
         {
             openedChest.Add(chestID);
         }
+
         inventory.Clear();
         foreach (itemStack stack in data.inventory)
         {
             inventory.Add(stack);
+        }
+
+        activeQuestsID.Clear();
+        foreach (string questID in data.activeQuestsIDs)
+        {
+            activeQuestsID.Add(questID);
+        }
+
+        completedQuestsID.Clear();
+        foreach (string questID in data.completedQuestsIDs)
+        {
+            completedQuestsID.Add(questID);
         }
     }
     [ContextMenu("reset")]
@@ -185,6 +229,8 @@ public class saveManager : MonoBehaviour
         seenDialogue.Clear();
         openedChest.Clear();
         inventory.Clear();
+        activeQuestsID.Clear();
+        completedQuestsID.Clear();
         foreach (skillSO skill in allSkills)
         {
             skill.isUnlocked= false;

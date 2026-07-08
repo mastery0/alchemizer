@@ -217,3 +217,11 @@ Ramo Cura:
 ### Giorno 15
 -**Main menu:** quando viene aperto il gioco si apre il main menu con tasti play e quit
 -**Esc menu:** quabndo viene premuto esc si apre un menu che pernette du accedere a skillTree,inventario(da fare) e quittare il gioco
+
+### Giorno 16
+-**Inventory:** implementazione sistema di inventario con possibilità di raccogliere oggetti 
+-**Inventory UI:** creazione di un'interfaccia per visualizzare gli oggetti raccolti e le loro descrizioni
+**Problema:** dubbi di game design,l'inventario serve?ci devono essere drop? potrebbe andare cancellato in futuro!
+
+### Giorno 17
+-**Quest system:** implementazione sistema di quest con possibilità di ricevere e completare missioni,ancora wip
