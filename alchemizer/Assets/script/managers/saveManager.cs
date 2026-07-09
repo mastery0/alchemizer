@@ -32,6 +32,7 @@ public class saveManager : MonoBehaviour
         public itemStack[] inventory;
         public string[] activeQuestsIDs;
         public string[] completedQuestsIDs;
+        public questSaveData[] questProgress;
     }
     private void Awake()
     {
@@ -118,6 +119,10 @@ public class saveManager : MonoBehaviour
         data.inventory = inventory.ToArray();
         data.activeQuestsIDs = activeQuestsID.ToArray();
         data.completedQuestsIDs = completedQuestsID.ToArray();
+        if (questManager.instance != null)
+        {
+            data.questProgress = questManager.instance.getQuestProgressData();
+        }
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
     }
@@ -214,6 +219,11 @@ public class saveManager : MonoBehaviour
         {
             completedQuestsID.Add(questID);
         }
+
+        if (questManager.instance != null)
+        {
+            questManager.instance.applySavedQuests(data.activeQuestsIDs, data.completedQuestsIDs, data.questProgress);
+        }
     }
     [ContextMenu("reset")]
     public void toDefault()
@@ -231,6 +241,10 @@ public class saveManager : MonoBehaviour
         inventory.Clear();
         activeQuestsID.Clear();
         completedQuestsID.Clear();
+        if (questManager.instance != null)
+        {
+            questManager.instance.resetQuestDB();
+        }
         foreach (skillSO skill in allSkills)
         {
             skill.isUnlocked= false;

@@ -32,6 +32,7 @@ public class dialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         dialogueManager.Instance.StartDialogue(dialogue);
+        if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.talk, dialogue.dialogueID);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

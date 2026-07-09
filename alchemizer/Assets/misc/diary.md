@@ -225,3 +225,6 @@ Ramo Cura:
 
 ### Giorno 17
 -**Quest system:** implementazione sistema di quest con possibilità di ricevere e completare missioni,ancora wip
+
+### Giorno 18
+-**Quest system:** sviluppo backend del sistema quest,UI wip

@@ -8,7 +8,11 @@ public class pickUP : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         { 
-            if(inventory.instance.addItem(item, amount))Destroy(gameObject);
+            if(inventory.instance.addItem(item, amount))
+            {
+                if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.collect, item.itemID, amount);
+                Destroy(gameObject);
+            }
             else Debug.Log("Inventory Full");
         }
     }

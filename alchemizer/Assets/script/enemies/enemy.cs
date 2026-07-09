@@ -27,6 +27,7 @@ public abstract class enemy : MonoBehaviour
     protected Collider2D enemyCollider;
 
     [Header("Stats")]
+    public string enemyID;
     public float maxHp;
     protected float hp;
     protected bool sight;
@@ -76,6 +77,7 @@ public abstract class enemy : MonoBehaviour
     }
     protected virtual void die()
     {
+        if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.kill, enemyID);
         dropEssence();
         Destroy(gameObject);
     }

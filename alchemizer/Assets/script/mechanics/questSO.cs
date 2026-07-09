@@ -1,6 +1,5 @@
-using JetBrains.Annotations;
-using Unity.VisualScripting;
 using UnityEngine;
+
 public enum questType
 {
     kill,
@@ -26,16 +25,17 @@ public class questObjective
     public void ResetProgress()
     {
         currentAmount = 0;
+        status = global::questStatus.notStarted;
     }
     public questStatus checkstatus()
     {
         if (currentAmount >= requiredAmount)
         {
-            return questStatus.completed;
+            return global::questStatus.completed;
         }
         else
         {
-            return questStatus.inProgress;
+            return global::questStatus.inProgress;
         }
     }
 }
@@ -54,11 +54,20 @@ public class quest : ScriptableObject
 
     public bool canStartQuest()
     {
-        foreach (var item in objectives) {
-            if(!(item.checkstatus()==questStatus.completed))return false; 
+        foreach (var item in prerequisites) {
+            if (item.questStatus != global::questStatus.completed) return false;
         }
-        if(questStatus!=questStatus.notStarted)return false;
+        if(questStatus!=global::questStatus.notStarted)return false;
         return true;
+    }
+    public void startQuest()
+    {
+        questStatus = global::questStatus.inProgress;
+        resetProgress();
+        foreach (var item in objectives)
+        {
+            item.status = item.checkstatus();
+        }
     }
     public void setID()
     {
@@ -74,29 +83,55 @@ public class quest : ScriptableObject
             item.ResetProgress();
         }
     }
-    public void updateProgress(string targetID, int amount)
+    public bool updateProgress(questType type, string targetID, int amount)
     {
+        bool updated = false;
         foreach (var item in objectives)
         {
+            if (item.status == global::questStatus.completed) continue;
+            if (item.type != type) continue;
             if (item.targetID == targetID)
             {
                 item.currentAmount += amount;
                 item.status = item.checkstatus();
+                updated = true;
             }
         }
+        return updated;
+    }
+
+    public bool updateProgress(string targetID, int amount)
+    {
+        bool updated = false;
+        foreach (var item in objectives)
+        {
+            if (item.status == global::questStatus.completed) continue;
+            if (item.targetID == targetID)
+            {
+                item.currentAmount += amount;
+                item.status = item.checkstatus();
+                updated = true;
+            }
+        }
+        return updated;
+    }
+
+    public bool canCompleteQuest()
+    {
+        if (questStatus != global::questStatus.inProgress) return false;
+        foreach(var item in objectives)
+        {
+            // Keeps objective status aligned even when progress was restored from a save.
+            item.status = item.checkstatus();
+            if (item.status != global::questStatus.completed) return false;
+        }
+        return true;
     }
 
     public bool completeAndReward()
     {
-        foreach(var item in objectives)
-        {
-            if (item.status == questStatus.completed) return false;
-        }
-        int i = Essencereward.Length;
-        foreach(var item in Essencereward)
-        {
-            essenceManager.instance.modifyAmount(item, essenceRewardAmount / i);
-        }
+        if (!canCompleteQuest()) return false;
+
         foreach(var item in itemRewards)
         {
             if (!inventory.instance.addItem(item.item, item.amount))
@@ -105,6 +140,13 @@ public class quest : ScriptableObject
                 return false;
             }
         }
+
+        int i = Essencereward.Length;
+        foreach(var item in Essencereward)
+        {
+            essenceManager.instance.modifyAmount(item, essenceRewardAmount / i);
+        }
+        questStatus = global::questStatus.completed;
         return true;
     }
 }
