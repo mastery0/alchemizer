@@ -288,7 +288,8 @@ Ramo Cura:
 - poison: danno nel tempo e riduzione efficacia cure
 - bleed: danno nel tempo che aumenta con la velocità di movimento
 - shock: danno instantaneo e aumento attack cd (solo player)
-
+- weakness: diminuzione danno inflitto
+- exhaustion: diminuzione guadagno pressure e aumento perdita pressure (solo player)
 ---
 
 ## Stato Attuale & Prossimi Passi (fine Giorno 20)

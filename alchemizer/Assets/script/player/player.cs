@@ -181,7 +181,7 @@ public class player : MonoBehaviour
         hp -= damage-damage*defense;
         hpBar.setAmount(hp,maxHp);
         timeSinceHit = 0f;
-        core.currentPressure += 10;
+        core.currentPressure += core.pressurePlusDelta;
         hitStopManager.instance.stopTime(0.08f);
         if (hp <= 0)
         {
@@ -259,7 +259,7 @@ public class player : MonoBehaviour
         {
             hit.collider.GetComponent<enemy>().takeDamage(attackDamage);
             timeSinceAttack = 0f;
-            core.currentPressure += 10;
+            core.currentPressure += core.pressurePlusDelta;
             hitStopManager.instance.stopTime(0.08f);
             Debug.Log("hitted");
         }

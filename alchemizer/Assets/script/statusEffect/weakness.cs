@@ -1,21 +1,18 @@
 using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
-public class shock : statusEffect
+
+public class weakness : statusEffect
 {
-    public float damage;
-    public float atkSpeedRed;//reduction in attack speed
+    public float damageReduction;
     public override void onApply()
     {
         remainingDuration = duration;
         if (gameObject.CompareTag("Player"))
         {
-            gameObject.GetComponent<player>().attackCooldown += atkSpeedRed;
-            gameObject.GetComponent<player>().takeDamage(damage);
+            gameObject.GetComponent<player>().attackDamage -= damageReduction;
         }
         else if (gameObject.CompareTag("Enemy"))
         {
-            gameObject.GetComponent<enemy>().takeDamage(damage);
+            gameObject.GetComponent<enemy>().damage -= damageReduction;
         }
     }
     public override void onTick()
@@ -27,9 +24,12 @@ public class shock : statusEffect
     {
         if (gameObject.CompareTag("Player"))
         {
-            gameObject.GetComponent<player>().attackCooldown -= atkSpeedRed;
+            gameObject.GetComponent<player>().attackDamage += damageReduction;
+        }
+        else if (gameObject.CompareTag("Enemy"))
+        {
+            gameObject.GetComponent<enemy>().damage += damageReduction;
         }
         Destroy(this);
     }
 }
-

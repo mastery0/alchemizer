@@ -12,7 +12,8 @@ public class coreInstability : MonoBehaviour
     public Volume volume;
 
     public int currentPressure = 0;
-    public int pressureDelta = 10;
+    public int pressurePlusDelta = 10;
+    public int pressureMinusDelta = 10;
     public int maxPressure = 100;
 
 
@@ -83,7 +84,7 @@ public class coreInstability : MonoBehaviour
     private IEnumerator decreasePressure()
     {
         isDecreasing = true;
-        currentPressure -= pressureDelta;
+        currentPressure -= pressureMinusDelta;
         yield return new WaitForSeconds(0.5f);
         isDecreasing=false;
     }
