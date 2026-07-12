@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 692797002517909691}
   - component: {fileID: 5040685643969513960}
   - component: {fileID: 1347099750053251632}
+  - component: {fileID: 7474087185785275942}
   m_Layer: 6
   m_Name: slime
   m_TagString: Untagged
@@ -253,6 +254,7 @@ MonoBehaviour:
   groundCheckDistance: 0.35
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
+  enemyID: slime
   maxHp: 15
   speed: 2
   damage: 30
@@ -262,3 +264,16 @@ MonoBehaviour:
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
   flashDuration: 0.3
   flashColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &7474087185785275942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875749033156400525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825a72db557cb73458b8888b8039b3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::statusManager
+  activeEffects: []

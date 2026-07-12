@@ -85,8 +85,6 @@ boss da decidere sul nome ma boss che non si muove e attacca il player con attac
 must to do
 romance quest tra due npc(solo se ci sta bene)
 skill tree con due tier
-quest system
-dialogues system
 buon quantitavo di trama con finale demo di suspance
 buon sviluppo di tutte le zone presenti
 comparto artistico

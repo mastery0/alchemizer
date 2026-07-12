@@ -1,6 +1,6 @@
 ﻿# ALCHEMIZER — Diario di Sviluppo
 
-> Aggiornato al termine del **Giorno 9**.
+> Aggiornato al termine del **Giorno 20**.
 
 ---
 
@@ -40,7 +40,10 @@ Nodo radice della progressione. Attuale nodo: `Catalyst Base`.
 Roadmap: evolversi in stadi, sbloccare nuove sezioni dell'albero, rappresentare i milestone principali.
 
 ### Decisione Risolta (Giorno 6)
-Le abilità di movimento si sbloccano tramite **Skill Tree** (ramo Movimento: Air Dash, Gale Step, Wind Flow, Swift Step).
+Le abilità di movimento si sbloccano tramite **Skill Tree** (ramo Movimento: Air Dash, Gale Step, Wind Flow, Swift Step). Le skill di progressione metroidvania (dash, double jump, ecc.) si sbloccano tramite esplorazione e vengono potenziate dalle skill nel tree.
+
+### Decisione Aperta (dal Giorno 16)
+**L'inventario serve davvero?** Dubbio di game design ancora irrisolto: se sì, servono drop dedicati dai nemici/mondo? Se no, il sistema va rimosso o riconvertito. Da chiudere prima di investire altro tempo nella UI (es. ScrollRect).
 
 ---
 
@@ -48,8 +51,12 @@ Le abilità di movimento si sbloccano tramite **Skill Tree** (ramo Movimento: Ai
 
 - Motore: **Unity**, linguaggio **C#**
 - Le skill usano **ScriptableObject** (`SkillSO`) — struttura estendibile
-- Attacco ranged basato su **raycast** (non proiettile fisico)
+- Anche il **Quest System** è basato su ScriptableObject
+- Attacco ranged basato su **raycast**, visualizzato con **LineRenderer** (da migliorare esteticamente)
 - Essenze gestite da un **Essence Manager** centralizzato
+- **SaveManager**: singleton con `DontDestroyOnLoad`
+- **Core Instability** (pressure): pattern a eventi `OnAttack()` / `OnHit()`, integrato con post-processing URP (vignette, color adjustment, saturazione)
+- Feedback di combattimento: `HitStopManager` (via `Time.timeScale`), hit-flash nemici (`SpriteRenderer.color`), knockback
 
 ---
 
@@ -103,9 +110,6 @@ Le abilità di movimento si sbloccano tramite **Skill Tree** (ramo Movimento: Ai
 - UI: contatore essenze visibile
 
 **Risultato:** loop completo minimo funzionante:
-```
-Combattimento → Drop Essenze → Raccolta → Skill Tree → Upgrade statistiche
-```
 
 ---
 
@@ -120,6 +124,7 @@ Combattimento → Drop Essenze → Raccolta → Skill Tree → Upgrade statistic
 **Risultato:** sistema di combattimento più profondo, albero espanso, base testabile.
 
 ---
+
 ### Giorno 6
 **Focus:** espansione Skill Tree — rami Movimento (Air) e Cura (Water)
 
@@ -135,11 +140,12 @@ Ramo Cura:
 - **Vitality:** aumenta gli HP massimi del 30%
 - **Fluid Body:** l'essenza dell'acqua attutisce le conseguenze di un colpo, estendendo l'invulnerabilità
 
-**Decisione:** Le skill dash,double jump etc.. che servono per la progressione metroidvania verrano sbloccate tramite esplorazione e migliorate dalle skill nel tree,
+**Decisione:** le skill dash, double jump, ecc. che servono per la progressione metroidvania verranno sbloccate tramite esplorazione e migliorate dalle skill nel tree.
 
 **Risultato:** Skill Tree ampliato con due nuovi rami tematici (mobilità aerea e sostegno/cura), che si aggiungono al ramo offensivo introdotto al Giorno 5.
 
 ---
+
 ### Giorno 7
 **Focus:** creazione Nemico 2 e Nemico 3
 
@@ -154,12 +160,12 @@ Ramo Cura:
 ### Giorno 8
 **Focus:** UI
 
-- **barra hp animata**
-- **barra pressure**
-- **livello di test**
-- **hit stop**
+- Barra HP animata
+- Barra Pressure
+- Livello di test
+- Hit stop
 
-**Risultato:** ui integrata con i sistemi di gioco e piu reattività nel combat
+**Risultato:** UI integrata con i sistemi di gioco e maggiore reattività nel combat.
 
 ---
 
@@ -175,56 +181,123 @@ Ramo Cura:
 ---
 
 ### Giorno 10
- **Focus:** implementazione checkpoint
+**Focus:** implementazione checkpoint
 
- -**checkpoint:** una volta cliccati settano il punto di respawn e chiamano la funzione load()
- -**Da discutere:** funzionamento save,cosa salvare e cosa ricaricare alla morte,argomento di design importante
+- **Checkpoint:** una volta attivati, settano il punto di respawn e chiamano la funzione `Load()`
+- **Da discutere:** funzionamento save, cosa salvare e cosa ricaricare alla morte — argomento di design importante
 
- **Risultato:** si respawna alla morte
+**Risultato:** si respawna alla morte.
 
- ---
+---
 
- ### Giorno 11
- **Focus:** implementazione finale save system
- 
- -**Creazione GDD:** documento contenente le informazioni sul gameplay,da sviluppare quando richiesto dal planning giornaliero
- -**fall death:** quando si cade dalle piattaforme si torna al checkpoint come in caso di moprte standard
- -**perdita di essenza:** quando si muore si perde il 20% delle essenze totali e si torna al checkpoint
- -**modifiche attacco:** tramite un line renderer quando si attacca viene visualizzato il raggio (da migliorare in futuro)
+### Giorno 11
+**Focus:** implementazione finale save system
 
- **Risultato:** polishing di cose già esistenti,niente sistemi nuovi
+- **Creazione GDD:** documento contenente le informazioni sul gameplay, da sviluppare quando richiesto dal planning giornaliero
+- **Fall death:** quando si cade dalle piattaforme si torna al checkpoint come in caso di morte standard
+- **Perdita di essenza:** quando si muore si perde il 20% delle essenze totali e si torna al checkpoint
+- **Modifiche attacco:** tramite LineRenderer, quando si attacca viene visualizzato il raggio (da migliorare in futuro)
 
- ---
- ### Giorno 12
- **Focus:** polishing vecchie feature
+**Risultato:** polishing di cose già esistenti, nessun sistema nuovo.
 
- -**Pressure:** adesso la barra fa un flash al cambio tier e aggiunto post processing della saturazione man mano che aumenta
- -**nemici:** i nemici adesso fanno un flash bianco quando colpiti
- -**morte:** fade out e fade in quando si muore e respawna
- -**GDD:** sviluppo delle prime aree di gioco e idea di trama a grandi linee
+---
 
- **Risultato:** sistemi rifiniti e bozza di trama
+### Giorno 12
+**Focus:** polishing vecchie feature
 
- ---
+- **Pressure:** ora la barra fa un flash al cambio tier, aggiunto post-processing della saturazione man mano che aumenta
+- **Nemici:** flash bianco quando colpiti
+- **Morte:** fade out e fade in quando si muore e si respawna
+- **GDD:** sviluppo delle prime aree di gioco e idea di trama a grandi linee
+
+**Risultato:** sistemi rifiniti e bozza di trama.
+
+---
+
 ### Giorno 13
--**tileset:** creazione di un livello di test con tileset e piattaforme
+**Focus:** tileset e livello di test
+
+- Creazione di un livello di test con tileset e piattaforme
+
+**Risultato:** base ambientale per testare le meccaniche in un contesto più simile al livello finale.
 
 ---
 
 ### Giorno 14
--**dialogue system:** implementazione sistema di dialogo con textbox e salvataggio dialoghi già visti
+**Focus:** Dialogue System
+
+- Implementazione sistema di dialogo con textbox e salvataggio dei dialoghi già visti
+
+**Risultato:** base narrativa funzionante e persistente tra le sessioni.
+
+---
 
 ### Giorno 15
--**Main menu:** quando viene aperto il gioco si apre il main menu con tasti play e quit
--**Esc menu:** quabndo viene premuto esc si apre un menu che pernette du accedere a skillTree,inventario(da fare) e quittare il gioco
+**Focus:** menu di navigazione
+
+- **Main menu:** all'apertura del gioco si apre il main menu con tasti Play e Quit
+- **Esc menu:** premendo Esc si apre un menu che permette di accedere a Skill Tree, Inventario (da fare) e uscire dal gioco
+
+**Risultato:** navigazione base tra le schermate di gioco completata.
+
+---
 
 ### Giorno 16
--**Inventory:** implementazione sistema di inventario con possibilità di raccogliere oggetti 
--**Inventory UI:** creazione di un'interfaccia per visualizzare gli oggetti raccolti e le loro descrizioni
-**Problema:** dubbi di game design,l'inventario serve?ci devono essere drop? potrebbe andare cancellato in futuro!
+**Focus:** Inventory
+
+- **Inventory:** implementazione sistema di inventario con possibilità di raccogliere oggetti
+- **Inventory UI:** creazione di un'interfaccia per visualizzare gli oggetti raccolti e le loro descrizioni
+
+**Domanda aperta:** dubbi di game design — l'inventario serve? Ci devono essere drop dedicati? Potrebbe essere rimosso in futuro.
+
+---
 
 ### Giorno 17
--**Quest system:** implementazione sistema di quest con possibilità di ricevere e completare missioni,ancora wip
+**Focus:** Quest System (avvio)
+
+- Implementazione sistema di quest con possibilità di ricevere e completare missioni — ancora WIP
+
+**Risultato:** architettura iniziale in piedi, da completare.
+
+---
 
 ### Giorno 18
--**Quest system:** sviluppo backend del sistema quest,UI wip
+**Focus:** Quest System (backend)
+
+- Sviluppo backend del sistema quest — UI ancora WIP
+
+**Risultato:** logica di gestione quest pronta, manca la parte visiva.
+
+---
+
+### Giorno 19
+**Focus:** Quest System (completamento base)
+
+- Completamento del sistema quest
+- Aggiunto un NPC di test
+- UI con placeholder finita
+
+**Risultato:** sistema quest utilizzabile end-to-end con dati placeholder.
+
+---
+
+### Giorno 20
+**Focus:** Effetti di stato per player e nemici
+
+- burning: semplice effetto di danno nel tempo
+- poison: danno nel tempo e riduzione efficacia cure
+- bleed: danno nel tempo che aumenta con la velocità di movimento
+- shock: danno instantaneo e aumento attack cd (solo player)
+
+---
+
+## Stato Attuale & Prossimi Passi (fine Giorno 20)
+
+**Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), 3 tipi di nemico, UI di combattimento (HP bar, Pressure bar, hit stop), Save/Load, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (base + UI), Quest System (backend + UI placeholder + NPC di test).
+
+**In corso / prossimo step immediato:**
+- **Inventory:** UI e raccolta funzionano, ma il ruolo di design è ancora incerto (vedi Giorno 16).
+
+**Decisioni aperte:**
+- Mantenere o rimuovere l'Inventory? Se mantenuto, servono drop dedicati?
+- Migliorare visivamente il raggio d'attacco (LineRenderer), nota dal Giorno 11 mai più affrontata.

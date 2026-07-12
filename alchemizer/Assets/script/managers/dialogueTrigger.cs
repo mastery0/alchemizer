@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
@@ -23,12 +24,20 @@ public class Dialogue
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
     public bool oneTimeOnly = true;
     public bool shown = false;
+    public bool isQuestDialogue = false;
+    [HideInInspector] public GameObject npc;
 }
 
 public class dialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-
+    private void Awake()
+    {
+        if(dialogue.isQuestDialogue)
+        {
+            dialogue.npc = gameObject;
+        }
+    }
     public void TriggerDialogue()
     {
         dialogueManager.Instance.StartDialogue(dialogue);

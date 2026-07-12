@@ -40,7 +40,15 @@ public class dialogueManager : MonoBehaviour
         isDialogueActive = true;
         dialogue.shown = true;
         //animator.Play("show");
+        if(dialogue.isQuestDialogue && questManager.instance != null)
+        {
+            questGiver qg;
 
+            if (dialogue.npc.TryGetComponent<questGiver>(out qg))
+            {
+                qg.tryGiveQuest();
+            }
+        }
         lines.Clear();
 
         foreach (DialogueLine dialogueLine in dialogue.dialogueLines)

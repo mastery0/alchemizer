@@ -35,6 +35,7 @@ public abstract class enemy : MonoBehaviour
     public float speed;
     public float damage;
     public float range;
+    public float healpercent=1;
 
     [Header("drops")]
     public essenceManager.essenceTypes[] essenceDrop;
@@ -200,5 +201,10 @@ public abstract class enemy : MonoBehaviour
         yield return new WaitForSeconds(flashDuration);
         for(int i=0;i < sr.Length;i++)sr[i].color = originalcolors[i];
         isFlashing=false;
+    }
+    public void heal(float amount)
+    {
+        hp += amount*healpercent;
+        if (hp > maxHp) hp = maxHp;
     }
 }

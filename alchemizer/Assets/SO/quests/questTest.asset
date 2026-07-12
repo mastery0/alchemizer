@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::quest
   questID: test01
   questName: Test
-  questStatus: 1
+  questStatus: 2
   questDescription: quest a fine di test
   objectives:
   - type: 0
-    status: 0
-    targetID: 01
-    requiredAmount: 10
-    currentAmount: 0
+    status: 2
+    targetID: slime
+    requiredAmount: 1
+    currentAmount: 1
   prerequisites: []
   Essencereward: 01000000
   essenceRewardAmount: 10

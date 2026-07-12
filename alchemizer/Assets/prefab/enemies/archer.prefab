@@ -75,9 +75,10 @@ GameObject:
   - component: {fileID: 692797002517909691}
   - component: {fileID: 5040685643969513960}
   - component: {fileID: 5441574329510163182}
+  - component: {fileID: 8102388600791667136}
   m_Layer: 6
   m_Name: archer
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,6 +254,7 @@ MonoBehaviour:
   groundCheckDistance: 0.7
   edgeCheckAhead: 1
   footCheckOffset: 0.1
+  enemyID: 
   maxHp: 10
   speed: 5
   damage: 25
@@ -266,3 +268,16 @@ MonoBehaviour:
   projectile: {fileID: 6097620132809743584, guid: 9bb7c608ada77394bba5d3ad124797a7, type: 3}
   projSpeed: 30
   shootCD: 0
+--- !u!114 &8102388600791667136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875749033156400525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825a72db557cb73458b8888b8039b3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::statusManager
+  activeEffects: []

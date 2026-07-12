@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 692797002517909691}
   - component: {fileID: 5040685643969513960}
   - component: {fileID: -7216708556110471524}
+  - component: {fileID: 7773262708291519933}
   m_Layer: 6
   m_Name: charger
   m_TagString: Untagged
@@ -253,6 +254,7 @@ MonoBehaviour:
   groundCheckDistance: 0.35
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
+  enemyID: 
   maxHp: 30
   speed: 1.5
   damage: 20
@@ -266,3 +268,16 @@ MonoBehaviour:
   CD: 2
   dashTime: 0
   dashForce: 25
+--- !u!114 &7773262708291519933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875749033156400525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 825a72db557cb73458b8888b8039b3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::statusManager
+  activeEffects: []
