@@ -16,12 +16,12 @@ al raggiungimento di certi valori soglia il player ottiene buff al costo di subi
 se il player smette di subire o fare danni si ha un decay della presusre
 è prevista l'implementazione nei futuri tree di buff o modifiche a questa meccanica
 
-Pozioni(da implementare)
+Pozioni
 le pozioni una volta comprate dalla erborista sono cambiabili e ricaricabili ai checkpoint esse curano il player e/o forniscono modificatori
 esempi:
-pozione base: hp+40% reset pressure qta 3
-pozione 1:hp +25% mantiene la pressure qta 5
-pozione 2:hp -5% danni aumentati qta 2
+base Potion: hp+40% reset pressure qta 3
+ember Potion:hp +25% mantiene la pressure qta 5
+rage Potion:hp -5% danni aumentati qta 2
 
 Morte
 quando il player muore il 20% delle essenze transportato esse viene perso,al respawn viene ricaricata la scena e si torna all'ultimo checkpoint
@@ -51,7 +51,7 @@ nucleo della corruzione(finale demo)
 Trama
 Premessa:
 le essenze danno vita e anima a tutto,per qualche motivo l'ordine si è spezzato e le essenze si stanno corrompendo e con loro tutto cio che è animato
-mc è un alchimista che studia in un laboratorio ereditato da suo padre fuori immerso nella forestaIncantata
+mc è un alchimista che studia in un laboratorio ereditato da suo padre immerso nella forestaIncantata
 
 Prologo/Casa-lab
 -Una notte sente un boato e il cielo si tinge di rosso,spaventato scende nel seminterrato dove apre una cassa con scritto "aprire solo in caso di emergenza" e trova il catalizzatore

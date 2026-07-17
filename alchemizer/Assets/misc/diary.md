@@ -292,13 +292,26 @@ Ramo Cura:
 - exhaustion: diminuzione guadagno pressure e aumento perdita pressure (solo player)
 ---
 
+### Giorno 21
+**Focus:** Vari polishing
+
+- Save manager ristrutturato: ristrutturazione in seguito ad implementazione nuovi sistemi
+- locked chest: casse che richiedono un item nell'inventario per essere aperte
+- destino inventario: inventario esclusivo per chiavi,oggetti chiave,per ora niente drop o consumabili
+
+### Giorno 22
+
+**Focus:** pozioni
+
+- base class healing potions
+- heal potion base
+- ui elementare
+**Risultato:** esiste superclasse e classe pozione di base manca swap tra diverse pozioni,ui e binding al tasto di utilizzo
 ## Stato Attuale & Prossimi Passi (fine Giorno 20)
 
 **Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), 3 tipi di nemico, UI di combattimento (HP bar, Pressure bar, hit stop), Save/Load, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (base + UI), Quest System (backend + UI placeholder + NPC di test).
 
 **In corso / prossimo step immediato:**
-- **Inventory:** UI e raccolta funzionano, ma il ruolo di design è ancora incerto (vedi Giorno 16).
 
 **Decisioni aperte:**
-- Mantenere o rimuovere l'Inventory? Se mantenuto, servono drop dedicati?
 - Migliorare visivamente il raggio d'attacco (LineRenderer), nota dal Giorno 11 mai più affrontata.

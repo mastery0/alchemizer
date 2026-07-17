@@ -47,5 +47,14 @@ public class inventory : MonoBehaviour
         }
         return true;
     }
+    public bool hasItem(string itemID)
+    {
+        foreach (itemStack stack in items)
+        {
+            if (stack.item.itemID == itemID) return true;
+        }
+        return false;
+    }
+
 }
 

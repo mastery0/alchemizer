@@ -13,6 +13,14 @@ public class saveManager : MonoBehaviour
     private List<string> activeQuestsID = new List<string>();
     private List<string> completedQuestsID = new List<string>();
     private List<itemStack> inventory = new List<itemStack>();
+
+    [System.Serializable]
+    public class inventorySaveData
+    {
+        public string itemID;
+        public string itemName;
+        public int amount;
+    }
     [System.Serializable]
     public class SaveData
     {
@@ -30,6 +38,7 @@ public class saveManager : MonoBehaviour
         public string[] seenDialogueIDs;
         public string[] openedChestIDs;
         public itemStack[] inventory;
+        public inventorySaveData[] inventoryItems;
         public string[] activeQuestsIDs;
         public string[] completedQuestsIDs;
         public questSaveData[] questProgress;
@@ -95,7 +104,8 @@ public class saveManager : MonoBehaviour
     public void save()
     {
         SaveData data = new SaveData();
-        data.maxHp=player.instance.maxHp;
+        // Player stats are rebuilt by the saved skills when loading.
+        // maxHp is retained in SaveData only to keep old save files compatible.
         data.respawnAltar=player.instance.respawnAltar;
         data.respawnscene=player.instance.respawnScene;
 
@@ -116,7 +126,16 @@ public class saveManager : MonoBehaviour
         data.unlockedSkillIDs = unlocked.ToArray();
         data.seenDialogueIDs = seenDialogue.ToArray();
         data.openedChestIDs = openedChest.ToArray();
-        data.inventory = inventory.ToArray();
+        inventory.Clear();
+        if (global::inventory.instance != null)
+        {
+            inventory.AddRange(global::inventory.instance.items);
+        }
+
+        // inventoryItems is the persistent representation. The legacy field is
+        // retained exclusively so files created by previous versions can load.
+        data.inventory = new itemStack[0];
+        data.inventoryItems = getInventorySaveData();
         data.activeQuestsIDs = activeQuestsID.ToArray();
         data.completedQuestsIDs = completedQuestsID.ToArray();
         if (questManager.instance != null)
@@ -127,13 +146,20 @@ public class saveManager : MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
     }
 
+    [ContextMenu("load")]
     public void load()
     {
         string path = Application.persistentDataPath + "/save.json";
+        Debug.Log("Loading save data from: " + path);
         if (File.Exists(path))
         {
             string json = File.ReadAllText(path);
             SaveData data = JsonUtility.FromJson<SaveData>(json);
+            if (data == null)
+            {
+                Debug.LogWarning("Save file could not be read.");
+                return;
+            }
             pendingLoadData = data;
             Time.timeScale = 1f;
             SceneManager.LoadScene(data.respawnscene);
@@ -161,13 +187,11 @@ public class saveManager : MonoBehaviour
 
     private bool CanApplyData()
     {
-        return player.instance != null && essenceManager.instance != null && coreInstability.instance != null;
+        return player.instance != null && essenceManager.instance != null && coreInstability.instance != null && global::inventory.instance != null;
     }
 
     private void ApplyData(SaveData data)
     {
-        player.instance.maxHp = data.maxHp;
-        player.instance.hp = data.maxHp;
         player.instance.respawnScene = data.respawnscene;
         player.instance.respawnAltar = data.respawnAltar;
         player.instance.transform.position = data.respawnAltar;
@@ -182,7 +206,7 @@ public class saveManager : MonoBehaviour
         foreach (skillSO skill in allSkills)
         {
             skill.isUnlocked= false;
-            foreach (int id in data.unlockedSkillIDs)
+            foreach (int id in data.unlockedSkillIDs ?? new int[0])
             {
                 if (id != skill.skillID) continue;
                 skill.applyEffects();
@@ -191,38 +215,36 @@ public class saveManager : MonoBehaviour
         }
 
         seenDialogue.Clear();
-        foreach (string dialogueID in data.seenDialogueIDs)
+        foreach (string dialogueID in data.seenDialogueIDs ?? new string[0])
         {
             seenDialogue.Add(dialogueID);
         }
 
         openedChest.Clear();
-        foreach (string chestID in data.openedChestIDs)
+        foreach (string chestID in data.openedChestIDs ?? new string[0])
         {
             openedChest.Add(chestID);
         }
 
-        inventory.Clear();
-        foreach (itemStack stack in data.inventory)
-        {
-            inventory.Add(stack);
-        }
+        applySavedInventory(data);
 
         activeQuestsID.Clear();
-        foreach (string questID in data.activeQuestsIDs)
+        string[] savedActiveQuests = data.activeQuestsIDs ?? new string[0];
+        foreach (string questID in savedActiveQuests)
         {
             activeQuestsID.Add(questID);
         }
 
         completedQuestsID.Clear();
-        foreach (string questID in data.completedQuestsIDs)
+        string[] savedCompletedQuests = data.completedQuestsIDs ?? new string[0];
+        foreach (string questID in savedCompletedQuests)
         {
             completedQuestsID.Add(questID);
         }
 
         if (questManager.instance != null)
         {
-            questManager.instance.applySavedQuests(data.activeQuestsIDs, data.completedQuestsIDs, data.questProgress);
+            questManager.instance.applySavedQuests(savedActiveQuests, savedCompletedQuests, data.questProgress);
         }
     }
     [ContextMenu("reset")]
@@ -239,6 +261,10 @@ public class saveManager : MonoBehaviour
         seenDialogue.Clear();
         openedChest.Clear();
         inventory.Clear();
+        if (global::inventory.instance != null)
+        {
+            global::inventory.instance.items.Clear();
+        }
         activeQuestsID.Clear();
         completedQuestsID.Clear();
         if (questManager.instance != null)
@@ -249,5 +275,78 @@ public class saveManager : MonoBehaviour
         {
             skill.isUnlocked= false;
         }
+    }
+
+    private inventorySaveData[] getInventorySaveData()
+    {
+        List<inventorySaveData> savedItems = new List<inventorySaveData>();
+        foreach (itemStack stack in inventory)
+        {
+            if (stack == null || stack.item == null || stack.amount <= 0) continue;
+
+            savedItems.Add(new inventorySaveData
+            {
+                itemID = stack.item.itemID,
+                itemName = stack.item.name,
+                amount = stack.amount
+            });
+        }
+        return savedItems.ToArray();
+    }
+
+    private void applySavedInventory(SaveData data)
+    {
+        List<itemStack> loadedItems = new List<itemStack>();
+
+        if (data.inventoryItems != null)
+        {
+            foreach (inventorySaveData savedItem in data.inventoryItems)
+            {
+                if (savedItem == null || savedItem.amount <= 0) continue;
+
+                itemData item = getItemFromSaveData(savedItem);
+                if (item == null)
+                {
+                    Debug.LogWarning("Could not restore saved inventory item: " + savedItem.itemID);
+                    continue;
+                }
+
+                loadedItems.Add(new itemStack { item = item, amount = savedItem.amount });
+            }
+        }
+        // Supports save files created before inventoryItems was added.
+        else if (data.inventory != null)
+        {
+            foreach (itemStack stack in data.inventory)
+            {
+                if (stack != null && stack.item != null && stack.amount > 0)
+                {
+                    loadedItems.Add(stack);
+                }
+            }
+        }
+
+        inventory.Clear();
+        inventory.AddRange(loadedItems);
+        global::inventory.instance.items.Clear();
+        global::inventory.instance.items.AddRange(loadedItems);
+    }
+
+    private itemData getItemFromSaveData(inventorySaveData savedItem)
+    {
+        itemData[] allItems = Resources.FindObjectsOfTypeAll<itemData>();
+        foreach (itemData item in allItems)
+        {
+            if (!string.IsNullOrEmpty(savedItem.itemID) && item.itemID == savedItem.itemID)
+            {
+                return item;
+            }
+
+            if (string.IsNullOrEmpty(savedItem.itemID) && item.name == savedItem.itemName)
+            {
+                return item;
+            }
+        }
+        return null;
     }
 }

@@ -14,7 +14,7 @@ public class player : MonoBehaviour
     public fillBar hpBar;
     public GameObject deathPanel;
     public GameObject bp;
-
+    public GameObject groundCheck;
 
     public Vector2 respawnAltar;
     public int respawnScene;
@@ -46,12 +46,14 @@ public class player : MonoBehaviour
     [System.NonSerialized] public bool airDash = true;
     [System.NonSerialized] public int dashCount = 1;
     [System.NonSerialized] public bool enemiesHeal = false;
+    [System.NonSerialized] public bool hasDoubleJump = true;//to set false before ship
     public bool hasGlider = true;
 
     private float moveX;
     private bool jumpHeld;
     private bool isDashing;
     private int currentDash;
+    private int currentJump;
     private bool dashCD;
     [System.NonSerialized] public coreInstability core;
     private bool grounded;
@@ -87,9 +89,10 @@ public class player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        Debug.Log(grounded);
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
-        grounded = Physics2D.OverlapCircle(transform.position, 0.9f, ground);
-        if (grounded) currentDash = dashCount;
+        grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.6f, ground);
+        if (grounded) { currentDash = dashCount; currentJump = jumpAmount; }
         glide();
         
         hp = Mathf.Clamp(hp, 0, maxHp);
@@ -106,6 +109,11 @@ public class player : MonoBehaviour
             jump();
         }
         jumpHeld = isJumpHeld;
+        if (hasDoubleJump && jumpHeld && !grounded && currentJump > 0)
+        {
+            jump();
+            currentJump--;
+        }
         if (moveInput.y < 0)
         {
             fastFall();
@@ -129,7 +137,13 @@ public class player : MonoBehaviour
         if (!isAlive) return;
         inv.SetActive(!inv.activeSelf);
     }
-
+    public void OnHeal(InputAction.CallbackContext context)
+    {
+        if (context.phase != InputActionPhase.Performed) return;
+        if (!isAlive) return;
+        healManager.instance.searchEquipped();
+        if(healManager.instance.remainingUse>0)healManager.instance.equipped.OnUse();
+    }
     //movement
     private IEnumerator Dash()
     {
@@ -297,5 +311,12 @@ public class player : MonoBehaviour
         rayEffect.SetPosition(1,endPoint);
         yield return new WaitForSeconds(0.2f);
         rayEffect.enabled = false;
+    }
+
+    public IEnumerator buffATK(float buff,float time)
+    {
+        attackDamage += attackDamage*buff;
+        yield return new WaitForSeconds(time);
+        attackDamage -= attackDamage*buff;
     }
 }

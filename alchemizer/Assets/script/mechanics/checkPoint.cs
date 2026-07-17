@@ -28,5 +28,6 @@ public class checkPoint : MonoBehaviour, IPointerEnterHandler,IPointerExitHandle
         player.instance.respawnAltar=checkPointPos;
         player.instance.respawnScene=gameObject.scene.buildIndex;
         saveManager.instance.save();
+        Debug.Log("Checkpoint saved at: " + checkPointPos);
     }
 }

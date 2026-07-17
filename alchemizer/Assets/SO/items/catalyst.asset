@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a928ef48cbdd43440a0d29c5b5bc2e13, type: 3}
-  m_Name: Slime Ball
+  m_Name: catalyst
   m_EditorClassIdentifier: Assembly-CSharp::itemData
-  itemID: slime_ball
-  itemName: Slime Ball
-  itemDescription: a bubble of slime,
-  itemIcon: {fileID: 0}
+  itemID: catalyst
+  itemName: Catalyst
+  itemDescription: a poweful item,will you master all his secrets? (Press esc to
+    access the skill tree)
+  itemIcon: {fileID: -7176472368941232777, guid: 72ef49262b39425409120b6624fcb009, type: 3}
   type: 0
-  maxStack: 99
+  maxStack: 1
   worldPrefab: {fileID: 0}
