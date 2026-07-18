@@ -2,17 +2,20 @@ using UnityEngine;
 
 public class basePotion : potion
 {
-    private void Start()
+    private void Awake()
     {
         Init();
     }
     public override void Init()
     {
-        potionID = "basePotion";
-        potionName = "Base Potion";
-        description = "heal 40 of max health but set pressure to 0";
-        healAmount = 0.4f;
-        potionAmount = 3;
+        do
+        {
+            potionID = "basePotion";
+            potionName = "Base Potion";
+            description = "heal 40 of max health but set pressure to 0";
+            healAmount = 0.4f;
+            potionAmount = 3;
+        } while (potionName != "Base Potion");
         healManager.instance.potionDB.Add(this);
     }
     public override void OnUse()

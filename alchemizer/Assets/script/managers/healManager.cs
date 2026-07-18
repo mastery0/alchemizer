@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEditor;
 
-[DefaultExecutionOrder(-1000)]
+
 public class healManager : MonoBehaviour
 {
     public static healManager instance;
@@ -17,6 +17,10 @@ public class healManager : MonoBehaviour
     private void Start()
     {
         remainingUse = equipped.potionAmount;
+        foreach (potion potion in potionDB)
+        {
+            Debug.Log(potion.name);
+        }
     }
     public void searchEquipped() {
         foreach (potion potion in potionDB)

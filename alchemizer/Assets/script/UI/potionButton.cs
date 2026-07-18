@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class potionButton : MonoBehaviour
 {
     public void OnClick()
@@ -9,10 +9,11 @@ public class potionButton : MonoBehaviour
         {
             if (GetComponentInChildren<TMP_Text>().text != potion.potionName) continue;
             Debug.Log("clicked");
-            potionUI.instance.potionNameText.text = potion.name;
+            potionUI.instance.potionNameText.text = potion.potionName;
             potionUI.instance.potionDescription.text = potion.description;
             potionUI.instance.potionImage = potion.potionIMG;
-            potionUI.instance.potionAmount.text = potion.potionAmount.ToString();
+            //gameObject.GetComponent<Image>().sprite = potion.potionIMG.sprite;
+            potionUI.instance.potionAmount.text = "Amount: "+potion.potionAmount.ToString();
         }
     }
 }

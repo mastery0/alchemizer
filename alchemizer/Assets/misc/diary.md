@@ -307,6 +307,14 @@ Ramo Cura:
 - heal potion base
 - ui elementare
 **Risultato:** esiste superclasse e classe pozione di base manca swap tra diverse pozioni,ui e binding al tasto di utilizzo
+
+### Giorno 23
+
+**Focus:** pozioni
+
+- binding tasto di uso
+- ui inventario che mostra le pozioni
+**Risultato:** sistema funzionante ma manca ancora swap e meccanica di unlock
 ## Stato Attuale & Prossimi Passi (fine Giorno 20)
 
 **Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), 3 tipi di nemico, UI di combattimento (HP bar, Pressure bar, hit stop), Save/Load, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (base + UI), Quest System (backend + UI placeholder + NPC di test).

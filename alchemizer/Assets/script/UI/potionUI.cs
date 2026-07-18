@@ -20,12 +20,16 @@ public class potionUI : MonoBehaviour
     }
     public void buildUI()
     {
+        for (int i = 0; i < content.childCount; i++)
+        {
+            Destroy(content.GetChild(i).gameObject);
+        }
         foreach(potion potion in healManager.instance.potionDB)
         {
             if (!potion.isUnlocked) continue;
             GameObject potionObj=Instantiate(potionPrefab, content);
-            potionPrefab.GetComponentInChildren<TMP_Text>().text = potion.name;
-            Debug.Log(potion.name);
+            potionObj.GetComponentInChildren<TMP_Text>().text = potion.potionName;
+            Debug.Log(potion.potionName);
         }
     }
 
