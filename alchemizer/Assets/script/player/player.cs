@@ -91,7 +91,7 @@ public class player : MonoBehaviour
     {
         Debug.Log(grounded);
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
-        grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.6f, ground);
+        grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground);
         if (grounded) { currentDash = dashCount; currentJump = jumpAmount; }
         glide();
         

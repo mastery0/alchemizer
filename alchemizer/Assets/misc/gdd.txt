@@ -2,9 +2,8 @@
 Alchemizer è un platformer 2D con elementi metroidvania e RPG ma progressione piu lineare per gli standard del genere
 il giocatore è un alchimista che ha trovato un antico catalizzatore che gli permette di estrarre essenze dai nemici uccisi
 in Alchemizer si ottengono essenze uccidendo nemici,a seconda del tipo di nemico ucciso.
-in futuro se necessario potrebbe essere aggiunta una valuta per effettuare scambi con npc
 le principali abilità di progressione si sbloccano  tramite esplorazione,dando un senso di metroidvania
-il loop del gioco cosiste nel arrivare in una zona seguendo la quest,perdersi esplorando,lootando,sbloccare abilità quando si possiedono le essenze e cercare i checkpoint per salvare
+il loop del gioco consiste nel arrivare in una zona seguendo la quest,perdersi esplorando,lootando,sbloccare abilità quando si possiedono le essenze e cercare i checkpoint per salvare
  
 Essenze e skill tree
 le essenze permettono di sbloccare abilità per il catalizzatore,l'arma del protagonista,il catalizzatore ha dei tier che crescono comprando abilità,tier piu alti contengono 
@@ -27,13 +26,17 @@ Morte
 quando il player muore il 20% delle essenze transportato esse viene perso,al respawn viene ricaricata la scena e si torna all'ultimo checkpoint
 
 
-SaveData attuale
+SaveData attuale:
 respawnPoint
+inventario
+chest aperte
 maxHp
 essenze possedute
 skillSbloccate
+dialoghi visti
+checkpoint di respawn
 
-Possibili abilità metroidvania
+abilità metroidvania:
 doubleJump
 wallJump
 groundSlam
@@ -54,34 +57,142 @@ le essenze danno vita e anima a tutto,per qualche motivo l'ordine si è spezzato
 mc è un alchimista che studia in un laboratorio ereditato da suo padre immerso nella forestaIncantata
 
 Prologo/Casa-lab
--Una notte sente un boato e il cielo si tinge di rosso,spaventato scende nel seminterrato dove apre una cassa con scritto "aprire solo in caso di emergenza" e trova il catalizzatore
-e un antico libro che gli spiega come funziona,risalendo sente rumori e capisce che c'è un problema,in casa non trova piu sua sorella,esce di casa e si addentra nella foresta incantata a cercarla
--dopo aver salvato la sorella si torna a casa con una transizione,qui il mc capisce che grazie al catalizzatore deve farsi carico del gestire la calamità,riparte quindi all'esplorazione
--Art Style:medieval house made mostly of wood,old with consumed parts,lambs parts and 
+Trama:
+Una notte sente un boato e il cielo si tinge di rosso,spaventato scende nel seminterrato 
+dove apre una cassa con scritto "aprire solo in caso di emergenza" e trova il catalizzatore e un antico libro che gli spiega come funziona
+risalendo sente rumori e capisce che c'è un problema,in casa non trova piu sua sorella,esce di casa e si addentra nella foresta incantata a cercarla
+dopo aver salvato la sorella si torna a casa con una transizione
+qui il mc capisce che grazie al catalizzatore deve farsi carico del gestire la calamità
+il mc vede la porta nel seminterrato e nota che per proseguire ha bisogno di due item
+atmosfera:
+contrasto tra calore della casa e freddezza del seminterrato
+Art Style:
+casa medievale fatta di legno,vecchia e consumata
 
 Foresta Incantata
-prima posto tranquillo pieno di fauna tranquilla,ora presenta mostri che vagano aggressivi,
-si imbatte nell'erborista,una donna che lavora le piante tramite la quale puo comprare diverse pozioni
-boss main slime gigante che aveva rapito la sorella,nessun drop principale solo avanzamento in trama
-boss secondario golem delle radici,protegge ingresso palude di grovigli
-boss secondario alchimista corrotto,sblocca il dash,richiesto per andare avanti,qualche rivelazioni di lore sulla corruzione 
+Atmosfera:
+prima posto tranquillo pieno di fauna tranquilla,ora presenta mostri che vagano aggressivi
+NPC:
+erborista:una donna che si offre di fornigli delle pozioni man mano che lui porta a termine i suoi incarichi
+boss:
+main slime gigante che aveva rapito la sorella,nessun drop principale solo avanzamento in trama
+secondario golem delle radici,protegge ingresso palude di grovigli
+secondario alchimista corrotto,sblocca il dash,richiesto per andare avanti,qualche rivelazioni di lore sulla corruzione 
+art style:
+palette viva ma con cenni di corruzione su tronchi e foglie
 
-Palude di grovigli
+Palude di grovigli (zona opzionale)
+atmosfera e meccanica:
 zona dove la corruzione è molto avanzata(acqua nera) e meccanica per cui passare tempo nella zona fa accumulare debuff al player
 i nemici sono lenti ma applicano debuff,un nemico potrebbe rubare essenze al player
-incontro con un ricercatore quasi pazzo dalle sue ricerche in un posto ostile esso a fine della sua quest diventa il 
-boss della zona,completamente pazzo e fuso con le essenze corrotte
 il passaggio in questa zona non è obbligatorio ma consente scoperte nuove e potenziamenti(da stabilire)
+NPC: 
+ricercatore quasi pazzo dalle sue ricerche in un posto ostile esso a fine della sua quest diventa il biss
+boss:
+main ricercatore completamente pazzo e fuso con le essenze corrotte
+art style:
+zone marce dalla corruzione verdi scuri e cupi
 
 Bosco Profondo
+atmosfera e meccanica:
 spazio molto verticale,piu strutturalmente elaborato della foresta
 piattaforme mobili,zone bloccate da radici
 wall jump nascosto ma richiesto per accedere a torre del guardiano
 vero skill check sul platforming con combat piu semplici della palude
 i nemici sono agili e veloci,puniscono l'aggressività eccessiva
-boss da decidere sul nome ma boss che non si muove e attacca il player con attacchi che lo costringono ad imparare come posizionarsi bene nel campo di battaglia
+NPC:
+Rampicatore:
+uomo isolato dalla società inizialmente aggressivo verso il mc una volta sbloccato il wall jump lo inizia a considerare amichevolmente
+boss:
+non si muove e attacca il player con attacchi che lo costringono ad imparare come posizionarsi bene nel campo di battaglia
+art style:
+cupo con palette fredda e nebbia
 
+Torre del guardiano
+atmosfera:
+rivelazioni su rottura dell'ordine e sul catalizzatore
+poche stanze verticali,zona funzionale alla boss fight alla sua fine,uso intero moveset
+i nemici sono golem corrotti e prevedibili
+boss:
+main il guardiano costrutto per proteggere qualcosa,fight che ti fa usare tutte le abilità
+art style:
+pietra/metallo antico,ormai in rovina
 
+Laboratorio Sepolto
+atmosfera:
+un laboratorio piu vecchio di quello in casa, legato a chi ha creato il catalizzatore,zona con dei puzzle e percioli ambientali
+nemici:esperimenti falliti
+boss:
+main creazione fallita per colpa della corruzione
+art style:
+laboratorio antico  con contenitori rotti e corruzione che cola
+
+Nucleo della Corruzione(finale)
+requisiti:
+richiede di visitare torre e lab per accedere
+finale:
+finisce mid boss fight lasciando la suspance
+art style:
+onirico e staccato da tutto il resto
+
+Enemy List:
+Foresta Incantata:
+
+Lupo Corrotto:
+lupo con chiazze di pelo scure e venature viola e occhi rossi
+patrol e danno al contatto
+
+Spora:
+fungo fluttuante con dettagli viola
+quando prende danno rilascia una nube che mette veleno al player
+
+Cinghiale Contaminato:
+cinghiale con crepe luminescenti
+attacco in carica applica bleed con le zanne
+
+Palude di grovigli:
+
+Sanguisuga d'essenza:
+tipo lumaca ricoperta di melma nera
+si aggancia al contatto ruba essenza al player e poison finche non viene uccisa
+
+Ricercatore corrotto
+figura umanoide corrotta dalla quale cola liquido scuro
+attacco melee che applica weakness
+
+Bosco Profondo:
+
+Falco delle cime:
+falco con piume scure
+attacco in picchiata dall'alto che applica shock
+
+Ombra:
+figura ombrosa che salta tra le piattaforme
+attacca il player e scappa subito dopo
+
+Radice Incantata:
+radice posseduta che cala dai rami
+colpisce il player e applica bleed
+
+Torre del Guardiano:
+
+Golem Sentinella:
+golem di pietra crepato con delle rune sul corpo
+colpisce a pugni lentamente
+
+Costrutto metallico:
+sfera metallica
+spara piccoli proiettili e si allontana dal player applica weakness
+
+Laboratorio sepolto:
+
+Sbaglio Alchemico:
+fusione tra carne e metallo
+movimenti rapidi ma a scatti alla morte esplode applica burning
+
+costrutto instabile:
+robot rotto che fa scintille
+si autodistrugge al contatto applica burning
 must to do
 romance quest tra due npc(solo se ci sta bene)
 skill tree con due tier
