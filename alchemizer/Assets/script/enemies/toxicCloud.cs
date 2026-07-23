@@ -3,6 +3,11 @@ using UnityEngine;
 public class toxicCloud : MonoBehaviour
 {
     public statusEffect poisonEfc;
+
+    private void Start()
+    {
+        Destroy(gameObject,2f);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject target = collision.gameObject;
