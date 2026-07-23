@@ -327,7 +327,31 @@ Ramo Cura:
 - GDD migliorato con descrizione delle varie zone del gioco
 
 **Risultato:** sistema pozioni avanzato e ulteriore svilupo di game design
+
+### Giorno 25
+
+**Focus:** modifiche gdd
+
+- aggiunta al gdd della lista nemici
+
+**Risultato:** lista nemici completa divisa per zone specificando attacchi e eventuali effetti di stato
+
+### Giorno 26
+**Focus:** rework effetti e nemico
+
+- inizio spora che non attacca ma fa una nube tossica quando viene colpito
+- rework sistema effetti
+
+**Risultato:** nemico work in progress
+
+### Giorno 27
+**Focus:** spora
+
+- finito spora completamente funzionante
+
+**Risultato:** nemico completamente funzionante
 ## Stato Attuale & Prossimi Passi (fine Giorno 20)
+
 
 **Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), 3 tipi di nemico, UI di combattimento (HP bar, Pressure bar, hit stop), Save/Load, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (base + UI), Quest System (backend + UI placeholder + NPC di test).
 

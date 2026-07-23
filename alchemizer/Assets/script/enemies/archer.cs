@@ -28,7 +28,7 @@ public class archer : enemy
         shootSight();
         inRange = (Mathf.Abs(player.transform.position.x - transform.position.x) <= shooterRange && !isShooting);
 
-        if (Mathf.Abs(player.transform.position.x - transform.position.x) < shooterRange * 0.6f && !isShooting)
+        if (Mathf.Abs(player.transform.position.x - transform.position.x) < shooterRange * 0.6f && !isShooting&&sight)
         {
             fleeing = true;
         }

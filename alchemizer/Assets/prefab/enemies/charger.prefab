@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 7773262708291519933}
   m_Layer: 6
   m_Name: charger
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba935900d455db4490f719bc4f0108d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::charger
+  isFlyingEnemy: 0
   patrolPoints:
   - {fileID: 6950413114944976211}
   - {fileID: 4654923322689114420}
@@ -254,11 +255,13 @@ MonoBehaviour:
   groundCheckDistance: 0.35
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
-  enemyID: 
+  enemyID: charger
   maxHp: 30
+  hp: 0
   speed: 1.5
   damage: 20
   range: 15
+  healpercent: 1
   essenceDrop: 01000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
@@ -281,3 +284,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::statusManager
   activeEffects: []
+  immuneEffects: []
