@@ -78,7 +78,7 @@ boss:
 main slime gigante che aveva rapito la sorella,nessun drop principale solo avanzamento in trama
 secondario golem delle radici,protegge ingresso palude di grovigli
 secondario alchimista corrotto,sblocca il dash,richiesto per andare avanti,qualche rivelazioni di lore sulla corruzione 
-art style:
+art style: 
 palette viva ma con cenni di corruzione su tronchi e foglie
 
 Palude di grovigli (zona opzionale)
