@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b8d7a69aacf164881623ff1dfb03bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::archer
+  isFlyingEnemy: 0
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -254,11 +255,12 @@ MonoBehaviour:
   groundCheckDistance: 0.7
   edgeCheckAhead: 1
   footCheckOffset: 0.1
-  enemyID: 
+  enemyID: archer
   maxHp: 10
   speed: 5
   damage: 25
   range: 4
+  healpercent: 1
   essenceDrop: 00000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}

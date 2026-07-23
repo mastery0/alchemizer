@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 7474087185785275942}
   m_Layer: 6
   m_Name: slime
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb7b60643d4fdf429dd487da94cfa40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::slime
+  isFlyingEnemy: 0
   patrolPoints:
   - {fileID: 6950413114944976211}
   - {fileID: 4654923322689114420}
@@ -256,9 +257,11 @@ MonoBehaviour:
   footCheckOffset: 0.05
   enemyID: slime
   maxHp: 15
+  hp: 0
   speed: 2
   damage: 30
   range: 15
+  healpercent: 1
   essenceDrop: 02000000
   minMaxEssence: {x: 0, y: 2}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
@@ -277,3 +280,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::statusManager
   activeEffects: []
+  immuneEffects: []

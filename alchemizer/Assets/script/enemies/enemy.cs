@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class enemy : MonoBehaviour
 {
-
+    public bool isFlyingEnemy = false;
     public Transform[] patrolPoints;
     protected Vector3[] patrolPositions;
     protected bool following;
@@ -17,7 +17,7 @@ public abstract class enemy : MonoBehaviour
     protected Rigidbody2D erb;
     protected Rigidbody2D prb;
     protected player playerScript;
-
+    protected float flightHeight;
     [Header("Ground Safety")]
     [SerializeField] protected LayerMask groundMask;
     [SerializeField] protected float groundCheckDistance = 0.35f;
@@ -29,7 +29,7 @@ public abstract class enemy : MonoBehaviour
     [Header("Stats")]
     public string enemyID;
     public float maxHp;
-    protected float hp;
+    public float hp;
     protected bool sight;
     protected Vector2 dir;
     public float speed;
@@ -65,6 +65,7 @@ public abstract class enemy : MonoBehaviour
         {
             patrolPositions[i]=patrolPoints[i].position;
         }
+        if (isFlyingEnemy) flightHeight = transform.position.y;
     }
     public virtual void takeDamage(float damage)
     {
@@ -76,7 +77,7 @@ public abstract class enemy : MonoBehaviour
             StartCoroutine(hitFlash());
         }
     }
-    protected virtual void die()
+    public virtual void die()
     {
         if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.kill, enemyID);
         dropEssence();
@@ -164,6 +165,10 @@ public abstract class enemy : MonoBehaviour
         }
 
         erb.linearVelocity = new Vector2(xVelocity, erb.linearVelocity.y);
+    }
+    protected void airFollow()
+    {
+        erb.linearVelocity = dir * speed;
     }
 
     protected bool HasGroundAhead(float moveDirection)

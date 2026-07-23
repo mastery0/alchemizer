@@ -13,6 +13,7 @@ public class projScript : MonoBehaviour
     }
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.layer==LayerMask.NameToLayer("Ground"))Destroy(gameObject);
         if (collision.CompareTag("Player"))
         {
             player.instance.takeDamage(atk);
