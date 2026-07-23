@@ -186,7 +186,7 @@ spara piccoli proiettili e si allontana dal player applica weakness
 
 Laboratorio sepolto:
 
-Sbaglio Alchemico:
+Sbaglio Alchemico(Alfio):
 fusione tra carne e metallo
 movimenti rapidi ma a scatti alla morte esplode applica burning
 
