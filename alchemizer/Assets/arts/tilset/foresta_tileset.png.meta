@@ -1,0 +1,7316 @@
+fileFormatVersion: 2
+guid: 502cd9592a57188428c2a8b1316c7be1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8037632058068943268
+    second: ingrandito_tileset_0
+  - first:
+      213: 5293711554189843307
+    second: ingrandito_tileset_1
+  - first:
+      213: 2977676772026336857
+    second: ingrandito_tileset_2
+  - first:
+      213: 463082965380263817
+    second: ingrandito_tileset_3
+  - first:
+      213: -4744784600707966389
+    second: ingrandito_tileset_4
+  - first:
+      213: -8682169830328147301
+    second: ingrandito_tileset_5
+  - first:
+      213: -3113937252945355752
+    second: ingrandito_tileset_6
+  - first:
+      213: 2362455408075277166
+    second: ingrandito_tileset_7
+  - first:
+      213: -1845052958741409002
+    second: ingrandito_tileset_8
+  - first:
+      213: -7661056902224151093
+    second: ingrandito_tileset_9
+  - first:
+      213: -5453806830809279604
+    second: ingrandito_tileset_10
+  - first:
+      213: 3073219602850855112
+    second: ingrandito_tileset_11
+  - first:
+      213: -1276695171730904365
+    second: ingrandito_tileset_12
+  - first:
+      213: -9112233626466009362
+    second: ingrandito_tileset_13
+  - first:
+      213: -7315160046041842677
+    second: ingrandito_tileset_14
+  - first:
+      213: 490539972755017059
+    second: ingrandito_tileset_15
+  - first:
+      213: -5570279414514852124
+    second: ingrandito_tileset_16
+  - first:
+      213: 3066378891767243526
+    second: ingrandito_tileset_17
+  - first:
+      213: -2640728946174317076
+    second: ingrandito_tileset_18
+  - first:
+      213: 1072645330519646483
+    second: ingrandito_tileset_19
+  - first:
+      213: -2314684877079411678
+    second: ingrandito_tileset_20
+  - first:
+      213: -166911501187701223
+    second: ingrandito_tileset_21
+  - first:
+      213: -2237559632843899526
+    second: ingrandito_tileset_22
+  - first:
+      213: 6204652531102884064
+    second: ingrandito_tileset_23
+  - first:
+      213: 1647992311811907448
+    second: ingrandito_tileset_24
+  - first:
+      213: -7656192968646093800
+    second: ingrandito_tileset_25
+  - first:
+      213: 7504698613431275875
+    second: ingrandito_tileset_26
+  - first:
+      213: -1321966407344227126
+    second: ingrandito_tileset_27
+  - first:
+      213: -7206342477038236920
+    second: ingrandito_tileset_28
+  - first:
+      213: -1679848478747830545
+    second: ingrandito_tileset_29
+  - first:
+      213: 8677477623872566602
+    second: ingrandito_tileset_30
+  - first:
+      213: -7824184998626746715
+    second: ingrandito_tileset_31
+  - first:
+      213: 4816386947172287322
+    second: ingrandito_tileset_32
+  - first:
+      213: -4620857674296117086
+    second: ingrandito_tileset_33
+  - first:
+      213: 8895356855168317970
+    second: ingrandito_tileset_34
+  - first:
+      213: -9087948942896620229
+    second: ingrandito_tileset_35
+  - first:
+      213: 6474524342503999553
+    second: ingrandito_tileset_36
+  - first:
+      213: -4922112888653574176
+    second: ingrandito_tileset_37
+  - first:
+      213: 6404183180907162037
+    second: ingrandito_tileset_38
+  - first:
+      213: -6862557340683806339
+    second: ingrandito_tileset_39
+  - first:
+      213: -4129353121571047075
+    second: ingrandito_tileset_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: foresta_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ced96299900bc248adafad83f917d5e
+      internalID: 689733488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8226dce7f3ed264280da2912ec881a8
+      internalID: 1168656235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93d29aacc93aef4ebac4ab418b4b699
+      internalID: -2126762663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad307e7c46fc794ebbfcc1e066205d2
+      internalID: -1885577211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d62d47aae9f9745bacdb5e82751e5f
+      internalID: 826125534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1808
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df50ebc45eba9c4bb9939cf95c62021
+      internalID: 2057520235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858bec420958842468c602b65375bb78
+      internalID: 892328899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1930f58d02e69154b80767adeba96ce2
+      internalID: -1659104236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20ab0a484e68d04eb72e447e8011e17
+      internalID: 1350853916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcec6f00a190c5a4ba0a239911e86346
+      internalID: -786126713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255fedd0bb1053846a61e8d53b2b25b9
+      internalID: -1525645556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e1f47a715ec6b4b8cd9e2ef045261f
+      internalID: -737776776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a192c6b6320bb2f4f9746b18adb5ba71
+      internalID: 1879758304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4505cf06a08bd47bc934b626c964f0
+      internalID: 2096975310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdd188ef2070e2428b78b8651cdae4e
+      internalID: -400217025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af9f87e5fbd3fd4193b50ea544c27c8
+      internalID: -2074129617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1744
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101a00cf485780d4fbdcb82e3a4ee6fd
+      internalID: -1046791327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37604f3013326db49adfd545ad9c12e1
+      internalID: -394477439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e902efda37f18694d8c611dfd6dcf2ae
+      internalID: 783280289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c2d6a8a379a7a44a0559fa69087321
+      internalID: 1931934366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632292e76223cb9459bebb0e83914f38
+      internalID: -2002735119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf8d02a4c37617469cc7cf4e1c3f483
+      internalID: 2099794201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df90e96dc2650064a9b1a582c94ac2fe
+      internalID: 1322318835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578666f183242af4089117957ff9f43f
+      internalID: -366367162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2221054d23fca694d870347eddfd3cfb
+      internalID: -1668891780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1680
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4897b3edfcfa674eae431130c62c661
+      internalID: 355039207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9630f299c8f320546ba9dcd046b63234
+      internalID: -884763405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c4dcabb5a30f24d9baa19b66b8d330
+      internalID: -1789304768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2a675f08a456b45a11541a7ade44bf
+      internalID: -2013469371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c313a024300ba024089647cb6ef3ef5f
+      internalID: 469516673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79df5591cbe23f47a989b22ecdcd0cb
+      internalID: -907757704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8362a57ab62ea4ab5a5d1dce0ebe63
+      internalID: 1805160070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70158abc8206c04ab2d19e141aead45
+      internalID: -991923348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_33
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308dcc4bc0fd2444586e621f6c2ac5ab
+      internalID: 217900900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_34
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae04372dda34134794f4234c3ffe965
+      internalID: -2013624142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_35
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d32525703a3da478b2da182fb22959
+      internalID: -2107325058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_36
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d682ca7bc26015b4e84533c16499a12c
+      internalID: -1802560539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_37
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accbb333aeacffb42b98bd2a596908fe
+      internalID: -892184217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_38
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b10af5e03c247242ba931172112c647
+      internalID: 2098888891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_39
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c025e9aae233049a61b2c3f83ec15e
+      internalID: -1967290223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_40
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1deffd0f05c251a459e7b4cf3af364a1
+      internalID: -1378043281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_41
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9634e641679134aa4bf6a20b66c7f4
+      internalID: 702523966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_42
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196e32cacfa95514aad3b0de80d3afb3
+      internalID: -597070253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_43
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b8cce80289bb641b8b295f13dbbd85
+      internalID: 1924430277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_44
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c5e3fa0a4bd0540b8680217e129a8f
+      internalID: -74953071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_45
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1616
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea002dada9a23aa46b69661488f20bac
+      internalID: 1808334314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_46
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813a657f4299b9941b423029aa7f7071
+      internalID: 1470912787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_47
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1858d8a07984c904d917ccd81e1f4e7a
+      internalID: 428756322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_48
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a5c47c050b53f408c834125b794f1d
+      internalID: 1376712414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_49
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cf7b37a3462434481e9d9807c9073c
+      internalID: -1703727536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_50
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8663c06fdc66b3d4cb7633c41cb7e7fc
+      internalID: 1293727640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_51
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c115c0e86d36e6a438ec7df986c44b85
+      internalID: -2103980331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139cb11a50973ea46b21620fccddb1a6
+      internalID: -164933734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_53
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf954ff40498ca4cb35b18d15d1e3bd
+      internalID: -1888388630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_54
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84570ee20b97b924bbd39c64caec3974
+      internalID: -33916789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_55
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cc79afb7ad79c41bb5167313c8a81d
+      internalID: -140882245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_56
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e187778ebf9104f8d5cfadf2c105e1
+      internalID: -1354694198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_57
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a7a530caa448d4bb25ef36ab417051
+      internalID: 1310631805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_58
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1552
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483cf3fee4283df40bfed0f1f2495273
+      internalID: -872730059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_59
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1488
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17377c401b618f45947c7c3737c08cb
+      internalID: -620567500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_60
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1488
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acb88883e24c2d4e9860c948a8fff30
+      internalID: -1844327815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_61
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1488
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f5e2eac23443c48a33440e7c683ae3
+      internalID: -630573202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_62
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad132fa519adc06448cf3c20fa233fa1
+      internalID: -696209816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_63
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57947e53e0b921246a99f3b99409073b
+      internalID: 431074200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_64
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac11189374efee4b90fe54657cdf588
+      internalID: -331318969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_65
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3fd4dea55760c43b23eb9577a1c870
+      internalID: 614830589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_66
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c3398788812ac4cbb38bb49b946383
+      internalID: -1159431105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_67
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7f93a431ada1d48995309919de6936
+      internalID: 1760896729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_68
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf8ffd35f5c3614c9fcd5b7e02df806
+      internalID: 409624552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_69
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7f581632b344d4aada58b4fe725756
+      internalID: -1448186620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_70
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500998f161e60d24bbf2a0ac58956cf3
+      internalID: -754327019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b79776db7e61046a5935564e6bba16
+      internalID: -679234846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_72
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa331a3572745464394570c6d7fd303f
+      internalID: -1645183017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_73
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1424
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3b5779549edff43b5e1724b801219d
+      internalID: 1024229835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f743a68378c10849aade50e65c5bdbf
+      internalID: 715195480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_75
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c86f42d21a64fb46bb4a83d7063d092
+      internalID: 644723059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4a0ee10fc831a478274b83f06d26f5
+      internalID: 2028259802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_77
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a72530dfdf5d64b89d482f3cf7165c
+      internalID: -1499924552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_78
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957183c272790bc4495ae2c49467f294
+      internalID: -95461345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_79
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8587520055f464f8aba5a02b46a92b
+      internalID: -163463023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_80
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d2414f19617d94ab0035fed5e77362
+      internalID: 1936634736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_81
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da089a98771f304db4e31be49cb0403
+      internalID: 696047864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_82
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f2e9afbd384c4479a756b713fd1e2a
+      internalID: 158277382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_83
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af75a0b768482d04889d5163f1362b90
+      internalID: 282644515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_84
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897da0b3f35d3914ebb7db8e67d02fee
+      internalID: 956139351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_85
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41b6f954a25e5a4c9812e4247eed0bb
+      internalID: 1279543488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_86
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655f199e7fde8ae4a9858e0b5c7bd02d
+      internalID: 1239466246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_87
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf9444598908304d9bdac83fd57221f
+      internalID: 282702421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_88
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0d0f01f22bc7943b782227a45bb18a
+      internalID: 957068620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_89
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a007560c77b71a44c85f89edfac820bb
+      internalID: -1614209162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_90
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88485cd8757128541b07dec064281830
+      internalID: -915621668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_91
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f73324ff94e514ab17955e9cab3685
+      internalID: 40038279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_92
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c94207a55827ee4e860f4f4c008a835
+      internalID: -1797001909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_93
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7998e88e8df57134abb52ce4d2e1c148
+      internalID: -1098519004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_94
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f97e6972e748804ca6ccb1cef847662
+      internalID: 556526596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_95
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4340b86ead4bb1d4489af0b7e4fe6383
+      internalID: -401547468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_96
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1360
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bd692f0f21af64796494b22a22fe15
+      internalID: 353547103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5533949299f8364888d9d0ab11bc6ea
+      internalID: -499045222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2146aabbd067be646b0b7f3c8b1fcabf
+      internalID: -201947119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7825bb3e6d315ce439b161d3408455ac
+      internalID: 2097772278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_100
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb6a6dd96afb764b808890b6c4b9441
+      internalID: -222299866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_101
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055163dad0914d24fa4527f5a1e8de23
+      internalID: -978708668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_102
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b5f74ab5456d84f8bcb63e89a6cd59
+      internalID: 672631078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_103
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44740556a151aef40b0771effb117b1e
+      internalID: 704533585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_104
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971989b4a84eac04d96a762b36008cf3
+      internalID: 1557548293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_105
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768b8826111558b47bb10d17e3d37f8a
+      internalID: -1943827537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_106
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2875a2ef44bb9c641812c750420fc065
+      internalID: 1473861311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_107
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb42ce8eeede2c43894173b3e446803
+      internalID: 682294602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_108
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdccd867a365ac41aa7d8f1b2b8303a
+      internalID: 25401994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_109
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23245812955eae740bb13073992d8db0
+      internalID: -411004478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_110
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4028e2603dd5a409c3ce5c491e20c4
+      internalID: 1375523302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_111
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a17920ccacf3147b6aaa0c8d8dcd95
+      internalID: -1871291367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_112
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a732388b6b207d4a833214bf637ad70
+      internalID: 1682305415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_113
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6114ce5f0c18e104a8dcd740dcbc7749
+      internalID: 1254377617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_114
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bead178d88285e04c901ff043b51b4ec
+      internalID: -506943160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_115
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2518c7d0e04126d46bf1ce08b0e75793
+      internalID: -1438598671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_116
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a951c86e59cb749a9abc4d1eed5f73
+      internalID: -627019966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_117
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1faf201cbb3375c4696344cbe748b950
+      internalID: -107460218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_118
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60c60c6849ce344cabdbe4455b64930
+      internalID: 1542671550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_119
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680ce4eee6d1c6440bf7dce8148fefe4
+      internalID: -1710677999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_120
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2c253a4b826474eb6a5a5106bd47b1
+      internalID: 986489407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_121
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191cec27ec6384a408c8d897b01b17e1
+      internalID: 1678548480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_122
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0352bb1fcb501f04ca7495af216e2e51
+      internalID: -451108062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_123
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9171bb28a8725dc49b254d5d540e9daf
+      internalID: -899015753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_124
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1eb96d93f928044a916428ad98b499
+      internalID: -1867392826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_125
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c53cade10c5b924daca203bfd512639
+      internalID: 463156728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_126
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a3ae1b7211b294e94363371fded75c
+      internalID: 393593125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_127
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a339e29c17e6742a58ae571bcc8fb7
+      internalID: -559297495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_128
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008863f11caf50c45a64debc34abd5a4
+      internalID: 766813323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_129
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6f453a1301d9c46aa72e14eda0fe6d
+      internalID: -1896727873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_130
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ec41ab17a53f6449bc9f4045140382
+      internalID: 1770223929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_131
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d517adda5a10a8e4298bede06a4fbda7
+      internalID: -763543360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_132
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcbb1bfcf8ae114dbbbc6eddef36e03
+      internalID: -1670165293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_133
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec2d2de4ca62ae4eb1642e90e10aace
+      internalID: -266607095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_134
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f89abf0919553488f9ed630bf10c0c
+      internalID: -802478798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_135
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930095a7ef6cf0b4b84da746d54bdf9b
+      internalID: -1096632679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_136
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1232
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9d6ae55430333468bff7a2eb315c87
+      internalID: 820956588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_137
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6bccfee00e6df4c9f16d71ce82309f
+      internalID: 138517647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_138
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e47b194c9463a4490d94409721d899
+      internalID: -1991329397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_139
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d88398fa9b2d054a93831fcf8dba2ee
+      internalID: -1405479430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_140
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d239b17bf9fe9741b5169958c085e2d
+      internalID: -22355805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_141
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64825d126a4cf042bc22ea9ebdf691a
+      internalID: 860141082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_142
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58232573ba030f842af30223f341f05a
+      internalID: -26077057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_143
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a94b1949e38ca449c06cf2dd0848ac
+      internalID: -1341174574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_144
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f41e29b1684d745a7779847b3bc06b
+      internalID: -85411080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_145
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e8bb0110e63784b8daa6d821059a55
+      internalID: -953983628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_146
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25979581b0bcef4eb1a33dd5effce5a
+      internalID: 510247632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_147
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1821fb1630256ef489a94cacf3ed49a4
+      internalID: 84030569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_148
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8123e8ee03219643bf9b569fff7f4ae
+      internalID: -1005352083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_149
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 1168
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9ebd21466c51847a4f1a3c5f63caca
+      internalID: 1575961350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_150
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0e422fc5760934cadf1052a59cb6e6
+      internalID: -934732100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_151
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3792bab3ed31d784faca23986ddf3b81
+      internalID: 2111343556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_152
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c921ca9aac607f344b3faeba6c245866
+      internalID: -424490668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_153
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8f25d1ab80ffc4e9c63afdd9683baa
+      internalID: -434817721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_154
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8762dfa6fee5be74080ab14c809dfa79
+      internalID: -463681145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_155
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b3483c591a0dc48a2f401c214c4ebc
+      internalID: -1413821162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_156
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c524d7a66b832c49870b57092022d49
+      internalID: 1961765775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_157
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8a9f7e6c9632946bcb9334ae759399
+      internalID: 1283863597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_158
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21f88d4e27d3ee42bd22dd5cccf6b74
+      internalID: -1292796417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_159
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed93f830bc8a57245a1ba11125ff234f
+      internalID: 1602018254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_160
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26281a9cdaf025d4c8ad4fe7bfac1f49
+      internalID: -1357293760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_161
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dcb2d8e5a3de848b5e645087e88ee3
+      internalID: 676515172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_162
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c2b8c294a798447abb7a868e492eb0
+      internalID: -730153803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_163
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6322df7cddfc66649a76ce7c9408555f
+      internalID: 1773259551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_164
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387fb4f666497a7418ed68006942e341
+      internalID: 932213066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_165
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e56f287bc9c244d87f442c627faf16
+      internalID: -244265114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_166
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b70a1a39e87ae74a955078148a285ed
+      internalID: 1858507518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_167
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48f7aa90f638df418fd4dd189ec3f7c
+      internalID: -1534914153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_168
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fbcdf645a7c7c47a5073fd9c4627e3
+      internalID: -1471804922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_169
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e400dd719cc0154bad5ea3284229115
+      internalID: -889047138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_170
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a520e6cf85bcc94da097f6bc6f8b90d
+      internalID: 2054689050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_171
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d3b276ca9436d48a6bc2bcd0960592
+      internalID: -590357187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_172
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67258489d6611114b93408767c7a737a
+      internalID: 737593019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_173
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1040
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef114f544d12b9a4ca052c6b10e35039
+      internalID: -157635345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_174
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca86842c225f5b4484c9f2e38996872
+      internalID: -1420262551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_175
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989f39cd24cb4184184d3091a9ea93f0
+      internalID: -1955824168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_176
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6edcceb39c81c499a1ff5bd22e43d2
+      internalID: 1474274981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_177
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89d89c7c45263045955904c5b405120
+      internalID: 786312242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_178
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b649c49cc293374589f7d3185f3568a
+      internalID: -961249634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_179
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6631318a506c81459ab4fcff9104f55
+      internalID: 1077485605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_180
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86daf31f9ce07424d84ddeba6d64c255
+      internalID: -732764074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_181
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 976
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ecf9914a9ce65438d4803500568e49
+      internalID: 2038303403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_182
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e607c08e4cb814348b2f9380ab9c68bd
+      internalID: -1534348848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_183
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f586061631b4244ba0fe9b5de4f2f5
+      internalID: -1326102659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_184
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ffdd04a6b70924c9a8a0bb0fac06c8
+      internalID: 112115973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_185
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34780c81ea105354a88f5ad7b004d70e
+      internalID: -137328584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_186
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad170f2399883f48b6c8b562b1b5840
+      internalID: 1828884575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_187
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e7b4dd829211948ab50c8501491cad
+      internalID: -557991670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_188
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e40270a5776c44ab8423631e05ea2f
+      internalID: 488708791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_189
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c382b2649691749915bf622257f6fb
+      internalID: 830359152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_190
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be829335e7b6b94baaffcfa78a81c55
+      internalID: -794890518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_191
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43a28015e65b904697e18e903cc78a1
+      internalID: -849592472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_192
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d1bd3e2a36a1f4b99bf9c07124b42a
+      internalID: -524452633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_193
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e514687f00a5e0d43a5551c43aef1547
+      internalID: 2091804906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_194
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bff5f320363a79409f866f6a24fe585
+      internalID: -760328786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_195
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 912
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d9e0acbe566414cb2ce761b1b4170c
+      internalID: -53869852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_196
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87189f6648d69e74faef58824bedcaa1
+      internalID: 186822227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_197
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 848
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4793ea4104f784b84aac5f25cbc5d3
+      internalID: 1728636787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_198
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7452cc8516f394d4fb6adde62780d791
+      internalID: 1244864987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_199
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bb10df70ad3274d988388d581cdbcb
+      internalID: 861512846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_200
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a40ae6220e5f364890798733889b6e7
+      internalID: 1459614403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_201
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f5b1e228cfdf246a12cb0c3962958b
+      internalID: 1612468945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_202
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88126a9db57b11f4685e18460f90de8b
+      internalID: 798530477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_203
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d90b7a7a5f1f14aa0f0a705230ce51
+      internalID: -799112598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_204
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaba5593f4aa00348a9946550447a2c9
+      internalID: -645826195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_205
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991dcee582be7c8458c1db9179656eb3
+      internalID: -1148023413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_206
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdd18fcb2c93f34eb72c6fdccc2e8db
+      internalID: 1462539299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_207
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02d9cff815ffee46a08c1478c59368e
+      internalID: 3268652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_208
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 784
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bee80d42cc82740a43489e0b6a415a
+      internalID: -510096180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_209
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc214e297a861241ac3ddd374e8c27b
+      internalID: 1649091584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_210
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16bc4b446beca64681a952b85da41b3
+      internalID: -455794048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_211
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe8c9b1414c3604e9758abf534ef8c3
+      internalID: 808831407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_212
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61ff78064e26d542baf1193803ce785
+      internalID: 563158310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_213
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78329d4d5b1e3714bbc40a35d8ca8009
+      internalID: -330714428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_214
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fe8338adf380b4baaf9b7e6f995287
+      internalID: -283232213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_215
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a809a4af19ab344eb5db05c17c0b258
+      internalID: 1451963987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_216
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecf2c1ae0d2bd946a4238f78a8a7a90
+      internalID: -1112141307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_217
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930ac10163edd3546a153f1959bbc601
+      internalID: 2054551240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_218
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf52f75ad1a74d646834fd850b6dac50
+      internalID: 911343855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_219
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 720
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ce791e681598549b97c375ea9ce4f5
+      internalID: 1400944302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_220
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026bf3baa56aefc4aa14092aae823fd9
+      internalID: -997661998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_221
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7265cdf33e94a94482a3d7761843230
+      internalID: -679669662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_222
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c646e3318b7f2074884f1f99f3180b27
+      internalID: -136334733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_223
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d283f0644f522341a88147afbb72a21
+      internalID: -1834652949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_224
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56eda8431955b0241b5affac77e9a3b0
+      internalID: 161121594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_225
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45d73e244e7b1b4c8e8f2a767e06d2b
+      internalID: 231840375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_226
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5260d0cc24da847baa10188b2c1855
+      internalID: 1971978328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_227
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98799296ea96b14cabb70ba9d9e1d9b
+      internalID: 483233457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_228
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6cb35196dbdd3419e3cd238d74db81
+      internalID: 2021191587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_229
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3a38913b8e17341b153ecac46ed90b
+      internalID: 2011721736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_230
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6abbffca3c3dc148ac434b5b82b049d
+      internalID: -1885453128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_231
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e47e7db5591b744eab581569505c4ea
+      internalID: 1213755943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_232
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98682e9f33ac1da4ebb21d62d12c92d8
+      internalID: -1623580819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_233
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5642dc5e6c20a54478c15eac4376514d
+      internalID: -2905800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_234
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 592
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812f211df4745bd429c7572d48183752
+      internalID: 584921921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_235
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de433066bc43f7d43a3c1dabdfd2e155
+      internalID: -1379200552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_236
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82e7137f54a65a489a60de419aadcb2
+      internalID: 1461798773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_237
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054ac129e49df4d48951500c7ba50432
+      internalID: -33107343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_238
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe76d85fd9e189f49ad5dab0afad9594
+      internalID: 1960584505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_239
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d293d4b3b91d013489dfd0dd846c6c2d
+      internalID: -1618297534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_240
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0284f251d15503548b435f13b800b196
+      internalID: -319264218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_241
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e977afca6c47948a8d935f53118ea5
+      internalID: 987815758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_242
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a32ff9a1974f154b8da3d687eec160b
+      internalID: 1751349171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_243
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f438b31fb56b98f4aab33e87020e7b85
+      internalID: 1589819658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_244
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c199a380c5ca288419a6dd22082ad9ed
+      internalID: 595487341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_245
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b905db2674209d42aea2683f35feeaa
+      internalID: -1853683011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_246
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b0df7697c727d429f7ad71e45b5e82
+      internalID: 490154243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_247
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df52b4a90875004ba89db254d487e72
+      internalID: 513351592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_248
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0be8de9f2233a4b9954fb362469dea
+      internalID: -1040154449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_249
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b5b33fc921c8e4eb83ac106a731b2f
+      internalID: 1798901388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_250
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 528
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffde0238d183304eb822e8ffba24e79
+      internalID: -1637867522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_251
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471a189f9c0cdd34c99fd499104e968b
+      internalID: -2006676528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_252
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11550d53200fa94e8337a083a46b513
+      internalID: 2010568756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_253
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e35425f99be6e4cadb811a02fa3dd1
+      internalID: 132563532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_254
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab307de19ed75a945bcfb3ef966cd452
+      internalID: 1550235275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_255
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5354199bef4f946904a6d262c8d911
+      internalID: -1809297025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_256
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa476c03a08f0594d924ee3a9109cb5b
+      internalID: -331737720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_257
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3088f88911c2ea94cbe6c990e9997cc6
+      internalID: 764376068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_258
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8116b151f08f948b3b5ddab37f1275
+      internalID: 1451900708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_259
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ae5609017bdf3489839d1642de7bca
+      internalID: 662649605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_260
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e523fb9123ea2d41b93c6f6df32bfa2
+      internalID: 728264701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_261
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c13669976c9c5b4a99742c2bf0d9306
+      internalID: 257120675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_262
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85876b7b9ee6164daf7ef0a6e07e35b
+      internalID: -1807910499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_263
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ee985ffef39ee4a88c4474fce3310c
+      internalID: -125634373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_264
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459ed6a627c3c3d46a6ba1db5791caf3
+      internalID: 1398804557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_265
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caccb8ee7cac58e43a09dda03ecc1415
+      internalID: -39468657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_266
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 464
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745136759465fcc4fba4c8cd27494c1b
+      internalID: -34096797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_267
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53a2fb9aafa80449a46555825e1c84a
+      internalID: -1533139095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_268
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dee66b232d421c4bab96d8be39746f4
+      internalID: 541682003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_269
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e550ea8eb063909478c0547e72e8165a
+      internalID: -1165267535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_270
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbb77104fbbaf14aa2b1f0e001d93db
+      internalID: 1428120517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_271
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f5a903d4aee74488f9adf56705a8be
+      internalID: -1201267978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_272
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ccb8c8ad6fba041b8459df0b1cfb41
+      internalID: -1052020792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_273
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078b2aafd47b7f046a5adcef932b9c84
+      internalID: 1506698314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_274
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80ca97543379cd4c8ade405adf5ce82
+      internalID: -1982285269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_275
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241d680d98e13cf4281b54a65349dd9a
+      internalID: -1775648380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_276
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac4fbd6c94ffaf4f8c4053f141521fa
+      internalID: -1908707244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_277
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad713731d01a66247a8a18dd33a9e485
+      internalID: 256663831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_278
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2068d2e8d870b474aac1b97bf695c404
+      internalID: -1764895390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_279
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e229d8705829545bf5c284911b4ad3
+      internalID: -1383819316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_280
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f585dbea8496dcb4a919180cb3dfe686
+      internalID: 1869121594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_281
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6792b7dc1217055408f5967516fb864c
+      internalID: 1474444246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_282
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 400
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ebdcbe3766191449e48cc973e5f92d
+      internalID: -900269256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_283
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd8397fa729a8f44b3d623de0faae27
+      internalID: 1882314190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_284
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6132d96fbc80ec4fa82a60e99aab41c
+      internalID: -284413058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_285
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa837e12197a2a949ad450d3d900af68
+      internalID: -1344321477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_286
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1131009ff6f396341954bf49b82748e3
+      internalID: 840377684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_287
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7452450c85c2fbb41b08ccb1619ec0c0
+      internalID: 1524855368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_288
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2ac0e26ed3b9c4fa56c9952d73241e
+      internalID: -140328601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_289
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c350b2d3b28f44bbc0f9103566fdbe
+      internalID: 768436211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_290
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 336
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e40e54f4760d8b4fa49b0f030bea7d7
+      internalID: 2129120357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_291
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347a3ea3e8f61da44a14ef5491abc0c6
+      internalID: -583857372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_292
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c562e24f4a4a5a49adb72472cb0a9df
+      internalID: -1062471896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_293
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708098ce24755d348834ae08f4f7b838
+      internalID: -1995302490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_294
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9281faa9e38e46e47b76328112167584
+      internalID: -1321120871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_295
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878d44f7dd5ef3e4eaf7bb4c78d56a0f
+      internalID: -1785032092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_296
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47ed402e4617834b88bca45aaa1e408
+      internalID: -1010969116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_297
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1627cb677babeeb409f261d7f74303b0
+      internalID: -648991515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_298
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77142e6531176548b205aefc302639a
+      internalID: 860734139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_299
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10787cb4495e31f4d875a033642a92d6
+      internalID: -17909266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_300
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abbcda19db0d23439856a3e15d47eba
+      internalID: 648176615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_301
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef5547e38f2bbb47811509ac7faa8a9
+      internalID: -610681348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_302
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909830fb76d396342b1bdac93ff1dfd6
+      internalID: 173587723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_303
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3250c570db6b04abc0da2fb17003c6
+      internalID: -248492333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_304
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b347efab3f58f40a851cd4f563efd0
+      internalID: 1043446157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_305
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f491bf7762cf88b478ecc36a5c582c28
+      internalID: -2056739861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foresta_tileset_306
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 272
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdae07ca46a94c94bb9b8b5c0c090b60
+      internalID: -910067088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5ad44c4e4132f464b89c4c536f778045
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      foresta_tileset_0: 689733488
+      foresta_tileset_1: 1168656235
+      foresta_tileset_10: -1525645556
+      foresta_tileset_100: -222299866
+      foresta_tileset_101: -978708668
+      foresta_tileset_102: 672631078
+      foresta_tileset_103: 704533585
+      foresta_tileset_104: 1557548293
+      foresta_tileset_105: -1943827537
+      foresta_tileset_106: 1473861311
+      foresta_tileset_107: 682294602
+      foresta_tileset_108: 25401994
+      foresta_tileset_109: -411004478
+      foresta_tileset_11: -737776776
+      foresta_tileset_110: 1375523302
+      foresta_tileset_111: -1871291367
+      foresta_tileset_112: 1682305415
+      foresta_tileset_113: 1254377617
+      foresta_tileset_114: -506943160
+      foresta_tileset_115: -1438598671
+      foresta_tileset_116: -627019966
+      foresta_tileset_117: -107460218
+      foresta_tileset_118: 1542671550
+      foresta_tileset_119: -1710677999
+      foresta_tileset_12: 1879758304
+      foresta_tileset_120: 986489407
+      foresta_tileset_121: 1678548480
+      foresta_tileset_122: -451108062
+      foresta_tileset_123: -899015753
+      foresta_tileset_124: -1867392826
+      foresta_tileset_125: 463156728
+      foresta_tileset_126: 393593125
+      foresta_tileset_127: -559297495
+      foresta_tileset_128: 766813323
+      foresta_tileset_129: -1896727873
+      foresta_tileset_13: 2096975310
+      foresta_tileset_130: 1770223929
+      foresta_tileset_131: -763543360
+      foresta_tileset_132: -1670165293
+      foresta_tileset_133: -266607095
+      foresta_tileset_134: -802478798
+      foresta_tileset_135: -1096632679
+      foresta_tileset_136: 820956588
+      foresta_tileset_137: 138517647
+      foresta_tileset_138: -1991329397
+      foresta_tileset_139: -1405479430
+      foresta_tileset_14: -400217025
+      foresta_tileset_140: -22355805
+      foresta_tileset_141: 860141082
+      foresta_tileset_142: -26077057
+      foresta_tileset_143: -1341174574
+      foresta_tileset_144: -85411080
+      foresta_tileset_145: -953983628
+      foresta_tileset_146: 510247632
+      foresta_tileset_147: 84030569
+      foresta_tileset_148: -1005352083
+      foresta_tileset_149: 1575961350
+      foresta_tileset_15: -2074129617
+      foresta_tileset_150: -934732100
+      foresta_tileset_151: 2111343556
+      foresta_tileset_152: -424490668
+      foresta_tileset_153: -434817721
+      foresta_tileset_154: -463681145
+      foresta_tileset_155: -1413821162
+      foresta_tileset_156: 1961765775
+      foresta_tileset_157: 1283863597
+      foresta_tileset_158: -1292796417
+      foresta_tileset_159: 1602018254
+      foresta_tileset_16: -1046791327
+      foresta_tileset_160: -1357293760
+      foresta_tileset_161: 676515172
+      foresta_tileset_162: -730153803
+      foresta_tileset_163: 1773259551
+      foresta_tileset_164: 932213066
+      foresta_tileset_165: -244265114
+      foresta_tileset_166: 1858507518
+      foresta_tileset_167: -1534914153
+      foresta_tileset_168: -1471804922
+      foresta_tileset_169: -889047138
+      foresta_tileset_17: -394477439
+      foresta_tileset_170: 2054689050
+      foresta_tileset_171: -590357187
+      foresta_tileset_172: 737593019
+      foresta_tileset_173: -157635345
+      foresta_tileset_174: -1420262551
+      foresta_tileset_175: -1955824168
+      foresta_tileset_176: 1474274981
+      foresta_tileset_177: 786312242
+      foresta_tileset_178: -961249634
+      foresta_tileset_179: 1077485605
+      foresta_tileset_18: 783280289
+      foresta_tileset_180: -732764074
+      foresta_tileset_181: 2038303403
+      foresta_tileset_182: -1534348848
+      foresta_tileset_183: -1326102659
+      foresta_tileset_184: 112115973
+      foresta_tileset_185: -137328584
+      foresta_tileset_186: 1828884575
+      foresta_tileset_187: -557991670
+      foresta_tileset_188: 488708791
+      foresta_tileset_189: 830359152
+      foresta_tileset_19: 1931934366
+      foresta_tileset_190: -794890518
+      foresta_tileset_191: -849592472
+      foresta_tileset_192: -524452633
+      foresta_tileset_193: 2091804906
+      foresta_tileset_194: -760328786
+      foresta_tileset_195: -53869852
+      foresta_tileset_196: 186822227
+      foresta_tileset_197: 1728636787
+      foresta_tileset_198: 1244864987
+      foresta_tileset_199: 861512846
+      foresta_tileset_2: -2126762663
+      foresta_tileset_20: -2002735119
+      foresta_tileset_200: 1459614403
+      foresta_tileset_201: 1612468945
+      foresta_tileset_202: 798530477
+      foresta_tileset_203: -799112598
+      foresta_tileset_204: -645826195
+      foresta_tileset_205: -1148023413
+      foresta_tileset_206: 1462539299
+      foresta_tileset_207: 3268652
+      foresta_tileset_208: -510096180
+      foresta_tileset_209: 1649091584
+      foresta_tileset_21: 2099794201
+      foresta_tileset_210: -455794048
+      foresta_tileset_211: 808831407
+      foresta_tileset_212: 563158310
+      foresta_tileset_213: -330714428
+      foresta_tileset_214: -283232213
+      foresta_tileset_215: 1451963987
+      foresta_tileset_216: -1112141307
+      foresta_tileset_217: 2054551240
+      foresta_tileset_218: 911343855
+      foresta_tileset_219: 1400944302
+      foresta_tileset_22: 1322318835
+      foresta_tileset_220: -997661998
+      foresta_tileset_221: -679669662
+      foresta_tileset_222: -136334733
+      foresta_tileset_223: -1834652949
+      foresta_tileset_224: 161121594
+      foresta_tileset_225: 231840375
+      foresta_tileset_226: 1971978328
+      foresta_tileset_227: 483233457
+      foresta_tileset_228: 2021191587
+      foresta_tileset_229: 2011721736
+      foresta_tileset_23: -366367162
+      foresta_tileset_230: -1885453128
+      foresta_tileset_231: 1213755943
+      foresta_tileset_232: -1623580819
+      foresta_tileset_233: -2905800
+      foresta_tileset_234: 584921921
+      foresta_tileset_235: -1379200552
+      foresta_tileset_236: 1461798773
+      foresta_tileset_237: -33107343
+      foresta_tileset_238: 1960584505
+      foresta_tileset_239: -1618297534
+      foresta_tileset_24: -1668891780
+      foresta_tileset_240: -319264218
+      foresta_tileset_241: 987815758
+      foresta_tileset_242: 1751349171
+      foresta_tileset_243: 1589819658
+      foresta_tileset_244: 595487341
+      foresta_tileset_245: -1853683011
+      foresta_tileset_246: 490154243
+      foresta_tileset_247: 513351592
+      foresta_tileset_248: -1040154449
+      foresta_tileset_249: 1798901388
+      foresta_tileset_25: 355039207
+      foresta_tileset_250: -1637867522
+      foresta_tileset_251: -2006676528
+      foresta_tileset_252: 2010568756
+      foresta_tileset_253: 132563532
+      foresta_tileset_254: 1550235275
+      foresta_tileset_255: -1809297025
+      foresta_tileset_256: -331737720
+      foresta_tileset_257: 764376068
+      foresta_tileset_258: 1451900708
+      foresta_tileset_259: 662649605
+      foresta_tileset_26: -884763405
+      foresta_tileset_260: 728264701
+      foresta_tileset_261: 257120675
+      foresta_tileset_262: -1807910499
+      foresta_tileset_263: -125634373
+      foresta_tileset_264: 1398804557
+      foresta_tileset_265: -39468657
+      foresta_tileset_266: -34096797
+      foresta_tileset_267: -1533139095
+      foresta_tileset_268: 541682003
+      foresta_tileset_269: -1165267535
+      foresta_tileset_27: -1789304768
+      foresta_tileset_270: 1428120517
+      foresta_tileset_271: -1201267978
+      foresta_tileset_272: -1052020792
+      foresta_tileset_273: 1506698314
+      foresta_tileset_274: -1982285269
+      foresta_tileset_275: -1775648380
+      foresta_tileset_276: -1908707244
+      foresta_tileset_277: 256663831
+      foresta_tileset_278: -1764895390
+      foresta_tileset_279: -1383819316
+      foresta_tileset_28: -2013469371
+      foresta_tileset_280: 1869121594
+      foresta_tileset_281: 1474444246
+      foresta_tileset_282: -900269256
+      foresta_tileset_283: 1882314190
+      foresta_tileset_284: -284413058
+      foresta_tileset_285: -1344321477
+      foresta_tileset_286: 840377684
+      foresta_tileset_287: 1524855368
+      foresta_tileset_288: -140328601
+      foresta_tileset_289: 768436211
+      foresta_tileset_29: 469516673
+      foresta_tileset_290: 2129120357
+      foresta_tileset_291: -583857372
+      foresta_tileset_292: -1062471896
+      foresta_tileset_293: -1995302490
+      foresta_tileset_294: -1321120871
+      foresta_tileset_295: -1785032092
+      foresta_tileset_296: -1010969116
+      foresta_tileset_297: -648991515
+      foresta_tileset_298: 860734139
+      foresta_tileset_299: -17909266
+      foresta_tileset_3: -1885577211
+      foresta_tileset_30: -907757704
+      foresta_tileset_300: 648176615
+      foresta_tileset_301: -610681348
+      foresta_tileset_302: 173587723
+      foresta_tileset_303: -248492333
+      foresta_tileset_304: 1043446157
+      foresta_tileset_305: -2056739861
+      foresta_tileset_306: -910067088
+      foresta_tileset_31: 1805160070
+      foresta_tileset_32: -991923348
+      foresta_tileset_33: 217900900
+      foresta_tileset_34: -2013624142
+      foresta_tileset_35: -2107325058
+      foresta_tileset_36: -1802560539
+      foresta_tileset_37: -892184217
+      foresta_tileset_38: 2098888891
+      foresta_tileset_39: -1967290223
+      foresta_tileset_4: 826125534
+      foresta_tileset_40: -1378043281
+      foresta_tileset_41: 702523966
+      foresta_tileset_42: -597070253
+      foresta_tileset_43: 1924430277
+      foresta_tileset_44: -74953071
+      foresta_tileset_45: 1808334314
+      foresta_tileset_46: 1470912787
+      foresta_tileset_47: 428756322
+      foresta_tileset_48: 1376712414
+      foresta_tileset_49: -1703727536
+      foresta_tileset_5: 2057520235
+      foresta_tileset_50: 1293727640
+      foresta_tileset_51: -2103980331
+      foresta_tileset_52: -164933734
+      foresta_tileset_53: -1888388630
+      foresta_tileset_54: -33916789
+      foresta_tileset_55: -140882245
+      foresta_tileset_56: -1354694198
+      foresta_tileset_57: 1310631805
+      foresta_tileset_58: -872730059
+      foresta_tileset_59: -620567500
+      foresta_tileset_6: 892328899
+      foresta_tileset_60: -1844327815
+      foresta_tileset_61: -630573202
+      foresta_tileset_62: -696209816
+      foresta_tileset_63: 431074200
+      foresta_tileset_64: -331318969
+      foresta_tileset_65: 614830589
+      foresta_tileset_66: -1159431105
+      foresta_tileset_67: 1760896729
+      foresta_tileset_68: 409624552
+      foresta_tileset_69: -1448186620
+      foresta_tileset_7: -1659104236
+      foresta_tileset_70: -754327019
+      foresta_tileset_71: -679234846
+      foresta_tileset_72: -1645183017
+      foresta_tileset_73: 1024229835
+      foresta_tileset_74: 715195480
+      foresta_tileset_75: 644723059
+      foresta_tileset_76: 2028259802
+      foresta_tileset_77: -1499924552
+      foresta_tileset_78: -95461345
+      foresta_tileset_79: -163463023
+      foresta_tileset_8: 1350853916
+      foresta_tileset_80: 1936634736
+      foresta_tileset_81: 696047864
+      foresta_tileset_82: 158277382
+      foresta_tileset_83: 282644515
+      foresta_tileset_84: 956139351
+      foresta_tileset_85: 1279543488
+      foresta_tileset_86: 1239466246
+      foresta_tileset_87: 282702421
+      foresta_tileset_88: 957068620
+      foresta_tileset_89: -1614209162
+      foresta_tileset_9: -786126713
+      foresta_tileset_90: -915621668
+      foresta_tileset_91: 40038279
+      foresta_tileset_92: -1797001909
+      foresta_tileset_93: -1098519004
+      foresta_tileset_94: 556526596
+      foresta_tileset_95: -401547468
+      foresta_tileset_96: 353547103
+      foresta_tileset_97: -499045222
+      foresta_tileset_98: -201947119
+      foresta_tileset_99: 2097772278
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
