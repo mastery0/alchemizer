@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class charger : enemy
     private bool inRange;
     public float dashTime;
     public float dashForce;
+    public bleed bleedEfc;
     protected override void Awake()
     {
         base.Awake();
@@ -47,5 +49,29 @@ public class charger : enemy
 
         yield return new WaitForSeconds(CD);
         canDash = true;
+    }
+    protected override void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerScript.takeDamage(damage);
+            Debug.Log(playerScript.hp);
+            if (isDashing)
+            {
+                
+                GameObject target = collision.gameObject;
+                if (!target.CompareTag("Player")) return;
+                if (!collision.gameObject.GetComponent<statusManager>().hasEffect("Bleed"))
+                {
+                    bleedEfc = target.AddComponent<bleed>();
+                    collision.gameObject.GetComponent<statusManager>().applyEffect(bleedEfc);
+                }
+                else
+                {
+                    bleed existing = target.GetComponent<bleed>();
+                    collision.gameObject.GetComponent<statusManager>().applyEffect(existing);
+                }
+            }
+        }
     }
 }

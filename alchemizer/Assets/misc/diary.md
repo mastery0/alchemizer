@@ -350,6 +350,20 @@ Ramo Cura:
 - finito spora completamente funzionante
 
 **Risultato:** nemico completamente funzionante
+
+### Giorno 28
+**Focus:** build map
+
+- inizio costruzione foresta incantata
+
+**Risultato:** inizio giocabile
+
+### Giorno 29
+**Focus:** nuovo nemico
+
+- implementazione sanguisuga che si attacca al player e ruba le essenze
+
+**Risultato:** nuovo nemico funzionante
 ## Stato Attuale & Prossimi Passi (fine Giorno 20)
 
 
