@@ -193,6 +193,8 @@ movimenti rapidi ma a scatti alla morte esplode applica burning
 costrutto instabile:
 robot rotto che fa scintille
 si autodistrugge al contatto applica burning
+
+
 must to do
 romance quest tra due npc(solo se ci sta bene)
 skill tree con due tier

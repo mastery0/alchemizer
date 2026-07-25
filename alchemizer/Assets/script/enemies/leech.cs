@@ -2,6 +2,7 @@ using System.Collections;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEngine.GraphicsBuffer;
 
 public class leech : enemy
 {
@@ -14,9 +15,16 @@ public class leech : enemy
     {
         if (isAttached)
         {
-            erb.position=(Vector2)player.transform.position+offset;
+            return;
         }
         base.Update();
+    }
+    private void LateUpdate()
+    {
+        if (isAttached)
+        {
+            transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 0.6f);
+        }
     }
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
@@ -26,8 +34,11 @@ public class leech : enemy
     {
         isAttached = true;
         erb.linearVelocity = Vector2.zero;
-        erb.bodyType = RigidbodyType2D.Kinematic;
-        offset=(Vector2)transform.position-(Vector2)player.transform.position;
+        transform.SetParent(target.transform);
+        transform.position = new Vector2(target.transform.position.x, target.transform.position.y+0.6f);
+        erb.gravityScale = 0;
+        enemyCollider.isTrigger = true;
+        
         if(drain!=null)StopCoroutine(drain);
         drain=StartCoroutine(drainRoutine());
     }
@@ -44,7 +55,11 @@ public class leech : enemy
     private void stealEssence()
     {
         int steal = Random.Range(0, 4);
-        if (essenceManager.instance.essenceInv[(essenceManager.essenceTypes)steal] > stealPerTick) essenceManager.instance.essenceInv[(essenceManager.essenceTypes)steal] -= stealPerTick;
+        essenceManager.essenceTypes type = (essenceManager.essenceTypes)steal;
+        if (essenceManager.instance.essenceInv.TryGetValue(type, out int amount) && amount >= stealPerTick)
+        {
+            essenceManager.instance.essenceInv[(essenceManager.essenceTypes)steal] -= stealPerTick;
+        }
     }
     private void applyPoison()
     {
