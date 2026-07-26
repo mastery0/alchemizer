@@ -44,11 +44,11 @@ groundSlam
 Mappa demo
 (le frecce indicano da dove si sblocca il primo accesso ad esempio la prima volta bisogna andare per forza dalla palude al bosco e non il contrario)
 (vedere immagine attaccata)
-            palude di grovigli    
+           palude di grovigli    
 			↑				↓
 casa→ forestaIncantata→ bosco profondo → torre del guardiano
-  ∟    →    ↓	→ laboratorio sepolto
-			↓
+  ↓                          ↓	→ laboratorio sepolto
+  ↓
 nucleo della corruzione(finale demo)
 
 Trama
@@ -84,7 +84,7 @@ palette viva ma con cenni di corruzione su tronchi e foglie
 Palude di grovigli (zona opzionale)
 atmosfera e meccanica:
 zona dove la corruzione è molto avanzata(acqua nera) e meccanica per cui passare tempo nella zona fa accumulare debuff al player
-i nemici sono lenti ma applicano debuff,un nemico potrebbe rubare essenze al player
+i nemici sono lenti ma applicano debuff,un nemico  ruba essenze al player
 il passaggio in questa zona non è obbligatorio ma consente scoperte nuove e potenziamenti(da stabilire)
 NPC: 
 ricercatore quasi pazzo dalle sue ricerche in un posto ostile esso a fine della sua quest diventa il biss

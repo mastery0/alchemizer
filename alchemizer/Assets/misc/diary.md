@@ -364,6 +364,12 @@ Ramo Cura:
 - implementazione sanguisuga che si attacca al player e ruba le essenze
 
 **Risultato:** nuovo nemico funzionante
+
+### Giorno 30
+- fix sanguisuga e fix fastfall
+
+### Giorno 31
+- sviluppo forestaIncantata level design
 ## Stato Attuale & Prossimi Passi (fine Giorno 20)
 
 

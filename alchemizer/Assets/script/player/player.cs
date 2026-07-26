@@ -54,6 +54,8 @@ public class player : MonoBehaviour
     private bool isDashing;
     private int currentDash;
     private int currentJump;
+    private bool jumpCheck;
+    private bool fastFallCheck;
     private bool dashCD;
     [System.NonSerialized] public coreInstability core;
     private bool grounded;
@@ -89,7 +91,6 @@ public class player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Debug.Log(grounded);
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
         grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground);
         if (grounded) { currentDash = dashCount; currentJump = jumpAmount; }
@@ -107,17 +108,21 @@ public class player : MonoBehaviour
         if (isJumpHeld && !jumpHeld && grounded)
         {
             jump();
+            jumpCheck=false;
         }
         jumpHeld = isJumpHeld;
-        if (hasDoubleJump && jumpHeld && !grounded && currentJump > 0)
+        if (hasDoubleJump && jumpHeld && !grounded && currentJump > 0&&jumpCheck)
         {
             jump();
             currentJump--;
+            jumpCheck = false;
         }
         if (moveInput.y < 0)
         {
             fastFall();
         }
+        if(moveInput.y>=0)prb.linearVelocity = new Vector2(prb.linearVelocityX,prb.linearVelocityY+fastFallForce);
+        if (moveInput.y == 0) jumpCheck = true;
     }
     public void OnDash(InputAction.CallbackContext context)
     {
@@ -171,7 +176,7 @@ public class player : MonoBehaviour
     }
     public void fastFall()
     {
-        prb.linearVelocity = new Vector2(prb.linearVelocityX, -fastFallForce);
+        prb.linearVelocity = new Vector2(prb.linearVelocityX, prb.linearVelocityY-fastFallForce);
     }
     private void glide()
     {
