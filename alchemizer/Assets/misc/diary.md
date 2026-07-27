@@ -370,6 +370,9 @@ Ramo Cura:
 
 ### Giorno 31
 - sviluppo forestaIncantata level design
+
+### Giorno 32
+- design forestaIncantata
 ## Stato Attuale & Prossimi Passi (fine Giorno 20)
 
 

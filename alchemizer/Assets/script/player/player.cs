@@ -55,7 +55,7 @@ public class player : MonoBehaviour
     private int currentDash;
     private int currentJump;
     private bool jumpCheck;
-    private bool fastFallCheck;
+    private float defaultGravity;
     private bool dashCD;
     [System.NonSerialized] public coreInstability core;
     private bool grounded;
@@ -86,7 +86,7 @@ public class player : MonoBehaviour
         c.a = 1f;
         img.color = c;
         bp.SetActive(true);
-
+        defaultGravity=prb.gravityScale;
         StartCoroutine(FadeDeathPanel(img, 0f,true));
     }
     void FixedUpdate()
@@ -121,7 +121,7 @@ public class player : MonoBehaviour
         {
             fastFall();
         }
-        if(moveInput.y>=0)prb.linearVelocity = new Vector2(prb.linearVelocityX,prb.linearVelocityY+fastFallForce);
+        if(prb.gravityScale!=defaultGravity&&moveInput.y>=0)prb.gravityScale = defaultGravity;
         if (moveInput.y == 0) jumpCheck = true;
     }
     public void OnDash(InputAction.CallbackContext context)
@@ -152,14 +152,17 @@ public class player : MonoBehaviour
     //movement
     private IEnumerator Dash()
     {
+        prb.gravityScale = 0;
         isDashing = true;
         dashCD = true;
         currentDash--;
         prb.linearVelocity=new Vector2(moveX * dashForce, 0);
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
+        prb.gravityScale = defaultGravity;
         yield return new WaitForSeconds(dashCooldown);
         dashCD = false;
+        
     }
     public bool dashCheck()
     {
@@ -176,7 +179,7 @@ public class player : MonoBehaviour
     }
     public void fastFall()
     {
-        prb.linearVelocity = new Vector2(prb.linearVelocityX, prb.linearVelocityY-fastFallForce);
+        prb.gravityScale = prb.gravityScale * 1.3f;
     }
     private void glide()
     {
