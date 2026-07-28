@@ -195,6 +195,21 @@ robot rotto che fa scintille
 si autodistrugge al contatto applica burning
 
 
+Boss List:
+Foresta Incantata:
+
+Slime Gigante*:
+massa di slime viola,occhi e nucleo visibile,il nucleo brilla prima di attaccare
+salto e carica verso il player
+
+Golem delle radici:
+corpo fatto di tronchi con crepe viola sui punti di giuntura e muschio che copre la schiena
+pugno a terra che fa comparire delle radici che vanno verso il player e colpo melee quando il player è vicino
+
+Alchimista corrotto:
+umanoide con mantello rovinato,con pozioni appese alla cintura,bagliore viola negli occhi
+lancio di fiale che creano aree di veleno a terra 
+
 must to do
 romance quest tra due npc(solo se ci sta bene)
 skill tree con due tier

@@ -1,6 +1,6 @@
 ﻿# ALCHEMIZER — Diario di Sviluppo
 
-> Aggiornato al termine del **Giorno 20**.
+> Aggiornato al termine del **Giorno 32**.
 
 ---
 
@@ -42,8 +42,8 @@ Roadmap: evolversi in stadi, sbloccare nuove sezioni dell'albero, rappresentare 
 ### Decisione Risolta (Giorno 6)
 Le abilità di movimento si sbloccano tramite **Skill Tree** (ramo Movimento: Air Dash, Gale Step, Wind Flow, Swift Step). Le skill di progressione metroidvania (dash, double jump, ecc.) si sbloccano tramite esplorazione e vengono potenziate dalle skill nel tree.
 
-### Decisione Aperta (dal Giorno 16)
-**L'inventario serve davvero?** Dubbio di game design ancora irrisolto: se sì, servono drop dedicati dai nemici/mondo? Se no, il sistema va rimosso o riconvertito. Da chiudere prima di investire altro tempo nella UI (es. ScrollRect).
+### Decisione Risolta (Giorno 21)
+**L'inventario serve davvero?** Dubbio aperto dal Giorno 16, ora chiuso: l'inventario resta nel gioco ma con uno scope ridotto — è dedicato esclusivamente a chiavi e oggetti chiave. Niente drop generici o consumabili passano da lì (le pozioni, ad esempio, hanno un proprio sistema dedicato a partire dal Giorno 22).
 
 ---
 
@@ -54,8 +54,9 @@ Le abilità di movimento si sbloccano tramite **Skill Tree** (ramo Movimento: Ai
 - Anche il **Quest System** è basato su ScriptableObject
 - Attacco ranged basato su **raycast**, visualizzato con **LineRenderer** (da migliorare esteticamente)
 - Essenze gestite da un **Essence Manager** centralizzato
-- **SaveManager**: singleton con `DontDestroyOnLoad`
+- **SaveManager**: singleton con `DontDestroyOnLoad`, ristrutturato al Giorno 21 per accogliere i nuovi sistemi
 - **Core Instability** (pressure): pattern a eventi `OnAttack()` / `OnHit()`, integrato con post-processing URP (vignette, color adjustment, saturazione)
+- **Status Effect System**: `statusManager` che ticka gli effetti attivi ogni frame, con sottoclassi dedicate per singolo effetto (es. `poison`), riorganizzato al Giorno 26
 - Feedback di combattimento: `HitStopManager` (via `Time.timeScale`), hit-flash nemici (`SpriteRenderer.color`), knockback
 
 ---
@@ -284,101 +285,218 @@ Ramo Cura:
 ### Giorno 20
 **Focus:** Effetti di stato per player e nemici
 
-- burning: semplice effetto di danno nel tempo
-- poison: danno nel tempo e riduzione efficacia cure
-- bleed: danno nel tempo che aumenta con la velocità di movimento
-- shock: danno instantaneo e aumento attack cd (solo player)
-- weakness: diminuzione danno inflitto
-- exhaustion: diminuzione guadagno pressure e aumento perdita pressure (solo player)
+- **burning:** semplice effetto di danno nel tempo
+- **poison:** danno nel tempo e riduzione efficacia cure
+- **bleed:** danno nel tempo che aumenta con la velocità di movimento
+- **shock:** danno instantaneo e aumento attack cooldown (solo player)
+- **weakness:** diminuzione danno inflitto
+- **exhaustion:** diminuzione guadagno pressure e aumento perdita pressure (solo player)
+
+**Risultato:** prima versione del sistema di effetti di stato definita, con sei effetti distinti pronti per essere collegati a nemici e meccaniche di combattimento (verrà riorganizzata al Giorno 26).
+
 ---
 
 ### Giorno 21
-**Focus:** Vari polishing
+**Focus:** Polishing e nuove meccaniche di inventario
 
-- Save manager ristrutturato: ristrutturazione in seguito ad implementazione nuovi sistemi
-- locked chest: casse che richiedono un item nell'inventario per essere aperte
-- destino inventario: inventario esclusivo per chiavi,oggetti chiave,per ora niente drop o consumabili
+- **Save Manager ristrutturato:** riorganizzata l'architettura del sistema di salvataggio per accogliere in modo pulito i nuovi sistemi introdotti nelle settimane precedenti (pozioni in arrivo, quest, effetti di stato)
+- **Locked chest:** introdotte casse che richiedono il possesso di uno specifico item nell'inventario per poter essere aperte, prima forma di progressione basata su chiavi
+- **Scope dell'inventario:** chiusa la questione aperta dal Giorno 16 — l'inventario sarà dedicato esclusivamente a chiavi e oggetti chiave; per ora nessun drop generico o consumabile passa da lì
+
+**Risultato:** save system più solido e pronto a scalare, aggiunta la prima meccanica di progressione basata su casse bloccate, ruolo dell'inventario finalmente chiarito nel design.
+
+---
 
 ### Giorno 22
+**Focus:** Sistema pozioni (avvio)
 
-**Focus:** pozioni
+- **Superclasse pozioni curative:** creata una base class comune (`healingPotion` o equivalente) da cui derivano tutte le pozioni di guarigione
+- **Heal Potion base:** implementata `basePotion`, la prima pozione concreta derivata dalla superclasse
+- **UI elementare:** aggiunta una prima interfaccia grezza per visualizzare la pozione posseduta
 
-- base class healing potions
-- heal potion base
-- ui elementare
+**Risultato:** superclasse e prima pozione funzionanti; manca ancora lo swap tra pozioni diverse, una UI rifinita e il binding al tasto di utilizzo.
 
-**Risultato:** esiste superclasse e classe pozione di base manca swap tra diverse pozioni,ui e binding al tasto di utilizzo
+---
 
 ### Giorno 23
+**Focus:** Sistema pozioni (input e UI)
 
-**Focus:** pozioni
+- **Binding tasto di uso:** collegato un tasto dedicato all'utilizzo della pozione attualmente attiva
+- **UI inventario:** l'inventario ora mostra le pozioni possedute accanto a chiavi e oggetti chiave
 
-- binding tasto di uso
-- ui inventario che mostra le pozioni
+**Risultato:** sistema di utilizzo pozioni funzionante end-to-end; mancano ancora lo swap tra pozioni diverse e la relativa meccanica di sblocco.
 
-**Risultato:** sistema funzionante ma manca ancora swap e meccanica di unlock
+---
 
 ### Giorno 24
+**Focus:** Sistema pozioni (completamento) e GDD
 
-**Focus:** pozioni
+- **UI checkpoint:** aggiunta la possibilità di gestire le pozioni direttamente dal menu checkpoint
+- **Swap pozioni:** integrata la possibilità di cambiare la pozione attiva tra quelle sbloccate (in previsione delle varianti `emberPotion` e `ragePotion`, ciascuna con un'interazione diversa con la meccanica Pressure)
+- **GDD:** migliorato con la descrizione delle varie zone di gioco
 
-- ui checkpoint
-- integrazione possibilità di cambio pozioni
-- GDD migliorato con descrizione delle varie zone del gioco
+**Risultato:** sistema pozioni completo (superclasse, pozione base, UI, binding, swap) e design delle zone più definito nel GDD.
 
-**Risultato:** sistema pozioni avanzato e ulteriore svilupo di game design
+---
 
 ### Giorno 25
+**Focus:** Design — lista nemici nel GDD
 
-**Focus:** modifiche gdd
+- **Lista nemici:** aggiunta al GDD una lista completa dei nemici, divisa per zona, con relativi attacchi ed eventuali effetti di stato applicati (collegando così il lavoro del Giorno 20 al design delle zone)
 
-- aggiunta al gdd della lista nemici
+**Risultato:** roster nemici completamente pianificato a livello di design, base solida per l'implementazione delle zone successive.
 
-**Risultato:** lista nemici completa divisa per zone specificando attacchi e eventuali effetti di stato
+---
 
 ### Giorno 26
-**Focus:** rework effetti e nemico
+**Focus:** Rework del sistema effetti di stato e nuovo nemico (Spora)
 
-- inizio spora che non attacca ma fa una nube tossica quando viene colpito
-- rework sistema effetti
+- **Nemico Spora (avvio):** iniziata l'implementazione di un nuovo nemico che non attacca direttamente ma rilascia una nube tossica quando viene colpito, applicando poison a contatto
+- **Rework sistema effetti:** riorganizzata l'architettura introdotta al Giorno 20 in un `statusManager` che ticka ogni frame gli effetti attivi, con sottoclassi dedicate per singolo effetto (a partire da `poison`, che gestisce danno nel tempo e riduzione dei moltiplicatori di cura)
 
-**Risultato:** nemico work in progress
+**Risultato:** nemico Spora ancora work in progress; sistema effetti riorganizzato in una struttura più solida ed estendibile, ma non ancora completamente stabile.
+
+---
 
 ### Giorno 27
-**Focus:** spora
+**Focus:** Completamento nemico Spora
 
-- finito spora completamente funzionante
+- **Spora completata:** finita l'implementazione del nemico, ora completamente funzionante — rilascia correttamente la nube tossica al contatto e applica l'effetto poison tramite il sistema effetti riorganizzato il giorno precedente, riusando il pattern di guardia sulle coroutine (`StopCoroutine` prima di riavviare) già adottato altrove nel progetto
 
-**Risultato:** nemico completamente funzionante
+**Risultato:** nemico Spora completamente funzionante e integrato con il rework degli effetti di stato del Giorno 26.
+
+---
 
 ### Giorno 28
-**Focus:** build map
+**Focus:** Costruzione mappa — Foresta Incantata
 
-- inizio costruzione foresta incantata
+- **Foresta Incantata:** avviata la costruzione della prima area di gioco vera e propria, usando tileset e piattaforme già preparati al Giorno 13
 
-**Risultato:** inizio giocabile
+**Risultato:** prima porzione della zona giocabile, base ambientale su cui costruire level design e incontri.
+
+---
 
 ### Giorno 29
-**Focus:** nuovo nemico
+**Focus:** Nuovo nemico — Sanguisuga
 
-- implementazione sanguisuga che si attacca al player e ruba le essenze
+- **Sanguisuga:** implementato un nuovo nemico che si attacca al player e ruba essenze nel tempo finché rimane agganciato
 
-**Risultato:** nuovo nemico funzionante
+**Risultato:** nuovo nemico funzionante, aggiunge una minaccia diversa dai pattern già esistenti (contatto diretto, dash, proiettili, nube tossica).
+
+---
 
 ### Giorno 30
-- fix sanguisuga e fix fastfall
+**Focus:** Fix e polishing
+
+- **Fix Sanguisuga:** corretti bug nel comportamento del nemico introdotto al Giorno 29
+- **Fix fastfall:** risolto un problema legato alla discesa rapida del player
+
+**Risultato:** stabilizzati due sistemi esistenti (nemico Sanguisuga e movimento del player).
+
+---
 
 ### Giorno 31
-- sviluppo forestaIncantata level design
+**Focus:** Level design — Foresta Incantata
+
+- **Foresta Incantata:** proseguito lo sviluppo del level design della zona, definendo il layout delle piattaforme e il posizionamento di nemici e ostacoli
+
+**Risultato:** level design della zona in progressione, costruito sopra la base ambientale del Giorno 28.
+
+---
 
 ### Giorno 32
-- design forestaIncantata
-## Stato Attuale & Prossimi Passi (fine Giorno 20)
+**Focus:** Level design — Foresta Incantata (continuazione)
+
+- **Foresta Incantata:** ulteriore lavoro sul design della zona, rifinendo struttura e progressione dell'area
+
+**Risultato:** zona Foresta Incantata sempre più definita, avvicinandosi a una prima versione giocabile completa.
+
+---
+
+### Giorno 33
+
+- fine design base forestaIncantata
+
+### Giorno 34
+
+- superclasse boss
 
 
-**Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), 3 tipi di nemico, UI di combattimento (HP bar, Pressure bar, hit stop), Save/Load, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (base + UI), Quest System (backend + UI placeholder + NPC di test).
+## Stato Attuale & Prossimi Passi (fine Giorno 32)
 
-**In corso / prossimo step immediato:**
+**Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), Save/Load ristrutturato, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (ridotto a chiavi/oggetti chiave, con locked chest), Quest System (backend + UI placeholder + NPC di test), sistema effetti di stato riorganizzato, sistema pozioni completo (superclasse, pozione base, UI, binding, swap), nemici: Crusher, Archer, Spora, Sanguisuga.
+
+**In corso / prossimi step immediati:**
+- Completare il level design della Foresta Incantata (avviato al Giorno 31)
+- Aggiungere i due nemici di zona ancora mancanti rispetto al GDD: Lupo Corrotto e Cinghiale Contaminato
+- Implementare NPC e boss della Foresta Incantata: erborista, slime gigante (main), golem delle radici (secondario), alchimista corrotto (secondario)
+- Costruire la sequenza di apertura Prologo/Casa-lab, propedeutica a tutta la trama successiva
 
 **Decisioni aperte:**
 - Migliorare visivamente il raggio d'attacco (LineRenderer), nota dal Giorno 11 mai più affrontata.
+- Ricompense/potenziamenti ottenibili esplorando la Palude di Grovigli: il GDD la segna come opzionale ma lascia i vantaggi "da stabilire".
+- Se e come includere la romance quest tra due NPC — il GDD la segna come eventuale ("solo se ci sta bene").
+- Come funziona l'acquisto delle pozioni dall'erborista: il GDD parla sia di pozioni "comprate" sia di pozioni ottenute completando i suoi incarichi — va chiarito se è lo stesso canale o due cose distinte, ed eventualmente con quale valuta/risorsa si comprano.
+- Cosa deve succedere perché il Catalizzatore salga al secondo tier dello Skill Tree (il GDD lo lascia come roadmap, senza trigger specifico).
+- Dove/come si ottengono nel mondo `doubleJump` e `groundSlam` (il GDD specifica solo che il wall jump è nascosto nel Bosco Profondo).
+- Il boss "alchimista corrotto" sbloccherebbe "il dash" — da chiarire se è lo stesso dash già disponibile dal Giorno 1 o un'abilità distinta, per evitare un conflitto di disponibilità.
+
+---
+
+## To-Do List — Tutto Ciò Che Manca per la Demo Completa
+
+Costruita confrontando il GDD con lo stato del progetto a fine Giorno 32. Non include ciò che è già fatto (es. Spora, Sanguisuga d'essenza, sistema pozioni base).
+
+### Sistemi di gioco
+- [ ] Secondo tier dello Skill Tree (al momento esiste solo `Catalyst Base`)
+- [ ] Abilità metroidvania da esplorazione: `doubleJump`, `wallJump`, `groundSlam` — nessuna delle tre risulta ancora implementata
+- [ ] Sistema di acquisto pozioni dall'erborista (valuta/risorsa da definire) + relativa UI negozio
+- [ ] Varianti pozione `emberPotion` e `ragePotion` (finora esiste solo `basePotion`)
+- [ ] Ricarica pozioni ai checkpoint — verificare se già coperta dalla UI checkpoint del Giorno 24 o da implementare esplicitamente
+- [ ] Persistenza dello stato "casse aperte" nel SaveData ristrutturato al Giorno 21
+- [ ] Porta del seminterrato a Casa apribile con i due item ottenuti da Torre del Guardiano e Laboratorio Sepolto, per accedere al Nucleo della Corruzione
+
+### Zone / Level Design
+- [ ] Prologo / Casa-lab: scena introduttiva completa (boato, seminterrato, cassa con catalizzatore + libro, ricerca e salvataggio della sorella, ritorno a casa)
+- [ ] Foresta Incantata: completare level design (in corso)
+- [ ] Palude di Grovigli: zona opzionale da costruire, con meccanica di debuff da permanenza in zona
+- [ ] Bosco Profondo: zona verticale da costruire (piattaforme mobili, radici che bloccano il passaggio, wall jump nascosto)
+- [ ] Torre del Guardiano: zona da costruire
+- [ ] Laboratorio Sepolto: zona da costruire, con puzzle e pericoli ambientali
+- [ ] Nucleo della Corruzione: zona finale da costruire, stile onirico/staccato
+
+### Nemici mancanti
+- [ ] Lupo Corrotto — Foresta Incantata
+- [ ] Cinghiale Contaminato — Foresta Incantata
+- [ ] Ricercatore corrotto — Palude di Grovigli
+- [ ] Falco delle cime — Bosco Profondo *(il movimento base in volo — patrol/follow — risulta già abbozzato da un lavoro precedente su nemici aerei; da verificare se riutilizzabile)*
+- [ ] Ombra — Bosco Profondo
+- [ ] Radice Incantata — Bosco Profondo
+- [ ] Golem Sentinella — Torre del Guardiano
+- [ ] Costrutto metallico — Torre del Guardiano
+- [ ] Sbaglio Alchemico "Alfio" — Laboratorio Sepolto
+- [ ] Costrutto instabile — Laboratorio Sepolto
+
+
+### Boss
+- [ ] Slime gigante — Foresta Incantata (main)
+- [ ] Golem delle radici — Foresta Incantata (secondario)
+- [ ] Alchimista corrotto — Foresta Incantata (secondario)
+- [ ] Ricercatore fuso con essenze corrotte — Palude di Grovigli (main)
+- [ ] Boss immobile del Bosco Profondo (main)
+- [ ] Guardiano costrutto — Torre del Guardiano (main)
+- [ ] Creazione fallita — Laboratorio Sepolto (main)
+- [ ] Mid-boss finale — Nucleo della Corruzione
+
+### NPC e Narrativa
+- [ ] Erborista — Foresta Incantata
+- [ ] Rampicatore — Bosco Profondo
+- [ ] Quest reali collegate agli NPC (finora solo dati placeholder e NPC di test, Giorno 19)
+- [ ] Scrittura e integrazione della trama in ogni zona (rivelazioni di lore, dialoghi legati a boss/NPC)
+- [ ] Eventuale romance quest tra due NPC (vedi decisioni aperte)
+- [ ] Finale della demo (mid boss fight con suspance) al Nucleo della Corruzione
+
+### Comparto Artistico e Audio
+- [ ] Art pass per ogni zona coerente con le palette del GDD (casa consumata, foresta viva/corrotta, palude marcia, bosco freddo e nebbioso, torre in rovina, laboratorio con corruzione, nucleo onirico)
+- [ ] Sprite e animazioni per tutti i nemici e boss elencati sopra
+- [ ] Comparto audio (musiche e SFX) — al momento non risulta ancora avviato
