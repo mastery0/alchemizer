@@ -5,7 +5,8 @@ public abstract class boss : enemy
 {
     [Header("setup")]
     public string bossName;
-    public GameObject[] arenaGate;
+    public GameObject arenaGate;
+    public Transform engagePoint;
     public bool lockOnEngage = true;
     [Header("phases")]
     public bool hasPhases = false;
@@ -28,12 +29,13 @@ public abstract class boss : enemy
     }
     protected override void Update()
     {
-        if(Vector2.Distance(transform.position,player.transform.position)<Vector2.Distance(transform.position,arenaGate[0].transform.position))engage();
+        if(Vector2.Distance(transform.position,player.transform.position)<Vector2.Distance(transform.position,engagePoint.position))engage();
     }
     protected virtual void engage()
     {
         if (engaged) return;
-        if(lockOnEngage)foreach (GameObject go in arenaGate)go.SetActive(true);
+        if(lockOnEngage)arenaGate.SetActive(true);
+        engaged=true;
         //if(bossHealthUI.instance!=null)bossHealthUI.instance.show(this);
     }
     public override void takeDamage(float damage)
@@ -66,7 +68,7 @@ public abstract class boss : enemy
     {
         if(defeated) return;
         defeated = true;
-        foreach(GameObject go in arenaGate)go.SetActive(false);
+        arenaGate.SetActive(false);
         //if(bossHealthUI.instance!=null)bossHealthUI.instance.hide(this);
         if(checkPointPrefab!=null)Instantiate(checkPointPrefab, checkPointPos,Quaternion.identity);
         Destroy(gameObject);

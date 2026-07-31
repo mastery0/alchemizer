@@ -38679,23 +38679,21 @@ MonoBehaviour:
   flashDuration: 0.3
   flashColor: {r: 1, g: 1, b: 1, a: 1}
   bossName: 
-  arenaGate:
-  - {fileID: 650234709}
-  - {fileID: 620908457}
+  arenaGate: []
   lockOnEngage: 1
   hasPhases: 0
   phasesThresholds: []
   currentPhase: 0
   hasACheckPoint: 1
   checkPointPrefab: {fileID: 3534612913704235648, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
-  checkPointPos: {x: 1, y: -15}
+  checkPointPos: {x: 1, y: -13}
   coreSprite: {fileID: 0}
   defColor: {r: 0, g: 0, b: 0, a: 0}
   teleColor: {r: 1, g: 1, b: 1, a: 1}
   coreGlowInterval: 0
   idleTime: 1.5
   chanceOfNothing: 30
-  meleeRange: 5
+  meleeRange: 3
   jumpRange: 8
   jumpMult: 1.5
   jumpDuration: 0.5
@@ -38777,8 +38775,8 @@ Transform:
   m_GameObject: {fileID: 62297412}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.28, y: -14.88, z: 0}
-  m_LocalScale: {x: 2.2094, y: 2.1804, z: 1}
+  m_LocalPosition: {x: 1.1, y: -12.83, z: 0}
+  m_LocalScale: {x: 5.1615, y: 6.0122, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -38809,7 +38807,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &62297417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43385,7 +43383,7 @@ Transform:
   m_GameObject: {fileID: 620908457}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.74, y: -15.33, z: 0}
+  m_LocalPosition: {x: -0.41418, y: -13.47099, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44493,7 +44491,7 @@ Transform:
   m_GameObject: {fileID: 650234709}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.04, y: -15.31, z: 0}
+  m_LocalPosition: {x: -0.41418, y: -13.47099, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

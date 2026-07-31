@@ -129,7 +129,7 @@ laboratorio antico  con contenitori rotti e corruzione che cola
 
 Nucleo della Corruzione(finale)
 requisiti:
-richiede di visitare torre e lab per accedere
+richiede di visitare torre per accedere
 finale:
 finisce mid boss fight lasciando la suspance
 art style:
@@ -196,6 +196,8 @@ si autodistrugge al contatto applica burning
 
 
 Boss List:
+
+boss finale:inizialmente immortale/troppo forte dopo aver preso item nel lab diventa fattibile
 Foresta Incantata:
 
 Slime Gigante*:

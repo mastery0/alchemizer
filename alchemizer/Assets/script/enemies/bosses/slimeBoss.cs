@@ -15,9 +15,6 @@ public class slimeBoss : boss
     protected bool hasDashHit;
     protected bool hasBullHit;
     protected bool hasBullCrushed;
-    protected bool hasStartAttacking;
-    [Header("info")]
-    public LayerMask playerMask;
     protected bool isAttacking;
     [Header("coreVisuals")]
     public SpriteRenderer coreSprite;
@@ -26,10 +23,9 @@ public class slimeBoss : boss
     public float coreGlowInterval;
     [Header("attack info")]
     public float idleTime;
-    public float chanceOfNothing;
+    public int chanceOfNothing;
     public float meleeRange;
     public float jumpRange;
-    public Transform[] bullPoint;
 
     [Header("jumpAttack")]
     public float jumpMult;
@@ -51,14 +47,14 @@ public class slimeBoss : boss
     protected override void Awake()
     {
         base.Awake();
-        coreSprite.color = defColor;
+        StartCoroutine(attackLoop());
+        //coreSprite.color = defColor;
     }
     protected override void Update()
     {
         base.Update();
         if (hp <= 0) die();
         if (!isAttacking) type = dmgType.contact;
-        if(!hasStartAttacking)StartCoroutine(attackLoop());
     }
     protected float calcDamage(dmgType type)
     {
@@ -72,25 +68,29 @@ public class slimeBoss : boss
     }
     IEnumerator attackLoop()
     {
-        hasStartAttacking = true;
         while (!defeated)
         {
-            yield return new WaitUntil(() => engaged);
+            if (engaged)
+            {
+                yield return StartCoroutine(idle());
+                if (Random.Range(1f, 100f) > chanceOfNothing)
+                {
+                    float d = Vector2.Distance(transform.position, player.transform.position);
 
-            yield return new WaitForSeconds(idleTime);
-
-            float d = Vector2.Distance(transform.position, player.transform.position);
-
-            if (d < meleeRange)
-                yield return StartCoroutine(dashAttack());
-            else if (d < jumpRange)
-                yield return StartCoroutine(jumpAttack());
-            else
-                yield return StartCoroutine(bullAttack());
+                    if (d < meleeRange)
+                        yield return StartCoroutine(dashAttack());
+                    else if (d < jumpRange)
+                        yield return StartCoroutine(jumpAttack());
+                    else
+                        yield return StartCoroutine(bullAttack());
+                }
+            }
+            yield return null;
         }
     }
     IEnumerator jumpAttack()
     {
+        Debug.Log("jump");
         isAttacking = true;
         type = dmgType.jump;
         erb.linearVelocity = Vector2.zero;
@@ -108,12 +108,14 @@ public class slimeBoss : boss
             yield return null;
         }
         transform.position = new Vector2(targetPos.x, startPos.y);
+        erb.linearVelocity=Vector2.zero;
         isAttacking =false;
     }
 
     IEnumerator dashAttack()
     {
-        isAttacking=true;
+        Debug.Log("dash");
+        isAttacking =true;
         type = dmgType.dash;
         erb.linearVelocity=Vector2.zero;
         hasDashHit=false;
@@ -133,6 +135,7 @@ public class slimeBoss : boss
 
     IEnumerator bullAttack()
     {
+        Debug.Log("bull");
         isAttacking = true;
         type = dmgType.bull;
         erb.linearVelocity = Vector2.zero;
@@ -148,21 +151,55 @@ public class slimeBoss : boss
         }
         float dirx = Mathf.Sign(closerPoint - transform.position.x);
         float elapsed = 0f;
+        float originalY=transform.position.y;
         while (elapsed < maxDuration)
         {
             elapsed += Time.deltaTime;
             erb.linearVelocityX = dirx * bullSpeed;
+            transform.position= new Vector2(transform.position.x,originalY+0.01f);
             if (Mathf.Abs(transform.position.x - closerPoint) < 0.5f)
             {
-                float original = closerPoint;
-                foreach (Transform x in point)
+                if (closerPoint == point[0].position.x)
                 {
-                    if (x.position.x < closerPoint && closerPoint != original) closerPoint = x.position.x;
+                    closerPoint = point[1].transform.position.x;
                 }
+                else
+                {
+                    closerPoint=point[0].position.x;
+                }
+                dirx = Mathf.Sign(closerPoint - transform.position.x);
             }
             yield return null;
         }
+        erb.linearVelocity= Vector2.zero;
         isAttacking = false;
+    }
+
+    IEnumerator idle()
+    {
+        float desiredDistance = 3f;
+        float t = 0f;
+
+        while (t < idleTime)
+        {
+            t += Time.deltaTime;
+
+            float dx = player.transform.position.x - transform.position.x;
+
+            if (Mathf.Abs(dx) > desiredDistance)
+            {
+                erb.linearVelocity = new Vector2(Mathf.Sign(dx) * speed, erb.linearVelocity.y);
+            }
+            else
+            {
+                float strafeDir = Mathf.Sign(Mathf.Sin(Time.time * 0.5f));
+                erb.linearVelocity = new Vector2(strafeDir * speed * 0.3f, erb.linearVelocity.y);
+            }
+
+            yield return null;
+        }
+
+        erb.linearVelocity = Vector2.zero;
     }
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
