@@ -38681,31 +38681,29 @@ MonoBehaviour:
   bossName: 
   arenaGate: []
   lockOnEngage: 1
-  bossID: 
   hasPhases: 0
   phasesThresholds: []
   currentPhase: 0
   hasACheckPoint: 1
   checkPointPrefab: {fileID: 3534612913704235648, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
   checkPointPos: {x: 1, y: -13}
-  coreRenderer: {fileID: 0}
-  coreIdleColor: {r: 0.6, g: 0.2, b: 0.8, a: 1}
-  coreChargeColor: {r: 1, g: 1, b: 1, a: 1}
-  coreGlowDuration: 0.6
-  attackCooldown: 3
-  telegraphDuration: 0.6
-  closeRangeDistance: 3
-  jumpHeight: 3
-  jumpDuration: 0.5
-  jumpSlamRadius: 2
-  jumpSlamDamage: 15
-  groundSlamRadius: 1.5
-  groundSlamDamage: 10
-  groundSlamWindup: 0.3
   playerMask:
     serializedVersion: 2
     m_Bits: 128
-  slamVfx: {fileID: 0}
+  coreSprite: {fileID: 0}
+  defColor: {r: 0, g: 0, b: 0, a: 0}
+  teleColor: {r: 1, g: 1, b: 1, a: 1}
+  coreGlowInterval: 0
+  idleTime: 0
+  chanceOfNothing: 0
+  meleeRange: 0
+  jumpRange: 0
+  bullPoint: []
+  jumpMult: 0
+  jumpDuration: 0.5
+  jumpHeight: 3
+  dashMult: 0
+  bullMult: 0
 --- !u!212 &62297414
 SpriteRenderer:
   serializedVersion: 2

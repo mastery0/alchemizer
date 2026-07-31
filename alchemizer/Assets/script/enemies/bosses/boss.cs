@@ -7,7 +7,6 @@ public abstract class boss : enemy
     public string bossName;
     public GameObject[] arenaGate;
     public bool lockOnEngage = true;
-    public string bossID;
     [Header("phases")]
     public bool hasPhases = false;
     public float[] phasesThresholds;
@@ -26,6 +25,10 @@ public abstract class boss : enemy
     {
         base.Awake();
         currentPhase = 1;
+    }
+    protected override void Update()
+    {
+        if(Vector2.Distance(transform.position,player.transform.position)<Vector2.Distance(transform.position,arenaGate[0].transform.position))engage();
     }
     protected virtual void engage()
     {
