@@ -36,12 +36,14 @@ public abstract class boss : enemy
         if (engaged) return;
         if(lockOnEngage)arenaGate.SetActive(true);
         engaged=true;
-        //if(bossHealthUI.instance!=null)bossHealthUI.instance.show(this);
+        bossBar.instance.show();
+        bossBar.instance.setAmount(hp, maxHp);
     }
     public override void takeDamage(float damage)
     {
         if (isInvincible || defeated) return;
         base.takeDamage(damage);
+        bossBar.instance.setAmount(hp, maxHp);
         checkPhaseTransition();
     }
     protected virtual void checkPhaseTransition()
@@ -69,7 +71,7 @@ public abstract class boss : enemy
         if(defeated) return;
         defeated = true;
         arenaGate.SetActive(false);
-        //if(bossHealthUI.instance!=null)bossHealthUI.instance.hide(this);
+        bossBar.instance.hide();
         if(checkPointPrefab!=null)Instantiate(checkPointPrefab, checkPointPos,Quaternion.identity);
         Destroy(gameObject);
     }

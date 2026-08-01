@@ -16,11 +16,17 @@ public class slimeBoss : boss
     protected bool hasBullHit;
     protected bool hasBullCrushed;
     protected bool isAttacking;
+    protected bool hasBeenHit;
     [Header("coreVisuals")]
     public SpriteRenderer coreSprite;
     public Color defColor;
     public Color teleColor= Color.white;
-    public float coreGlowInterval;
+    public float dashGlowInterval;
+    public float jumpGlowInterval;
+    public float bullGlowInterval;
+    public float dashTelegraph;
+    public float jumpTelegraph;
+    public float bullTelegraph;
     [Header("attack info")]
     public float idleTime;
     public int chanceOfNothing;
@@ -76,13 +82,24 @@ public class slimeBoss : boss
                 if (Random.Range(1f, 100f) > chanceOfNothing)
                 {
                     float d = Vector2.Distance(transform.position, player.transform.position);
-
+                    hasBeenHit = false;
                     if (d < meleeRange)
-                        yield return StartCoroutine(dashAttack());
+                    {
+                        float r = Random.value;
+                        if (r < 0.6f) yield return StartCoroutine(dashAttack());
+                        if(r< 0.8f) yield return StartCoroutine(jumpAttack());
+                        else yield return StartCoroutine(bullAttack());
+                    }
                     else if (d < jumpRange)
-                        yield return StartCoroutine(jumpAttack());
+                    {
+                        float r = Random.value;
+                        if (r < 0.7f) yield return StartCoroutine(jumpAttack());
+                        else yield return StartCoroutine(dashAttack());
+                    }
                     else
+                    {
                         yield return StartCoroutine(bullAttack());
+                    }
                 }
             }
             yield return null;
@@ -94,7 +111,7 @@ public class slimeBoss : boss
         isAttacking = true;
         type = dmgType.jump;
         erb.linearVelocity = Vector2.zero;
-        //coreGlow
+        yield return StartCoroutine(coreGlow(jumpTelegraph, jumpGlowInterval));
         Vector2 startPos=transform.position;
         Vector2 targetPos =player.transform.position;
         float elapsed = 0f;
@@ -119,13 +136,15 @@ public class slimeBoss : boss
         type = dmgType.dash;
         erb.linearVelocity=Vector2.zero;
         hasDashHit=false;
-        //coreGlow
+        yield return StartCoroutine(coreGlow(dashTelegraph, dashGlowInterval));
         float dirx=Mathf.Sign(player.transform.position.x-transform.position.x);
+        float originalY = transform.position.y;
         float elapsed = 0f;
         while (elapsed < dashDuration) 
         {
             elapsed += Time.deltaTime;
             erb.linearVelocity = new Vector2(dashSpeed * dirx,erb.linearVelocityY);
+            transform.position = new Vector2(transform.position.x, originalY + 0.01f);
             if (hasDashHit) break;
             yield return null;
         }
@@ -139,7 +158,7 @@ public class slimeBoss : boss
         isAttacking = true;
         type = dmgType.bull;
         erb.linearVelocity = Vector2.zero;
-        //coreGlow
+        yield return StartCoroutine(coreGlow(bullTelegraph, bullGlowInterval));
         float closerPoint = point[0].position.x;
         foreach (Transform p in point)
         {
@@ -177,29 +196,42 @@ public class slimeBoss : boss
 
     IEnumerator idle()
     {
-        float desiredDistance = 3f;
+        float desiredDistance = 5.3f;
+        float chargeDistance = 3f;
         float t = 0f;
-
+        bool reached= false;
         while (t < idleTime)
         {
             t += Time.deltaTime;
 
             float dx = player.transform.position.x - transform.position.x;
 
-            if (Mathf.Abs(dx) > desiredDistance)
+            if (Mathf.Abs(dx) > desiredDistance&&!reached)
             {
                 erb.linearVelocity = new Vector2(Mathf.Sign(dx) * speed, erb.linearVelocity.y);
             }
             else
             {
-                float strafeDir = Mathf.Sign(Mathf.Sin(Time.time * 0.5f));
+                reached = true;
+                float strafeDir = Mathf.Sign(Mathf.Sin(Time.time * 3f));
                 erb.linearVelocity = new Vector2(strafeDir * speed * 0.3f, erb.linearVelocity.y);
             }
-
+            if (hasBeenHit)
+            {
+                t = idleTime;
+            }
+            yield return null;
             yield return null;
         }
 
         erb.linearVelocity = Vector2.zero;
+    }
+
+    public override void takeDamage(float damage)
+    {
+        if (isInvincible || defeated) return;
+        base.takeDamage(damage);
+        hasBeenHit = true;
     }
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
@@ -209,5 +241,16 @@ public class slimeBoss : boss
             if(type==dmgType.dash)hasDashHit=true;
         }
     }
-
+    IEnumerator coreGlow(float duration, float frequency)
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float pulse = Mathf.PingPong(elapsed * frequency * 2f, 1f);
+            coreSprite.color = Color.Lerp(defColor, teleColor, pulse);
+            yield return null;
+        }
+        coreSprite.color = defColor;
+    }
 }

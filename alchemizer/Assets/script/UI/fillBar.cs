@@ -3,7 +3,7 @@ using UnityEngine.UI;
 public class fillBar : MonoBehaviour
 {
     public Image bar;
-    public static pressureBar instance;
+    public static fillBar instance;
     public float fillSpeed;
     protected float target;
 
