@@ -35893,12 +35893,12 @@ MonoBehaviour:
   jumpHeight: 4
   dashMult: 1.8
   dashDuration: 0.6
-  dashSpeed: 20
+  dashSpeed: 22
   bullMult: 2.5
   point:
   - {fileID: 650234710}
   - {fileID: 620908458}
-  bullSpeed: 22
+  bullSpeed: 25
   maxDuration: 3
 --- !u!212 &62297414
 SpriteRenderer:

@@ -432,6 +432,16 @@ Ramo Cura:
 ### Giorno 37
 
 - fix boss slime
+
+### Giorno 38
+
+- fix boss slime e building foresta incantata
+
+### Giorno 39
+
+- creazione sistema di transizione tra aree (scene manager)
+
+
 ## Stato Attuale & Prossimi Passi (fine Giorno 32)
 
 **Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), Save/Load ristrutturato, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (ridotto a chiavi/oggetti chiave, con locked chest), Quest System (backend + UI placeholder + NPC di test), sistema effetti di stato riorganizzato, sistema pozioni completo (superclasse, pozione base, UI, binding, swap), nemici: Crusher, Archer, Spora, Sanguisuga.
@@ -461,14 +471,11 @@ Costruita confrontando il GDD con lo stato del progetto a fine Giorno 32. Non in
 - [ ] Secondo tier dello Skill Tree (al momento esiste solo `Catalyst Base`)
 - [ ] Abilità metroidvania da esplorazione: `doubleJump`, `wallJump`, `groundSlam` — nessuna delle tre risulta ancora implementata
 - [ ] Sistema di acquisto pozioni dall'erborista (valuta/risorsa da definire) + relativa UI negozio
-- [ ] Varianti pozione `emberPotion` e `ragePotion` (finora esiste solo `basePotion`)
 - [ ] Ricarica pozioni ai checkpoint — verificare se già coperta dalla UI checkpoint del Giorno 24 o da implementare esplicitamente
-- [ ] Persistenza dello stato "casse aperte" nel SaveData ristrutturato al Giorno 21
 - [ ] Porta del seminterrato a Casa apribile con i due item ottenuti da Torre del Guardiano e Laboratorio Sepolto, per accedere al Nucleo della Corruzione
 
 ### Zone / Level Design
 - [ ] Prologo / Casa-lab: scena introduttiva completa (boato, seminterrato, cassa con catalizzatore + libro, ricerca e salvataggio della sorella, ritorno a casa)
-- [ ] Foresta Incantata: completare level design (in corso)
 - [ ] Palude di Grovigli: zona opzionale da costruire, con meccanica di debuff da permanenza in zona
 - [ ] Bosco Profondo: zona verticale da costruire (piattaforme mobili, radici che bloccano il passaggio, wall jump nascosto)
 - [ ] Torre del Guardiano: zona da costruire
@@ -476,8 +483,6 @@ Costruita confrontando il GDD con lo stato del progetto a fine Giorno 32. Non in
 - [ ] Nucleo della Corruzione: zona finale da costruire, stile onirico/staccato
 
 ### Nemici mancanti
-- [ ] Lupo Corrotto — Foresta Incantata
-- [ ] Cinghiale Contaminato — Foresta Incantata
 - [ ] Ricercatore corrotto — Palude di Grovigli
 - [ ] Falco delle cime — Bosco Profondo *(il movimento base in volo — patrol/follow — risulta già abbozzato da un lavoro precedente su nemici aerei; da verificare se riutilizzabile)*
 - [ ] Ombra — Bosco Profondo
@@ -489,7 +494,6 @@ Costruita confrontando il GDD con lo stato del progetto a fine Giorno 32. Non in
 
 
 ### Boss
-- [ ] Slime gigante — Foresta Incantata (main)
 - [ ] Golem delle radici — Foresta Incantata (secondario)
 - [ ] Alchimista corrotto — Foresta Incantata (secondario)
 - [ ] Ricercatore fuso con essenze corrotte — Palude di Grovigli (main)

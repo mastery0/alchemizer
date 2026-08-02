@@ -27,6 +27,13 @@ public abstract class boss : enemy
         base.Awake();
         currentPhase = 1;
     }
+    private void OnEnable()
+    {
+        if (saveManager.instance.isBossDefeated(bossName))
+        {
+            gameObject.SetActive(false);
+        }
+    }
     protected override void Update()
     {
         if(Vector2.Distance(transform.position,player.transform.position)<Vector2.Distance(transform.position,engagePoint.position))engage();
@@ -73,6 +80,7 @@ public abstract class boss : enemy
         arenaGate.SetActive(false);
         bossBar.instance.hide();
         if(checkPointPrefab!=null)Instantiate(checkPointPrefab, checkPointPos,Quaternion.identity);
+        saveManager.instance.markBossDefeated(bossName);
         Destroy(gameObject);
     }
 }

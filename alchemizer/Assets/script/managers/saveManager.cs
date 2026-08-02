@@ -3,6 +3,9 @@ using System.Collections;
 using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
+
+[DefaultExecutionOrder(-1)]
 public class saveManager : MonoBehaviour
 {
     public skillSO[] allSkills;
@@ -13,6 +16,8 @@ public class saveManager : MonoBehaviour
     private List<string> activeQuestsID = new List<string>();
     private List<string> completedQuestsID = new List<string>();
     private List<itemStack> inventory = new List<itemStack>();
+    private List<string>defeatedBoss = new List<string>();
+    private string currentArea;
 
     [System.Serializable]
     public class inventorySaveData
@@ -42,7 +47,10 @@ public class saveManager : MonoBehaviour
         public string[] activeQuestsIDs;
         public string[] completedQuestsIDs;
         public questSaveData[] questProgress;
+        public string[] defeatedBoss;
+        public string currentArea;
     }
+
     private void Awake()
     {
         instance = this;
@@ -100,6 +108,27 @@ public class saveManager : MonoBehaviour
     {
         return completedQuestsID.Contains(questToCheck);
     }
+
+    public void markBossDefeated(string bossID)
+    {
+        if (!defeatedBoss.Contains(bossID))
+        {
+            defeatedBoss.Add(bossID);
+        }
+    }
+    public bool isBossDefeated(string bossID)
+    {
+        return defeatedBoss.Contains(bossID);
+    }
+
+    public void setCurrentArea(string areaName)
+    {
+        currentArea = areaName;
+    }
+    public string getCurrentArea()
+    {
+        return currentArea;
+    }
     [ContextMenu("save")]
     public void save()
     {
@@ -142,6 +171,8 @@ public class saveManager : MonoBehaviour
         {
             data.questProgress = questManager.instance.getQuestProgressData();
         }
+        data.defeatedBoss = defeatedBoss.ToArray();
+        data.currentArea = currentArea;
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
     }
@@ -246,6 +277,7 @@ public class saveManager : MonoBehaviour
         {
             questManager.instance.applySavedQuests(savedActiveQuests, savedCompletedQuests, data.questProgress);
         }
+        areaManager.instance.switchToArea(data.currentArea);
     }
     [ContextMenu("reset")]
     public void toDefault()
@@ -261,6 +293,7 @@ public class saveManager : MonoBehaviour
         seenDialogue.Clear();
         openedChest.Clear();
         inventory.Clear();
+        defeatedBoss.Clear();
         if (global::inventory.instance != null)
         {
             global::inventory.instance.items.Clear();
@@ -275,6 +308,7 @@ public class saveManager : MonoBehaviour
         {
             skill.isUnlocked= false;
         }
+        areaManager.instance.switchToArea("house");
     }
 
     private inventorySaveData[] getInventorySaveData()
