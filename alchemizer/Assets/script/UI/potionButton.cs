@@ -16,10 +16,10 @@ public class potionButton : MonoBehaviour
             potionUI.instance.potionImage.color = Color.green;
             //gameObject.GetComponent<Image>().sprite = potion.potionIMG.sprite;
             potionUI.instance.potionAmount.text = "Amount: "+potion.potionAmount.ToString();
-            if (usedForSwapping)
+            /*if (usedForSwapping)
             {
                 checkPoint.instance.selectedPotion=potion.potionID;
-            }
+            }*/
         }
     }
 }

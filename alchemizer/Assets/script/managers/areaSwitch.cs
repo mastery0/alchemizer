@@ -1,27 +1,48 @@
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class areaSwitch : MonoBehaviour, IPointerDownHandler
+public class areaSwitch : MonoBehaviour
 {
     public string targetArea;
-    private bool inRange;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public Vector2 targetCoords;
+    public GameObject menuPanel;
+    [HideInInspector] public UnityEngine.Camera cam;
+
+    public RectTransform Canvasrect;
+
+    public TMP_Text areaTxt;
+
+    private void Awake()
     {
-        if (collision.CompareTag("Player"))
-        {
-            inRange = true;
-        }
+        cam = Camera.main;
     }
-    private void OnTriggerExit(Collider collision)
+
+    private void Update()
     {
-        if (collision.CompareTag("Player"))
+        if (Vector3.Distance(player.instance.transform.position, gameObject.transform.position) > 2)
         {
-            inRange = false;
+            Canvasrect.gameObject.SetActive(false);
         }
+        else
+        {
+            Canvasrect.gameObject.SetActive(true);
+        }
+        if (Canvasrect.gameObject.activeSelf) positionMenu();
+        areaTxt.text = "Enter "+targetArea;
     }
-    public void OnPointerDown (PointerEventData eventData)
+    public void onClick ()
     {
-         if(inRange)areaManager.instance.switchToArea(targetArea);
+        Debug.Log("func");
+        areaManager.instance.switchToArea(targetArea);
+        player.instance.prb.linearVelocity = Vector2.zero;
+        player.instance.transform.position = targetCoords;
+    }
+
+    public void positionMenu()
+    {
+        Vector2 pos = cam.WorldToScreenPoint(transform.position);
+        menuPanel.GetComponent<RectTransform>().position = pos + new Vector2(0, 250f);
     }
 }

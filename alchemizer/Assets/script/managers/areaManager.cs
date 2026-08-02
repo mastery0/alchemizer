@@ -15,6 +15,7 @@ public class areaManager : MonoBehaviour
     private void Awake()
     {
         instance=this;
+        loadedEnemies= new GameObject("loadedEnemies");
     }
     public void switchToArea(string areaName)
     {
@@ -36,7 +37,9 @@ public class areaManager : MonoBehaviour
                 area.areaPrefab.SetActive(true);
                 Destroy(loadedEnemies);
                 loadedEnemies=Instantiate(area.enemies, area.areaPrefab.transform);
+                loadedEnemies.SetActive(true);
                 currentArea = areaName;
+                Debug.Log("Switched to area: " + areaName);
                 return;
             }
         }

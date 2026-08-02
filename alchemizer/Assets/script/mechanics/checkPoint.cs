@@ -5,12 +5,10 @@ using TMPro;
 using UnityEngine.UI;
 public class checkPoint : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler,IPointerDownHandler
 {
-    public static checkPoint instance;
-
 
     public Vector2 checkPointPos;
     public GameObject menuPanel;
-    public UnityEngine.Camera cam;
+    [HideInInspector]public UnityEngine.Camera cam;
     public RectTransform Canvasrect;
 
 
@@ -21,7 +19,7 @@ public class checkPoint : MonoBehaviour, IPointerEnterHandler,IPointerExitHandle
     [HideInInspector]public string selectedPotion;
     private void Awake()
     {
-        instance = this;
+        cam=Camera.main;
     }
     private void Start()
     {
