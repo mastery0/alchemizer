@@ -24,12 +24,15 @@ public class potionUI : MonoBehaviour
         {
             Destroy(content.GetChild(i).gameObject);
         }
-        foreach(potion potion in healManager.instance.potionDB)
+        foreach (potion potion in healManager.instance.potionDB)
         {
             if (!potion.isUnlocked) continue;
-            GameObject potionObj=Instantiate(potionPrefab, content);
+            GameObject potionObj = Instantiate(potionPrefab, content);
             potionObj.GetComponentInChildren<TMP_Text>().text = potion.potionName;
-            Debug.Log(potion.potionName);
+
+            potionButton pb = potionObj.GetComponent<potionButton>();
+            if (pb != null) pb.Setup(potion);
+            if (pb.checkPoint != null) pb.usedForSwapping = true;
         }
     }
 

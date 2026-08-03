@@ -5,7 +5,7 @@ public class potion : MonoBehaviour
     public string potionID;
     public string potionName;
     public string description;
-    public Image potionIMG;
+    public Sprite potionIMG;
     public float healAmount;
     public int potionAmount;
     public bool isUnlocked;

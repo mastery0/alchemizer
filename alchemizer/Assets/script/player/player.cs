@@ -140,6 +140,7 @@ public class player : MonoBehaviour
     public void OnOpenInv(InputAction.CallbackContext context)
     {
         if (!isAlive) return;
+        Debug.Log("Inventory toggled");
         inv.SetActive(!inv.activeSelf);
     }
     public void OnHeal(InputAction.CallbackContext context)

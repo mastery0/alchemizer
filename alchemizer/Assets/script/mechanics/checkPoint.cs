@@ -15,7 +15,6 @@ public class checkPoint : MonoBehaviour, IPointerEnterHandler,IPointerExitHandle
     public GameObject potionMenu;
     public TMP_Text equipTxt;
     public Button equipBtn;
-
     [HideInInspector]public string selectedPotion;
     private void Awake()
     {
@@ -74,6 +73,14 @@ public class checkPoint : MonoBehaviour, IPointerEnterHandler,IPointerExitHandle
         }
         Canvasrect.gameObject.SetActive(true);
         positionMenu();
+        foreach (potion potion in healManager.instance.potionDB)
+        {
+            if (potion.isEquipped)
+            {
+                healManager.instance.remainingUse = potion.potionAmount;
+                break;
+            }
+        }
     }
     public void positionMenu()
     {
@@ -98,6 +105,22 @@ public class checkPoint : MonoBehaviour, IPointerEnterHandler,IPointerExitHandle
     }
     public void onEquipClick()
     {
-        foreach(potion potion in healManager.instance.potionDB)if(potion.potionID==selectedPotion) healManager.instance.equipped = potion;
+        string oldPotion="";
+        string newPotion="";
+        foreach (potion potion in healManager.instance.potionDB)
+        {
+            if(potion.isEquipped)oldPotion=potion.potionID;
+            if (potion.potionID == selectedPotion)
+            {
+                newPotion = potion.potionID;
+                continue;
+            }
+        }
+        foreach (potion potion in healManager.instance.potionDB)
+        {
+            if (potion.potionID == newPotion) { potion.isEquipped = true; healManager.instance.remainingUse = potion.potionAmount; }
+                if (potion.potionID==oldPotion)potion.isEquipped = false;
+        }
+        healManager.instance.searchEquipped();
     }
 }

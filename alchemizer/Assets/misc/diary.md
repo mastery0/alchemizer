@@ -441,6 +441,13 @@ Ramo Cura:
 
 - creazione sistema di transizione tra aree (scene manager)
 
+### Giorno 40
+
+- polishing vari
+
+### Giorno 41
+
+- fix sistema pozioni e UI
 
 ## Stato Attuale & Prossimi Passi (fine Giorno 32)
 

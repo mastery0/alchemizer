@@ -53,8 +53,12 @@ public class slimeBoss : boss
     protected override void Awake()
     {
         base.Awake();
+        
+        coreSprite.color = defColor;
+    }
+    private void OnEnable()
+    {
         StartCoroutine(attackLoop());
-        //coreSprite.color = defColor;
     }
 
     protected override void Update()

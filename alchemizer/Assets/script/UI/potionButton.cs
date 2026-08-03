@@ -1,25 +1,34 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+[DefaultExecutionOrder(100)]
 public class potionButton : MonoBehaviour
 {
     public bool usedForSwapping = false;
+    public checkPoint checkPoint;
+    public potion assignedPotion;
+
+    public void Setup(potion potion)
+    {
+        assignedPotion = potion;
+        GetComponent<Image>().sprite = potion.potionIMG;
+        checkPoint = GetComponentInParent<checkPoint>();
+    }
+
     public void OnClick()
     {
-        foreach (potion potion in healManager.instance.potionDB)
+        if (assignedPotion == null) return;
+
+        potionUI.instance.potionNameText.text = assignedPotion.potionName;
+        potionUI.instance.potionDescription.text = assignedPotion.description;
+        potionUI.instance.potionImage.sprite = assignedPotion.potionIMG;
+        potionUI.instance.potionImage.color = Color.green;
+        potionUI.instance.potionAmount.text = "Amount: " + assignedPotion.potionAmount.ToString();
+
+        if (usedForSwapping && checkPoint != null)
         {
-            if (GetComponentInChildren<TMP_Text>().text != potion.potionName) continue;
-            Debug.Log("clicked");
-            potionUI.instance.potionNameText.text = potion.potionName;
-            potionUI.instance.potionDescription.text = potion.description;
-            potionUI.instance.potionImage = potion.potionIMG;
-            potionUI.instance.potionImage.color = Color.green;
-            //gameObject.GetComponent<Image>().sprite = potion.potionIMG.sprite;
-            potionUI.instance.potionAmount.text = "Amount: "+potion.potionAmount.ToString();
-            /*if (usedForSwapping)
-            {
-                checkPoint.instance.selectedPotion=potion.potionID;
-            }*/
+            checkPoint.selectedPotion = assignedPotion.potionID;
         }
     }
 }

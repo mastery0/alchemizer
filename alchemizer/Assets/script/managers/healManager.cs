@@ -7,7 +7,6 @@ public class healManager : MonoBehaviour
 {
     public static healManager instance;
     public List<potion> potionDB=new();
-    public bool canSwap=false;
     public int remainingUse;
     public potion equipped;
     private void Awake()
@@ -16,11 +15,8 @@ public class healManager : MonoBehaviour
     }
     private void Start()
     {
+        potionDB[0].isEquipped= true;
         remainingUse = equipped.potionAmount;
-        foreach (potion potion in potionDB)
-        {
-            Debug.Log(potion.name);
-        }
     }
     public void searchEquipped() {
         foreach (potion potion in potionDB)
