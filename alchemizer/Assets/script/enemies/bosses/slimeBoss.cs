@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-public enum dmgType
+public enum dmgTypeSlime
 {
     dash,
     jump,
@@ -11,7 +11,7 @@ public enum dmgType
 }
 public class slimeBoss : boss
 {
-    protected dmgType type;
+    protected dmgTypeSlime type;
     protected bool hasDashHit;
     protected bool hasBullHit;
     protected bool hasBullCrushed;
@@ -65,16 +65,16 @@ public class slimeBoss : boss
     {
         base.Update();
         if (hp <= 0) die();
-        if (!isAttacking) type = dmgType.contact;
+        if (!isAttacking) type = dmgTypeSlime.contact;
     }
-    protected float calcDamage(dmgType type)
+    protected float calcDamage(dmgTypeSlime type)
     {
         switch (type) 
         {
             default:return damage;
-            case dmgType.dash:return damage * dashMult;
-            case dmgType.jump:return damage * jumpMult;
-            case dmgType.bull:return damage * bullMult;
+            case dmgTypeSlime.dash:return damage * dashMult;
+            case dmgTypeSlime.jump:return damage * jumpMult;
+            case dmgTypeSlime.bull:return damage * bullMult;
         }
     }
     IEnumerator attackLoop()
@@ -114,7 +114,7 @@ public class slimeBoss : boss
     {
         Debug.Log("jump");
         isAttacking = true;
-        type = dmgType.jump;
+        type = dmgTypeSlime.jump;
         erb.linearVelocity = Vector2.zero;
         yield return StartCoroutine(coreGlow(jumpTelegraph, jumpGlowInterval));
         Vector2 startPos=transform.position;
@@ -138,7 +138,7 @@ public class slimeBoss : boss
     {
         Debug.Log("dash");
         isAttacking =true;
-        type = dmgType.dash;
+        type = dmgTypeSlime.dash;
         erb.linearVelocity=Vector2.zero;
         hasDashHit=false;
         yield return StartCoroutine(coreGlow(dashTelegraph, dashGlowInterval));
@@ -161,7 +161,7 @@ public class slimeBoss : boss
     {
         Debug.Log("bull");
         isAttacking = true;
-        type = dmgType.bull;
+        type = dmgTypeSlime.bull;
         erb.linearVelocity = Vector2.zero;
         yield return StartCoroutine(coreGlow(bullTelegraph, bullGlowInterval));
         float closerPoint = point[0].position.x;
@@ -202,7 +202,6 @@ public class slimeBoss : boss
     IEnumerator idle()
     {
         float desiredDistance = 5.3f;
-        float chargeDistance = 3f;
         float t = 0f;
         bool reached= false;
         while (t < idleTime)
@@ -243,7 +242,7 @@ public class slimeBoss : boss
         if (collision.gameObject.CompareTag("Player"))
         {
             playerScript.takeDamage(calcDamage(type));
-            if(type==dmgType.dash)hasDashHit=true;
+            if(type==dmgTypeSlime.dash)hasDashHit=true;
         }
     }
     IEnumerator coreGlow(float duration, float frequency)

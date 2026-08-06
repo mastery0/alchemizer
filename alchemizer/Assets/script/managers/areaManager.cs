@@ -39,7 +39,6 @@ public class areaManager : MonoBehaviour
                 loadedEnemies=Instantiate(area.enemies, area.areaPrefab.transform);
                 loadedEnemies.SetActive(true);
                 currentArea = areaName;
-                Debug.Log("Switched to area: " + areaName);
                 return;
             }
         }

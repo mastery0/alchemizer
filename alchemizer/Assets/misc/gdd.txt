@@ -75,7 +75,7 @@ prima posto tranquillo pieno di fauna tranquilla,ora presenta mostri che vagano 
 NPC:
 erborista:una donna che si offre di fornigli delle pozioni man mano che lui porta a termine i suoi incarichi
 boss:
-main slime gigante che aveva rapito la sorella,nessun drop principale solo avanzamento in trama
+main ricercatore completamente pazzo e fuso con le essenze corrotte
 secondario golem delle radici,protegge ingresso palude di grovigli
 secondario alchimista corrotto,sblocca il dash,richiesto per andare avanti,qualche rivelazioni di lore sulla corruzione 
 art style: 
@@ -89,7 +89,7 @@ il passaggio in questa zona non è obbligatorio ma consente scoperte nuove e pot
 NPC: 
 ricercatore quasi pazzo dalle sue ricerche in un posto ostile esso a fine della sua quest diventa il biss
 boss:
-main ricercatore completamente pazzo e fuso con le essenze corrotte
+main slime gigante,nessun drop principale solo avanzamento in trama
 art style:
 zone marce dalla corruzione verdi scuri e cupi
 

@@ -34,7 +34,6 @@ public class areaSwitch : MonoBehaviour
     }
     public void onClick ()
     {
-        Debug.Log("func");
         areaManager.instance.switchToArea(targetArea);
         player.instance.prb.linearVelocity = Vector2.zero;
         player.instance.transform.position = targetCoords;
