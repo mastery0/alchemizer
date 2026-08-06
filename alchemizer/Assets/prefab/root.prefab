@@ -49,8 +49,8 @@ MonoBehaviour:
   emergeDuration: 0.25
   emergeHeight: 0.6
   col: {fileID: 1831103038989697160}
-  speed: 5
-  lifetime: 5
+  speed: 1
+  lifetime: 1.5
 --- !u!61 &1831103038989697160
 BoxCollider2D:
   m_ObjectHideFlags: 0

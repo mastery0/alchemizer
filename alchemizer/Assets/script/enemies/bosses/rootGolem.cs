@@ -79,10 +79,13 @@ public class rootGolem : boss
             if (engaged)
             {
                 yield return StartCoroutine(idle());
-                int attackChoice = Random.Range(0, 100);
-                if (attackChoice < chanceOfNothing) continue;
-                else if (attackChoice < chanceOfNothing + 50) StartCoroutine(meleeAttack());
-                else if(!hasRootHit)StartCoroutine(rootAttack());
+                if (Random.Range(0, 100) < chanceOfNothing) continue;
+                if (Vector2.Distance(transform.position, player.transform.position) > meleeRange - 1.2 ||
+                (player.transform.position.x - transform.position.x) * prb.linearVelocity.x > 0)
+                    StartCoroutine(meleeAttack());
+                else
+                if (Random.Range(0, 100) < 60) StartCoroutine(meleeAttack());
+                else if (!hasRootHit) StartCoroutine(rootAttack());
                 else StartCoroutine(meleeAttack());
             }
             yield return null;
@@ -97,19 +100,30 @@ public class rootGolem : boss
         erb.linearVelocity=Vector2.zero;
         yield return StartCoroutine(crackGlow(meleeTelegraph, meleeGlowInterval));
         faceTarget();
+        StartCoroutine(miniJump(7));
         float elapsed = 0f;
         while(elapsed < meleeDuration)
         {
             elapsed += Time.deltaTime;
+            //OnDrawGizmos();
             if (!defeated && !hasMeleeHit && Vector2.Distance(transform.position, player.transform.position) <= meleeRange)
             {
                 playerScript.takeDamage(calcDamage(type));
+                Debug.Log("hitMelee");
                 hasMeleeHit = true;
             }
             yield return null;
         }
         isAttacking = false;
     }
+    /*private void OnDrawGizmos()
+    {
+        if (isAttacking && type == dmgTypeGolem.melee)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, meleeRange);
+        }
+    }*/
     IEnumerator rootAttack() 
     { 
         isAttacking = true;
@@ -197,6 +211,22 @@ public class rootGolem : boss
             yield return null;
         }
         setCrackColor(defColor);
+    }
+    IEnumerator miniJump(float horizontalSpeed)
+    {
+        float originalY = transform.position.y;
+
+        erb.linearVelocity = new Vector2(horizontalSpeed, horizontalSpeed * 0.5f);
+        Debug.Log(erb.linearVelocity.y);
+        while (erb.linearVelocity.y > 0)
+        {
+            yield return null;
+            Debug.Log(erb.linearVelocity.y);
+        }
+            while (transform.position.y > originalY + 0.01f)
+            yield return null;
+
+        erb.linearVelocity = Vector2.zero;
     }
     void setCrackColor(Color c)
     {

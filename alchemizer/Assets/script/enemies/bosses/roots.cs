@@ -4,9 +4,8 @@ public class roots : MonoBehaviour
 {
     [Header("emrge")]
     public float emergeDuration=0.25f;
-    public float emergeHeight=0.9f;
+    public float emergeHeight=1.2f;
     public Collider2D col;
-    public float speed = 5f;
     public float lifetime = 5f;
 
     private float dirx;
@@ -27,17 +26,19 @@ public class roots : MonoBehaviour
     }
     IEnumerator emerge()
     {
-        Vector2 target = new Vector2(transform.position.x,transform.position.y-1.2f);
+        Vector2 target = new Vector2(transform.position.x,transform.position.y-0.9f);
         Vector2 startPos=target-new Vector2(0f,emergeHeight);
         transform.position=startPos;
         float elapsed=0f;
-        while(elapsed < speed)
+        while(elapsed < emergeDuration||Vector2.Distance(transform.position,target)>0.05)
         {
             elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed/emergeDuration);
+            Debug.Log(Vector2.Distance(transform.position, target));
+            float t = elapsed/emergeDuration;
             transform.position=Vector2.Lerp(startPos,target,t);
             yield return null;
         }
+        Debug.Log("emerge done");
         transform.position=target;
         col.enabled = true;
         isActive = true;

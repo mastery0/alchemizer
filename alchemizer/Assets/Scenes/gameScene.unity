@@ -4666,15 +4666,15 @@ MonoBehaviour:
   - {fileID: 692899838}
   defColor: {r: 1, g: 1, b: 1, a: 1}
   glowColor: {r: 1, g: 0, b: 1, a: 1}
-  meleeGlowInterval: 0.4
-  rootGlowInterval: 0.6
-  meleeTelegraph: 2
-  rootTelegraph: 4
+  meleeGlowInterval: 1.2
+  rootGlowInterval: 3
+  meleeTelegraph: 1
+  rootTelegraph: 1.3
   idleTime: 1.5
   chanceOfNothing: 20
   meleeRange: 5
   meleeMult: 1.8
-  meleeDuration: 0
+  meleeDuration: 1
   meleeRecovery: 1.2
   rootPrefab: {fileID: 1669442633133857065, guid: fbdf0fc2e1b25094d996c606b46e5372, type: 3}
   rootSpawnPoint: {fileID: 692899834}
