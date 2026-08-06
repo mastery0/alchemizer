@@ -4672,9 +4672,9 @@ MonoBehaviour:
   rootTelegraph: 1.3
   idleTime: 1.5
   chanceOfNothing: 20
-  meleeRange: 5
+  meleeRange: 2
   meleeMult: 1.8
-  meleeDuration: 1
+  meleeDuration: 0.3
   meleeRecovery: 1.2
   rootPrefab: {fileID: 1669442633133857065, guid: fbdf0fc2e1b25094d996c606b46e5372, type: 3}
   rootSpawnPoint: {fileID: 692899834}
@@ -9923,7 +9923,7 @@ Transform:
   m_GameObject: {fileID: 1645553675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.8, y: -77.51, z: 0}
+  m_LocalPosition: {x: 17.71, y: -77.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13893,6 +13893,10 @@ PrefabInstance:
     - target: {fileID: 2881576655247973374, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: m_Name
       value: ForestaIncantata
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162301855649347128, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
+      propertyPath: jumpDuration
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5013021043536204777, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: m_Tiles.Array.size

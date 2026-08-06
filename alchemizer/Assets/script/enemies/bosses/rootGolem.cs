@@ -16,7 +16,7 @@ public class rootGolem : boss
     protected bool hasMeleeHit;
     protected bool hasBeenHit;
     protected bool isAttacking;
-
+    protected string lastAttack="";
     [Header("crackVisuals")]
     public SpriteRenderer[] crackSprites;
     public Color defColor;
@@ -76,31 +76,42 @@ public class rootGolem : boss
     {
         while (!defeated)
         {
-            if (engaged)
-            {
-                yield return StartCoroutine(idle());
-                if (Random.Range(0, 100) < chanceOfNothing) continue;
-                if (Vector2.Distance(transform.position, player.transform.position) > meleeRange - 1.2 ||
-                (player.transform.position.x - transform.position.x) * prb.linearVelocity.x > 0)
-                    StartCoroutine(meleeAttack());
-                else
-                if (Random.Range(0, 100) < 60) StartCoroutine(meleeAttack());
-                else if (!hasRootHit) StartCoroutine(rootAttack());
-                else StartCoroutine(meleeAttack());
-            }
+            if (!engaged) { yield return null; continue; }
+
+            yield return StartCoroutine(idle());
+            if (defeated) yield break;
+            if (Random.Range(0, 100) < chanceOfNothing) continue;
+
+            float distance = Vector2.Distance(transform.position, player.transform.position);
+            hasBeenHit = false;
+            if (distance < meleeRange - 1.2)
+                if (lastAttack == "melee" && !hasRootHit)
+                    if (Random.value < 0.7)
+                        yield return StartCoroutine(rootAttack());
+                    else yield return StartCoroutine(meleeAttack());
+                else yield return StartCoroutine(meleeAttack());
+            else
+                if (!hasRootHit) yield return StartCoroutine(rootAttack());
+            else yield return StartCoroutine(meleeAttack());
+
             yield return null;
         }
     }
     IEnumerator meleeAttack() 
-    { 
-        Debug.Log("melee");
+    {
         isAttacking = true;
         type = dmgTypeGolem.melee;
         hasMeleeHit = false;
         erb.linearVelocity=Vector2.zero;
+
         yield return StartCoroutine(crackGlow(meleeTelegraph, meleeGlowInterval));
+
         faceTarget();
-        StartCoroutine(miniJump(7));
+
+        float distance=Mathf.Abs(player.transform.position.x-transform.position.x);
+        float jumpPower = Mathf.Clamp(distance * 1.5f, 4f, 8f);
+        float direction = Mathf.Sign(player.transform.position.x - transform.position.x);
+        if (direction != 0) { yield return StartCoroutine(miniJump(jumpPower * direction)); Debug.Log("jump skipped"); }
         float elapsed = 0f;
         while(elapsed < meleeDuration)
         {
@@ -109,11 +120,12 @@ public class rootGolem : boss
             if (!defeated && !hasMeleeHit && Vector2.Distance(transform.position, player.transform.position) <= meleeRange)
             {
                 playerScript.takeDamage(calcDamage(type));
-                Debug.Log("hitMelee");
                 hasMeleeHit = true;
             }
             yield return null;
         }
+        erb.linearVelocity=Vector2.zero;
+        lastAttack = "melee";
         isAttacking = false;
     }
     /*private void OnDrawGizmos()
@@ -127,14 +139,27 @@ public class rootGolem : boss
     IEnumerator rootAttack() 
     { 
         isAttacking = true;
-        rootCoolDown();
         type = dmgTypeGolem.contact;
         erb.linearVelocity=Vector2.zero;
         yield return StartCoroutine(crackGlow(rootTelegraph, rootGlowInterval));
         faceTarget();
-        if(!defeated) spawnRoots();
-        yield return new WaitForSeconds(rootCD);
+        if(!defeated) yield return StartCoroutine(spawnRoots());
+        lastAttack = "root";
         isAttacking = false;
+        StartCoroutine(rootCoolDown());
+        yield return null;
+    }
+    IEnumerator spawnRoots() 
+    {
+        float dirx = Mathf.Sign(player.transform.position.x - transform.position.x);
+        for (int i = 0; i < rootCount; i++)
+        {
+            Vector3 spawnPos = rootSpawnPoint.position + new Vector3(i * rootSpace * dirx, 0f, 0f);
+            GameObject root = Instantiate(rootPrefab, spawnPos, Quaternion.identity);
+            root.GetComponent<roots>().setup(dirx, calcDamage(dmgTypeGolem.root));
+            yield return new WaitForSeconds(0.15f);
+        }
+        yield return null;
     }
 
     IEnumerator rootCoolDown() 
@@ -145,40 +170,47 @@ public class rootGolem : boss
     }
     IEnumerator idle() 
     {
-        float desiredDestince = 3.5f;
-        float t = 0f;
-        bool reached= false;
-        while (t < idleTime)
+        float desiredDistance = Random.Range(3.5f-1.5f,3.5f+1.5f);
+        float elapsed = 0f;
+        bool locked = false;
+        while (elapsed < idleTime)
         {
-            t+= Time.deltaTime;
+            elapsed += Time.deltaTime;
             float dx=player.transform.position.x - transform.position.x;
-            if (Mathf.Abs(dx) > desiredDestince&&!reached)
+            float distance=Mathf.Abs(dx);
+            if (hasBeenHit)
+            {
+                elapsed = idleTime;
+                break;
+            }
+            if (distance > desiredDistance&&!locked)
             {
                 float dirx = Mathf.Sign(dx);
                 erb.linearVelocity = new Vector2(dirx * speed, erb.linearVelocity.y);
             }
+            else if(distance < desiredDistance&&!locked)
+            {
+                float dirx = -Mathf.Sign(dx);
+                erb.linearVelocity = new Vector2(dirx*speed*0.8f, erb.linearVelocity.y);
+            }
             else
             {
-                erb.linearVelocity = new Vector2(0f, erb.linearVelocity.y);
-                reached = true;
+                /*locked = true;
+                float strafeDir = 1;
+                if (Random.value < 0.002f)
+                {
+                    strafeDir *= -1;             
+                }
+                else
+                {
+                    erb.linearVelocity = new Vector2(strafeDir * speed * 0.5f, erb.linearVelocity.y);
+                }*/
+                elapsed=idleTime;
             }
-            if(hasBeenHit)
-            {
-                t = idleTime;
-            }
-            yield return null;
+           yield return null;
         }
         erb.linearVelocity = Vector2.zero;
-    }
-    void spawnRoots() 
-    { 
-        float dirx = Mathf.Sign(player.transform.position.x - transform.position.x);
-        for(int i=0;i < rootCount; i++)
-        {
-            Vector3 spawnPos = rootSpawnPoint.position + new Vector3(i * rootSpace * dirx, 0f, 0f);
-            GameObject root = Instantiate(rootPrefab, spawnPos, Quaternion.identity);
-            root.GetComponent<roots>().setup(dirx,calcDamage(dmgTypeGolem.root));
-        }
+        yield return null;
     }
     void faceTarget() 
     {
@@ -190,6 +222,7 @@ public class rootGolem : boss
     public override void takeDamage(float damage)
     {
         if (isInvincible||defeated) return;
+        hasBeenHit = true;
         base.takeDamage(damage);
     }
     protected override void OnCollisionEnter2D(Collision2D collision)
@@ -197,7 +230,6 @@ public class rootGolem : boss
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<player>().takeDamage(calcDamage(type));
-            if(type==dmgTypeGolem.melee) hasBeenHit=true;
         }
     }
     IEnumerator crackGlow(float duration,float frequency)
@@ -216,17 +248,13 @@ public class rootGolem : boss
     {
         float originalY = transform.position.y;
 
-        erb.linearVelocity = new Vector2(horizontalSpeed, horizontalSpeed * 0.5f);
-        Debug.Log(erb.linearVelocity.y);
-        while (erb.linearVelocity.y > 0)
-        {
-            yield return null;
-            Debug.Log(erb.linearVelocity.y);
-        }
-            while (transform.position.y > originalY + 0.01f)
-            yield return null;
+        float verticalPower = Mathf.Clamp(Mathf.Abs(horizontalSpeed) * 0.7f, 3f, 6f);
+        erb.linearVelocity = new Vector2(horizontalSpeed, verticalPower);
+        while (erb.linearVelocity.y > 0) yield return null;
+            while (transform.position.y > originalY + 0.01f) yield return null;
 
         erb.linearVelocity = Vector2.zero;
+        yield return null;
     }
     void setCrackColor(Color c)
     {
