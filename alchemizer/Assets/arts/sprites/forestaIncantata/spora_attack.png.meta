@@ -1,0 +1,2002 @@
+fileFormatVersion: 2
+guid: 1b020c9d3fe9cda46b5e5abd51c9c7ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5950632774252762875
+    second: spora_attack_0
+  - first:
+      213: -3935999573943565301
+    second: spora_attack_1
+  - first:
+      213: 2449325288636374654
+    second: spora_attack_2
+  - first:
+      213: 6948247739224173506
+    second: spora_attack_3
+  - first:
+      213: 7890726728182293952
+    second: spora_attack_4
+  - first:
+      213: -659083729230223467
+    second: spora_attack_5
+  - first:
+      213: -4827659684760770814
+    second: spora_attack_6
+  - first:
+      213: -1485803835695290038
+    second: spora_attack_7
+  - first:
+      213: 9105807148546894647
+    second: spora_attack_8
+  - first:
+      213: -9219749073033988243
+    second: spora_attack_9
+  - first:
+      213: -5595325139888727067
+    second: spora_attack_10
+  - first:
+      213: -8706876223705451435
+    second: spora_attack_11
+  - first:
+      213: -5954248417239846865
+    second: spora_attack_12
+  - first:
+      213: -230156532203797062
+    second: spora_attack_13
+  - first:
+      213: -4068038949445038150
+    second: spora_attack_14
+  - first:
+      213: -8209902117873927838
+    second: spora_attack_15
+  - first:
+      213: -4063641885269265422
+    second: spora_attack_16
+  - first:
+      213: -1384428733709118860
+    second: spora_attack_17
+  - first:
+      213: -8531786683751046616
+    second: spora_attack_18
+  - first:
+      213: 8303936447155936189
+    second: spora_attack_19
+  - first:
+      213: 5061251766927528856
+    second: spora_attack_20
+  - first:
+      213: -2617705946103997762
+    second: spora_attack_21
+  - first:
+      213: -198070642100202724
+    second: spora_attack_22
+  - first:
+      213: 1482573785774444687
+    second: spora_attack_23
+  - first:
+      213: 6530606034093321496
+    second: spora_attack_24
+  - first:
+      213: 8593060302378313484
+    second: spora_attack_25
+  - first:
+      213: 8015670558967967831
+    second: spora_attack_26
+  - first:
+      213: 8518269585922761561
+    second: spora_attack_27
+  - first:
+      213: 2261320148350081139
+    second: spora_attack_28
+  - first:
+      213: 248038584103276894
+    second: spora_attack_29
+  - first:
+      213: -1754921125467475344
+    second: spora_attack_30
+  - first:
+      213: 2429825892035513610
+    second: spora_attack_31
+  - first:
+      213: 2048573470437063468
+    second: spora_attack_32
+  - first:
+      213: 549830486295861060
+    second: spora_attack_33
+  - first:
+      213: 5820979397370648313
+    second: spora_attack_34
+  - first:
+      213: 3479396326094106153
+    second: spora_attack_35
+  - first:
+      213: 4575268960714424995
+    second: spora_attack_36
+  - first:
+      213: -8082376514568251758
+    second: spora_attack_37
+  - first:
+      213: 6597373170517240532
+    second: spora_attack_38
+  - first:
+      213: -8155327688163910922
+    second: spora_attack_39
+  - first:
+      213: -6673341913695705245
+    second: spora_attack_40
+  - first:
+      213: 6121164936353030299
+    second: spora_attack_41
+  - first:
+      213: -8507162308321352152
+    second: spora_attack_42
+  - first:
+      213: 3724540844125390815
+    second: spora_attack_43
+  - first:
+      213: -6519619390888854515
+    second: spora_attack_44
+  - first:
+      213: 1866948804779203998
+    second: spora_attack_45
+  - first:
+      213: 1936816284946769936
+    second: spora_attack_46
+  - first:
+      213: -9018709167534874846
+    second: spora_attack_47
+  - first:
+      213: 1974777517329556686
+    second: spora_attack_48
+  - first:
+      213: 8446329679616721960
+    second: spora_attack_49
+  - first:
+      213: 382019210815915481
+    second: spora_attack_50
+  - first:
+      213: 1505889167503271473
+    second: spora_attack_51
+  - first:
+      213: 5929429087717236907
+    second: spora_attack_52
+  - first:
+      213: -7882700917247831702
+    second: spora_attack_53
+  - first:
+      213: 1716496747957617301
+    second: spora_attack_54
+  - first:
+      213: 1781086220381537532
+    second: spora_attack_55
+  - first:
+      213: 2606613540275670270
+    second: spora_attack_56
+  - first:
+      213: -3247563912767542536
+    second: spora_attack_57
+  - first:
+      213: -4777117014296056100
+    second: spora_attack_58
+  - first:
+      213: 1777958863399430038
+    second: spora_attack_59
+  - first:
+      213: 2207864594811053705
+    second: spora_attack_60
+  - first:
+      213: 7009290338007153702
+    second: spora_attack_61
+  - first:
+      213: 8666854041364742400
+    second: spora_attack_62
+  - first:
+      213: -1444995521059324064
+    second: spora_attack_63
+  - first:
+      213: -989549887011915457
+    second: spora_attack_64
+  - first:
+      213: 7309699781272519505
+    second: spora_attack_65
+  - first:
+      213: 7412809445063700934
+    second: spora_attack_66
+  - first:
+      213: -7047998123212305374
+    second: spora_attack_67
+  - first:
+      213: 4792834907017770013
+    second: spora_attack_68
+  - first:
+      213: -6261633561428046408
+    second: spora_attack_69
+  - first:
+      213: 2154679893997487467
+    second: spora_attack_70
+  - first:
+      213: -1733857959460078461
+    second: spora_attack_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spora_attack_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 114
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6122afaf4e49250800000000000000
+      internalID: 5950632774252762875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 110
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b044107cd358069c0800000000000000
+      internalID: -3935999573943565301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e5d887f50cdf120800000000000000
+      internalID: 2449325288636374654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb2ed361822d6060800000000000000
+      internalID: 6948247739224173506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c56cf4072e718d60800000000000000
+      internalID: 7890726728182293952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5972ef917d67ad6f0800000000000000
+      internalID: -659083729230223467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_6
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 106
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2072c514815b00db0800000000000000
+      internalID: -4827659684760770814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_7
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 103
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a492877984d516be0800000000000000
+      internalID: -1485803835695290038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 108
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ba9526b535e5e70800000000000000
+      internalID: 9105807148546894647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67729ff01fdc0080800000000000000
+      internalID: -9219749073033988243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb9e1a3e696952b0800000000000000
+      internalID: -5595325139888727067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_11
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 96
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554fdbe9436fa2780800000000000000
+      internalID: -8706876223705451435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_12
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 96
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20bcf98c924e5da0800000000000000
+      internalID: -5954248417239846865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_13
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 96
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5c1477ad15eccf0800000000000000
+      internalID: -230156532203797062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_14
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 100
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf00edf02c6b87c0800000000000000
+      internalID: -4068038949445038150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269b56f8581901e80800000000000000
+      internalID: -8209902117873927838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 92
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f370264c3b0b97c0800000000000000
+      internalID: -4063641885269265422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_17
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 94
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4729c66d66589cce0800000000000000
+      internalID: -1384428733709118860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8226c97e631099980800000000000000
+      internalID: -8531786683751046616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 93
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb162ad3328d3370800000000000000
+      internalID: 8303936447155936189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_20
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89398869aad2d3640800000000000000
+      internalID: 5061251766927528856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba1b0caf4a0cabd0800000000000000
+      internalID: -2617705946103997762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_22
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c131f29eccf404df0800000000000000
+      internalID: -198070642100202724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_23
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 81
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80546ec009239410800000000000000
+      internalID: 1482573785774444687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_24
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 84
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81da72e569f51aa50800000000000000
+      internalID: 6530606034093321496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_25
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 83
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0725c821dea04770800000000000000
+      internalID: 8593060302378313484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750b7df87e16d3f60800000000000000
+      internalID: 8015670558967967831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 83
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953a0f18e09f63670800000000000000
+      internalID: 8518269585922761561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37817d5a1b2d16f10800000000000000
+      internalID: 2261320148350081139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_29
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51111037c5317300800000000000000
+      internalID: 248038584103276894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_30
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072beabc88445a7e0800000000000000
+      internalID: -1754921125467475344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_31
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 77
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dc2d866c978b120800000000000000
+      internalID: 2429825892035513610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_32
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bb0b1b7befd6c10800000000000000
+      internalID: 2048573470437063468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_33
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44758560ae361a700800000000000000
+      internalID: 549830486295861060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_34
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 68
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f61529cbe548c050800000000000000
+      internalID: 5820979397370648313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_35
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 73
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e63a1268c494030800000000000000
+      internalID: 3479396326094106153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_36
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2014301ee9e7f30800000000000000
+      internalID: 4575268960714424995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_37
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296133cd161a5df80800000000000000
+      internalID: -8082376514568251758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 71
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da6f57b1f39e8b50800000000000000
+      internalID: 6597373170517240532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_39
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 70
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa15182da472de80800000000000000
+      internalID: -8155327688163910922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_40
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 62
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3672179e2e68363a0800000000000000
+      internalID: -6673341913695705245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_41
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 61
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9026ea041fb2f450800000000000000
+      internalID: 6121164936353030299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_42
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826e9e514fc70f980800000000000000
+      internalID: -8507162308321352152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_43
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7078d0a2a30b330800000000000000
+      internalID: 3724540844125390815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_44
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 61
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c3257d4b8a585a0800000000000000
+      internalID: -6519619390888854515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d54b2eb0cb8e910800000000000000
+      internalID: 1866948804779203998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_46
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 54
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018a1734624f0ea10800000000000000
+      internalID: 1936816284946769936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_47
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 55
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f56889bcb17d280800000000000000
+      internalID: -9018709167534874846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_48
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 59
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec42bde60b1d76b10800000000000000
+      internalID: 1974777517329556686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_49
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 54
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824c461d714673570800000000000000
+      internalID: 8446329679616721960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_50
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 56
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5ce0eb2743d4500800000000000000
+      internalID: 382019210815915481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_51
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 47
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1362424283ef5e410800000000000000
+      internalID: 1505889167503271473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_52
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 52
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0214ef650994250800000000000000
+      internalID: 5929429087717236907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_53
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a611cc4b7450b9290800000000000000
+      internalID: -7882700917247831702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_54
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5928028a2b832d710800000000000000
+      internalID: 1716496747957617301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_55
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf44f281b70b7b810800000000000000
+      internalID: 1781086220381537532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_56
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efccad6543d8c2420800000000000000
+      internalID: 2606613540275670270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_57
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8faec12e3d55ee2d0800000000000000
+      internalID: -3247563912767542536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_58
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdea860c26544bdb0800000000000000
+      internalID: -4777117014296056100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_59
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 42
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6972e2e8a249ca810800000000000000
+      internalID: 1777958863399430038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_60
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986efd5b629e3ae10800000000000000
+      internalID: 2207864594811053705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_61
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 38
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c7e74fc60064160800000000000000
+      internalID: 7009290338007153702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_62
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00144b7e4d9d64870800000000000000
+      internalID: 8666854041364742400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_63
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 37
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f7a31ca3852fbe0800000000000000
+      internalID: -1444995521059324064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_64
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 26
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f397021ee996442f0800000000000000
+      internalID: -989549887011915457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_65
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153cf7df835417560800000000000000
+      internalID: 7309699781272519505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_66
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 29
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1bea06ae69fd660800000000000000
+      internalID: 7412809445063700934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_67
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c8f408c0b703e90800000000000000
+      internalID: -7047998123212305374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_68
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14f2e354f1938240800000000000000
+      internalID: 4792834907017770013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_69
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 23
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdca6193753a19a0800000000000000
+      internalID: -6261633561428046408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_70
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 18
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65856692f5f6ed10800000000000000
+      internalID: 2154679893997487467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spora_attack_71
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38cf56b4f5910f7e0800000000000000
+      internalID: -1733857959460078461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spora_attack_0: 5950632774252762875
+      spora_attack_1: -3935999573943565301
+      spora_attack_10: -5595325139888727067
+      spora_attack_11: -8706876223705451435
+      spora_attack_12: -5954248417239846865
+      spora_attack_13: -230156532203797062
+      spora_attack_14: -4068038949445038150
+      spora_attack_15: -8209902117873927838
+      spora_attack_16: -4063641885269265422
+      spora_attack_17: -1384428733709118860
+      spora_attack_18: -8531786683751046616
+      spora_attack_19: 8303936447155936189
+      spora_attack_2: 2449325288636374654
+      spora_attack_20: 5061251766927528856
+      spora_attack_21: -2617705946103997762
+      spora_attack_22: -198070642100202724
+      spora_attack_23: 1482573785774444687
+      spora_attack_24: 6530606034093321496
+      spora_attack_25: 8593060302378313484
+      spora_attack_26: 8015670558967967831
+      spora_attack_27: 8518269585922761561
+      spora_attack_28: 2261320148350081139
+      spora_attack_29: 248038584103276894
+      spora_attack_3: 6948247739224173506
+      spora_attack_30: -1754921125467475344
+      spora_attack_31: 2429825892035513610
+      spora_attack_32: 2048573470437063468
+      spora_attack_33: 549830486295861060
+      spora_attack_34: 5820979397370648313
+      spora_attack_35: 3479396326094106153
+      spora_attack_36: 4575268960714424995
+      spora_attack_37: -8082376514568251758
+      spora_attack_38: 6597373170517240532
+      spora_attack_39: -8155327688163910922
+      spora_attack_4: 7890726728182293952
+      spora_attack_40: -6673341913695705245
+      spora_attack_41: 6121164936353030299
+      spora_attack_42: -8507162308321352152
+      spora_attack_43: 3724540844125390815
+      spora_attack_44: -6519619390888854515
+      spora_attack_45: 1866948804779203998
+      spora_attack_46: 1936816284946769936
+      spora_attack_47: -9018709167534874846
+      spora_attack_48: 1974777517329556686
+      spora_attack_49: 8446329679616721960
+      spora_attack_5: -659083729230223467
+      spora_attack_50: 382019210815915481
+      spora_attack_51: 1505889167503271473
+      spora_attack_52: 5929429087717236907
+      spora_attack_53: -7882700917247831702
+      spora_attack_54: 1716496747957617301
+      spora_attack_55: 1781086220381537532
+      spora_attack_56: 2606613540275670270
+      spora_attack_57: -3247563912767542536
+      spora_attack_58: -4777117014296056100
+      spora_attack_59: 1777958863399430038
+      spora_attack_6: -4827659684760770814
+      spora_attack_60: 2207864594811053705
+      spora_attack_61: 7009290338007153702
+      spora_attack_62: 8666854041364742400
+      spora_attack_63: -1444995521059324064
+      spora_attack_64: -989549887011915457
+      spora_attack_65: 7309699781272519505
+      spora_attack_66: 7412809445063700934
+      spora_attack_67: -7047998123212305374
+      spora_attack_68: 4792834907017770013
+      spora_attack_69: -6261633561428046408
+      spora_attack_7: -1485803835695290038
+      spora_attack_70: 2154679893997487467
+      spora_attack_71: -1733857959460078461
+      spora_attack_8: 9105807148546894647
+      spora_attack_9: -9219749073033988243
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

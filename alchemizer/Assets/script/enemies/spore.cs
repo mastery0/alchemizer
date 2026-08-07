@@ -8,6 +8,7 @@ public class spore : enemy
     public float spd;
     public float stopTime;
     private Coroutine cloudRoutine;
+    private bool animAllowAttack;
     private new void Awake()
     {
         base.Awake();
@@ -25,8 +26,15 @@ public class spore : enemy
     {
         speed = 0;
         yield return new WaitForSeconds(stopTime);
+        attackAnim();
+        while(!animAllowAttack) yield return null;
         Instantiate(toxicCloudPrefab, transform.position, Quaternion.identity);
         speed = spd;
         cloudRoutine = null;
+        animAllowAttack = false;
+    }
+    public void animToAttack()
+    {
+        animAllowAttack = true;
     }
 }

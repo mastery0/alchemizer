@@ -18,6 +18,7 @@ public abstract class enemy : MonoBehaviour
     protected Rigidbody2D prb;
     protected player playerScript;
     protected float flightHeight;
+    protected Animator animator;
     [Header("Ground Safety")]
     [SerializeField] protected LayerMask groundMask;
     [SerializeField] protected float groundCheckDistance = 0.35f;
@@ -51,12 +52,14 @@ public abstract class enemy : MonoBehaviour
     protected bool isFlashing;
     protected virtual void Awake()
     {
+        animator = GetComponent<Animator>();
         erb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         prb= player.GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<player>();
         enemyCollider = GetComponent<Collider2D>();
         sr=GetComponentsInChildren<SpriteRenderer>();
+
         originalcolors=new Color[sr.Length];
         for(int i=0; i<sr.Length; i++)originalcolors[i]=sr[i].color;
         hp = maxHp;
@@ -85,6 +88,8 @@ public abstract class enemy : MonoBehaviour
     }
     protected virtual void Update()
     {
+        if (erb.linearVelocity.x > 0) { transform.localScale = new Vector3(-1, 1, 1); }
+        if (erb.linearVelocity.x < 0) { transform.localScale = new Vector3(+1, 1, 1); }
         if (!playerScript.isAlive) return;
         hasSight();
         if (sight) groundFollow();
@@ -211,5 +216,23 @@ public abstract class enemy : MonoBehaviour
     {
         hp += amount*healpercent;
         if (hp > maxHp) hp = maxHp;
+    }
+
+    //Animator Settings
+    public void setWalking(bool walking)
+    {
+        animator.SetBool("isWalking", walking);
+    }
+    public void attackAnim()
+    {
+        animator.SetTrigger("attack");
+    }
+    public void hitAnim()
+    {
+        animator.SetTrigger("hit");
+    }
+    public void dieAnim()
+    {
+        animator.SetTrigger("die");
     }
 }

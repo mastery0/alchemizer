@@ -449,6 +449,25 @@ Ramo Cura:
 
 - fix sistema pozioni e UI
 
+### Giorno 42
+
+- inizio rootGolem
+
+### Giorno 43
+
+- attacchi rootGolem
+
+- ### Giorno 44
+
+- fix rootGolem
+
+### Giorno 45
+
+- animazioni spora
+
+### Giorno 46
+
+- attacchi wolf
 ## Stato Attuale & Prossimi Passi (fine Giorno 32)
 
 **Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), Save/Load ristrutturato, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (ridotto a chiavi/oggetti chiave, con locked chest), Quest System (backend + UI placeholder + NPC di test), sistema effetti di stato riorganizzato, sistema pozioni completo (superclasse, pozione base, UI, binding, swap), nemici: Crusher, Archer, Spora, Sanguisuga.

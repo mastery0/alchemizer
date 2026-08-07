@@ -109,9 +109,6 @@ public class rootGolem : boss
         faceTarget();
 
         float distance=Mathf.Abs(player.transform.position.x-transform.position.x);
-        float jumpPower = Mathf.Clamp(distance * 1.5f, 4f, 8f);
-        float direction = Mathf.Sign(player.transform.position.x - transform.position.x);
-        if (direction != 0) { yield return StartCoroutine(miniJump(jumpPower * direction)); Debug.Log("jump skipped"); }
         float elapsed = 0f;
         while(elapsed < meleeDuration)
         {
@@ -168,49 +165,36 @@ public class rootGolem : boss
         yield return new WaitForSeconds(rootCD);
         hasRootHit = false;
     }
-    IEnumerator idle() 
+    IEnumerator idle()
     {
-        float desiredDistance = Random.Range(3.5f-1.5f,3.5f+1.5f);
-        float elapsed = 0f;
-        bool locked = false;
-        while (elapsed < idleTime)
+        float desiredDistance = 5.3f;
+        float t = 0f;
+        bool reached = false;
+        while (t < idleTime)
         {
-            elapsed += Time.deltaTime;
-            float dx=player.transform.position.x - transform.position.x;
-            float distance=Mathf.Abs(dx);
-            if (hasBeenHit)
+            t += Time.deltaTime;
+
+            float dx = player.transform.position.x - transform.position.x;
+
+            if (Mathf.Abs(dx) > desiredDistance && !reached)
             {
-                elapsed = idleTime;
-                break;
-            }
-            if (distance > desiredDistance&&!locked)
-            {
-                float dirx = Mathf.Sign(dx);
-                erb.linearVelocity = new Vector2(dirx * speed, erb.linearVelocity.y);
-            }
-            else if(distance < desiredDistance&&!locked)
-            {
-                float dirx = -Mathf.Sign(dx);
-                erb.linearVelocity = new Vector2(dirx*speed*0.8f, erb.linearVelocity.y);
+                erb.linearVelocity = new Vector2(Mathf.Sign(dx) * speed, erb.linearVelocity.y);
             }
             else
             {
-                /*locked = true;
-                float strafeDir = 1;
-                if (Random.value < 0.002f)
-                {
-                    strafeDir *= -1;             
-                }
-                else
-                {
-                    erb.linearVelocity = new Vector2(strafeDir * speed * 0.5f, erb.linearVelocity.y);
-                }*/
-                elapsed=idleTime;
+                reached = true;
+                float strafeDir = Mathf.Sign(Mathf.Sin(Time.time * 3f));
+                erb.linearVelocity = new Vector2(strafeDir * speed * 0.3f, erb.linearVelocity.y);
             }
-           yield return null;
+            if (hasBeenHit)
+            {
+                t = idleTime;
+            }
+            yield return null;
+            yield return null;
         }
+
         erb.linearVelocity = Vector2.zero;
-        yield return null;
     }
     void faceTarget() 
     {
@@ -243,18 +227,6 @@ public class rootGolem : boss
             yield return null;
         }
         setCrackColor(defColor);
-    }
-    IEnumerator miniJump(float horizontalSpeed)
-    {
-        float originalY = transform.position.y;
-
-        float verticalPower = Mathf.Clamp(Mathf.Abs(horizontalSpeed) * 0.7f, 3f, 6f);
-        erb.linearVelocity = new Vector2(horizontalSpeed, verticalPower);
-        while (erb.linearVelocity.y > 0) yield return null;
-            while (transform.position.y > originalY + 0.01f) yield return null;
-
-        erb.linearVelocity = Vector2.zero;
-        yield return null;
     }
     void setCrackColor(Color c)
     {
