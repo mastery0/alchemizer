@@ -1,0 +1,931 @@
+fileFormatVersion: 2
+guid: 83ee7d273d677ab49a44c96f152c04a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1534441729897063098
+    second: hog_enemy_final 1_0
+  - first:
+      213: -2368916098122745327
+    second: hog_enemy_final 1_1
+  - first:
+      213: 8300875367706857888
+    second: hog_enemy_final 1_2
+  - first:
+      213: -2179180262933459290
+    second: hog_enemy_final 1_3
+  - first:
+      213: 318098933151071981
+    second: hog_enemy_final 1_4
+  - first:
+      213: 7371783691223254074
+    second: hog_enemy_final 1_5
+  - first:
+      213: 5087674236909828072
+    second: hog_enemy_final 1_6
+  - first:
+      213: 4431781589086029653
+    second: hog_enemy_final 1_7
+  - first:
+      213: -891974336670289250
+    second: hog_enemy_final 1_8
+  - first:
+      213: -6580758591627611306
+    second: hog_enemy_final 1_9
+  - first:
+      213: -5668072749343047558
+    second: hog_enemy_final 1_10
+  - first:
+      213: 3495998723313848206
+    second: hog_enemy_final 1_11
+  - first:
+      213: -2218358382393066786
+    second: hog_enemy_final 1_12
+  - first:
+      213: 911627896277745931
+    second: hog_enemy_final 1_13
+  - first:
+      213: 3397553866629365542
+    second: hog_enemy_final 1_14
+  - first:
+      213: -7092770504912772542
+    second: hog_enemy_final 1_15
+  - first:
+      213: -1316882166844111619
+    second: hog_enemy_final 1_16
+  - first:
+      213: 9080368623718736483
+    second: hog_enemy_final 1_17
+  - first:
+      213: -713377126033186692
+    second: hog_enemy_final 1_18
+  - first:
+      213: -6124780788977140535
+    second: hog_enemy_final 1_19
+  - first:
+      213: 5379050267291025696
+    second: hog_enemy_final 1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hog_enemy_final 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 993
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d13f0606194bae0800000000000000
+      internalID: -1534441729897063098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 993
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a70bc1c5bef1fd0800000000000000
+      internalID: -2368916098122745327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 993
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a115f0ca22a23370800000000000000
+      internalID: 8300875367706857888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 993
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae0f4eb81ff1c1e0800000000000000
+      internalID: -2179180262933459290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee76e95b4d1a6400800000000000000
+      internalID: 318098933151071981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a344164b536dd4660800000000000000
+      internalID: 7371783691223254074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7bae743cc0b9640800000000000000
+      internalID: 5087674236909828072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557c69befd9d08d30800000000000000
+      internalID: 4431781589086029653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92b00211121f93f0800000000000000
+      internalID: -891974336670289250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653bf616de27ca4a0800000000000000
+      internalID: -6580758591627611306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_10
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70065e7dd5f651b0800000000000000
+      internalID: -5668072749343047558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final 1_11
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 803
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f4756f058448030800000000000000
+      internalID: 3495998723313848206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final walk 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda73f8fdcec631e0800000000000000
+      internalID: -2218358382393066786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final walk 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 613
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01c8fcddb0c6ac00800000000000000
+      internalID: 911627896277745931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final walk 3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 613
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62fb2bd9d39862f20800000000000000
+      internalID: 3397553866629365542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final walk 4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 613
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2426e4d0eca619d90800000000000000
+      internalID: -7092770504912772542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final charge 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 423
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4c53a75ae79bde0800000000000000
+      internalID: -1316882166844111619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final charge 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 423
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362ab564723f30e70800000000000000
+      internalID: 9080368623718736483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final charge 3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 423
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7027e398439916f0800000000000000
+      internalID: -713377126033186692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final charge 4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 423
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc71e9a258600ba0800000000000000
+      internalID: -6124780788977140535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final charge 5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 423
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0210adaf7b936aa40800000000000000
+      internalID: 5379050267291025696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final charge 6
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 423
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad33ed45b0e4527438bdb1e9454b37b1
+      internalID: 1133914842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final run 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed81cf7db0059545b549aee62161cb2
+      internalID: 1184334982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final run 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 233
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c46907535295994eb1ca601d64c40b1
+      internalID: 1093842230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final run 3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 233
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8269284dc04ed4746ba1930aebf28eed
+      internalID: 720933412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final run 4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 233
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1459f2da19bf74e8e6eb8fcd0a0533
+      internalID: -348075567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final run 5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 233
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa7a7b6a3b230c4b8723423842fb72a
+      internalID: -1612686666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final stop 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7630dc3421ec8344ebadb237a1fe641b
+      internalID: -211467723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final stop 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 43
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9f16cdb7cbcf448acaf64e6e348be9
+      internalID: 465549409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final stop 3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 43
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc43fbc7d4123b0428f9fe48e8406e8b
+      internalID: 87222454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final stop 4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 43
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153f73e1f902605498787e0bfc372efd
+      internalID: -1592414152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hog_enemy_final stop 5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 43
+        width: 128
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64351bda5b897644bbd03db568040e0b
+      internalID: 424434290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a8b33ee9a57849f4ca4d107cabb442f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":89.0},"gridSpriteOffset":{"x":0.0,"y":6.0},"gridSpritePadding":{"x":0.0,"y":101.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      hog_enemy_final 1_0: -1534441729897063098
+      hog_enemy_final 1_1: -2368916098122745327
+      hog_enemy_final 1_10: -5668072749343047558
+      hog_enemy_final 1_11: 3495998723313848206
+      hog_enemy_final 1_2: 8300875367706857888
+      hog_enemy_final 1_3: -2179180262933459290
+      hog_enemy_final 1_4: 318098933151071981
+      hog_enemy_final 1_5: 7371783691223254074
+      hog_enemy_final 1_6: 5087674236909828072
+      hog_enemy_final 1_7: 4431781589086029653
+      hog_enemy_final 1_8: -891974336670289250
+      hog_enemy_final 1_9: -6580758591627611306
+      hog_enemy_final charge 1: -1316882166844111619
+      hog_enemy_final charge 2: 9080368623718736483
+      hog_enemy_final charge 3: -713377126033186692
+      hog_enemy_final charge 4: -6124780788977140535
+      hog_enemy_final charge 5: 5379050267291025696
+      hog_enemy_final charge 6: 1133914842
+      hog_enemy_final run 1: 1184334982
+      hog_enemy_final run 2: 1093842230
+      hog_enemy_final run 3: 720933412
+      hog_enemy_final run 4: -348075567
+      hog_enemy_final run 5: -1612686666
+      hog_enemy_final stop 1: -211467723
+      hog_enemy_final stop 2: 465549409
+      hog_enemy_final stop 3: 87222454
+      hog_enemy_final stop 4: -1592414152
+      hog_enemy_final stop 5: 424434290
+      hog_enemy_final walk 1: -2218358382393066786
+      hog_enemy_final walk 2: 911627896277745931
+      hog_enemy_final walk 3: 3397553866629365542
+      hog_enemy_final walk 4: -7092770504912772542
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

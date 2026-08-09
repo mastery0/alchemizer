@@ -1,0 +1,31 @@
+diaologhi:
+	erborist (Yara):
+
+	First Talk:
+	Stop right there,this forest is gone,animals are evil,but you don't seem like them
+	Well,sorry for the sudden introduction,anyaway,I'm Yara
+	I can't do anything but noticing that thing you carry,that catalyst
+	You're the one right?The one that will save this place
+	I used to know your ancestor,if you agree on helping me,I'll help you too
+	I can provide potions to keep you alive,for now the only one i can give you is a normal Heal Potion
+	When you sit on [checkPoint name] this bottles will fill on their own
+	You can also change the one you are carrying
+	Every potion have different effects and uses,find the one you like the most
+
+	Second Talk:
+	Now for unlocking other potions you'll have to do things for me
+	Since the cataclysm this forest is full of spores,i'd love if you could elimate some of them {Give quest 1}
+
+	On Quest 1 Completed
+	Perfect,now the area is much more clean thanks to you
+	As our deal now i'll give you this potion wich will heal you less but will maintain your instability
+
+	Third Talk:
+
+	My next request will be way more hard
+	I need you to visit the swamp,there you'll have to defeat [Swamp area boss] and then return to me and i'll reward you {Give quest 2}
+
+	On Quest 2 Completed
+
+	Finally that monster is gone,about your reward
+	This potion will hurt you but it will increase your damage for some time,you also got only a few uses of it so think well about using it
