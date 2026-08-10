@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System;
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class charger : enemy
@@ -14,6 +15,9 @@ public class charger : enemy
     public float dashTime;
     public float dashForce;
     public bleed bleedEfc;
+
+    private bool finishedCharging;
+    private bool finishedAttacking;
     protected override void Awake()
     {
         base.Awake();
@@ -37,7 +41,11 @@ public class charger : enemy
     {
         canDash = false;
         isDashing = true;
-
+        finishedCharging = false;
+        finishedAttacking = false;
+        chargeAnim();
+        while(!finishedCharging)yield return null;
+        attackAnim();
         Vector2 dir = (player.transform.position - transform.position).normalized;
         yield return new WaitForSeconds(0.5f);
 
@@ -45,6 +53,8 @@ public class charger : enemy
         yield return new WaitForSeconds(dashTime);
 
         erb.linearVelocity = new Vector2(0f, erb.linearVelocity.y);
+        stopAnim();
+        while(!finishedAttacking) yield return null;
         isDashing = false;
 
         yield return new WaitForSeconds(CD);
@@ -74,4 +84,23 @@ public class charger : enemy
             }
         }
     }
+
+    public void chargeAnim()
+
+    {
+        animator.SetTrigger("isCharging");
+    }
+    public void stopAnim()
+    {
+        animator.SetTrigger("stop");
+    }
+    public void animAllowToAttack()
+    {
+        finishedCharging = true;
+    }
+    public void animAllowToStop()
+    {
+        finishedAttacking = true;
+    }
+    
 }

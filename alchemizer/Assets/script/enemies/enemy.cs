@@ -119,9 +119,17 @@ public abstract class enemy : MonoBehaviour
     {
         Vector2 target = patrolPositions[currentPoint];
         Vector2 patrolDir=(target-(Vector2)transform.position).normalized;
+        Debug.Log(gameObject.name + " " + (target - (Vector2)transform.position).x);
         SetSafeHorizontalVelocity(patrolDir.x * speed);
-        if (Vector2.Distance(transform.position, target) < 0.4f)
+        Vector2 thisTrans = new Vector2(transform.position.x, 0);
+        Vector2 targetTrans=new Vector2(target.x, 0);
+        Debug.Log(gameObject.name + " " + targetTrans);
+
+       bool reached = Vector2.Distance(thisTrans,targetTrans) < 0.4f;
+
+        if (reached)
         {
+            Debug.Log(gameObject.name + " reached");
             currentPoint += direction;
             if (currentPoint >= patrolPoints.Length)
             {
@@ -159,6 +167,7 @@ public abstract class enemy : MonoBehaviour
     {
         if (Mathf.Approximately(xVelocity, 0f))
         {
+            
             erb.linearVelocity = new Vector2(0f, erb.linearVelocity.y);
             return;
         }
@@ -187,7 +196,11 @@ public abstract class enemy : MonoBehaviour
         );
 
         RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down, groundCheckDistance, groundMask);
-        Debug.DrawRay(origin, Vector2.down * groundCheckDistance,Color.yellow);
+        Debug.DrawRay(
+            origin,
+            Vector2.down * groundCheckDistance,
+            hit.collider != null ? Color.green : Color.red
+        );
 
         return hit.collider != null;
     }
