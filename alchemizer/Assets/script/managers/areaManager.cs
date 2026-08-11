@@ -5,6 +5,7 @@ public class area
     public string areaName;
     public GameObject areaPrefab;
     public GameObject enemies;
+    public Vector3 enemiesPosition;
 }
 public class areaManager : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class areaManager : MonoBehaviour
                 }
                 area.areaPrefab.SetActive(true);
                 Destroy(loadedEnemies);
-                loadedEnemies=Instantiate(area.enemies, area.areaPrefab.transform);
+                loadedEnemies=Instantiate(area.enemies,area.enemiesPosition,Quaternion.identity);
                 loadedEnemies.SetActive(true);
                 currentArea = areaName;
                 if (saveManager.instance != null)
