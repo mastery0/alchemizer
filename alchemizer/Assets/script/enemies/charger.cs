@@ -43,17 +43,18 @@ public class charger : enemy
         isDashing = true;
         finishedCharging = false;
         finishedAttacking = false;
-        chargeAnim();
-        while(!finishedCharging)yield return null;
-        attackAnim();
+        faceTarget();
+        chargeAnim();      
         Vector2 dir = (player.transform.position - transform.position).normalized;
         yield return new WaitForSeconds(0.5f);
-
+        animAllowToAttack();
+        attackAnim();
         erb.linearVelocity = new Vector2(dir.x * dashForce, 0);
         yield return new WaitForSeconds(dashTime);
 
         erb.linearVelocity = new Vector2(0f, erb.linearVelocity.y);
         stopAnim();
+        animAllowToStop();
         while(!finishedAttacking) yield return null;
         isDashing = false;
 
@@ -83,6 +84,13 @@ public class charger : enemy
                 }
             }
         }
+    }
+    protected new void faceTarget()
+    {
+        float dirx = -Mathf.Sign(player.transform.position.x - transform.position.x);
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * dirx;
+        transform.localScale = scale;
     }
 
     public void chargeAnim()

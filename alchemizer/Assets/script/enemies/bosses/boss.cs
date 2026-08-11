@@ -26,13 +26,36 @@ public abstract class boss : enemy
     {
         base.Awake();
         currentPhase = 1;
+        if (saveManager.instance != null)
+        {
+            saveManager.instance.loadApplied += applySavedDefeatState;
+        }
     }
-    private void OnEnable()
+
+    private void OnDestroy()
     {
-        if (saveManager.instance.isBossDefeated(bossName))
+        if (saveManager.instance != null)
+        {
+            saveManager.instance.loadApplied -= applySavedDefeatState;
+        }
+    }
+
+    private void Start()
+    {
+        applySavedDefeatState();
+    }
+
+    private void applySavedDefeatState()
+    {
+        if (saveManager.instance != null && saveManager.instance.isBossDefeated(getBossID()))
         {
             gameObject.SetActive(false);
         }
+    }
+
+    private string getBossID()
+    {
+        return string.IsNullOrEmpty(bossName) ? enemyID : bossName;
     }
     protected override void Update()
     {
@@ -80,7 +103,7 @@ public abstract class boss : enemy
         arenaGate.SetActive(false);
         bossBar.instance.hide();
         if(checkPointPrefab!=null)Instantiate(checkPointPrefab, checkPointPos,Quaternion.identity);
-        saveManager.instance.markBossDefeated(bossName);
+        saveManager.instance.markBossDefeated(getBossID());
         Destroy(gameObject);
     }
 }

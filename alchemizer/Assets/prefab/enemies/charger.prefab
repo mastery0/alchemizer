@@ -212,7 +212,7 @@ MonoBehaviour:
   - {fileID: 789208012357798432, guid: ab980ebd957dd7842a90bf49313e465e, type: 3}
   sightMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 128
   groundMask:
     serializedVersion: 2
     m_Bits: 8
@@ -233,7 +233,7 @@ MonoBehaviour:
   flashColor: {r: 1, g: 1, b: 1, a: 1}
   dashRange: 2
   CD: 2
-  dashTime: 0
+  dashTime: 0.5
   dashForce: 25
   bleedEfc: {fileID: 0}
 --- !u!114 &7773262708291519933

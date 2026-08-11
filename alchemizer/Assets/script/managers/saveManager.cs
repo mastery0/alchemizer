@@ -16,8 +16,10 @@ public class saveManager : MonoBehaviour
     private List<string> activeQuestsID = new List<string>();
     private List<string> completedQuestsID = new List<string>();
     private List<itemStack> inventory = new List<itemStack>();
-    private List<string>defeatedBoss = new List<string>();
+    private List<string>defeatedBosses = new List<string>();
     private string currentArea;
+
+    public event System.Action loadApplied;
 
     [System.Serializable]
     public class inventorySaveData
@@ -111,14 +113,16 @@ public class saveManager : MonoBehaviour
 
     public void markBossDefeated(string bossID)
     {
-        if (!defeatedBoss.Contains(bossID))
+        if (string.IsNullOrEmpty(bossID)) return;
+
+        if (!defeatedBosses.Contains(bossID))
         {
-            defeatedBoss.Add(bossID);
+            defeatedBosses.Add(bossID);
         }
     }
     public bool isBossDefeated(string bossID)
     {
-        return defeatedBoss.Contains(bossID);
+        return defeatedBosses.Contains(bossID);
     }
 
     public void setCurrentArea(string areaName)
@@ -171,8 +175,10 @@ public class saveManager : MonoBehaviour
         {
             data.questProgress = questManager.instance.getQuestProgressData();
         }
-        data.defeatedBoss = defeatedBoss.ToArray();
-        data.currentArea = currentArea;
+        data.defeatedBoss = defeatedBosses.ToArray();
+        data.currentArea = !string.IsNullOrEmpty(currentArea)
+            ? currentArea
+            : areaManager.instance.currentArea;
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/save.json", json);
     }
@@ -218,7 +224,8 @@ public class saveManager : MonoBehaviour
 
     private bool CanApplyData()
     {
-        return player.instance != null && essenceManager.instance != null && coreInstability.instance != null && global::inventory.instance != null;
+        return player.instance != null && essenceManager.instance != null && coreInstability.instance != null &&
+            global::inventory.instance != null && areaManager.instance != null;
     }
 
     private void ApplyData(SaveData data)
@@ -257,7 +264,14 @@ public class saveManager : MonoBehaviour
             openedChest.Add(chestID);
         }
 
-        applySavedInventory(data);
+        defeatedBosses.Clear();
+        foreach (string bossID in data.defeatedBoss ?? new string[0])
+        {
+            if (!string.IsNullOrEmpty(bossID))
+            {
+                defeatedBosses.Add(bossID);
+            }
+        }
 
         activeQuestsID.Clear();
         string[] savedActiveQuests = data.activeQuestsIDs ?? new string[0];
@@ -278,6 +292,8 @@ public class saveManager : MonoBehaviour
             questManager.instance.applySavedQuests(savedActiveQuests, savedCompletedQuests, data.questProgress);
         }
         areaManager.instance.switchToArea(data.currentArea);
+        applySavedInventory(data);
+        loadApplied?.Invoke();
     }
     [ContextMenu("reset")]
     public void toDefault()
@@ -293,7 +309,7 @@ public class saveManager : MonoBehaviour
         seenDialogue.Clear();
         openedChest.Clear();
         inventory.Clear();
-        defeatedBoss.Clear();
+        defeatedBosses.Clear();
         if (global::inventory.instance != null)
         {
             global::inventory.instance.items.Clear();

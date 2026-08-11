@@ -4041,7 +4041,7 @@ MonoBehaviour:
   heals: {fileID: 0}
   flashDuration: 0.3
   flashColor: {r: 1, g: 1, b: 1, a: 1}
-  bossName: 
+  bossName: Slime Boss
   arenaGate: {fileID: 6033681474189504081}
   engagePoint: {fileID: 4534036622921171390}
   lockOnEngage: 1

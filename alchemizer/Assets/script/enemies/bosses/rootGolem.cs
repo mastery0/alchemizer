@@ -113,7 +113,6 @@ public class rootGolem : boss
         while(elapsed < meleeDuration)
         {
             elapsed += Time.deltaTime;
-            //OnDrawGizmos();
             if (!defeated && !hasMeleeHit && Vector2.Distance(transform.position, player.transform.position) <= meleeRange)
             {
                 playerScript.takeDamage(calcDamage(type));
@@ -125,14 +124,6 @@ public class rootGolem : boss
         lastAttack = "melee";
         isAttacking = false;
     }
-    /*private void OnDrawGizmos()
-    {
-        if (isAttacking && type == dmgTypeGolem.melee)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, meleeRange);
-        }
-    }*/
     IEnumerator rootAttack() 
     { 
         isAttacking = true;
@@ -196,13 +187,7 @@ public class rootGolem : boss
 
         erb.linearVelocity = Vector2.zero;
     }
-    void faceTarget() 
-    {
-        float dirx=Mathf.Sign(player.transform.position.x-transform.position.x);
-        Vector3 scale = transform.localScale;
-        scale.x=Mathf.Abs(scale.x)*dirx;
-        transform.localScale=scale;
-    }
+
     public override void takeDamage(float damage)
     {
         if (isInvincible||defeated) return;

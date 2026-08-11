@@ -119,17 +119,14 @@ public abstract class enemy : MonoBehaviour
     {
         Vector2 target = patrolPositions[currentPoint];
         Vector2 patrolDir=(target-(Vector2)transform.position).normalized;
-        Debug.Log(gameObject.name + " " + (target - (Vector2)transform.position).x);
         SetSafeHorizontalVelocity(patrolDir.x * speed);
         Vector2 thisTrans = new Vector2(transform.position.x, 0);
         Vector2 targetTrans=new Vector2(target.x, 0);
-        Debug.Log(gameObject.name + " " + targetTrans);
 
        bool reached = Vector2.Distance(thisTrans,targetTrans) < 0.4f;
 
         if (reached)
         {
-            Debug.Log(gameObject.name + " reached");
             currentPoint += direction;
             if (currentPoint >= patrolPoints.Length)
             {
@@ -153,7 +150,6 @@ public abstract class enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerScript.takeDamage(damage);
-            Debug.Log(playerScript.hp);
         }
     }
     public void hasSight()
@@ -208,7 +204,6 @@ public abstract class enemy : MonoBehaviour
     protected void StopAtEdge()
     {
         float xVelocity = erb.linearVelocity.x;
-        Debug.Log("stopped");
         if (Mathf.Approximately(xVelocity, 0f)) return;
 
         if (!HasGroundAhead(Mathf.Sign(xVelocity)))
@@ -230,7 +225,13 @@ public abstract class enemy : MonoBehaviour
         hp += amount*healpercent;
         if (hp > maxHp) hp = maxHp;
     }
-
+    protected void faceTarget()
+    {
+        float dirx = Mathf.Sign(player.transform.position.x - transform.position.x);
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * dirx;
+        transform.localScale = scale;
+    }
     //Animator Settings
     public void setWalking(bool walking)
     {

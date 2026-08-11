@@ -39,6 +39,10 @@ public class areaManager : MonoBehaviour
                 loadedEnemies=Instantiate(area.enemies, area.areaPrefab.transform);
                 loadedEnemies.SetActive(true);
                 currentArea = areaName;
+                if (saveManager.instance != null)
+                {
+                    saveManager.instance.setCurrentArea(currentArea);
+                }
                 return;
             }
         }
