@@ -1,4 +1,24 @@
-﻿Core Loop Design
+﻿check up:
+Foresta Incantata:
+level design: finito nemici: 3/3 boss: 1/3 meccaniche: 0/0 npc/quest: 0.5/1
+
+Palude di grovigli:
+level design: tile palette pronta nemici: 1/2 boss: 1/1 meccaniche: 0/1 npc/quest 0/1:
+
+Bosco Profondo:
+level design: tile palette pronta nemici: 0/3 boss: 0/1 meccaniche: 0/1 npc/quest 0/1:
+
+Torre del Guardiano:
+level design: 0 nemici: 0/2 boss: 0/x meccaniche: 0/0 npc/quest 0/x:
+
+Laboratorio Sepolto:
+level design: 0 nemici: 0/2 boss: 0/x meccaniche: 0/0 npc/quest 0/x:
+
+Nucleo della Corruzione:
+level design: 0 nemici: 0/0 boss: 0/1 meccaniche: 0/0 npc/quest 0/x:
+
+
+Core Loop Design
 Alchemizer è un platformer 2D con elementi metroidvania e RPG ma progressione piu lineare per gli standard del genere
 il giocatore è un alchimista che ha trovato un antico catalizzatore che gli permette di estrarre essenze dai nemici uccisi
 in Alchemizer si ottengono essenze uccidendo nemici,a seconda del tipo di nemico ucciso.
@@ -56,7 +76,7 @@ Premessa:
 le essenze danno vita e anima a tutto,per qualche motivo l'ordine si è spezzato e le essenze si stanno corrompendo e con loro tutto cio che è animato
 mc è un alchimista che studia in un laboratorio ereditato da suo padre immerso nella forestaIncantata
 
-Prologo/Casa-lab
+Prologo/Casa-lab sezione narrativa gestita come cutscene introduttiva
 Trama:
 Una notte sente un boato e il cielo si tinge di rosso,spaventato scende nel seminterrato 
 dove apre una cassa con scritto "aprire solo in caso di emergenza" e trova il catalizzatore e un antico libro che gli spiega come funziona
@@ -89,7 +109,7 @@ il passaggio in questa zona non è obbligatorio ma consente scoperte nuove e pot
 NPC: 
 ricercatore quasi pazzo dalle sue ricerche in un posto ostile esso a fine della sua quest diventa il biss
 boss:
-main slime gigante,nessun drop principale solo avanzamento in trama
+slime gigante,serve per avanzare nella quest del erborista
 art style:
 zone marce dalla corruzione verdi scuri e cupi
 
@@ -114,7 +134,7 @@ rivelazioni su rottura dell'ordine e sul catalizzatore
 poche stanze verticali,zona funzionale alla boss fight alla sua fine,uso intero moveset
 i nemici sono golem corrotti e prevedibili
 boss:
-main il guardiano costrutto per proteggere qualcosa,fight che ti fa usare tutte le abilità
+main il guardiano costrutto per proteggere uno dei due oggetti,fight che ti fa usare tutte le abilità
 art style:
 pietra/metallo antico,ormai in rovina
 
@@ -123,7 +143,7 @@ atmosfera:
 un laboratorio piu vecchio di quello in casa, legato a chi ha creato il catalizzatore,zona con dei puzzle e percioli ambientali
 nemici:esperimenti falliti
 boss:
-main creazione fallita per colpa della corruzione
+main creazione fallita per colpa della corruzione,da accesso all'altro dei due oggetti richiesti
 art style:
 laboratorio antico  con contenitori rotti e corruzione che cola
 
@@ -138,21 +158,21 @@ onirico e staccato da tutto il resto
 Enemy List:
 Foresta Incantata:
 
-Lupo Corrotto:
+Lupo Corrotto: finito
 lupo con chiazze di pelo scure e venature viola e occhi rossi
 patrol e danno al contatto
 
-Spora:
+Spora: finito
 fungo fluttuante con dettagli viola
 quando prende danno rilascia una nube che mette veleno al player
 
-Cinghiale Contaminato:
+Cinghiale Contaminato: finito
 cinghiale con crepe luminescenti
 attacco in carica applica bleed con le zanne
 
 Palude di grovigli:
 
-Sanguisuga d'essenza:
+Sanguisuga d'essenza: da animare
 tipo lumaca ricoperta di melma nera
 si aggancia al contatto ruba essenza al player e poison finche non viene uccisa
 
@@ -180,7 +200,7 @@ Golem Sentinella:
 golem di pietra crepato con delle rune sul corpo
 colpisce a pugni lentamente
 
-Costrutto metallico:
+Costrutto metallico: da animare e rivedere
 sfera metallica
 spara piccoli proiettili e si allontana dal player applica weakness
 
