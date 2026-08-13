@@ -1,0 +1,92 @@
+check up:
+Foresta Incantata:
+level design: finito nemici: 3/3 boss: 2/2 npc/quest: 0.5/1
+Bosco Profondo:
+level design: tile palette pronta 
+Palude di grovigli:
+level design: tile palette pronta 
+
+Da scegliere una sola zona tra bosco o palude,entrambe sono allo stesso punto
+
+
+Priorità:
+Animare Player
+Background forestaIncantata
+Fix rootGolem
+UI
+Animazioni boss
+Animazioni nemico ranged
+Cutscene iniziale
+Main menu
+
+
+Sequenza di gioco:
+
+Cutscene iniziale:
+mc è a casa tranquillo (possono essere piu frame che mostrano la sua vita ordinaria)
+sente un forte boato,palette sul viola che ricorda la corruzione
+spaventato corre in seminterrato dove apre il baule nascosto
+trova il catalizzatore
+legge come usarlo
+nota una porta che prima non c'era
+vede che servono due item per aprirla
+terremoto
+corre sopra
+la porta crolla dietro di lui
+decide di uscire di casa per scoprire di piu su quanto accaduto fuori
+obbiettivo:riaccedere al seminterrato
+(fine cutscene)
+
+Esplorazione forestaIncatata
+
+Incontro con Yara
+farming di spore per la sua prima quest/incontro con slimeBoss
+Completi la prima quest di Yara
+Ricevi la seconda quest da Yara
+Esplorazione parte bassa forestaIncantata
+Fight root Golem
+Completi la seconda quest di Yara
+ti dice che nella palude/bosco puoi trovare un oggetto che ti permette di tornare nel seminterrato di casa
+Accedi alla palude/bosco
+Schermata di chiusura demo
+
+
+
+
+
+
+
+
+Pozioni: (finite)
+base Potion: hp+40% reset pressure qta 3
+ember Potion:hp +25% mantiene la pressure qta 5
+rage Potion:hp -5% danni aumentati qta 2
+Enemy List:
+Ranged enemy: nemico ranged comune a tute le zone da animare
+
+Occhio della corruzione:
+Occhio viola in grado di sparare pericolosi dardi
+
+Melee enemies:
+
+Lupo Corrotto: finito
+lupo con chiazze di pelo scure e venature viola e occhi rossi
+patrol e danno al contatto
+
+Spora: finito
+fungo fluttuante con dettagli viola
+quando prende danno rilascia una nube che mette veleno al player
+
+Cinghiale Contaminato: finito
+cinghiale con crepe luminescenti
+attacco in carica applica bleed con le zanne
+
+Boss List:
+
+Slime Gigante: da animare
+massa di slime viola,occhi e nucleo visibile,il nucleo brilla prima di attaccare
+salto e carica verso il player
+
+Golem delle radici: da ribilanciare e animare
+corpo fatto di tronchi con crepe viola sui punti di giuntura e muschio che copre la schiena
+pugno a terra che fa comparire delle radici che vanno verso il player e colpo melee quando il player è vicino
