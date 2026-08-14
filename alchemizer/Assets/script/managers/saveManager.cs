@@ -176,6 +176,8 @@ public class saveManager : MonoBehaviour
             data.questProgress = questManager.instance.getQuestProgressData();
         }
         data.defeatedBoss = defeatedBosses.ToArray();
+        // areaManager is the source of truth when this manager has not yet
+        // received a switch notification (for example in the initial area).
         data.currentArea = !string.IsNullOrEmpty(currentArea)
             ? currentArea
             : areaManager.instance.currentArea;
@@ -291,6 +293,9 @@ public class saveManager : MonoBehaviour
         {
             questManager.instance.applySavedQuests(savedActiveQuests, savedCompletedQuests, data.questProgress);
         }
+        // The scene load replaces the previous areaManager. Switch only after
+        // the new scene's managers are ready, otherwise the switch is applied
+        // to the manager that is about to be destroyed.
         areaManager.instance.switchToArea(data.currentArea);
         applySavedInventory(data);
         loadApplied?.Invoke();

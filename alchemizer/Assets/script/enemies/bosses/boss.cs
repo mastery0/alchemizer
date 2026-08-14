@@ -49,6 +49,7 @@ public abstract class boss : enemy
     {
         if (saveManager.instance != null && saveManager.instance.isBossDefeated(getBossID()))
         {
+            if (checkPointPrefab != null) Instantiate(checkPointPrefab, checkPointPos, Quaternion.identity);
             gameObject.SetActive(false);
         }
     }
