@@ -9,9 +9,9 @@ level design: tile palette pronta
 Da scegliere una sola zona tra bosco o palude,entrambe sono allo stesso punto
 
 
-Priorità:
+PrioritÃ :
 Animare Player
-Background forestaIncantata
+Background forestaIncantata ***
 Fix rootGolem
 UI
 Animazioni boss
@@ -23,7 +23,7 @@ Main menu
 Sequenza di gioco:
 
 Cutscene iniziale:
-mc è a casa tranquillo (possono essere piu frame che mostrano la sua vita ordinaria)
+mc Ã© a casa tranquillo (possono essere piu frame che mostrano la sua vita ordinaria)
 sente un forte boato,palette sul viola che ricorda la corruzione
 spaventato corre in seminterrato dove apre il baule nascosto
 trova il catalizzatore
@@ -57,12 +57,12 @@ Schermata di chiusura demo
 
 
 
-Pozioni: (finite)
-base Potion: hp+40% reset pressure qta 3
-ember Potion:hp +25% mantiene la pressure qta 5
-rage Potion:hp -5% danni aumentati qta 2
+Pozioni: (finite)(anche di disegnare)
+base Potion: hp+40% reset pressure qta 3  (finita anche di disegnare)
+ember Potion:hp +25% mantiene la pressure qta 5 (finita anche di disegnare)
+rage Potion:hp -5% danni aumentati qta 2 (finita anche di disegnare)
 Enemy List:
-Ranged enemy: nemico ranged comune a tute le zone da animare
+Ranged enemy: nemico ranged comune a tute le zone da animare 
 
 Occhio della corruzione:
 Occhio viola in grado di sparare pericolosi dardi
@@ -89,4 +89,4 @@ salto e carica verso il player
 
 Golem delle radici: da ribilanciare e animare
 corpo fatto di tronchi con crepe viola sui punti di giuntura e muschio che copre la schiena
-pugno a terra che fa comparire delle radici che vanno verso il player e colpo melee quando il player è vicino
+pugno a terra che fa comparire delle radici che vanno verso il player e colpo melee quando il player ï¿½ vicino
