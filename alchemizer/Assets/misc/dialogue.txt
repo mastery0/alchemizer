@@ -2,13 +2,13 @@ diaologhi:
 
 	erborist (Yara):
 
-	First Talk:
+	First Talk: id:yaraFirstEncounter
 	Stay back.This forest isn't what it used to be, everything out there has turned hostile.But...you don't look like one of them.
 	Sorry,that's not much of a greeting.I'm Yara.
 	That's a catalyst that you're carrying,isn't it? I haven't seen one of those in years.
 	So it's true,you're the one who's supposed to set this place right.
 	I knew your father.If you're willing to help me,I'll do the same for you.
-	I can brew potions to keep you standing,For now all ihave is a basic Heal Potion.
+	I can brew potions to keep you standing,For now all I have is a basic Heal Potion.
 	Rest on a checkpoint and your bottle refill on its own.
 	You can also switch which potion you're carrying,once you've got more than one.
 	Each one does something different. Find whichever suits how you fight.

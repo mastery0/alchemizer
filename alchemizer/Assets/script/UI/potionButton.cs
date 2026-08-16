@@ -23,7 +23,6 @@ public class potionButton : MonoBehaviour
         potionUI.instance.potionNameText.text = assignedPotion.potionName;
         potionUI.instance.potionDescription.text = assignedPotion.description;
         potionUI.instance.potionImage.sprite = assignedPotion.potionIMG;
-        potionUI.instance.potionImage.color = Color.green;
         potionUI.instance.potionAmount.text = "Amount: " + assignedPotion.potionAmount.ToString();
 
         if (usedForSwapping && checkPoint != null)

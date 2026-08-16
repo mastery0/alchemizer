@@ -22,26 +22,45 @@ public class Dialogue
 {
     public string dialogueID;
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+    [Header("Visibility")]
+    public string requiredCompletedDialogueID;
+    public string requiredActiveQuestID;
+    public string requiredCompletedQuestID;
     public bool oneTimeOnly = true;
     public bool shown = false;
     public bool isQuestDialogue = false;
     [HideInInspector] public GameObject npc;
+    public bool canStart()
+    {
+        if (oneTimeOnly && saveManager.instance.hasSeenDialogue(dialogueID)) return false;
+        if (!string.IsNullOrEmpty(requiredCompletedDialogueID) && saveManager.instance.hasSeenDialogue(requiredCompletedDialogueID)) return false;
+        if (!string.IsNullOrEmpty(requiredActiveQuestID) && saveManager.instance.isQuestActive(requiredActiveQuestID)) return false;
+        if (!string.IsNullOrEmpty(requiredCompletedQuestID) && saveManager.instance.isQuestCompleted(requiredCompletedQuestID)) return false;
+        return true;
+    }
 }
 
 public class dialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public List<Dialogue> dialogues=new();
     private void Awake()
     {
-        if(dialogue.isQuestDialogue)
+        foreach (Dialogue dialogue in dialogues)
         {
-            dialogue.npc = gameObject;
+            if (dialogue.isQuestDialogue)
+            {
+                dialogue.npc = gameObject;
+            }
         }
     }
     public void TriggerDialogue()
     {
-        dialogueManager.Instance.StartDialogue(dialogue);
-        if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.talk, dialogue.dialogueID);
+        foreach (Dialogue dialogue in dialogues)
+        {
+            if (!dialogue.canStart()) continue;
+            dialogueManager.Instance.StartDialogue(dialogue);
+            if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.talk, dialogue.dialogueID);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
