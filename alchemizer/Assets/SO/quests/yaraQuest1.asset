@@ -10,19 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: questTest
+  m_Name: yaraQuest1
   m_EditorClassIdentifier: Assembly-CSharp::quest
-  questID: test01
-  questName: Test
-  questStatus: 2
-  questDescription: quest a fine di test
+  questID: yaraQuest1
+  questName: Clear the Spores
+  questStatus: 1
+  questDescription: Get rid of the spores for Yara
   objectives:
   - type: 0
     status: 2
-    targetID: slime
-    requiredAmount: 1
-    currentAmount: 1
+    targetID: spore
+    requiredAmount: 10
+    currentAmount: 10
+  - type: 3
+    status: 1
+    targetID: spore
+    requiredAmount: 10
+    currentAmount: 0
   prerequisites: []
-  Essencereward: 01000000
-  essenceRewardAmount: 10
+  Essencereward: 
+  essenceRewardAmount: 0
   itemRewards: []

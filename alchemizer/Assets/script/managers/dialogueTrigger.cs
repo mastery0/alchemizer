@@ -32,10 +32,11 @@ public class Dialogue
     [HideInInspector] public GameObject npc;
     public bool canStart()
     {
+        if (saveManager.instance == null) return false;
         if (oneTimeOnly && saveManager.instance.hasSeenDialogue(dialogueID)) return false;
-        if (!string.IsNullOrEmpty(requiredCompletedDialogueID) && saveManager.instance.hasSeenDialogue(requiredCompletedDialogueID)) return false;
-        if (!string.IsNullOrEmpty(requiredActiveQuestID) && saveManager.instance.isQuestActive(requiredActiveQuestID)) return false;
-        if (!string.IsNullOrEmpty(requiredCompletedQuestID) && saveManager.instance.isQuestCompleted(requiredCompletedQuestID)) return false;
+        if (!string.IsNullOrEmpty(requiredCompletedDialogueID) && !saveManager.instance.hasSeenDialogue(requiredCompletedDialogueID)) return false;
+        if (!string.IsNullOrEmpty(requiredActiveQuestID) && !saveManager.instance.isQuestActive(requiredActiveQuestID)) return false;
+        if (!string.IsNullOrEmpty(requiredCompletedQuestID) && !saveManager.instance.isQuestCompleted(requiredCompletedQuestID)) return false;
         return true;
     }
 }
@@ -47,10 +48,7 @@ public class dialogueTrigger : MonoBehaviour
     {
         foreach (Dialogue dialogue in dialogues)
         {
-            if (dialogue.isQuestDialogue)
-            {
-                dialogue.npc = gameObject;
-            }
+            if (dialogue != null) dialogue.npc = gameObject;
         }
     }
     public void TriggerDialogue()
@@ -60,6 +58,7 @@ public class dialogueTrigger : MonoBehaviour
             if (!dialogue.canStart()) continue;
             dialogueManager.Instance.StartDialogue(dialogue);
             if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.talk, dialogue.dialogueID);
+            return;
         }
     }
 

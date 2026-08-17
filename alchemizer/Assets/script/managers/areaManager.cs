@@ -11,12 +11,15 @@ public class areaManager : MonoBehaviour
 {
     public static areaManager instance;
     public area[] areaList;
+    public area starterArea;
     public string currentArea;
     private GameObject loadedEnemies;
     private void Awake()
     {
         instance=this;
         loadedEnemies= new GameObject("loadedEnemies");
+        loadedEnemies = Instantiate(starterArea.enemies, starterArea.enemiesPosition, Quaternion.identity);
+        loadedEnemies.SetActive(true);
     }
     public void switchToArea(string areaName)
     {
