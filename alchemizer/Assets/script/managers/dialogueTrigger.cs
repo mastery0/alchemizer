@@ -56,7 +56,7 @@ public class dialogueTrigger : MonoBehaviour
         foreach (Dialogue dialogue in dialogues)
         {
             if (!dialogue.canStart()) continue;
-            dialogueManager.Instance.StartDialogue(dialogue);
+            dialogueManager.instance.StartDialogue(dialogue);
             if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.talk, dialogue.dialogueID);
             return;
         }

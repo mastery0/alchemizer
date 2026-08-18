@@ -13,10 +13,15 @@ diaologhi:
 	You can also switch which potion you're carrying,once you've got more than one.
 	Each one does something different. Find whichever suits how you fight.
 
-	Second Talk:
+	Second Talk: id:yaraFirstQuest
 	If you want more than a Heal Potion,you'll have to earn it,help me and i'll help you back.
 	Since the cataclysm this forest has been crawling with spores.Thin them out for me,would you?
 	{give quest 1: Clear the Spores}
+
+	Loop Talk 1: id:yaraFirstLoop
+
+	Go get rid of that spores,they are bothering me.
+	Don't come back until you've killed 10 of them
 
 	On quest 1 completed:
 	Good the air already smells less like rot,thanks to you.

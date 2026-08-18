@@ -15,7 +15,7 @@ public class questGiver : MonoBehaviour
 {
     [Header("Quest per dialogo")]
     [Tooltip("Lo stesso NPC puo' assegnare piu' quest. Aggiungi una riga per ogni coppia dialogo/quest.")]
-    public List<DialogueQuestAssignment> dialogueQuestAssignments = new List<DialogueQuestAssignment>();
+    public List<DialogueQuestAssignment> dialogueQuestAssignments = new();
 
 
     public void tryGiveQuest(string dialogueID)

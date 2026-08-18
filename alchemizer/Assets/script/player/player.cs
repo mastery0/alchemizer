@@ -10,7 +10,7 @@ public class player : MonoBehaviour
     public Rigidbody2D prb;
     public LayerMask ground;
     public LayerMask enemyLayer;
-    public GameObject inv;
+    public GameObject actionbarObj;
     public fillBar hpBar;
     public GameObject deathPanel;
     public GameObject bp;
@@ -135,13 +135,14 @@ public class player : MonoBehaviour
     public void OnAttack(InputAction.CallbackContext context)
     {
         if (!isAlive) return;
+        if(dialogueManager.instance.isTalking) return;
+        if (actionBar.instance != null && actionBar.instance.isOpened) return;
         attack();
     }
-    public void OnOpenInv(InputAction.CallbackContext context)
+    public void OnOpenMenu(InputAction.CallbackContext context)
     {
         if (!isAlive) return;
-        Debug.Log("Inventory toggled");
-        inv.SetActive(!inv.activeSelf);
+        actionbarObj.SetActive(!actionbarObj.activeSelf);
     }
     public void OnHeal(InputAction.CallbackContext context)
     {

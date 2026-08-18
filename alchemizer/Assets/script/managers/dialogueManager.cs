@@ -6,7 +6,7 @@ using TMPro;
 
 public class dialogueManager : MonoBehaviour
 {
-    public static dialogueManager Instance;
+    public static dialogueManager instance;
 
     public Image characterIcon;
     public TextMeshProUGUI characterName;
@@ -19,22 +19,26 @@ public class dialogueManager : MonoBehaviour
 
     public float typingSpeed = 0.2f;
 
+    public bool isTalking = false;
     //public Animator animator;
 
     private void Awake()
     {
-        if (Instance == null)
-            Instance = this;
+        if (instance == null)
+            instance = this;
         lines = new Queue<DialogueLine>();
         canvas.SetActive(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        if (isTalking) return;
         if (dialogue.oneTimeOnly && saveManager.instance.hasSeenDialogue(dialogue.dialogueID))
         {
             return;
         }
+        Time.timeScale = 0;
+        isTalking= true;
         saveManager.instance.markDialogueSeen(dialogue.dialogueID);
         canvas.SetActive(true);
         isDialogueActive = true;
@@ -83,7 +87,7 @@ public class dialogueManager : MonoBehaviour
         foreach (char letter in dialogueLine.line.ToCharArray())
         {
             dialogueArea.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSecondsRealtime(typingSpeed);
         }
     }
 
@@ -91,6 +95,8 @@ public class dialogueManager : MonoBehaviour
     {
         isDialogueActive = false;
         canvas.SetActive(false);
+        isTalking=false;
+        Time.timeScale = 1;
         //animator.Play("hide");
     }
 }
