@@ -84,16 +84,30 @@ public class QuestUI : MonoBehaviour
             objectiveUI.Setup(objective);
         }
 
-        rewardText.text = "";
+        rewardText.text = string.IsNullOrWhiteSpace(q.rewardText)
+            ? GetAutomaticRewardText(q)
+            : q.rewardText;
+    }
 
-        foreach (var item in q.itemRewards)
+    private string GetAutomaticRewardText(quest q)
+    {
+        string rewards = "";
+
+        if (q.itemRewards != null)
         {
-            rewardText.text += item.item.itemName + " x" + item.amount + "\n";
+            foreach (var item in q.itemRewards)
+            {
+                if (item == null || item.item == null) continue;
+                rewards += item.item.itemName + " x" + item.amount + "\n";
+            }
         }
 
-        if (q.Essencereward.Length > 0)
+        if (q.Essencereward != null && q.Essencereward.Length > 0)
         {
-            rewardText.text += "\nEssence: " + q.essenceRewardAmount;
+            if (!string.IsNullOrEmpty(rewards)) rewards += "\n";
+            rewards += "Essence: " + q.essenceRewardAmount;
         }
+
+        return rewards;
     }
 }

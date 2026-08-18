@@ -122,6 +122,6 @@ public class actionBar : MonoBehaviour
         pauseMenu.SetActive(false);
         questMenu.SetActive(false);
         potionMenu.SetActive(true);
-        lastOpenedMenu = menu.questMenu;
+        lastOpenedMenu = menu.potionMenu;
     }
 }

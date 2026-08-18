@@ -9,6 +9,15 @@ level design: tile palette pronta
 Da scegliere una sola zona tra bosco o palude,entrambe sono allo stesso punto
 
 
+Disegni:
+ Dash
+ Yara pg+face
+ ranged Enemy
+ slime boss
+ root Golem
+ UI
+ cutscene
+
 Priorità:
 Animare Player
 Background forestaIncantata ***

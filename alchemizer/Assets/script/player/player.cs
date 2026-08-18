@@ -143,6 +143,7 @@ public class player : MonoBehaviour
     {
         if (!isAlive) return;
         actionbarObj.SetActive(!actionbarObj.activeSelf);
+        Debug.Log(actionbarObj.activeSelf);
     }
     public void OnHeal(InputAction.CallbackContext context)
     {

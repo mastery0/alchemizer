@@ -20,6 +20,11 @@ public class questObjective
     public questType type;
     public questStatus status;
     public string targetID;
+
+    [Tooltip("Testo mostrato nel diario delle quest. Se vuoto, la UI genera una descrizione da tipo e targetID.")]
+    [TextArea]
+    public string displayText;
+
     public int requiredAmount;
     public int currentAmount;
     public void ResetProgress()
@@ -51,6 +56,11 @@ public class quest : ScriptableObject
     public essenceManager.essenceTypes[] Essencereward;
     public int essenceRewardAmount;
     public itemStack[] itemRewards;
+
+    [Header("Reward UI")]
+    [Tooltip("Testo opzionale mostrato nella UI della quest. Se compilato, sostituisce la lista automatica di item ed essenze; utile per ricompense non-item.")]
+    [TextArea(2, 5)]
+    public string rewardText;
 
     public bool canStartQuest()
     {

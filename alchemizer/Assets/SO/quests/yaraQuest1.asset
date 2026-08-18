@@ -20,14 +20,17 @@ MonoBehaviour:
   - type: 0
     status: 2
     targetID: spore
+    displayText: Spore Killed
     requiredAmount: 10
     currentAmount: 10
   - type: 3
     status: 1
     targetID: spore
-    requiredAmount: 10
+    displayText: Talk To Yara
+    requiredAmount: 1
     currentAmount: 0
   prerequisites: []
   Essencereward: 
   essenceRewardAmount: 0
   itemRewards: []
+  rewardText: Unlock a new Potion from Yara

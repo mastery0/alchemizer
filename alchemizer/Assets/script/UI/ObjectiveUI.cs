@@ -8,14 +8,38 @@ public class ObjectiveUI : MonoBehaviour
     public void Setup(questObjective obj)
     {
         string check = obj.status == questStatus.completed ? "✓" : "□";
-
+        string objectiveText = string.IsNullOrWhiteSpace(obj.displayText)
+            ? GetDefaultText(obj)
+            : obj.displayText;
+        Debug.Log(check);
+        Debug.Log(objectiveText);
         text.text =
             check +
             " " +
-            obj.type +
-            " : " +
+            objectiveText +
+            " (" +
             obj.currentAmount +
             "/" +
-            obj.requiredAmount;
+            obj.requiredAmount +
+            ")";
+    }
+
+    private string GetDefaultText(questObjective obj)
+    {
+        string target = string.IsNullOrWhiteSpace(obj.targetID) ? "target" : obj.targetID;
+
+        switch (obj.type)
+        {
+            case questType.kill:
+                return "Defeat " + target;
+            case questType.collect:
+                return "Collect " + target;
+            case questType.reach:
+                return "Reach " + target;
+            case questType.talk:
+                return "Talk to " + target;
+            default:
+                return target;
+        }
     }
 }

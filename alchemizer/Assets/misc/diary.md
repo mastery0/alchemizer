@@ -508,6 +508,10 @@ Ramo Cura:
 ### Giorno 56
 
 - ristrutturazione gestione input e scarto inventario non piu necessario nel nuovo scope della demo
+
+### Giorno 57
+
+- ristrtturazione grafica quest menu
 ## Stato Attuale & Prossimi Passi (fine Giorno 32)
 
 **Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), Save/Load ristrutturato, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (ridotto a chiavi/oggetti chiave, con locked chest), Quest System (backend + UI placeholder + NPC di test), sistema effetti di stato riorganizzato, sistema pozioni completo (superclasse, pozione base, UI, binding, swap), nemici: Crusher, Archer, Spora, Sanguisuga.
