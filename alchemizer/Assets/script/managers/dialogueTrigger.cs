@@ -26,6 +26,15 @@ public class Dialogue
     public string requiredCompletedDialogueID;
     public string requiredActiveQuestID;
     public string requiredCompletedQuestID;
+
+    [Header("Objective requirement")]
+    [Tooltip("Quest che contiene l'obiettivo da completare prima di rendere disponibile questo dialogo. Lascia vuoto per non richiedere alcun obiettivo.")]
+    public quest requiredCompletedObjectiveQuest;
+
+    [Min(0)]
+    [Tooltip("Indice dell'obiettivo nella quest selezionata (0 = primo obiettivo).")]
+    public int requiredCompletedObjectiveIndex;
+
     public bool oneTimeOnly = true;
     public bool shown = false;
     public bool isQuestDialogue = false;
@@ -37,6 +46,10 @@ public class Dialogue
         if (!string.IsNullOrEmpty(requiredCompletedDialogueID) && !saveManager.instance.hasSeenDialogue(requiredCompletedDialogueID)) return false;
         if (!string.IsNullOrEmpty(requiredActiveQuestID) && !saveManager.instance.isQuestActive(requiredActiveQuestID)) return false;
         if (!string.IsNullOrEmpty(requiredCompletedQuestID) && !saveManager.instance.isQuestCompleted(requiredCompletedQuestID)) return false;
+        if (requiredCompletedObjectiveQuest != null)
+        {
+            if (!requiredCompletedObjectiveQuest.isObjectiveCompleted(requiredCompletedObjectiveIndex)) return false;
+        }
         return true;
     }
 }
@@ -55,6 +68,7 @@ public class dialogueTrigger : MonoBehaviour
     {
         foreach (Dialogue dialogue in dialogues)
         {
+            Debug.Log(dialogue.dialogueID);
             if (!dialogue.canStart()) continue;
             dialogueManager.instance.StartDialogue(dialogue);
             if (questManager.instance != null) questManager.instance.updateQuestProgress(questType.talk, dialogue.dialogueID);

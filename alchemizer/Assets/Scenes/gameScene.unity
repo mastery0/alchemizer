@@ -168,7 +168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &33687762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1586,10 +1586,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 176343033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 480, y: -240.33}
+  m_SizeDelta: {x: 268.75, y: 40.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &210502783
 MonoBehaviour:
@@ -2551,12 +2551,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314246689}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.15, y: -13.81, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.700573, y: 31.71183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2112424050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &325661793
 GameObject:
@@ -4655,7 +4655,7 @@ MonoBehaviour:
   potionIMG: {fileID: -53869852, guid: 502cd9592a57188428c2a8b1316c7be1, type: 3}
   healAmount: 0
   potionAmount: 0
-  isUnlocked: 1
+  isUnlocked: 0
   isEquipped: 0
 --- !u!114 &661955022
 MonoBehaviour:
@@ -4675,7 +4675,7 @@ MonoBehaviour:
   potionIMG: {fileID: 2091804906, guid: 502cd9592a57188428c2a8b1316c7be1, type: 3}
   healAmount: 0
   potionAmount: 0
-  isUnlocked: 1
+  isUnlocked: 0
   isEquipped: 0
 --- !u!224 &666575383 stripped
 RectTransform:
@@ -5240,7 +5240,7 @@ MonoBehaviour:
       line: 'I can brew potions to keep you standing,For now all I have is a basic
         Heal Potion.
 
-        Rest on a checkpoint and your bottle refill on its
+        Rest at a checkpoint and your bottle refill on its
         own.'
     - character:
         name: Yara
@@ -5253,6 +5253,8 @@ MonoBehaviour:
     requiredCompletedDialogueID: 
     requiredActiveQuestID: 
     requiredCompletedQuestID: 
+    requiredCompletedObjectiveQuest: {fileID: 0}
+    requiredCompletedObjectiveIndex: 0
     oneTimeOnly: 1
     shown: 0
     isQuestDialogue: 0
@@ -5262,14 +5264,16 @@ MonoBehaviour:
     - character:
         name: Yara
         icon: {fileID: 0}
-      line: 'If you want more than a Heal Potion,you''ll have to earn it,help me
+      line: 'If you want more than a Heal Potion,you''ll have to earn it. Help me
         and i''ll help you back.
 
-        Since the cataclysm this forest has been
-        crawling with spores.Thin them out for me,would you?'
-    requiredCompletedDialogueID: 
+        Since the cataclysm, this forest has been
+        crawling with spores. Thin them out for me,would you?'
+    requiredCompletedDialogueID: yaraFirstEncounter
     requiredActiveQuestID: 
     requiredCompletedQuestID: 
+    requiredCompletedObjectiveQuest: {fileID: 0}
+    requiredCompletedObjectiveIndex: 0
     oneTimeOnly: 1
     shown: 0
     isQuestDialogue: 0
@@ -5286,7 +5290,105 @@ MonoBehaviour:
     requiredCompletedDialogueID: 
     requiredActiveQuestID: yaraQuest1
     requiredCompletedQuestID: 
+    requiredCompletedObjectiveQuest: {fileID: 0}
+    requiredCompletedObjectiveIndex: 0
     oneTimeOnly: 0
+    shown: 0
+    isQuestDialogue: 0
+    npc: {fileID: 0}
+  - dialogueID: quest1Completed
+    dialogueLines:
+    - character:
+        name: Yara
+        icon: {fileID: 0}
+      line: 'Good. The air already smells less like rot, thanks to you.
+
+        As
+        promised, This one heals less than the last, but it won''t reset your instability.'
+    requiredCompletedDialogueID: 
+    requiredActiveQuestID: 
+    requiredCompletedQuestID: 
+    requiredCompletedObjectiveQuest: {fileID: 0}
+    requiredCompletedObjectiveIndex: 0
+    oneTimeOnly: 1
+    shown: 0
+    isQuestDialogue: 0
+    npc: {fileID: 0}
+  - dialogueID: yaraSecondQuest
+    dialogueLines:
+    - character:
+        name: Yara
+        icon: {fileID: 0}
+      line: 'This one won''t be as easy.
+
+        There''s a Root Golem at the edge
+        of the swamp.'
+    - character:
+        name: Yara
+        icon: {fileID: 0}
+      line: 'This one won''t be as easy.
+
+        There''s a Root Golem at the edge
+        of the swamp.
+
+        It has been roaming around that area since the corruption
+        started spreading.'
+    - character:
+        name: Yara
+        icon: {fileID: 0}
+      line: 'I don''t know what it is protecting, but it''s not letting anything
+        through.
+
+        Bring it down and come back to me. I''ll make it worth
+        your time.'
+    requiredCompletedDialogueID: quest1Completed
+    requiredActiveQuestID: 
+    requiredCompletedQuestID: yaraQuest1
+    requiredCompletedObjectiveQuest: {fileID: 0}
+    requiredCompletedObjectiveIndex: 0
+    oneTimeOnly: 1
+    shown: 0
+    isQuestDialogue: 0
+    npc: {fileID: 0}
+  - dialogueID: yaraSecondLoop
+    dialogueLines:
+    - character:
+        name: 
+        icon: {fileID: 0}
+      line: 'It seems like you haven''t defeated that monster yet
+
+        Go take
+        care of him before coming back'
+    requiredCompletedDialogueID: yaraSecondQuest
+    requiredActiveQuestID: yaraQuest2
+    requiredCompletedQuestID: yaraQuest1
+    requiredCompletedObjectiveQuest: {fileID: 0}
+    requiredCompletedObjectiveIndex: 0
+    oneTimeOnly: 0
+    shown: 0
+    isQuestDialogue: 0
+    npc: {fileID: 0}
+  - dialogueID: quest2Completed
+    dialogueLines:
+    - character:
+        name: 
+        icon: {fileID: 0}
+      line: So it's finally down. I hoped you wouldn't need to find out how strong
+        it was.
+    - character:
+        name: 
+        icon: {fileID: 0}
+      line: 'Here, your reward. It''ll cost you your life force to drink it, but
+        your strikes will hit harder for a while.
+
+        You won''t have many,
+        so choose the right moment to consume them.'
+    requiredCompletedDialogueID: yaraSecondQuest
+    requiredActiveQuestID: yaraQuest2
+    requiredCompletedQuestID: yaraQuest1
+    requiredCompletedObjectiveQuest: {fileID: 11400000, guid: 2c6baa8eb179fcb4db6f0687086a5210, type: 2}
+    requiredCompletedObjectiveIndex: 0
+    oneTimeOnly: 1
     shown: 0
     isQuestDialogue: 0
     npc: {fileID: 0}
@@ -5357,12 +5459,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746345677}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.49, y: -20.56, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.270939, y: 10.077841, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1378965078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &746345681
 CircleCollider2D:
@@ -5415,6 +5517,8 @@ MonoBehaviour:
   dialogueQuestAssignments:
   - dialogueID: yaraFirstQuest
     quest: {fileID: 11400000, guid: 4104b738c5a63ae429151f5bd57b8278, type: 2}
+  - dialogueID: yaraSecondQuest
+    quest: {fileID: 11400000, guid: 2c6baa8eb179fcb4db6f0687086a5210, type: 2}
 --- !u!1001 &755511826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8872,7 +8976,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 100
+  m_Spacing: 150
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -10658,8 +10762,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 480, y: -540}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 480, y: -539.9997}
+  m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299457037
 MonoBehaviour:
@@ -11319,6 +11423,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376464565}
   m_CullTransparentMesh: 1
+--- !u!4 &1378965078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6164333508722632188, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
+  m_PrefabInstance: {fileID: 6405467359735496623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1384715592
 GameObject:
   m_ObjectHideFlags: 0
@@ -11766,10 +11875,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 176343033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 480, y: -480.55}
+  m_SizeDelta: {x: 212.24, y: 40.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446508656
 MonoBehaviour:
@@ -13369,10 +13478,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 176343033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 480, y: -100.11}
+  m_SizeDelta: {x: 205.61, y: 40.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663022975
 MonoBehaviour:
@@ -14418,6 +14527,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849533117}
   m_CullTransparentMesh: 1
+--- !u!4 &1859468590 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
+  m_PrefabInstance: {fileID: 2132723037}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1859490984 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5020598475775485637, guid: 4991f9fd7199e8943ac96956a7578936, type: 3}
@@ -15455,6 +15569,11 @@ MonoBehaviour:
   m_Spacing: {x: 100, y: 100}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!4 &1977088714 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9147814067632967433, guid: dec99b2c860502c498580919e50a1579, type: 3}
+  m_PrefabInstance: {fileID: 543565604081726636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1990057742
 GameObject:
   m_ObjectHideFlags: 0
@@ -16449,7 +16568,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1977088714}
     m_Modifications:
     - target: {fileID: 1915971893210087591, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_IsActive
@@ -16461,11 +16580,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -216.29535
+      value: -40.16716
       objectReference: {fileID: 0}
     - target: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.358044
+      value: -8.571184
       objectReference: {fileID: 0}
     - target: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16477,15 +16596,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7090432032991958288, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16682,6 +16801,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 9147814067632967433, guid: dec99b2c860502c498580919e50a1579, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1859468590}
     - targetCorrespondingSourceObject: {fileID: 1383707765750076718, guid: dec99b2c860502c498580919e50a1579, type: 3}
       insertIndex: -1
       addedObject: {fileID: 362030115}
@@ -82382,6 +82504,9 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2916605991847397434, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 314246691}
+    - targetCorrespondingSourceObject: {fileID: 2916605991847397434, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1317420211}
     - targetCorrespondingSourceObject: {fileID: 1347491084267166900, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       insertIndex: -1
@@ -82389,6 +82514,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6210368046658038552, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1071439277}
+    - targetCorrespondingSourceObject: {fileID: 6164333508722632188, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 746345680}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8036386376364651403, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       insertIndex: 3
@@ -82427,9 +82555,6 @@ SceneRoots:
   - {fileID: 6405467359735496623}
   - {fileID: 543565604081726636}
   - {fileID: 542276842}
-  - {fileID: 2132723037}
-  - {fileID: 314246691}
-  - {fileID: 746345680}
   - {fileID: 608893601}
   - {fileID: 1409488530}
   - {fileID: 1764740761}

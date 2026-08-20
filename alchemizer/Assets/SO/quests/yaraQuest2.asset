@@ -10,27 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: yaraQuest1
+  m_Name: yaraQuest2
   m_EditorClassIdentifier: Assembly-CSharp::quest
-  questID: yaraQuest1
-  questName: Clear the Spores
-  questStatus: 2
-  questDescription: Get rid of the spores for Yara
+  questID: yaraQuest2
+  questName: Defeat The Root Golem
+  questStatus: 1
+  questDescription: The Root Golem is threatening the entrance to the Swamp,go and
+    kill him
   objectives:
   - type: 0
-    status: 2
-    targetID: spore
-    displayText: 'Spore Killed:'
-    requiredAmount: 10
-    currentAmount: 10
+    status: 1
+    targetID: rootGolemBoss
+    displayText: 'Root Golem Defeated:'
+    requiredAmount: 1
+    currentAmount: 0
   - type: 3
     status: 2
-    targetID: quest1Completed
-    displayText: Talk To Yara
-    requiredAmount: 1
-    currentAmount: 1
+    targetID: quest2Completed
+    displayText: 
+    requiredAmount: 0
+    currentAmount: 0
   prerequisites: []
   Essencereward: 
   essenceRewardAmount: 0
   itemRewards: []
-  rewardText: Unlock a new Potion from Yara
+  rewardText: 'Unlock rage Potion '

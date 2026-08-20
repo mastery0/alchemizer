@@ -126,6 +126,14 @@ public class quest : ScriptableObject
         return updated;
     }
 
+    public bool isObjectiveCompleted(int objectiveIndex)
+    {
+        if (objectives == null || objectiveIndex < 0 || objectiveIndex >= objectives.Length) return false;
+
+        questObjective objective = objectives[objectiveIndex];
+        return objective != null && objective.status == global::questStatus.completed;
+    }
+
     public bool canCompleteQuest()
     {
         if (questStatus != global::questStatus.inProgress) return false;

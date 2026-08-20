@@ -102,6 +102,15 @@ public class saveManager : MonoBehaviour
             completedQuestsID.Add(completedQuestID);
         }
     }
+    [ContextMenu("test")]
+    public void test()
+    {
+        foreach (var item in activeQuestsID)
+        {
+            Debug.Log("active"+item);
+        }
+        foreach (var item in completedQuestsID) Debug.Log("fninished"+item);
+    }
     public bool isQuestActive(string questToCheck)
     {
         return activeQuestsID.Contains(questToCheck);

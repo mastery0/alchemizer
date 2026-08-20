@@ -3,41 +3,56 @@ diaologhi:
 	erborist (Yara):
 
 	First Talk: id:yaraFirstEncounter
-	Stay back.This forest isn't what it used to be, everything out there has turned hostile.But...you don't look like one of them.
-	Sorry,that's not much of a greeting.I'm Yara.
-	That's a catalyst that you're carrying,isn't it? I haven't seen one of those in years.
-	So it's true,you're the one who's supposed to set this place right.
-	I knew your father.If you're willing to help me,I'll do the same for you.
-	I can brew potions to keep you standing,For now all I have is a basic Heal Potion.
-	Rest on a checkpoint and your bottle refill on its own.
-	You can also switch which potion you're carrying,once you've got more than one.
-	Each one does something different. Find whichever suits how you fight.
+    Stay back.This forest isn't what it used to be, everything out there has turned hostile.But...you don't look like one of them.
+    Sorry,that's not much of a greeting.I'm Yara.
+    That's a catalyst that you're carrying,isn't it? I haven't seen one of those in years.
+    So it's true,you're the one who's supposed to set this place right.
+    I knew your father.If you're willing to help me,I'll do the same for you.
+    I can brew potions to keep you standing,For now all I have is a basic Heal Potion.
+    Rest at a checkpoint and your bottle refill on its own.
+    You can also switch which potion you're carrying,once you've got more than one.
+    Each one does something different. Find whichever suits how you fight.
+
+
 
 	Second Talk: id:yaraFirstQuest
-	If you want more than a Heal Potion,you'll have to earn it,help me and i'll help you back.
-	Since the cataclysm this forest has been crawling with spores.Thin them out for me,would you?
-	{give quest 1: Clear the Spores}
+    If you want more than a Heal Potion,you'll have to earn it. Help me and i'll help you back.
+    Since the cataclysm, this forest has been crawling with spores. Thin them out for me,would you?
+    {give quest 1: Clear the Spores}
 
-	Loop Talk 1: id:yaraFirstLoop
 
+
+	Loop Talk 1: id: yaraFirstLoop
 	Go get rid of that spores,they are bothering me.
 	Don't come back until you've killed 10 of them
 
-	On quest 1 completed:
-	Good the air already smells less like rot,thanks to you.
-	As promised.This one heals less than the last,but it won't reset your instability.
-	{give ember potion}
 
-	Third Talk:
-	This one won't be as easy.
-	There is a Root Golem at the edge of the swamp.
-	It has been guarding that ground since the corruption started spreading.
-	I don't know what it is protecting,but it's not letting anything through.
-	Bring it down and come back to me.I'll make it worth your time.
-	{give quest 2:Defeat the Root Golem}
+
+	On quest 1 completed: id: quest1Completed
+    Good. The air already smells less like rot, thanks to you.
+    As promised, This one heals less than the last, but it won't reset your instability.
+    {give ember potion}
+
+
+
+	Third Talk: id: yaraSecondQuest
+    This one won't be as easy.
+    There's a Root Golem at the edge of the swamp.
+    It has been roaming around that area since the corruption started spreading.
+    I don't know what it is protecting, but it's not letting anything through.
+    Bring it down and come back to me. I'll make it worth your time.
+    {give quest 2:Defeat the Root Golem}
+
+
+
+	Loop Talk 2: id: yaraSecondLoop
+	It seems like you haven't defeated that monster yet
+	Go take care of him before coming back
+
+
 
 	On quest 2 completed:
-	So it's finally down.I hoped you wouldn't need to find out how string it was.
-	Here,your reward.It'll cost you your blood to drink it,but your strikes will hit harder for a while.
-	You won't have many,so choose the right moment to consume them.
-	{give rage potion}
+    So it's finally down. I hoped you wouldn't need to find out how strong it was.
+    Here, your reward. It'll cost you your life force to drink it, but your strikes will hit harder for a while.
+    You won't have many, so choose the right moment to consume them.
+    {give rage potion}
