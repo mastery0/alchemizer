@@ -42,6 +42,8 @@ public class saveManager : MonoBehaviour
         public int darkEss;
 
         public int[] unlockedSkillIDs;
+        public string[] unlockedPotionIDs;
+        public string equippedPotionID;
         public string[] seenDialogueIDs;
         public string[] openedChestIDs;
         public itemStack[] inventory;
@@ -166,6 +168,11 @@ public class saveManager : MonoBehaviour
             }
         }
         data.unlockedSkillIDs = unlocked.ToArray();
+        if (healManager.instance != null)
+        {
+            data.unlockedPotionIDs = healManager.instance.getUnlockedPotionIDs();
+            data.equippedPotionID = healManager.instance.getEquippedPotionID();
+        }
         data.seenDialogueIDs = seenDialogue.ToArray();
         data.openedChestIDs = openedChest.ToArray();
         inventory.Clear();
@@ -236,7 +243,7 @@ public class saveManager : MonoBehaviour
     private bool CanApplyData()
     {
         return player.instance != null && essenceManager.instance != null && coreInstability.instance != null &&
-            global::inventory.instance != null && areaManager.instance != null;
+            global::inventory.instance != null && areaManager.instance != null && healManager.instance != null;
     }
 
     private void ApplyData(SaveData data)
@@ -302,6 +309,10 @@ public class saveManager : MonoBehaviour
         {
             questManager.instance.applySavedQuests(savedActiveQuests, savedCompletedQuests, data.questProgress);
         }
+        if (healManager.instance != null)
+        {
+            healManager.instance.applySavedPotionState(data.unlockedPotionIDs, data.equippedPotionID);
+        }
         // The scene load replaces the previous areaManager. Switch only after
         // the new scene's managers are ready, otherwise the switch is applied
         // to the manager that is about to be destroyed.
@@ -333,6 +344,10 @@ public class saveManager : MonoBehaviour
         if (questManager.instance != null)
         {
             questManager.instance.resetQuestDB();
+        }
+        if (healManager.instance != null)
+        {
+            healManager.instance.resetPotionState();
         }
         foreach (skillSO skill in allSkills)
         {

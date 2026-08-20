@@ -14,23 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::quest
   questID: yaraQuest1
   questName: Clear the Spores
-  questStatus: 2
+  questStatus: 0
   questDescription: Get rid of the spores for Yara
   objectives:
   - type: 0
-    status: 2
+    status: 0
     targetID: spore
     displayText: 'Spore Killed:'
     requiredAmount: 10
-    currentAmount: 10
+    currentAmount: 0
   - type: 3
-    status: 2
+    status: 0
     targetID: quest1Completed
     displayText: Talk To Yara
     requiredAmount: 1
-    currentAmount: 1
+    currentAmount: 0
   prerequisites: []
   Essencereward: 
   essenceRewardAmount: 0
   itemRewards: []
+  potionRewardID: heatPotion
   rewardText: Unlock a new Potion from Yara

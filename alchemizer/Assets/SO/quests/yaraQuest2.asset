@@ -34,4 +34,5 @@ MonoBehaviour:
   Essencereward: 
   essenceRewardAmount: 0
   itemRewards: []
+  potionRewardID: ragePotion
   rewardText: 'Unlock rage Potion '

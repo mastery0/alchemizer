@@ -19,6 +19,7 @@ public class player : MonoBehaviour
     public Vector2 respawnAltar;
     public int respawnScene;
 
+    public Animator animator;
 
     [Header("Movement")]
     public float moveSpeed = 5f;
@@ -91,12 +92,27 @@ public class player : MonoBehaviour
     }
     void FixedUpdate()
     {
+        faceTarget();
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
-        grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground);
+
+            grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground);
         if (grounded) { currentDash = dashCount; currentJump = jumpAmount; }
         glide();
         
         hp = Mathf.Clamp(hp, 0, maxHp);
+        //animator
+        setGrounded(grounded);
+        if (moveX != 0) setWalking(true);
+        else setWalking(false);
+        if (prb.linearVelocity.y < -0.05) setFalling(true);
+        else setFalling(false);
+    }
+    protected void faceTarget()
+    {
+        float dirx = Mathf.Sign(moveX);
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * dirx;
+        transform.localScale = scale;
     }
     // Input System
     public void OnMove(InputAction.CallbackContext context)
@@ -178,6 +194,7 @@ public class player : MonoBehaviour
     }
     public void jump()
     {
+        jumpAnim();
         prb.linearVelocity=new Vector2( prb.linearVelocityX, jumpForce);
     }
     public void fastFall()
@@ -229,7 +246,7 @@ public class player : MonoBehaviour
     public void die()
     {
         if (!isAlive) return;
-
+        dieAnim();
         isAlive = false;
         removeEssence();
         if (hitStopManager.instance != null)
@@ -274,6 +291,7 @@ public class player : MonoBehaviour
         canAttack = false;
 
         Vector2 dir = direction();
+        attackAnim();
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, attackRange, enemyLayer);
         Vector2 endPoint;
         if (hit.collider == null) endPoint = (Vector2)transform.position + dir * attackRange;
@@ -329,5 +347,33 @@ public class player : MonoBehaviour
         attackDamage += attackDamage*buff;
         yield return new WaitForSeconds(time);
         attackDamage -= attackDamage*buff;
+    }
+    //Animator Settings
+    public void setWalking(bool walking)
+    {
+        animator.SetBool("isWalking", walking);
+    }
+
+    public void jumpAnim()
+    {
+        animator.SetTrigger("jump");
+    }
+
+    public void setFalling(bool falling)
+    {
+        animator.SetBool("falling", falling);
+    }
+    public void setGrounded(bool grounded)
+    {
+        animator.SetBool("grounded", grounded);
+    }
+    public void attackAnim()
+    {
+        animator.SetTrigger("attack");
+    }
+
+    public void dieAnim()
+    {
+        animator.SetTrigger("die");
     }
 }

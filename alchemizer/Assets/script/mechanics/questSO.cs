@@ -57,6 +57,10 @@ public class quest : ScriptableObject
     public int essenceRewardAmount;
     public itemStack[] itemRewards;
 
+    [Header("Potion Reward")]
+    [Tooltip("ID della pozione sbloccata al completamento della quest. Lascia vuoto se la quest non sblocca una pozione.")]
+    public string potionRewardID;
+
     [Header("Reward UI")]
     [Tooltip("Testo opzionale mostrato nella UI della quest. Se compilato, sostituisce la lista automatica di item ed essenze; utile per ricompense non-item.")]
     [TextArea(2, 5)]

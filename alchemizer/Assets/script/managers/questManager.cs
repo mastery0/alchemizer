@@ -26,6 +26,15 @@ public class questManager : MonoBehaviour
     {
         instance = this;
     }
+
+    private void Start()
+    {
+        // Supports scenes or saves where a quest was already marked complete.
+        foreach (quest quest in questDB)
+        {
+            if (quest.questStatus == questStatus.completed) unlockQuestPotion(quest);
+        }
+    }
     public void startQuest(quest quest)
     {
         if (quest == null) return;
@@ -68,6 +77,7 @@ public class questManager : MonoBehaviour
         if (quest == null) return false;
         if (!quest.completeAndReward()) return false;
 
+        unlockQuestPotion(quest);
         if(saveManager.instance!=null)saveManager.instance.completeQuest(quest.questID);
         onQuestCompleted?.Invoke(quest);
         onQuestUpdated?.Invoke(quest);
@@ -136,6 +146,7 @@ public class questManager : MonoBehaviour
                 objective.currentAmount = objective.requiredAmount;
                 objective.status = questStatus.completed;
             }
+            unlockQuestPotion(quest);
         }
 
         foreach(string questID in activeQuestsID)
@@ -179,5 +190,11 @@ public class questManager : MonoBehaviour
         if (data.objectiveProgress == null) return 0;
         if (objectiveIndex >= data.objectiveProgress.Length) return 0;
         return data.objectiveProgress[objectiveIndex];
+    }
+
+    private void unlockQuestPotion(quest quest)
+    {
+        if (quest == null || healManager.instance == null) return;
+        healManager.instance.unlockPotion(quest.potionRewardID);
     }
 }

@@ -512,6 +512,18 @@ Ramo Cura:
 ### Giorno 57
 
 - ristrtturazione grafica quest menu
+
+### Giorno 58
+
+- sistemazioni dialoghi (adattamento in inglese)
+
+### Giorno 59
+
+- creazione quests
+
+### Giorno 60
+
+- rework questSystem per fare in modo che una volta finita una quest si possono sbloccare le pozioni
 ## Stato Attuale & Prossimi Passi (fine Giorno 32)
 
 **Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), Save/Load ristrutturato, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (ridotto a chiavi/oggetti chiave, con locked chest), Quest System (backend + UI placeholder + NPC di test), sistema effetti di stato riorganizzato, sistema pozioni completo (superclasse, pozione base, UI, binding, swap), nemici: Crusher, Archer, Spora, Sanguisuga.
