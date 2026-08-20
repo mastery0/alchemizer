@@ -19,9 +19,9 @@ Disegni:
  cutscene
 
 Priorità:
-Animare Player
+Animare Player ***
 Background forestaIncantata ***
-Fix rootGolem
+Fix rootGolem 
 UI
 Animazioni boss
 Animazioni nemico ranged
