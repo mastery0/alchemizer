@@ -68,6 +68,7 @@ public class player : MonoBehaviour
     private bool isInvicible=false;
     private Vector2 facingDirection;
     private LineRenderer rayEffect;
+    private bool canMove = true;
 
     private void Awake()
     {
@@ -132,6 +133,7 @@ public class player : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         if (!isAlive) return;
+        if (!canMove) return;
         Vector2 moveInput = context.ReadValue<Vector2>();
         bool isJumpHeld = moveInput.y > 0;
         moveX = moveInput.x;
@@ -226,8 +228,8 @@ public class player : MonoBehaviour
     }
     public Vector2 direction()
     {
-        if (prb.linearVelocity.x > 0) facingDirection = Vector2.right;
-        if (prb.linearVelocity.x < 0) facingDirection = Vector2.left;
+        if (moveX > 0) facingDirection = Vector2.right;
+        if (moveX < 0) facingDirection = Vector2.left;
         return facingDirection;
     }
     public void takeDamage(float damage)
@@ -305,6 +307,8 @@ public class player : MonoBehaviour
         canAttack = false;
 
         Vector2 dir = direction();
+        canMove = false;
+        moveX = 0;
         attackAnim();
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, attackRange, enemyLayer);
         Vector2 endPoint;
@@ -388,9 +392,12 @@ public class player : MonoBehaviour
 
     public void dieAnim()
     {
-        // die() pauses the game immediately afterwards; use real time so the
-        // death-state transition and clip can still run.
         animator.updateMode = AnimatorUpdateMode.UnscaledTime;
         animator.SetTrigger("die");
+    }
+
+    public void finishingAttackAnim()
+    {
+        canMove = true;
     }
 }
