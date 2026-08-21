@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class skillButton : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
+public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public skillSO skill;
     public TMP_Text skillName;
@@ -13,7 +13,17 @@ public class skillButton : MonoBehaviour,IPointerEnterHandler,IPointerExitHandle
     private void Start()
     {
         skillName.text = skill.skillName;
-        menuScript=overMenu.GetComponent<overMenuScript>();
+        menuScript = overMenu.GetComponent<overMenuScript>();
+    }
+    void LateUpdate()
+    {
+        Vector3 parentScale = transform.parent.lossyScale;
+
+        transform.localScale = new Vector3(
+            1f / parentScale.x,
+            1f / parentScale.y,
+            1f / parentScale.z
+        );
     }
     public void OnClick()
     {

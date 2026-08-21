@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering;
 [RequireComponent(typeof(Animator))]
 public class player : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class player : MonoBehaviour
     public float dashTime = 0.2f;
     public float dashCooldown = 1f;
     public float glideFallSpeed = 2f;
+    private float moveXClone;
     [Header("Combat")]
     public float hp;
     public float maxHp = 100f;
@@ -40,6 +42,8 @@ public class player : MonoBehaviour
     public float attackRange = 1f;
     public float attackCooldown = 1f;
     public float iFrames = 0.1f;
+
+    public float raySpeed;
 
     //unlocks
     [System.NonSerialized] public bool hasDash = true;
@@ -132,11 +136,15 @@ public class player : MonoBehaviour
     // Input System
     public void OnMove(InputAction.CallbackContext context)
     {
+        Debug.Log(canMove);  
         if (!isAlive) return;
+        if (!canMove && context.canceled) moveXClone = 0;
         if (!canMove) return;
+        Debug.Log("func called");
         Vector2 moveInput = context.ReadValue<Vector2>();
         bool isJumpHeld = moveInput.y > 0;
         moveX = moveInput.x;
+        moveXClone = moveX;
         if (isJumpHeld && !jumpHeld && grounded)
         {
             jump();
@@ -228,8 +236,8 @@ public class player : MonoBehaviour
     }
     public Vector2 direction()
     {
-        if (moveX > 0) facingDirection = Vector2.right;
-        if (moveX < 0) facingDirection = Vector2.left;
+        if (transform.localScale.x > 0) facingDirection = Vector2.right;
+        if (transform.localScale.x < 0) facingDirection = Vector2.left;
         return facingDirection;
     }
     public void takeDamage(float damage)
@@ -304,28 +312,63 @@ public class player : MonoBehaviour
     public void attack()
     {
         if (!canAttack) return;
+        if (!grounded) return;
+
         canAttack = false;
 
         Vector2 dir = direction();
+
         canMove = false;
         moveX = 0;
+
         attackAnim();
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, attackRange, enemyLayer);
-        Vector2 endPoint;
-        if (hit.collider == null) endPoint = (Vector2)transform.position + dir * attackRange;
-        else endPoint = hit.point;
-        StartCoroutine(showRay(endPoint));
 
         if (hit.collider != null)
         {
-            hit.collider.GetComponent<enemy>().takeDamage(attackDamage);
-            timeSinceAttack = 0f;
-            core.currentPressure += core.pressurePlusDelta;
-            hitStopManager.instance.stopTime(0.08f);
-            Debug.Log("hitted");
+            StartCoroutine(timedRayCast(hit.collider,hit.point));
         }
-        Debug.Log("attacking");
         StartCoroutine(attackCD());
+    }
+    IEnumerator timedRayCast(Collider2D target,Vector2 hitPoint)
+    {
+        float distance = Vector2.Distance(transform.position, hitPoint);
+
+        float time = distance / raySpeed;
+
+        yield return new WaitForSeconds(time);
+
+
+        //DEBUG
+        Vector2 startPoint=transform.position;
+        float elapsed = 0;
+        while (elapsed < time)
+        {
+            elapsed += Time.deltaTime;
+
+            float t = elapsed / time;
+
+            Vector2 currentPoint = Vector2.Lerp(startPoint, hitPoint, t);
+
+            Debug.DrawLine(startPoint, currentPoint, Color.red);
+            Debug.Log("in debug loop");
+            yield return null;
+        }
+        //END DEBUG
+
+
+        if (target==null)yield break;
+
+            enemy e = target.GetComponent<enemy>();
+            if (e != null)
+            {
+                e.takeDamage(attackDamage);
+
+                timeSinceAttack = 0f;
+                core.currentPressure += core.pressurePlusDelta;
+
+                hitStopManager.instance.stopTime(0.08f);
+            }
     }
     public void heal(float amount1)
     {
@@ -399,5 +442,6 @@ public class player : MonoBehaviour
     public void finishingAttackAnim()
     {
         canMove = true;
+        moveX = moveXClone;
     }
 }

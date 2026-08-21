@@ -141,7 +141,7 @@ public class overMenuScript : MonoBehaviour
             rectTransform.anchoredPosition += targetLocalPosition - currentLocalPosition;
         }
 
-        rectTransform.SetAsLastSibling();
+        rectTransform.parent.SetAsLastSibling();
     }
 
     private Vector2 WorldToScreen(Vector3 worldPosition)
