@@ -15,7 +15,7 @@ public class parallaxEffect : MonoBehaviour
         float temp = (cam.transform.position.x * (1 - parallexEffectMult));
         float dist = (cam.transform.position.x * parallexEffectMult);
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
-        if (temp > startpos + length) startpos += length*2;
-        else if (temp < startpos - length) startpos -= length*2;
+        if (temp > startpos + length) startpos += length*2.5f;
+        else if (temp < startpos - length) startpos -= length*2.5f;
     }
 }
