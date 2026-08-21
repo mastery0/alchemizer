@@ -44,16 +44,9 @@ public class overMenuScript : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void OnEnable()
+    public void Spawn()
     {
-        if (skill == null)
-        {
-            skill = GetComponentInParent<skillButton>();
-        }
-
-        skillName.text = skill.skill.skillName;
-        skillDescription.text = skill.skill.skillDescription;
-        rectTransform.anchoredPosition = startPosition;
+        gameObject.SetActive(true);
         KeepInsideBounds();
         canvasGroup.alpha = 0f;
         StartFade(0.8f);

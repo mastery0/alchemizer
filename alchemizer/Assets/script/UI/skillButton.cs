@@ -8,12 +8,9 @@ public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 {
     public skillSO skill;
     public TMP_Text skillName;
-    public GameObject overMenu;
-    private overMenuScript menuScript;
     private void Start()
     {
         skillName.text = skill.skillName;
-        menuScript = overMenu.GetComponent<overMenuScript>();
     }
     void LateUpdate()
     {
@@ -31,10 +28,17 @@ public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
     public void OnPointerEnter(PointerEventData data)
     {
-        overMenu.SetActive(true);
+        ConjureMenu();
     }
     public void OnPointerExit(PointerEventData data)
     {
-        menuScript.despawn();
+        skillTreeManager.overMenu.gameObject.SetActive(false);
+    }
+    void ConjureMenu()
+    {
+        skillTreeManager.overMenu.transform.position = transform.position + new Vector3(200, -10, 0);
+        skillTreeManager.overMenu.skillName.text = skill.name;
+        skillTreeManager.overMenu.skillDescription.text = skill.skillDescription;
+        skillTreeManager.overMenu.Spawn();
     }
 }
