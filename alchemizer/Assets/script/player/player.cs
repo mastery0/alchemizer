@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+[RequireComponent(typeof(Animator))]
 public class player : MonoBehaviour
 {
     public static player instance;
@@ -67,6 +68,17 @@ public class player : MonoBehaviour
     private bool isInvicible=false;
     private Vector2 facingDirection;
     private LineRenderer rayEffect;
+
+    private void Awake()
+    {
+        // Keep the Animator reference valid even if it was not assigned in the
+        // inspector. The player uses the Animator on this same GameObject.
+        if (animator == null)
+        {
+            animator = GetComponent<Animator>();
+        }
+    }
+
     private void Start()
     {
         instance = this;
@@ -102,13 +114,15 @@ public class player : MonoBehaviour
         hp = Mathf.Clamp(hp, 0, maxHp);
         //animator
         setGrounded(grounded);
-        if (moveX != 0) setWalking(true);
-        else setWalking(false);
-        if (prb.linearVelocity.y < -0.05) setFalling(true);
+        if (!Mathf.Approximately(moveX, 0f)) setWalking(true);
+        else if(Mathf.Approximately(prb.linearVelocity.y, 0f)) setWalking(false);
+        if (prb.linearVelocity.y < 0f&&!grounded) setFalling(true);
         else setFalling(false);
     }
     protected void faceTarget()
     {
+        if (Mathf.Approximately(moveX, 0f)) return;
+
         float dirx = Mathf.Sign(moveX);
         Vector3 scale = transform.localScale;
         scale.x = Mathf.Abs(scale.x) * dirx;
@@ -374,6 +388,9 @@ public class player : MonoBehaviour
 
     public void dieAnim()
     {
+        // die() pauses the game immediately afterwards; use real time so the
+        // death-state transition and clip can still run.
+        animator.updateMode = AnimatorUpdateMode.UnscaledTime;
         animator.SetTrigger("die");
     }
 }
