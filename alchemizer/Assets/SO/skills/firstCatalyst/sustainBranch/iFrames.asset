@@ -19,7 +19,11 @@ MonoBehaviour:
   requiredSkill:
   - {fileID: 11400000, guid: 34cdfd286472971489800c04e57b431d, type: 2}
   skipRequirement: 0
-  essences: []
+  essences:
+  - type: 0
+    amount: 5
+  - type: 3
+    amount: 5
   hpMult: 1
   atkMult: 1
   dashMult: 1
@@ -37,4 +41,4 @@ MonoBehaviour:
   airDash: 0
   glider: 0
   enemyHeals: 0
-  isUnlocked: 1
+  isUnlocked: 0

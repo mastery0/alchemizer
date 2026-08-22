@@ -20,7 +20,7 @@ MonoBehaviour:
   skipRequirement: 0
   essences:
   - type: 0
-    amount: 50
+    amount: 5
   hpMult: 1
   atkMult: 1
   dashMult: 1
@@ -29,8 +29,13 @@ MonoBehaviour:
   atkCDmult: 1
   speedMult: 1
   dashCDmult: 1
+  dashCount: 0
+  iFrames: 0
+  healMult: 0
   dashInv: 0
   coreinstability: 0
   glassCannon: 0
   airDash: 1
+  glider: 0
+  enemyHeals: 0
   isUnlocked: 0

@@ -19,8 +19,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 10396e9a357cd954bb3b9807c0268f29, type: 2}
   skipRequirement: 0
   essences:
-  - type: 0
-    amount: 100
+  - type: 3
+    amount: 5
+  - type: 4
+    amount: 5
   hpMult: 1
   atkMult: 1
   dashMult: 1
@@ -30,9 +32,12 @@ MonoBehaviour:
   speedMult: 1
   dashCDmult: 1
   dashCount: 1
+  iFrames: 0
+  healMult: 0
   dashInv: 0
   coreinstability: 0
   glassCannon: 0
   airDash: 0
   glider: 0
+  enemyHeals: 0
   isUnlocked: 0

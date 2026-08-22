@@ -21,7 +21,7 @@ MonoBehaviour:
   skipRequirement: 0
   essences:
   - type: 2
-    amount: 25
+    amount: 3
   hpMult: 1.3
   atkMult: 1
   dashMult: 1
