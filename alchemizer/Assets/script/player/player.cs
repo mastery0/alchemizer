@@ -199,6 +199,7 @@ public class player : MonoBehaviour
         isDashing = true;
         dashCD = true;
         currentDash--;
+        dashAnim();
         prb.linearVelocity=new Vector2(moveX * dashForce, 0);
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
@@ -338,25 +339,6 @@ public class player : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
-
-        //DEBUG
-        Vector2 startPoint=transform.position;
-        float elapsed = 0;
-        while (elapsed < time)
-        {
-            elapsed += Time.deltaTime;
-
-            float t = elapsed / time;
-
-            Vector2 currentPoint = Vector2.Lerp(startPoint, hitPoint, t);
-
-            Debug.DrawLine(startPoint, currentPoint, Color.red);
-            Debug.Log("in debug loop");
-            yield return null;
-        }
-        //END DEBUG
-
-
         if (target==null)yield break;
 
             enemy e = target.GetComponent<enemy>();
@@ -439,6 +421,11 @@ public class player : MonoBehaviour
         animator.SetTrigger("die");
     }
 
+    public void dashAnim()
+    {
+        animator.SetTrigger("dash");
+        Debug.Log("dash");
+    }
     public void finishingAttackAnim()
     {
         canMove = true;
