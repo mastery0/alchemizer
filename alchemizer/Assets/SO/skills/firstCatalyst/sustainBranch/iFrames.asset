@@ -16,7 +16,8 @@ MonoBehaviour:
   skillName: Fluid Body
   skillDescription: Water's essence softens the aftermath of a blow, extending your
     invulnerability
-  requiredSkill: []
+  requiredSkill:
+  - {fileID: 11400000, guid: 34cdfd286472971489800c04e57b431d, type: 2}
   skipRequirement: 0
   essences: []
   hpMult: 1
@@ -36,4 +37,4 @@ MonoBehaviour:
   airDash: 0
   glider: 0
   enemyHeals: 0
-  isUnlocked: 0
+  isUnlocked: 1

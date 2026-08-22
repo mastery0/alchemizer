@@ -17,7 +17,7 @@ MonoBehaviour:
   skillDescription: Your body adapts to the flow of essence, increasing your maximum
     health by 30%
   requiredSkill:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 74b196e70e2c16949a41be2150d5c4e2, type: 2}
   skipRequirement: 0
   essences:
   - type: 2

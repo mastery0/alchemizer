@@ -17,7 +17,7 @@ MonoBehaviour:
   skillDescription: Life orbs may blooms where your enemies fall,collect them to
     heal yourself
   requiredSkill:
-  - {fileID: 11400000, guid: d72470432be7ade45a09ddc537aca8cd, type: 2}
+  - {fileID: 11400000}
   skipRequirement: 0
   essences:
   - type: 2
