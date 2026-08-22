@@ -7,10 +7,17 @@ using UnityEngine.UI;
 public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public skillSO skill;
+    private Image skillIMG;
+    public Sprite skillBG;
     public TMP_Text skillName;
+    private void Awake()
+    {
+        skillIMG = GetComponent<Image>();
+    }
     private void Start()
     {
         skillName.text = skill.skillName;
+        skillIMG.sprite=skillBG;
     }
     void LateUpdate()
     {
@@ -39,6 +46,7 @@ public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         skillTreeManager.overMenu.transform.position = transform.position + new Vector3(200, -10, 0);
         skillTreeManager.overMenu.skillName.text = skill.name;
         skillTreeManager.overMenu.skillDescription.text = skill.skillDescription;
+        skillTreeManager.overMenu.skillImage.sprite=skill.skillMenuImg;
         skillTreeManager.overMenu.Spawn();
     }
 }

@@ -341,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 9c4c32db9c654fd4d9de3651da12b358, type: 2}
     - target: {fileID: 6884056887791194016, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 7323499323442576968, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_Name
@@ -1592,7 +1592,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3e75c40202078364db656b0a441bb8b1, type: 2}
     - target: {fileID: 6884056887791194016, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 7323499323442576968, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_Name
@@ -2201,7 +2201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -29.3}
+  m_AnchoredPosition: {x: 0, y: -41.999996}
   m_SizeDelta: {x: 140, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262138239
@@ -3806,7 +3806,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c9e8b1d7ef0ba7f4994903ab9b74c109, type: 2}
     - target: {fileID: 6884056887791194016, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 7323499323442576968, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_Name
@@ -5263,7 +5263,7 @@ MonoBehaviour:
   potionID: 
   potionName: 
   description: 
-  potionIMG: {fileID: 826125534, guid: 502cd9592a57188428c2a8b1316c7be1, type: 3}
+  potionIMG: {fileID: 2183566215317997150, guid: c0c6bc56bd9900f4ba530a428848cf9f, type: 3}
   healAmount: 0
   potionAmount: 0
   isUnlocked: 1
@@ -5298,7 +5298,7 @@ MonoBehaviour:
   potionID: 
   potionName: 
   description: 
-  potionIMG: {fileID: -53869852, guid: 502cd9592a57188428c2a8b1316c7be1, type: 3}
+  potionIMG: {fileID: 4650686576872047046, guid: 0dae833f75d94d0408faf54d8d346979, type: 3}
   healAmount: 0
   potionAmount: 0
   isUnlocked: 0
@@ -5318,7 +5318,7 @@ MonoBehaviour:
   potionID: 
   potionName: 
   description: 
-  potionIMG: {fileID: 2091804906, guid: 502cd9592a57188428c2a8b1316c7be1, type: 3}
+  potionIMG: {fileID: -4478483295110185260, guid: eb6303f94738a1b4aa6ffe841c232989, type: 3}
   healAmount: 0
   potionAmount: 0
   isUnlocked: 0
@@ -6041,7 +6041,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d72470432be7ade45a09ddc537aca8cd, type: 2}
     - target: {fileID: 6884056887791194016, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 7323499323442576968, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_Name
@@ -10418,7 +10418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6884056887791194016, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 7323499323442576968, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_Name
@@ -11136,7 +11136,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: this potion heal 40 hp and reset pressure
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11163,7 +11163,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.55
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11477,8 +11477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -26.73}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -42}
+  m_SizeDelta: {x: 83.9404, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1174791038
 MonoBehaviour:
@@ -11500,7 +11500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1003944813, guid: 1a6b42bf1bfbbdb4d91c2cc4501c7777, type: 3}
+  m_Sprite: {fileID: 2183566215317997150, guid: c0c6bc56bd9900f4ba530a428848cf9f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13009,7 +13009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Amount:5
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13159,7 +13159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 155652453209377690, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -617
+      value: -639.91
       objectReference: {fileID: 0}
     - target: {fileID: 155652453209377690, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14050,7 +14050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: base Potion
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14077,7 +14077,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.5
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14674,7 +14674,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 0176098aa59151243b898c95b2e85f92, type: 2}
     - target: {fileID: 6884056887791194016, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 78.7
       objectReference: {fileID: 0}
     - target: {fileID: 7323499323442576968, guid: 7a4ebdcbdbf6b9849ae7c78334b5ec6e, type: 3}
       propertyPath: m_Name
@@ -15350,15 +15350,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
   m_Padding:
-    m_Left: 0
+    m_Left: 100
     m_Right: 0
-    m_Top: 0
+    m_Top: 25
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 150, y: 150}
-  m_Spacing: {x: 100, y: 100}
+  m_Spacing: {x: 200, y: 100}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &1662114293
@@ -15859,6 +15859,7 @@ GameObject:
   - component: {fileID: 1734296226}
   - component: {fileID: 1734296228}
   - component: {fileID: 1734296227}
+  - component: {fileID: 1734296229}
   m_Layer: 5
   m_Name: potionImage
   m_TagString: Untagged
@@ -15923,6 +15924,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734296225}
   m_CullTransparentMesh: 1
+--- !u!114 &1734296229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734296225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fbc3fab1646e144ace8def6d6dab9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::imgBlankRemove
 --- !u!1 &1749819225
 GameObject:
   m_ObjectHideFlags: 0
@@ -86551,6 +86564,7 @@ MonoBehaviour:
   skill: {fileID: 0}
   skillName: {fileID: 1647760140594607154}
   skillDescription: {fileID: 2957959874578683240}
+  skillImage: {fileID: 0}
   fadeDuration: 0.3
   screenPadding: 12
 --- !u!1 &8007688280952126823

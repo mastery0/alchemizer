@@ -16,6 +16,10 @@ public class skillSO : ScriptableObject
         public int skillID;
         public string skillName;
         public string skillDescription;
+        public Sprite skillBG;
+        public Sprite skillMenuImg;
+
+
         public skillSO[] requiredSkill;
         public bool skipRequirement;
         public essence[] essences = null;

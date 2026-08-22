@@ -1,16 +1,16 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class imgBlankRemove : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   private Image img;
     void Start()
     {
-        
+        img= GetComponent<Image>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (img.sprite == null) img.color = new Color() { a = 0 };
+        else img.color = Color.white;
     }
 }

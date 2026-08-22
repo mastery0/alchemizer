@@ -1,13 +1,14 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-
+using UnityEngine.UI;
 [RequireComponent(typeof(CanvasGroup))]
 public class overMenuScript : MonoBehaviour
 {
     public skillButton skill;
     public TMP_Text skillName;
     public TMP_Text skillDescription;
+    public Image skillImage;
     public float fadeDuration = 0.3f;
     public float screenPadding = 12f;
 
