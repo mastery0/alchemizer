@@ -107,13 +107,16 @@ public class rootGolem : boss
         yield return StartCoroutine(crackGlow(0, meleeGlowInterval));
 
         faceTarget();
-        triggerRootAttack();
+        triggerAttackAnim();
         float distance=Mathf.Abs(player.transform.position.x-transform.position.x);
         float elapsed = 0f;
         while(elapsed < meleeDuration)
         {
+            Debug.DrawLine(transform.position, new Vector2(transform.position.x + meleeRange, transform.position.y),Color.green,2f);
             elapsed += Time.deltaTime;
-            if (!defeated && !hasMeleeHit && Vector2.Distance(transform.position, player.transform.position) <= meleeRange)
+            float dx = player.transform.position.x - transform.position.x;
+            bool playerPos = (transform.localScale.x > 0 && dx > 0) || (transform.localScale.x < 0 && dx < 0);
+            if (!defeated && !hasMeleeHit && Vector2.Distance(transform.position, player.transform.position) <= meleeRange&&playerPos)
             {
                 playerScript.takeDamage(calcDamage(type));
                 hasMeleeHit = true;

@@ -7,17 +7,17 @@ using UnityEngine.UI;
 public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public skillSO skill;
-    private Image skillIMG;
-    public Sprite skillBG;
-    public TMP_Text skillName;
+    //private Image skillIMG;
+    //public Sprite skillBG;
+    //public TMP_Text skillName;
     private void Awake()
     {
-        skillIMG = GetComponent<Image>();
+        //skillIMG = GetComponent<Image>();
     }
     private void Start()
     {
-        skillName.text = skill.skillName;
-        skillIMG.sprite=skillBG;
+        //skillName.text = skill.skillName;
+        //skillIMG.sprite=skillBG;
     }
     void LateUpdate()
     {

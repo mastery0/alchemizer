@@ -2,13 +2,21 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using UnityEngine.UI;
+using System.Linq;
 [RequireComponent(typeof(CanvasGroup))]
+[System.Serializable]
+public class backGround
+{
+    public Sprite backGroundSprite;
+    public skillSO[] skills;
+}
 public class overMenuScript : MonoBehaviour
 {
     public skillButton skill;
     public TMP_Text skillName;
     public TMP_Text skillDescription;
     public Image skillImage;
+    public Image menuBG;
     public float fadeDuration = 0.3f;
     public float screenPadding = 12f;
 
@@ -21,9 +29,14 @@ public class overMenuScript : MonoBehaviour
     private Vector2 startPosition;
     private Coroutine fadeRoutine;
 
+    [Header("Back Ground Menus")]
+    public backGround[] bgList;
+
+
     private void Awake()
     {
         skill = GetComponentInParent<skillButton>();
+        menuBG = GetComponentInParent<Image>();
         canvas = GetComponentInParent<Canvas>();
         canvasRect = canvas.GetComponent<RectTransform>();
         boundsRect = FindBoundsRect();
@@ -44,7 +57,10 @@ public class overMenuScript : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-
+    private void OnEnable()
+    {
+        setBackground();
+    }
     public void Spawn()
     {
         gameObject.SetActive(true);
@@ -160,5 +176,17 @@ public class overMenuScript : MonoBehaviour
             yield return null;
             }
         canvasGroup.alpha = to;
+    }
+
+    private void setBackground()
+    {
+        foreach(var bg in bgList)
+        {
+            foreach(var Selectedskill in bg.skills)
+            {
+                if (Selectedskill == skill.skill) {menuBG.sprite = bg.backGroundSprite;return; }
+                
+            }
+        }
     }
 }
