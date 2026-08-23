@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 07bacdfe050afca4395b37db0ea95489
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2022268893501099586
+    second: ranged_0
+  - first:
+      213: 2462376623767423772
+    second: ranged_1
+  - first:
+      213: -7237214569014445462
+    second: ranged_2
+  - first:
+      213: -7547724211320952297
+    second: ranged_3
+  - first:
+      213: -3307943455611945503
+    second: ranged_4
+  - first:
+      213: -584330311543938942
+    second: ranged_5
+  - first:
+      213: 7663431617838366237
+    second: ranged_6
+  - first:
+      213: -2242309861578279706
+    second: ranged_7
+  - first:
+      213: -2835772305543606000
+    second: ranged_8
+  - first:
+      213: 6489823925615035077
+    second: ranged_9
+  - first:
+      213: 3272627074887378992
+    second: ranged_10
+  - first:
+      213: 5580962474498762945
+    second: ranged_11
+  - first:
+      213: -6218848535662084294
+    second: ranged_12
+  - first:
+      213: 8725232709732815416
+    second: ranged_13
+  - first:
+      213: 5266836249997031812
+    second: ranged_14
+  - first:
+      213: -4131137478044939205
+    second: ranged_15
+  - first:
+      213: 4771478737788242784
+    second: ranged_16
+  - first:
+      213: -3181782631149777287
+    second: ranged_17
+  - first:
+      213: -6548388683984210187
+    second: ranged_18
+  - first:
+      213: -9017448952580987279
+    second: ranged_19
+  - first:
+      213: 7703853746386079607
+    second: ranged_20
+  - first:
+      213: 2261559733480728472
+    second: ranged_21
+  - first:
+      213: 4023501635643197499
+    second: ranged_22
+  - first:
+      213: -4926027494944001965
+    second: ranged_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ranged_z0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1071
+        width: 98
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb17b82e7257fe3e0800000000000000
+      internalID: -2022268893501099586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_z1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1071
+        width: 98
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b02ea3e7e1c2220800000000000000
+      internalID: 2462376623767423772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_z2
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1071
+        width: 98
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6abc92a1bf309b90800000000000000
+      internalID: -7237214569014445462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_z3
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1071
+        width: 98
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a6991c1d8114790800000000000000
+      internalID: -7547724211320952297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_shoot1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 783
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1edfb2f04f2d712d0800000000000000
+      internalID: -3307943455611945503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_shoot2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 783
+        width: 98
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2802ee47daa04e7f0800000000000000
+      internalID: -584330311543938942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_shoot3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 783
+        width: 98
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1eb0cd247af95a60800000000000000
+      internalID: 7663431617838366237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_shoot4
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 782
+        width: 98
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e47548af07b1e0e0800000000000000
+      internalID: -2242309861578279706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoot
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 813
+        width: 84
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011de28dc1055a8d0800000000000000
+      internalID: -2835772305543606000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_shoot5
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 783
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c28d1dc97c701a50800000000000000
+      internalID: 6489823925615035077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 591
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038ecf84cf4ba6d20800000000000000
+      internalID: 3272627074887378992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 591
+        width: 98
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8a8452dcf837d40800000000000000
+      internalID: 5580962474498762945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle2
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 591
+        width: 98
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f37e7a43632b9a0800000000000000
+      internalID: -6218848535662084294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 591
+        width: 98
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8325e36dbe0461970800000000000000
+      internalID: 8725232709732815416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle4
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 591
+        width: 98
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489393b1aaf871940800000000000000
+      internalID: 5266836249997031812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle5
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 591
+        width: 97
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c04d6f9504ba6c0800000000000000
+      internalID: -4131137478044939205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b8233b1a2b73240800000000000000
+      internalID: 4771478737788242784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_17
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 483
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97e4fc50e8908d3d0800000000000000
+      internalID: -3181782631149777287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle7
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 399
+        width: 98
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6feefcf237f15a0800000000000000
+      internalID: -6548388683984210187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_19
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 482
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176213144f59bd280800000000000000
+      internalID: -9017448952580987279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle8
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 399
+        width: 98
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f87e26a2699ea60800000000000000
+      internalID: 7703853746386079607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_idle9
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 399
+        width: 98
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8972278689ca26f10800000000000000
+      internalID: 2261559733480728472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 97
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3847b19b6956d730800000000000000
+      internalID: 4023501635643197499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_23
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 207
+        width: 98
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3503e02b71c33abb0800000000000000
+      internalID: -4926027494944001965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc0a3147bddb2664ebbd273203ba68f2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ranged_17: -3181782631149777287
+      ranged_19: -9017448952580987279
+      ranged_22: 4023501635643197499
+      ranged_23: -4926027494944001965
+      ranged_idle0: 3272627074887378992
+      ranged_idle1: 5580962474498762945
+      ranged_idle2: -6218848535662084294
+      ranged_idle3: 8725232709732815416
+      ranged_idle4: 5266836249997031812
+      ranged_idle5: -4131137478044939205
+      ranged_idle6: 4771478737788242784
+      ranged_idle7: -6548388683984210187
+      ranged_idle8: 7703853746386079607
+      ranged_idle9: 2261559733480728472
+      ranged_shoot1: -3307943455611945503
+      ranged_shoot2: -584330311543938942
+      ranged_shoot3: 7663431617838366237
+      ranged_shoot4: -2242309861578279706
+      ranged_shoot5: 6489823925615035077
+      ranged_z0: -2022268893501099586
+      ranged_z1: 2462376623767423772
+      ranged_z2: -7237214569014445462
+      ranged_z3: -7547724211320952297
+      shoot: -2835772305543606000
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

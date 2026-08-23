@@ -9,6 +9,7 @@ public class archer : enemy
     private bool isShooting = false;
     private bool fleeing = false;
     private bool canshoot = false;
+    private bool animToShoot=true;
     private bool inRange = false;
     public GameObject projectile;
     public float projSpeed;
@@ -70,7 +71,10 @@ public class archer : enemy
         isShooting = true;
         canshoot = false;
         erb.linearVelocity = new Vector2(0, erb.linearVelocity.y);
+        if(!animToShoot)yield return null;
         yield return new WaitForSeconds(1f);
+        faceTarget();
+        attackAnim();
         Vector2 dir = (player.transform.position - transform.position).normalized;
         GameObject p=Instantiate(projectile,transform.position+new Vector3(0.2f,0,0),Quaternion.identity);
         p.GetComponent<projScript>().setDamage(damage);
@@ -78,5 +82,16 @@ public class archer : enemy
         isShooting = false;
         yield return new WaitForSeconds(shootCD);
         canshoot = true;
+    }
+    //animator
+    public new void attackAnim()
+    {
+        animToShoot = false;
+        animator.SetBool("isAttacking",true);
+    }
+    public void endAnim()
+    {
+        animToShoot = true;
+        animator.SetBool("isAttacking", false);
     }
 }

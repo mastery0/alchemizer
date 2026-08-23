@@ -1,0 +1,1384 @@
+fileFormatVersion: 2
+guid: eea0249a07d9ed84394bb7466fd544cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8529224267297259807
+    second: boss_bosco_wip_senza_supecchi_0
+  - first:
+      213: 4843709001162423820
+    second: boss_bosco_wip_senza_supecchi_1
+  - first:
+      213: -1161631450270015881
+    second: boss_bosco_wip_senza_supecchi_2
+  - first:
+      213: 2245716161855139589
+    second: boss_bosco_wip_senza_supecchi_3
+  - first:
+      213: -5979032843426705795
+    second: boss_bosco_wip_senza_supecchi_4
+  - first:
+      213: 6031713063688592033
+    second: boss_bosco_wip_senza_supecchi_5
+  - first:
+      213: 6835215842846718337
+    second: boss_bosco_wip_senza_supecchi_6
+  - first:
+      213: 4491802019559915483
+    second: boss_bosco_wip_senza_supecchi_7
+  - first:
+      213: 195624466066923614
+    second: boss_bosco_wip_senza_supecchi_8
+  - first:
+      213: 5633543307819777915
+    second: boss_bosco_wip_senza_supecchi_9
+  - first:
+      213: -1376754209711929494
+    second: boss_bosco_wip_senza_supecchi_10
+  - first:
+      213: -6702289158921788954
+    second: boss_bosco_wip_senza_supecchi_11
+  - first:
+      213: 1738978898057358032
+    second: boss_bosco_wip_senza_supecchi_12
+  - first:
+      213: 7265173989296903247
+    second: boss_bosco_wip_senza_supecchi_13
+  - first:
+      213: 8995558003337814892
+    second: boss_bosco_wip_senza_supecchi_14
+  - first:
+      213: 4463718423561810556
+    second: boss_bosco_wip_senza_supecchi_15
+  - first:
+      213: -3631555684742356292
+    second: boss_bosco_wip_senza_supecchi_16
+  - first:
+      213: -5085440277872079651
+    second: boss_bosco_wip_senza_supecchi_17
+  - first:
+      213: 8649936905568390888
+    second: boss_bosco_wip_senza_supecchi_18
+  - first:
+      213: -2363074238269597871
+    second: boss_bosco_wip_senza_supecchi_19
+  - first:
+      213: 4529268134349827114
+    second: boss_bosco_wip_senza_supecchi_20
+  - first:
+      213: -7136228566632855894
+    second: boss_bosco_wip_senza_supecchi_21
+  - first:
+      213: -5943811297039483871
+    second: boss_bosco_wip_senza_supecchi_22
+  - first:
+      213: 8180750150707132169
+    second: boss_bosco_wip_senza_supecchi_23
+  - first:
+      213: -5088524108002165224
+    second: boss_bosco_wip_senza_supecchi_24
+  - first:
+      213: -4377937383774238143
+    second: boss_bosco_wip_senza_supecchi_25
+  - first:
+      213: 5579477639094041939
+    second: boss_bosco_wip_senza_supecchi_26
+  - first:
+      213: 126709955298540571
+    second: boss_bosco_wip_senza_supecchi_27
+  - first:
+      213: -3151560312439744598
+    second: boss_bosco_wip_senza_supecchi_28
+  - first:
+      213: 4073493668557760171
+    second: boss_bosco_wip_senza_supecchi_29
+  - first:
+      213: -6889816265986067222
+    second: boss_bosco_wip_senza_supecchi_30
+  - first:
+      213: -265187100384232321
+    second: boss_bosco_wip_senza_supecchi_31
+  - first:
+      213: -1596771201033012510
+    second: boss_bosco_wip_senza_supecchi_32
+  - first:
+      213: 8449542685390496966
+    second: boss_bosco_wip_senza_supecchi_33
+  - first:
+      213: -2947641167963885060
+    second: boss_bosco_wip_senza_supecchi_34
+  - first:
+      213: 1273251789507979190
+    second: boss_bosco_wip_senza_supecchi_35
+  - first:
+      213: -7978139333458402229
+    second: boss_bosco_wip_senza_supecchi_36
+  - first:
+      213: -4672001615203673779
+    second: boss_bosco_wip_senza_supecchi_37
+  - first:
+      213: 8907618520808992562
+    second: boss_bosco_wip_senza_supecchi_38
+  - first:
+      213: -2981635757342103306
+    second: boss_bosco_wip_senza_supecchi_39
+  - first:
+      213: 755578777899240585
+    second: boss_bosco_wip_senza_supecchi_40
+  - first:
+      213: 5088995438020013947
+    second: boss_bosco_wip_senza_supecchi_41
+  - first:
+      213: 2494349369057472545
+    second: boss_bosco_wip_senza_supecchi_42
+  - first:
+      213: -814114706759975992
+    second: boss_bosco_wip_senza_supecchi_43
+  - first:
+      213: 6693447644739733837
+    second: boss_bosco_wip_senza_supecchi_44
+  - first:
+      213: 1154417871085152460
+    second: boss_bosco_wip_senza_supecchi_45
+  - first:
+      213: 4771536894476464678
+    second: boss_bosco_wip_senza_supecchi_46
+  - first:
+      213: 6581457071919577460
+    second: boss_bosco_wip_senza_supecchi_47
+  - first:
+      213: 6587086605098927224
+    second: boss_bosco_wip_senza_supecchi_48
+  - first:
+      213: 4872052064465688440
+    second: boss_bosco_wip_senza_supecchi_49
+  - first:
+      213: 1194335582060715373
+    second: boss_bosco_wip_senza_supecchi_50
+  - first:
+      213: -1046119815308207292
+    second: boss_bosco_wip_senza_supecchi_51
+  - first:
+      213: -6810003713568582985
+    second: boss_bosco_wip_senza_supecchi_52
+  - first:
+      213: 5210716612953320353
+    second: boss_bosco_wip_senza_supecchi_53
+  - first:
+      213: -6646667889430139593
+    second: boss_bosco_wip_senza_supecchi_54
+  - first:
+      213: 7985126918679642808
+    second: boss_bosco_wip_senza_supecchi_55
+  - first:
+      213: 1565996011175302242
+    second: boss_bosco_wip_senza_supecchi_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rootGolemIdle0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1105e50844ed5670800000000000000
+      internalID: 8529224267297259807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ef5a96caf483340800000000000000
+      internalID: 4843709001162423820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77edbbeb95e01efe0800000000000000
+      internalID: -1161631450270015881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50faabd63f26a2f10800000000000000
+      internalID: 2245716161855139589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e4823ae45360da0800000000000000
+      internalID: -5979032843426705795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aadd34f213f4b350800000000000000
+      internalID: 6031713063688592033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle6
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189300438909bde50800000000000000
+      internalID: 6835215842846718337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle7
+      rect:
+        serializedVersion: 2
+        x: 2685
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf30416326165e30800000000000000
+      internalID: 4491802019559915483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle8
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e506b495a6ff6b200800000000000000
+      internalID: 195624466066923614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle9
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f70696acd5e2e40800000000000000
+      internalID: 5633543307819777915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle10
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67c8133759c4ece0800000000000000
+      internalID: -1376754209711929494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemIdle11
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 1824
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1e38c258facf2a0800000000000000
+      internalID: -6702289158921788954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0daeb922818122810800000000000000
+      internalID: 1738978898057358032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44137f204513d460800000000000000
+      internalID: 7265173989296903247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c636f51f754a6dc70800000000000000
+      internalID: 8995558003337814892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_15
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72b4c5a14052fd30800000000000000
+      internalID: 4463718423561810556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_16
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2a1e4785f1a9dc0800000000000000
+      internalID: -3631555684742356292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc88f6d203ec69b0800000000000000
+      internalID: -5085440277872079651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_18
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee02f949cfba0870800000000000000
+      internalID: 8649936905568390888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_19
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157501a108ca43fd0800000000000000
+      internalID: -2363074238269597871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_20
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cea600f513bde30800000000000000
+      internalID: 4529268134349827114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_21
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa68ad19de507fc90800000000000000
+      internalID: -7136228566632855894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_22
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cf104fd17538da0800000000000000
+      internalID: -5943811297039483871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_23
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9073f192becd78170800000000000000
+      internalID: 8180750150707132169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_24
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ef48fa84ee169b0800000000000000
+      internalID: -5088524108002165224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_bosco_wip_senza_supecchi_25
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 1440
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14acb3f05217e33c0800000000000000
+      internalID: -4377937383774238143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d7f66f9594e6d40800000000000000
+      internalID: 5579477639094041939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c3313780a22c100800000000000000
+      internalID: 126709955298540571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa75fc0f7986344d0800000000000000
+      internalID: -3151560312439744598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba62035c8e4f78830800000000000000
+      internalID: 4073493668557760171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk4
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae431322c947260a0800000000000000
+      internalID: -6889816265986067222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cf49abcbdd15cf0800000000000000
+      internalID: -265187100384232321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk6
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea7ade7d0127d9e0800000000000000
+      internalID: -1596771201033012510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemWalk7
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1056
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c463350e4ec24570800000000000000
+      internalID: 8449542685390496966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1f13a99ffd717d0800000000000000
+      internalID: -2947641167963885060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7e04fa1cf7ba110800000000000000
+      internalID: 1273251789507979190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44e3a4db84f74190800000000000000
+      internalID: -7978139333458402229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 672
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49dbb7c847b92fb0800000000000000
+      internalID: -4672001615203673779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 668
+        width: 264
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fa28f99d73e9b70800000000000000
+      internalID: 8907618520808992562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee5
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 672
+        width: 264
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8650a731a1f96d0800000000000000
+      internalID: -2981635757342103306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee6
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 672
+        width: 254
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c028035ea5c7a00800000000000000
+      internalID: 755578777899240585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemMelee7
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 672
+        width: 225
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f24c2636ebf9640800000000000000
+      internalID: 5088995438020013947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemRootAttack0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120f3681985bd9220800000000000000
+      internalID: 2494349369057472545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemRootAttack1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb7621dcfea3b4f0800000000000000
+      internalID: -814114706759975992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemRootAttack2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4903636b27e3ec50800000000000000
+      internalID: 6693447644739733837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemRootAttack3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8a468ffe0550010800000000000000
+      internalID: 1154417871085152460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rootGolemRootAttack4
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 288
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622b0fb5687e73240800000000000000
+      internalID: 4771536894476464678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2267bb0ee67fd244a95fae0ddaa50ab6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":192.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":192.0,"y":192.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      boss_bosco_wip_senza_supecchi_12: 1738978898057358032
+      boss_bosco_wip_senza_supecchi_13: 7265173989296903247
+      boss_bosco_wip_senza_supecchi_14: 8995558003337814892
+      boss_bosco_wip_senza_supecchi_15: 4463718423561810556
+      boss_bosco_wip_senza_supecchi_16: -3631555684742356292
+      boss_bosco_wip_senza_supecchi_17: -5085440277872079651
+      boss_bosco_wip_senza_supecchi_18: 8649936905568390888
+      boss_bosco_wip_senza_supecchi_19: -2363074238269597871
+      boss_bosco_wip_senza_supecchi_20: 4529268134349827114
+      boss_bosco_wip_senza_supecchi_21: -7136228566632855894
+      boss_bosco_wip_senza_supecchi_22: -5943811297039483871
+      boss_bosco_wip_senza_supecchi_23: 8180750150707132169
+      boss_bosco_wip_senza_supecchi_24: -5088524108002165224
+      boss_bosco_wip_senza_supecchi_25: -4377937383774238143
+      rootGolemIdle0: 8529224267297259807
+      rootGolemIdle1: 4843709001162423820
+      rootGolemIdle10: -1376754209711929494
+      rootGolemIdle11: -6702289158921788954
+      rootGolemIdle2: -1161631450270015881
+      rootGolemIdle3: 2245716161855139589
+      rootGolemIdle4: -5979032843426705795
+      rootGolemIdle5: 6031713063688592033
+      rootGolemIdle6: 6835215842846718337
+      rootGolemIdle7: 4491802019559915483
+      rootGolemIdle8: 195624466066923614
+      rootGolemIdle9: 5633543307819777915
+      rootGolemMelee0: -2947641167963885060
+      rootGolemMelee1: 1273251789507979190
+      rootGolemMelee2: -7978139333458402229
+      rootGolemMelee3: -4672001615203673779
+      rootGolemMelee4: 8907618520808992562
+      rootGolemMelee5: -2981635757342103306
+      rootGolemMelee6: 755578777899240585
+      rootGolemMelee7: 5088995438020013947
+      rootGolemRootAttack0: 2494349369057472545
+      rootGolemRootAttack1: -814114706759975992
+      rootGolemRootAttack2: 6693447644739733837
+      rootGolemRootAttack3: 1154417871085152460
+      rootGolemRootAttack4: 4771536894476464678
+      rootGolemWalk0: 5579477639094041939
+      rootGolemWalk1: 126709955298540571
+      rootGolemWalk2: -3151560312439744598
+      rootGolemWalk3: 4073493668557760171
+      rootGolemWalk4: -6889816265986067222
+      rootGolemWalk5: -265187100384232321
+      rootGolemWalk6: -1596771201033012510
+      rootGolemWalk7: 8449542685390496966
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

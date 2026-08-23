@@ -104,10 +104,10 @@ public class rootGolem : boss
         hasMeleeHit = false;
         erb.linearVelocity=Vector2.zero;
 
-        yield return StartCoroutine(crackGlow(meleeTelegraph, meleeGlowInterval));
+        yield return StartCoroutine(crackGlow(0, meleeGlowInterval));
 
         faceTarget();
-
+        triggerRootAttack();
         float distance=Mathf.Abs(player.transform.position.x-transform.position.x);
         float elapsed = 0f;
         while(elapsed < meleeDuration)
@@ -129,7 +129,8 @@ public class rootGolem : boss
         isAttacking = true;
         type = dmgTypeGolem.contact;
         erb.linearVelocity=Vector2.zero;
-        yield return StartCoroutine(crackGlow(rootTelegraph, rootGlowInterval));
+        triggerRootAttack();
+        yield return StartCoroutine(crackGlow(0, rootGlowInterval));
         faceTarget();
         if(!defeated) yield return StartCoroutine(spawnRoots());
         lastAttack = "root";
@@ -163,6 +164,7 @@ public class rootGolem : boss
         bool reached = false;
         while (t < idleTime)
         {
+            if(Mathf.Approximately(erb.linearVelocity.x,0))setWalking(true);
             t += Time.deltaTime;
 
             float dx = player.transform.position.x - transform.position.x;
@@ -184,7 +186,7 @@ public class rootGolem : boss
             yield return null;
             yield return null;
         }
-
+        setWalking(false);
         erb.linearVelocity = Vector2.zero;
     }
 
@@ -219,5 +221,16 @@ public class rootGolem : boss
         {
             s.color = c;
         }
+    }
+
+    //animator
+    public void triggerAttackAnim()
+    {
+        animator.SetTrigger("meleeAttack");
+    }
+
+    public void triggerRootAttack()
+    {
+        animator.SetTrigger("rootAttack");
     }
 }
