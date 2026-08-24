@@ -16,6 +16,8 @@ MonoBehaviour:
   skillName: Blooming  Heals
   skillDescription: Life orbs may blooms where your enemies fall,collect them to
     heal yourself
+  skillBG: {fileID: 0}
+  skillMenuImg: {fileID: 21300000, guid: bd2a2c50c8751514fa4736e82c6a6873, type: 3}
   requiredSkill:
   - {fileID: 11400000}
   skipRequirement: 0

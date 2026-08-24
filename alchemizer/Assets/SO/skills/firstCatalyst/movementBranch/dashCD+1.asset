@@ -15,6 +15,8 @@ MonoBehaviour:
   skillID: 7
   skillName: Wind Flow
   skillDescription: Decrease the cooldown between dashes
+  skillBG: {fileID: 0}
+  skillMenuImg: {fileID: 21300000, guid: e200832bc75b44f47852b45e837ed949, type: 3}
   requiredSkill:
   - {fileID: 11400000, guid: 59d932073346e0246b55e116ce20ceea, type: 2}
   skipRequirement: 0

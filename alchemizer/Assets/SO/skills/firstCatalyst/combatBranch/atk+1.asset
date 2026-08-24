@@ -15,6 +15,8 @@ MonoBehaviour:
   skillID: 1
   skillName: Alchemist's Strength
   skillDescription: Increases attack dmg by 10%
+  skillBG: {fileID: 0}
+  skillMenuImg: {fileID: 21300000, guid: 8b2c6544af14e424491ff362ef35dc55, type: 3}
   requiredSkill:
   - {fileID: 11400000, guid: 74b196e70e2c16949a41be2150d5c4e2, type: 2}
   skipRequirement: 0

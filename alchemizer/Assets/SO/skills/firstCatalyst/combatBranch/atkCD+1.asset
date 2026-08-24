@@ -15,6 +15,8 @@ MonoBehaviour:
   skillID: 2
   skillName: Burning Soul
   skillDescription: Increases attack speed by 10%
+  skillBG: {fileID: 0}
+  skillMenuImg: {fileID: 21300000, guid: 85175529183748a43bb8dce60edbf60c, type: 3}
   requiredSkill:
   - {fileID: 11400000, guid: 3e75c40202078364db656b0a441bb8b1, type: 2}
   skipRequirement: 0

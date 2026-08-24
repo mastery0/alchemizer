@@ -47,6 +47,7 @@ public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         skillTreeManager.overMenu.skillName.text = skill.name;
         skillTreeManager.overMenu.skillDescription.text = skill.skillDescription;
         skillTreeManager.overMenu.skillImage.sprite=skill.skillMenuImg;
+        skillTreeManager.overMenu.skill = skill;
         skillTreeManager.overMenu.Spawn();
     }
 }

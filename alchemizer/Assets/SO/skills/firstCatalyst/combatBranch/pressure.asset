@@ -16,6 +16,8 @@ MonoBehaviour:
   skillName: Core Instability
   skillDescription: Pressure increases as you fight aggressively or take hits. The
     higher it gets, the stronger you become but also more vulnerable.
+  skillBG: {fileID: 0}
+  skillMenuImg: {fileID: 21300000, guid: ce4f5d519fa79204a9f2fa2ba4fd4918, type: 3}
   requiredSkill:
   - {fileID: 11400000, guid: 6ed2e21121c0c224db7fcaba86f3b01b, type: 2}
   skipRequirement: 0

@@ -15,6 +15,8 @@ MonoBehaviour:
   skillID: 12
   skillName: Flowing Health
   skillDescription: The flow of water gathers within, amplifying every healing effect
+  skillBG: {fileID: 0}
+  skillMenuImg: {fileID: 21300000, guid: c7796caf0c7c0b04faebd84e816595e4, type: 3}
   requiredSkill:
   - {fileID: 11400000, guid: d72470432be7ade45a09ddc537aca8cd, type: 2}
   skipRequirement: 0

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: bd2a2c50c8751514fa4736e82c6a6873
+guid: ce4f5d519fa79204a9f2fa2ba4fd4918
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5184652112965887882
-    second: BloomingHeals_disegno_0
-  - first:
-      213: 1309820998711762218
-    second: BloomingHeals_disegno_1
+      213: 1104464377823376492
+    second: Core_Instability_disegno_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BloomingHeals_disegno_0
+      name: Core_Instability_disegno_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 8
-        width: 74
-        height: 74
+        x: 15
+        y: 0
+        width: 98
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67890ba6f5a6c08b0800000000000000
-      internalID: -5184652112965887882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BloomingHeals_disegno_1
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 49
-        width: 44
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2ddf83324b6d2210800000000000000
-      internalID: 1309820998711762218
+      spriteID: c643c3bff78d35f00800000000000000
+      internalID: 1104464377823376492
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BloomingHeals_disegno_0: -5184652112965887882
-      BloomingHeals_disegno_1: 1309820998711762218
+      Core_Instability_disegno_0: 1104464377823376492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

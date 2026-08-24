@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: 51c404e707aacf14baa15a995ca202b9
+guid: c7796caf0c7c0b04faebd84e816595e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7971982415231213926
-    second: sli-sli-slime_0
+      213: 7890677733503785415
+    second: Flowing_Health_disegno_0
   - first:
-      213: 8356868945663689474
-    second: sli-sli-slime_1
+      213: 672785081857237837
+    second: Flowing_Health_disegno_1
   - first:
-      213: -7049114462887540754
-    second: sli-sli-slime_2
+      213: -41843549583042389
+    second: Flowing_Health_disegno_2
   - first:
-      213: -120361378408692638
-    second: sli-sli-slime_3
+      213: -1989348922954513084
+    second: Flowing_Health_disegno_3
   - first:
-      213: 3091594377535285440
-    second: sli-sli-slime_4
-  - first:
-      213: -7039647878409262123
-    second: sli-sli-slime_5
-  - first:
-      213: -5635710256411053582
-    second: sli-sli-slime_6
+      213: 459947239010729658
+    second: Flowing_Health_disegno_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -131,155 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sli-sli-slime_0
+      name: Flowing_Health_disegno_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 129
-        height: 55
+        x: 0
+        y: 19
+        width: 80
+        height: 77
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 661648fe4cb22ae60800000000000000
-      internalID: 7971982415231213926
+      spriteID: 7c9d39e8791518d60800000000000000
+      internalID: 7890677733503785415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sli-sli-slime_1
+      name: Flowing_Health_disegno_1
       rect:
         serializedVersion: 2
-        x: 251
-        y: 0
-        width: 134
-        height: 60
+        x: 69
+        y: 30
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20307cc870099f370800000000000000
-      internalID: 8356868945663689474
+      spriteID: d436846a776365900800000000000000
+      internalID: 672785081857237837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sli-sli-slime_2
+      name: Flowing_Health_disegno_2
       rect:
         serializedVersion: 2
-        x: 447
-        y: 0
-        width: 134
-        height: 60
+        x: 82
+        y: 30
+        width: 12
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee7058a6eb38c2e90800000000000000
-      internalID: -7049114462887540754
+      spriteID: ba816fa63875b6ff0800000000000000
+      internalID: -41843549583042389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sli-sli-slime_3
+      name: Flowing_Health_disegno_3
       rect:
         serializedVersion: 2
-        x: 639
-        y: 0
-        width: 130
-        height: 71
+        x: 93
+        y: 30
+        width: 7
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 264064bc6f3645ef0800000000000000
-      internalID: -120361378408692638
+      spriteID: 4458df0d1b96464e0800000000000000
+      internalID: -1989348922954513084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sli-sli-slime_4
+      name: Flowing_Health_disegno_4
       rect:
         serializedVersion: 2
-        x: 767
-        y: 0
-        width: 130
-        height: 75
+        x: 100
+        y: 30
+        width: 14
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c8e596d4bc87ea20800000000000000
-      internalID: 3091594377535285440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sli-sli-slime_loop1
-      rect:
-        serializedVersion: 2
-        x: 895
-        y: 0
-        width: 130
-        height: 79
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5db659f5d852e4e90800000000000000
-      internalID: -7039647878409262123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sli-sli-slime_loop2
-      rect:
-        serializedVersion: 2
-        x: 1023
-        y: 0
-        width: 130
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f1f79d816fe9c1b0800000000000000
-      internalID: -5635710256411053582
+      spriteID: abef7a4b39f026600800000000000000
+      internalID: 459947239010729658
       vertices: []
       indices: 
       edges: []
@@ -288,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fe636095f6a42524c82245593a589410
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sli-sli-slime_0: 7971982415231213926
-      sli-sli-slime_1: 8356868945663689474
-      sli-sli-slime_2: -7049114462887540754
-      sli-sli-slime_3: -120361378408692638
-      sli-sli-slime_4: 3091594377535285440
-      sli-sli-slime_loop1: -7039647878409262123
-      sli-sli-slime_loop2: -5635710256411053582
+      Flowing_Health_disegno_0: 7890677733503785415
+      Flowing_Health_disegno_1: 672785081857237837
+      Flowing_Health_disegno_2: -41843549583042389
+      Flowing_Health_disegno_3: -1989348922954513084
+      Flowing_Health_disegno_4: 459947239010729658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

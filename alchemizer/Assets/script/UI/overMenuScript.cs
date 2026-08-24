@@ -12,7 +12,7 @@ public class backGround
 }
 public class overMenuScript : MonoBehaviour
 {
-    public skillButton skill;
+    public skillSO skill;
     public TMP_Text skillName;
     public TMP_Text skillDescription;
     public Image skillImage;
@@ -35,8 +35,7 @@ public class overMenuScript : MonoBehaviour
 
     private void Awake()
     {
-        skill = GetComponentInParent<skillButton>();
-        menuBG = GetComponentInParent<Image>();
+        menuBG = GetComponent<Image>();
         canvas = GetComponentInParent<Canvas>();
         canvasRect = canvas.GetComponent<RectTransform>();
         boundsRect = FindBoundsRect();
@@ -184,7 +183,7 @@ public class overMenuScript : MonoBehaviour
         {
             foreach(var Selectedskill in bg.skills)
             {
-                if (Selectedskill == skill.skill) {menuBG.sprite = bg.backGroundSprite;return; }
+                if (Selectedskill == skill) {menuBG.sprite = bg.backGroundSprite;return; }
                 
             }
         }
