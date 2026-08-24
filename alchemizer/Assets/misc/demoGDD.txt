@@ -10,11 +10,11 @@ Da scegliere una sola zona tra bosco o palude,entrambe sono allo stesso punto
 
 
 Disegni:
- Dash
- Yara pg+face
- ranged Enemy
- slime boss
- root Golem
+ Dash  ***
+ Yara pg+face ***
+ ranged Enemy ***
+ slime boss 
+ root Golem ***
  UI
  cutscene
 
@@ -22,11 +22,11 @@ Priorità:
 Animare Player ***
 Background forestaIncantata ***
 Fix rootGolem 
-UI
-Animazioni boss
-Animazioni nemico ranged
+UI + Main menu 
+Animazioni boss ***
+Animazioni nemico ranged ***
+slimeBoss
 Cutscene iniziale
-Main menu
 
 
 Sequenza di gioco:
@@ -45,6 +45,28 @@ la porta crolla dietro di lui
 decide di uscire di casa per scoprire di piu su quanto accaduto fuori
 obbiettivo:riaccedere al seminterrato
 (fine cutscene)
+
+
+DIVISIONE IN FRAME:
+frame in cui lui fa qualcosa random
+frame in cui il personaggio si gira da quello che stava facendo verso il boato e vede effetti di corruzione e suono arrivare
+due frame in cui corre verso il seminterrato
+frame in cui vede il baule
+frame in cui apre il baule
+frame dentro il baule che si vede il catalizzatore(catacristo) e foglio
+frame che legge il foglio 
+frame che si sposta su una porta con due lucchetti 
+terremoto primo frame in cui inizia il terremoto e secondo che fa capire il tremolio dello schermo
+frame di corsa verso Spora
+massi che crollano sulla porta
+lui che esce dall edificio 
+frame nero
+compare la scritta PROLOGO
+fine cutscene
+
+
+
+
 
 Esplorazione forestaIncatata
 

@@ -23,11 +23,13 @@ Alchemizer è un platformer 2D con elementi metroidvania e RPG ma progressione p
 il giocatore è un alchimista che ha trovato un antico catalizzatore che gli permette di estrarre essenze dai nemici uccisi
 in Alchemizer si ottengono essenze uccidendo nemici,a seconda del tipo di nemico ucciso.
 le principali abilità di progressione si sbloccano  tramite esplorazione,dando un senso di metroidvania
-il loop del gioco consiste nel arrivare in una zona seguendo la quest,perdersi esplorando,lootando,sbloccare abilità quando si possiedono le essenze e cercare i checkpoint per salvare
+il loop del gioco consiste nel arrivare in una zona seguendo la quest,perdersi esplorando,lootando,
+sbloccare abilità quando si possiedono le essenze e cercare i checkpoint per salvare
  
 Essenze e skill tree
 le essenze permettono di sbloccare abilità per il catalizzatore,l'arma del protagonista,il catalizzatore ha dei tier che crescono comprando abilità,tier piu alti contengono 
-abilita piu forti,nel primo tree ci sono tre branch uno per l'attacco uno per la mobility e uno per il sustain,le abilità sbloccate dal'esplorazione sono migliorate da evenutali skill (esempio CD diminuiti)
+abilita piu forti,nel primo tree ci sono tre branch uno per l'attacco uno per la mobility e uno per il sustain,le abilità sbloccate dal'esplorazione sono migliorate da 
+evenutali skill (esempio CD diminuiti)
 
 Core Instability(meccanica esclusiva di gameplay,nessun impatto nella lore,esclusiva del protagonista)
 una volta sbloccata la skill dallo skill tree si sblocca questo sistema in cui,finchè il player continua a fare danni o a subirne,una barra si carica
