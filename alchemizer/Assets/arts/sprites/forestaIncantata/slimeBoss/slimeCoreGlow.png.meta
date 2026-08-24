@@ -1,0 +1,1202 @@
+fileFormatVersion: 2
+guid: 574d73fe8a366e14aaed735c95b758f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4367094170382765642
+    second: slimeCoreGlow_0
+  - first:
+      213: 5073315971069411248
+    second: slimeCoreGlow_1
+  - first:
+      213: -6643461120445377323
+    second: slimeCoreGlow_2
+  - first:
+      213: 1817159624504615085
+    second: slimeCoreGlow_3
+  - first:
+      213: 6390363167247064229
+    second: slimeCoreGlow_4
+  - first:
+      213: 8601579811131869292
+    second: slimeCoreGlow_5
+  - first:
+      213: -561280809248618596
+    second: slimeCoreGlow_6
+  - first:
+      213: -7051445832590392028
+    second: slimeCoreGlow_7
+  - first:
+      213: -5965159454810233815
+    second: slimeCoreGlow_8
+  - first:
+      213: -1804924984002473846
+    second: slimeCoreGlow_9
+  - first:
+      213: -5079354771281713493
+    second: slimeCoreGlow_10
+  - first:
+      213: 8013305253221990610
+    second: slimeCoreGlow_11
+  - first:
+      213: -6775204705645739928
+    second: slimeCoreGlow_12
+  - first:
+      213: 7676227054916897998
+    second: slimeCoreGlow_13
+  - first:
+      213: -3660628851496727485
+    second: slimeCoreGlow_14
+  - first:
+      213: 2094548818569171152
+    second: slimeCoreGlow_15
+  - first:
+      213: 7090022466999244595
+    second: slimeCoreGlow_16
+  - first:
+      213: -3565410035448971034
+    second: slimeCoreGlow_17
+  - first:
+      213: -4308107043158157388
+    second: slimeCoreGlow_18
+  - first:
+      213: 5995462963882476579
+    second: slimeCoreGlow_19
+  - first:
+      213: -2828817544714368766
+    second: slimeCoreGlow_20
+  - first:
+      213: 8616552275208837804
+    second: slimeCoreGlow_21
+  - first:
+      213: -3296944589289553393
+    second: slimeCoreGlow_22
+  - first:
+      213: -4261729198234970476
+    second: slimeCoreGlow_23
+  - first:
+      213: -2351481448954766171
+    second: slimeCoreGlow_24
+  - first:
+      213: -5528146421890857760
+    second: slimeCoreGlow_25
+  - first:
+      213: -2063809649616941167
+    second: slimeCoreGlow_26
+  - first:
+      213: 8065388399473296832
+    second: slimeCoreGlow_27
+  - first:
+      213: -3993846787614760759
+    second: slimeCoreGlow_28
+  - first:
+      213: 3538880781805243161
+    second: slimeCoreGlow_29
+  - first:
+      213: -7610547871083991438
+    second: slimeCoreGlow_30
+  - first:
+      213: -2485118895780027211
+    second: slimeCoreGlow_31
+  - first:
+      213: -3128109181314298198
+    second: slimeCoreGlow_32
+  - first:
+      213: -2758376161829554191
+    second: slimeCoreGlow_33
+  - first:
+      213: 8734216043732964153
+    second: slimeCoreGlow_34
+  - first:
+      213: 2670269444739866084
+    second: slimeCoreGlow_35
+  - first:
+      213: -2451802334010690541
+    second: slimeCoreGlow_36
+  - first:
+      213: -7950829296351191737
+    second: slimeCoreGlow_37
+  - first:
+      213: -4062647935629936618
+    second: slimeCoreGlow_38
+  - first:
+      213: 4401778576246789949
+    second: slimeCoreGlow_39
+  - first:
+      213: 6321041004317077318
+    second: slimeCoreGlow_40
+  - first:
+      213: -2532174784466789319
+    second: slimeCoreGlow_41
+  - first:
+      213: -2898842691401902107
+    second: slimeCoreGlow_42
+  - first:
+      213: -8501820847442256583
+    second: slimeCoreGlow_43
+  - first:
+      213: -5952020066574811301
+    second: slimeCoreGlow_44
+  - first:
+      213: 5352518240581949429
+    second: slimeCoreGlow_45
+  - first:
+      213: -1085928266894575980
+    second: slimeCoreGlow_46
+  - first:
+      213: -5629307388820090280
+    second: slimeCoreGlow_47
+  - first:
+      213: -5165552774283055414
+    second: slimeCoreGlow_48
+  - first:
+      213: 6806850091120365818
+    second: slimeCoreGlow_49
+  - first:
+      213: 2055931487420765343
+    second: slimeCoreGlow_50
+  - first:
+      213: -4055494361936377319
+    second: slimeCoreGlow_51
+  - first:
+      213: -9084735857214965483
+    second: slimeCoreGlow_52
+  - first:
+      213: 8372687491428465068
+    second: slimeCoreGlow_53
+  - first:
+      213: 4449392771584247684
+    second: slimeCoreGlow_54
+  - first:
+      213: -5781482040852032588
+    second: slimeCoreGlow_55
+  - first:
+      213: -2668906564818500051
+    second: slimeCoreGlow_56
+  - first:
+      213: 4408139997145080912
+    second: slimeCoreGlow_57
+  - first:
+      213: -7172074422272087209
+    second: slimeCoreGlow_58
+  - first:
+      213: -6874018135199630512
+    second: slimeCoreGlow_59
+  - first:
+      213: -413442154650233294
+    second: slimeCoreGlow_60
+  - first:
+      213: -5369469648961451915
+    second: slimeCoreGlow_61
+  - first:
+      213: -3855526488084463059
+    second: slimeCoreGlow_62
+  - first:
+      213: 8635783946460135236
+    second: slimeCoreGlow_63
+  - first:
+      213: -3932212530896276667
+    second: slimeCoreGlow_64
+  - first:
+      213: -130295291704464483
+    second: slimeCoreGlow_65
+  - first:
+      213: -8340932399172813428
+    second: slimeCoreGlow_66
+  - first:
+      213: -6666420244070138957
+    second: slimeCoreGlow_67
+  - first:
+      213: -1288741651656457228
+    second: slimeCoreGlow_68
+  - first:
+      213: 7815520182688586660
+    second: slimeCoreGlow_69
+  - first:
+      213: 2472865556102164970
+    second: slimeCoreGlow_70
+  - first:
+      213: 4146976738945306532
+    second: slimeCoreGlow_71
+  - first:
+      213: 803423281198920511
+    second: slimeCoreGlow_72
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slimeCoreGlow_idle0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1f7a96df6f463c0800000000000000
+      internalID: -4367094170382765642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_idle1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1087
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf78e00ff9086640800000000000000
+      internalID: 5073315971069411248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_idle2
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1087
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d41cbc3f4fadc3a0800000000000000
+      internalID: -6643461120445377323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_idle3
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1087
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0a7cefc09d73910800000000000000
+      internalID: 1817159624504615085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_idle4
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1087
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac508961712fa850800000000000000
+      internalID: 6390363167247064229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_idle5
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1087
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68cfadd343fe5770800000000000000
+      internalID: 8601579811131869292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 899
+        width: 126
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c970e79e31ee538f0800000000000000
+      internalID: -561280809248618596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 899
+        width: 127
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4258a8b106b342e90800000000000000
+      internalID: -7051445832590392028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk2
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 899
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9242973a41f773da0800000000000000
+      internalID: -5965159454810233815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk3
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 899
+        width: 123
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a801e4a3a4e93f6e0800000000000000
+      internalID: -1804924984002473846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk4
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 899
+        width: 127
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba661914fb18289b0800000000000000
+      internalID: -5079354771281713493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk5
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 899
+        width: 148
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d08117ebaaf43f60800000000000000
+      internalID: 8013305253221990610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk6
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 899
+        width: 127
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8604e6f7733a9f1a0800000000000000
+      internalID: -6775204705645739928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk7
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 899
+        width: 126
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc809706df678a60800000000000000
+      internalID: 7676227054916897998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_walk8
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 899
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ccdf35475d23dc0800000000000000
+      internalID: -3660628851496727485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_15
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 823
+        width: 121
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d097879d05511d10800000000000000
+      internalID: 2094548818569171152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_fall
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 711
+        width: 121
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33757038ed1d46260800000000000000
+      internalID: 7090022466999244595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_touchGround0
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 711
+        width: 160
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0837e867e158ec0800000000000000
+      internalID: -3565410035448971034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_touchGround1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 711
+        width: 152
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7133638778634c0800000000000000
+      internalID: -4308107043158157388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_touchGround2
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 711
+        width: 139
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324c932ecc9243350800000000000000
+      internalID: 5995462963882476579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_touchGround3
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 711
+        width: 121
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20948e84e650eb8d0800000000000000
+      internalID: -2828817544714368766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_touchGround4
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 711
+        width: 121
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa186054a4249770800000000000000
+      internalID: 8616552275208837804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_22
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 635
+        width: 121
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02004f2d56ee32d0800000000000000
+      internalID: -3296944589289553393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_jump0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 523
+        width: 121
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4965b42bfdb4bd4c0800000000000000
+      internalID: -4261729198234970476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_jump1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 523
+        width: 121
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac5123b41cdd5fd0800000000000000
+      internalID: -2351481448954766171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_inAir
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 523
+        width: 127
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e449d06e141843b0800000000000000
+      internalID: -5528146421890857760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_26
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 438
+        width: 121
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f0f86ee00eb53e0800000000000000
+      internalID: -2063809649616941167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_27
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 442
+        width: 121
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5892e54040eef60800000000000000
+      internalID: 8065388399473296832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_28
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 335
+        width: 121
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c023e8c1810398c0800000000000000
+      internalID: -3993846787614760759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_29
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 335
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b45fd3251ac1130800000000000000
+      internalID: 3538880781805243161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_30
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 335
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eeeed9807e16690800000000000000
+      internalID: -7610547871083991438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 128
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4ab60f785138dd0800000000000000
+      internalID: -2485118895780027211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_32
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 335
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae8f15e549b694d0800000000000000
+      internalID: -3128109181314298198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_33
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 335
+        width: 121
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f77e3dce7748b9d0800000000000000
+      internalID: -2758376161829554191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_34
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 335
+        width: 121
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9339836473b263970800000000000000
+      internalID: 8734216043732964153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_35
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 335
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed9c4c89e3be0520800000000000000
+      internalID: 2670269444739866084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeCoreGlow_36
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 335
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314b1d574c279fdd0800000000000000
+      internalID: -2451802334010690541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d0aef37d73aa5ea4aaac9b7e4df832df
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":121.0,"y":94.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      slimeCoreGlow_15: 2094548818569171152
+      slimeCoreGlow_22: -3296944589289553393
+      slimeCoreGlow_26: -2063809649616941167
+      slimeCoreGlow_27: 8065388399473296832
+      slimeCoreGlow_28: -3993846787614760759
+      slimeCoreGlow_29: 3538880781805243161
+      slimeCoreGlow_30: -7610547871083991438
+      slimeCoreGlow_31: -2485118895780027211
+      slimeCoreGlow_32: -3128109181314298198
+      slimeCoreGlow_33: -2758376161829554191
+      slimeCoreGlow_34: 8734216043732964153
+      slimeCoreGlow_35: 2670269444739866084
+      slimeCoreGlow_36: -2451802334010690541
+      slimeCoreGlow_fall: 7090022466999244595
+      slimeCoreGlow_idle0: -4367094170382765642
+      slimeCoreGlow_idle1: 5073315971069411248
+      slimeCoreGlow_idle2: -6643461120445377323
+      slimeCoreGlow_idle3: 1817159624504615085
+      slimeCoreGlow_idle4: 6390363167247064229
+      slimeCoreGlow_idle5: 8601579811131869292
+      slimeCoreGlow_inAir: -5528146421890857760
+      slimeCoreGlow_jump0: -4261729198234970476
+      slimeCoreGlow_jump1: -2351481448954766171
+      slimeCoreGlow_touchGround0: -3565410035448971034
+      slimeCoreGlow_touchGround1: -4308107043158157388
+      slimeCoreGlow_touchGround2: 5995462963882476579
+      slimeCoreGlow_touchGround3: -2828817544714368766
+      slimeCoreGlow_touchGround4: 8616552275208837804
+      slimeCoreGlow_walk0: -561280809248618596
+      slimeCoreGlow_walk1: -7051445832590392028
+      slimeCoreGlow_walk2: -5965159454810233815
+      slimeCoreGlow_walk3: -1804924984002473846
+      slimeCoreGlow_walk4: -5079354771281713493
+      slimeCoreGlow_walk5: 8013305253221990610
+      slimeCoreGlow_walk6: -6775204705645739928
+      slimeCoreGlow_walk7: 7676227054916897998
+      slimeCoreGlow_walk8: -3660628851496727485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
