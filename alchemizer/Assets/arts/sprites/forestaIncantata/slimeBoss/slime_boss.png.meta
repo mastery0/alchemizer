@@ -471,7 +471,7 @@ TextureImporter:
       name: slime_boss_idle1
       rect:
         serializedVersion: 2
-        x: 242
+        x: 241
         y: 1206
         width: 121
         height: 94
@@ -626,7 +626,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1010
+        y: 1018
         width: 126
         height: 94
       alignment: 0
@@ -669,7 +669,7 @@ TextureImporter:
       name: slime_boss_walk1
       rect:
         serializedVersion: 2
-        x: 241
+        x: 242
         y: 1018
         width: 127
         height: 94

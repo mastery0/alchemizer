@@ -55,8 +55,8 @@ public class slimeBoss : boss
     public float bullSpeed;
     public float maxDuration;
 
-    public float linearVelocityY;
-
+    private bool canDieBool;
+    //private float test { set { }; }
     protected override void Awake()
     {
         base.Awake();
@@ -81,13 +81,12 @@ public class slimeBoss : boss
         if (hp <= 0 && !defeated)
         {
             deathAnim();
-            die();
+            if (canDieBool) die();
+            else return;
         }
 
         if (!isAttacking)
             type = dmgTypeSlime.contact;
-
-        linearVelocityY = erb.linearVelocityY;
     }
 
     protected float calcDamage(dmgTypeSlime type)
@@ -199,7 +198,17 @@ public class slimeBoss : boss
 
         jumpStartAnim();
 
-        yield return new WaitForSeconds(0.08f);
+        AnimatorStateInfo state;
+
+        while (true)
+        {
+            state = animator.GetCurrentAnimatorStateInfo(0);
+
+            if (state.IsName("jumpAnim"))
+                break;
+
+            yield return null;
+        }
 
         erb.linearVelocity = new Vector2(horizontalVelocity, jumpVelocity);
 
@@ -232,7 +241,6 @@ public class slimeBoss : boss
 
         jumpLandAnim();
 
-        AnimatorStateInfo state;
 
         while (true)
         {
@@ -286,8 +294,7 @@ public class slimeBoss : boss
 
             transform.position = new Vector2(transform.position.x, originalY + 0.01f);
 
-            if (hasDashHit)
-                break;
+            if (hasDashHit)break;
 
             yield return null;
         }
@@ -350,6 +357,11 @@ public class slimeBoss : boss
                 }
 
                 dirx = Mathf.Sign(closerPoint - transform.position.x);
+                Vector3 scale = transform.localScale;
+
+                scale.x = Mathf.Abs(scale.x) * dirx;
+
+                transform.localScale = scale;
             }
 
             yield return null;
@@ -375,7 +387,7 @@ public class slimeBoss : boss
         while (t < idleTime)
         {
             t += Time.deltaTime;
-
+            faceTarget();
             float dx = player.transform.position.x - transform.position.x;
 
             if (Mathf.Abs(dx) > desiredDistance && !reached)
@@ -388,8 +400,7 @@ public class slimeBoss : boss
             {
                 reached = true;
 
-                float strafeDir =
-                    Mathf.Sign(Mathf.Sin(Time.time * 3f));
+                float strafeDir =Mathf.Sign(Mathf.Sin(Time.time * 3f));
 
                 erb.linearVelocity = new Vector2(strafeDir * speed * 0.3f, erb.linearVelocityY);
             }
@@ -472,7 +483,21 @@ public class slimeBoss : boss
 
         setGlow(0f);
     }
+    private IEnumerator canDie()
+    {
+        canDieBool=false;
+        AnimatorStateInfo state;
+        while (true)
+        {
+            state = animator.GetCurrentAnimatorStateInfo(0);
 
+            if (state.IsName("jumpAnim"))
+                break;
+
+            yield return null;
+        }
+        canDieBool = true;
+    }
     //animator
 
     /*
