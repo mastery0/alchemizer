@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
+
 public enum dmgTypeSlime
 {
     dash,
@@ -9,53 +8,67 @@ public enum dmgTypeSlime
     bull,
     contact
 }
+
 public class slimeBoss : boss
 {
     protected dmgTypeSlime type;
+
     protected bool hasDashHit;
     protected bool hasBullHit;
-    protected bool hasBullCrushed;
     protected bool isAttacking;
     protected bool hasBeenHit;
-    [Header("coreVisuals")]
+
+    [Header("Core Visuals")]
     public SpriteRenderer coreSprite;
     public Color defColor;
-    public Color teleColor= Color.white;
+    public Color teleColor = Color.white;
+
     public float dashGlowInterval;
     public float jumpGlowInterval;
     public float bullGlowInterval;
+
     public float dashTelegraph;
     public float jumpTelegraph;
     public float bullTelegraph;
-    [Header("attack info")]
+
+    [Header("Attack Info")]
     public float idleTime;
     public int chanceOfNothing;
     public float meleeRange;
     public float jumpRange;
 
-    [Header("jumpAttack")]
+    [Header("Jump Attack")]
     public float jumpMult;
     public float jumpDuration;
     public float jumpHeight;
+    public GameObject groundCheck;
+    public LayerMask ground;
 
-    [Header("dashAttack")]
+    [Header("Dash Attack")]
     public float dashMult;
     public float dashDuration;
     public float dashSpeed;
 
-    [Header("bullAttack")]
+    [Header("Bull Attack")]
     public float bullMult;
     public Transform[] point;
     public float bullSpeed;
     public float maxDuration;
 
+    public float linearVelocityY;
 
     protected override void Awake()
     {
         base.Awake();
-        
+
         coreSprite.color = defColor;
+
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
+        direction = 1;
     }
+
     private void OnEnable()
     {
         StartCoroutine(attackLoop());
@@ -64,42 +77,80 @@ public class slimeBoss : boss
     protected override void Update()
     {
         base.Update();
-        if (hp <= 0) die();
-        if (!isAttacking) type = dmgTypeSlime.contact;
+
+        if (hp <= 0 && !defeated)
+        {
+            deathAnim();
+            die();
+        }
+
+        if (!isAttacking)
+            type = dmgTypeSlime.contact;
+
+        linearVelocityY = erb.linearVelocityY;
     }
+
     protected float calcDamage(dmgTypeSlime type)
     {
-        switch (type) 
+        switch (type)
         {
-            default:return damage;
-            case dmgTypeSlime.dash:return damage * dashMult;
-            case dmgTypeSlime.jump:return damage * jumpMult;
-            case dmgTypeSlime.bull:return damage * bullMult;
+            default:
+                return damage;
+
+            case dmgTypeSlime.dash:
+                return damage * dashMult;
+
+            case dmgTypeSlime.jump:
+                return damage * jumpMult;
+
+            case dmgTypeSlime.bull:
+                return damage * bullMult;
         }
     }
-    IEnumerator attackLoop()
+
+    protected IEnumerator attackLoop()
     {
         while (!defeated)
         {
             if (engaged)
             {
                 yield return StartCoroutine(idle());
+
                 if (Random.Range(1f, 100f) > chanceOfNothing)
                 {
                     float d = Vector2.Distance(transform.position, player.transform.position);
+
                     hasBeenHit = false;
+
                     if (d < meleeRange)
                     {
                         float r = Random.value;
-                        if (r < 0.6f) yield return StartCoroutine(dashAttack());
-                        if(r< 0.8f) yield return StartCoroutine(jumpAttack());
-                        else yield return StartCoroutine(bullAttack());
+
+                        if (r < 0.6f)
+                        {
+                            yield return StartCoroutine(dashAttack());
+                        }
+                        else if (r < 0.8f)
+                        {
+                            yield return StartCoroutine(jumpAttack());
+                        }
+                        else
+                        {
+                            yield return StartCoroutine(bullAttack());
+                        }
                     }
                     else if (d < jumpRange)
                     {
                         float r = Random.value;
-                        if (r < 0.7f) yield return StartCoroutine(jumpAttack());
-                        else yield return StartCoroutine(dashAttack());
+
+                        if (r < 0.7f)
+                        {
+                            yield return StartCoroutine(jumpAttack());
+                        }
+                        else
+                        {
+                            yield return StartCoroutine(dashAttack());
+                        }
                     }
                     else
                     {
@@ -107,154 +158,389 @@ public class slimeBoss : boss
                     }
                 }
             }
+
             yield return null;
         }
     }
-    IEnumerator jumpAttack()
+
+    protected IEnumerator jumpAttack()
     {
-        Debug.Log("jump");
         isAttacking = true;
         type = dmgTypeSlime.jump;
+
         erb.linearVelocity = Vector2.zero;
+
+        faceTarget();
+
         yield return StartCoroutine(coreGlow(jumpTelegraph, jumpGlowInterval));
-        Vector2 startPos=transform.position;
-        Vector2 targetPos =player.transform.position;
-        float elapsed = 0f;
-        while (elapsed < jumpDuration)
+
+        float startX = transform.position.x;
+        float targetX = player.transform.position.x;
+        float distanceX = targetX - startX;
+
+        float gravity = Mathf.Abs(Physics2D.gravity.y * erb.gravityScale);
+
+        float jumpVelocity = Mathf.Sqrt(2f * gravity * jumpHeight);
+        float flightTime = (2f * jumpVelocity) / gravity;
+
+        if (jumpDuration > 0f)
         {
-            elapsed += Time.deltaTime;
-            float t = elapsed / jumpDuration;
-            Vector2 flatPos = Vector2.Lerp(startPos, targetPos, t);
-            float arc = jumpHeight * 4f * t * (1f - t);
-            transform.position = new Vector2(flatPos.x, startPos.y + arc);
+            flightTime = jumpDuration;
+
+            jumpVelocity = gravity * flightTime / 2f;
+        }
+
+        float horizontalVelocity = distanceX / flightTime;
+
+
+        jumpUpAnim(false);
+        jumpDownAnim(false);
+
+
+        jumpStartAnim();
+
+        yield return new WaitForSeconds(0.08f);
+
+        erb.linearVelocity = new Vector2(horizontalVelocity, jumpVelocity);
+
+        jumpUpAnim(true);
+
+        bool falling = false;
+
+        while (true)
+        {
+            if (!falling && erb.linearVelocity.y <= 0f)
+            {
+                falling = true;
+
+                jumpUpAnim(false);
+                jumpDownAnim(true);
+            }
+
+            if (falling && Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground))
+            {
+                break;
+            }
+
             yield return null;
         }
-        transform.position = new Vector2(targetPos.x, startPos.y);
-        erb.linearVelocity=Vector2.zero;
-        isAttacking =false;
+
+        erb.linearVelocity = Vector2.zero;
+
+        jumpUpAnim(false);
+        jumpDownAnim(false);
+
+        jumpLandAnim();
+
+        AnimatorStateInfo state;
+
+        while (true)
+        {
+            state = animator.GetCurrentAnimatorStateInfo(0);
+
+            if (state.IsName("touchGround"))
+                break;
+
+            yield return null;
+        }
+
+        while (true)
+        {
+            state = animator.GetCurrentAnimatorStateInfo(0);
+
+            if (state.IsName("touchGround") && state.normalizedTime >= 1f)
+                break;
+
+            yield return null;
+        }
+
+        isAttacking = false;
     }
 
-    IEnumerator dashAttack()
+    protected IEnumerator dashAttack()
     {
-        Debug.Log("dash");
-        isAttacking =true;
+        isAttacking = true;
         type = dmgTypeSlime.dash;
-        erb.linearVelocity=Vector2.zero;
-        hasDashHit=false;
+
+        erb.linearVelocity = Vector2.zero;
+
+        hasDashHit = false;
+
+        faceTarget();
+
         yield return StartCoroutine(coreGlow(dashTelegraph, dashGlowInterval));
-        float dirx=Mathf.Sign(player.transform.position.x-transform.position.x);
+
+        dashAnim();
+
+        float dirx = Mathf.Sign(player.transform.position.x - transform.position.x);
+
         float originalY = transform.position.y;
+
         float elapsed = 0f;
-        while (elapsed < dashDuration) 
+
+        while (elapsed < dashDuration)
         {
             elapsed += Time.deltaTime;
-            erb.linearVelocity = new Vector2(dashSpeed * dirx,erb.linearVelocityY);
+
+            erb.linearVelocity = new Vector2(dashSpeed * dirx, erb.linearVelocityY);
+
             transform.position = new Vector2(transform.position.x, originalY + 0.01f);
-            if (hasDashHit) break;
+
+            if (hasDashHit)
+                break;
+
             yield return null;
         }
-        erb.linearVelocity= Vector2.zero;
-        isAttacking=false;
+
+        erb.linearVelocity = Vector2.zero;
+
+        stopDashAnim();
+
+        isAttacking = false;
     }
 
-    IEnumerator bullAttack()
+    protected IEnumerator bullAttack()
     {
-        Debug.Log("bull");
         isAttacking = true;
         type = dmgTypeSlime.bull;
+
         erb.linearVelocity = Vector2.zero;
+
+        hasBullHit = false;
+
+        faceTarget();
+
         yield return StartCoroutine(coreGlow(bullTelegraph, bullGlowInterval));
+
+        bullAnim();
+
         float closerPoint = point[0].position.x;
+
         foreach (Transform p in point)
         {
-            if (Mathf.Abs(transform.position.x - p.position.x) <
-                Mathf.Abs(transform.position.x - closerPoint))
+            if (Mathf.Abs(transform.position.x - p.position.x) < Mathf.Abs(transform.position.x - closerPoint))
             {
                 closerPoint = p.position.x;
             }
         }
+
         float dirx = Mathf.Sign(closerPoint - transform.position.x);
+
         float elapsed = 0f;
-        float originalY=transform.position.y;
+
+        float originalY = transform.position.y;
+
         while (elapsed < maxDuration)
         {
             elapsed += Time.deltaTime;
+
             erb.linearVelocityX = dirx * bullSpeed;
-            transform.position= new Vector2(transform.position.x,originalY+0.01f);
+
+            transform.position = new Vector2(transform.position.x, originalY + 0.01f);
+
             if (Mathf.Abs(transform.position.x - closerPoint) < 0.5f)
             {
                 if (closerPoint == point[0].position.x)
                 {
-                    closerPoint = point[1].transform.position.x;
+                    closerPoint = point[1].position.x;
                 }
                 else
                 {
-                    closerPoint=point[0].position.x;
+                    closerPoint = point[0].position.x;
                 }
+
                 dirx = Mathf.Sign(closerPoint - transform.position.x);
             }
+
             yield return null;
         }
-        erb.linearVelocity= Vector2.zero;
+
+        erb.linearVelocity = Vector2.zero;
+
+        stopBullAnim();
+
         isAttacking = false;
     }
 
-    IEnumerator idle()
+    protected IEnumerator idle()
     {
         float desiredDistance = 5.3f;
+
         float t = 0f;
-        bool reached= false;
+
+        bool reached = false;
+
+        walkingAnim(true);
+
         while (t < idleTime)
         {
             t += Time.deltaTime;
 
             float dx = player.transform.position.x - transform.position.x;
 
-            if (Mathf.Abs(dx) > desiredDistance&&!reached)
+            if (Mathf.Abs(dx) > desiredDistance && !reached)
             {
-                erb.linearVelocity = new Vector2(Mathf.Sign(dx) * speed, erb.linearVelocity.y);
+                faceTarget();
+
+                erb.linearVelocity = new Vector2(Mathf.Sign(dx) * speed, erb.linearVelocityY);
             }
             else
             {
                 reached = true;
-                float strafeDir = Mathf.Sign(Mathf.Sin(Time.time * 3f));
-                erb.linearVelocity = new Vector2(strafeDir * speed * 0.3f, erb.linearVelocity.y);
+
+                float strafeDir =
+                    Mathf.Sign(Mathf.Sin(Time.time * 3f));
+
+                erb.linearVelocity = new Vector2(strafeDir * speed * 0.3f, erb.linearVelocityY);
             }
+
             if (hasBeenHit)
             {
                 t = idleTime;
             }
+
             yield return null;
             yield return null;
         }
 
         erb.linearVelocity = Vector2.zero;
+
+        walkingAnim(false);
     }
 
     public override void takeDamage(float damage)
     {
-        if (isInvincible || defeated) return;
+        if (isInvincible || defeated)
+            return;
+
         base.takeDamage(damage);
+
         hasBeenHit = true;
     }
+
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerScript.takeDamage(calcDamage(type));
-            if(type==dmgTypeSlime.dash)hasDashHit=true;
+            playerScript.takeDamage(
+                calcDamage(type)
+            );
+
+            if (type == dmgTypeSlime.dash)
+            {
+                hasDashHit = true;
+            }
+
+            if (type == dmgTypeSlime.bull)
+            {
+                hasBullHit = true;
+            }
         }
     }
-    IEnumerator coreGlow(float duration, float frequency)
+
+    protected new void faceTarget()
+    {
+        float dirx = Mathf.Sign(player.transform.position.x - transform.position.x);
+
+        Vector3 scale = transform.localScale;
+
+        scale.x = Mathf.Abs(scale.x) * dirx;
+
+        transform.localScale = scale;
+    }
+
+    protected void setGlow(float value)
+    {
+        coreSprite.material.SetFloat("_Pulse",value);
+    }
+
+    protected IEnumerator coreGlow(float duration, float frequency)
     {
         float elapsed = 0f;
+
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            float pulse = Mathf.PingPong(elapsed * frequency * 2f, 1f);
-            coreSprite.color = Color.Lerp(defColor, teleColor, pulse);
+
+            float pulse =
+                Mathf.PingPong(elapsed * frequency * 2f, 1f);
+
+            setGlow(pulse);
+
             yield return null;
         }
-        coreSprite.color = defColor;
+
+        setGlow(0f);
+    }
+
+    //animator
+
+    /*
+    isWalking bool
+    jump trigger
+    inAir bool
+    fall bool
+    touchGround trigger
+    dash bool
+    bull bool
+    death trigger
+    */
+
+    public void walkingAnim(bool value)
+    {
+        animator.SetBool("isWalking", value);
+    }
+
+    public void jumpStartAnim()
+    {
+        animator.ResetTrigger("touchGround");
+
+        animator.SetBool("inAir", false);
+        animator.SetBool("fall", false);
+
+        animator.SetTrigger("jump");
+    }
+
+    public void jumpUpAnim(bool value)
+    {
+        animator.SetBool("inAir", value);
+    }
+
+    public void jumpDownAnim(bool value)
+    {
+        animator.SetBool("fall", value);
+    }
+
+    public void jumpLandAnim()
+    {
+        animator.SetBool("inAir", false);
+        animator.SetBool("fall", false);
+
+        animator.SetTrigger("touchGround");
+    }
+
+    public void dashAnim()
+    {
+        animator.SetBool("dash", true);
+    }
+
+    public void stopDashAnim()
+    {
+        animator.SetBool("dash", false);
+    }
+
+    public void bullAnim()
+    {
+        animator.SetBool("dash", true);
+    }
+
+    public void stopBullAnim()
+    {
+        animator.SetBool("dash", false);
+    }
+
+    public void deathAnim()
+    {
+        animator.SetTrigger("death");
     }
 }
