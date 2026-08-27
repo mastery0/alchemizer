@@ -55,8 +55,7 @@ public class slimeBoss : boss
     public float bullSpeed;
     public float maxDuration;
 
-    private bool canDieBool;
-    //private float test { set { }; }
+    private bool hasDeathStarted=false;
     protected override void Awake()
     {
         base.Awake();
@@ -76,13 +75,13 @@ public class slimeBoss : boss
 
     protected override void Update()
     {
-        base.Update();
-
-        if (hp <= 0 && !defeated)
+        //base.Update();
+        if (Vector2.Distance(transform.position, player.transform.position) < Vector2.Distance(transform.position, engagePoint.position)) engage();
+        if (hp <= 0 && !defeated&&!hasDeathStarted)
         {
+            hasDeathStarted = true;
             deathAnim();
-            if (canDieBool) die();
-            else return;
+            StartCoroutine(canDie());
         }
 
         if (!isAttacking)
@@ -256,7 +255,7 @@ public class slimeBoss : boss
         {
             state = animator.GetCurrentAnimatorStateInfo(0);
 
-            if (state.IsName("touchGround") && state.normalizedTime >= 1f)
+            if (!state.IsName("touchGround"))
                 break;
 
             yield return null;
@@ -485,18 +484,18 @@ public class slimeBoss : boss
     }
     private IEnumerator canDie()
     {
-        canDieBool=false;
         AnimatorStateInfo state;
+
         while (true)
         {
             state = animator.GetCurrentAnimatorStateInfo(0);
-
-            if (state.IsName("jumpAnim"))
-                break;
+            erb.linearVelocity = new Vector2(0, erb.linearVelocity.y);
+            if (state.IsName("deathAnim") && state.normalizedTime >= 1f)break;
 
             yield return null;
         }
-        canDieBool = true;
+
+        die();
     }
     //animator
 

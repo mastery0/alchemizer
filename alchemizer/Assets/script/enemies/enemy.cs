@@ -72,13 +72,14 @@ public abstract class enemy : MonoBehaviour
     }
     public virtual void takeDamage(float damage)
     {
+        Debug.Log(gameObject.name);
         hp -= damage;
-        if (hp <= 0) die();
+        /*if (hp <= 0) die();
         else
         {
             if (isFlashing) StopCoroutine(hitFlash());
             StartCoroutine(hitFlash());
-        }
+        }*/
     }
     public virtual void die()
     {
