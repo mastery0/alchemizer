@@ -75,15 +75,14 @@ public class slimeBoss : boss
 
     protected override void Update()
     {
-        //base.Update();
-        if (Vector2.Distance(transform.position, player.transform.position) < Vector2.Distance(transform.position, engagePoint.position)) engage();
+        base.Update();
         if (hp <= 0 && !defeated&&!hasDeathStarted)
         {
             hasDeathStarted = true;
             deathAnim();
             StartCoroutine(canDie());
         }
-
+        if(hasDeathStarted)erb.linearVelocity=new Vector2(0,erb.linearVelocity.y);
         if (!isAttacking)
             type = dmgTypeSlime.contact;
     }
@@ -420,9 +419,6 @@ public class slimeBoss : boss
 
     public override void takeDamage(float damage)
     {
-        if (isInvincible || defeated)
-            return;
-
         base.takeDamage(damage);
 
         hasBeenHit = true;
@@ -472,8 +468,7 @@ public class slimeBoss : boss
         {
             elapsed += Time.deltaTime;
 
-            float pulse =
-                Mathf.PingPong(elapsed * frequency * 2f, 1f);
+            float pulse =Mathf.PingPong(elapsed * frequency * 2f, 1f);
 
             setGlow(pulse);
 

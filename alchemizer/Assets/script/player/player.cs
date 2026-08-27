@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
+using Unity.VisualScripting;
 [RequireComponent(typeof(Animator))]
 public class player : MonoBehaviour
 {
@@ -331,7 +332,7 @@ public class player : MonoBehaviour
         }
         StartCoroutine(attackCD());
     }
-    IEnumerator timedRayCast(Collider2D target,Vector2 hitPoint)
+    IEnumerator timedRayCast(Collider2D target, Vector2 hitPoint)
     {
         float distance = Vector2.Distance(transform.position, hitPoint);
 
@@ -339,18 +340,28 @@ public class player : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
-        if (target==null)yield break;
+        if (target == null) yield break;
+        boss b;
+        if (target.TryGetComponent<boss>(out b))
+        {
+            b.takeDamage(attackDamage);
 
-            enemy e = target.GetComponent<enemy>();
-            if (e != null)
-            {
-                e.takeDamage(attackDamage);
+            timeSinceAttack = 0f;
+            core.currentPressure += core.pressurePlusDelta;
 
-                timeSinceAttack = 0f;
-                core.currentPressure += core.pressurePlusDelta;
+            hitStopManager.instance.stopTime(0.08f);
+            yield break;
+        }
+        enemy e = target.GetComponent<enemy>();
+        if (e != null)
+        {
+            e.takeDamage(attackDamage);
 
-                hitStopManager.instance.stopTime(0.08f);
-            }
+            timeSinceAttack = 0f;
+            core.currentPressure += core.pressurePlusDelta;
+
+            hitStopManager.instance.stopTime(0.08f);
+        }
     }
     public void heal(float amount1)
     {

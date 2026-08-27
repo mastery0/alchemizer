@@ -73,7 +73,13 @@ public abstract class boss : enemy
     public override void takeDamage(float damage)
     {
         if (isInvincible || defeated) return;
-        base.takeDamage(damage);
+        hp -= damage;
+        if (hp <= 0&&enemyID!= "bossSlime") die();
+        else
+        {
+            if (isFlashing) StopCoroutine(hitFlash());
+            StartCoroutine(hitFlash());
+        }
         bossBar.instance.setAmount(hp, maxHp);
         checkPhaseTransition();
     }

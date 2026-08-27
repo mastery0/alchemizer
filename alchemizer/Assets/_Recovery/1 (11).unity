@@ -15197,7 +15197,7 @@ MonoBehaviour:
   maxHp: 100
   healMult: 1
   defense: 0.5
-  attackDamage: 500
+  attackDamage: 99
   attackRange: 5
   attackCooldown: 0.5
   iFrames: 0.1
