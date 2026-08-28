@@ -124,4 +124,8 @@ public class actionBar : MonoBehaviour
         potionMenu.SetActive(true);
         lastOpenedMenu = menu.potionMenu;
     }
+    public void closeActionBar()
+    {
+        gameObject.SetActive(false);
+    }
 }

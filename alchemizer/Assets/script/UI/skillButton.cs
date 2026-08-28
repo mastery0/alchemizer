@@ -44,7 +44,7 @@ public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     void ConjureMenu()
     {
         skillTreeManager.overMenu.transform.position = transform.position + new Vector3(200, -10, 0);
-        skillTreeManager.overMenu.skillName.text = skill.name;
+        skillTreeManager.overMenu.skillName.text = skill.skillName;
         skillTreeManager.overMenu.skillDescription.text = skill.skillDescription;
         skillTreeManager.overMenu.skillImage.sprite=skill.skillMenuImg;
         skillTreeManager.overMenu.skill = skill;
