@@ -56,7 +56,7 @@ frame in cui apre il baule ***
 frame dentro il baule che si vede il catalizzatore(catacristo) e foglio ***
 frame che legge il foglio  ***
 terremoto primo frame in cui inizia il terremoto e secondo che fa capire il tremolio dello schermo (da fare sull editor)
-frame che si sposta su una porta con due lucchetti (da capire come e dove mettere sta porta )(decidere a che tema) 
+frame che si sposta su una porta con due lucchetti (da capire come e dove mettere sta porta )(decidere a che tema) ***
 frame di corsa verso Sopra ***
 massi che crollano sulla porta 
 lui che esce dall edificio ***
