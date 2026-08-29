@@ -27,7 +27,7 @@ MonoBehaviour:
   - type: 3
     status: 1
     targetID: quest2Completed
-    displayText: 
+    displayText: 'Talk To Yara:'
     requiredAmount: 1
     currentAmount: 0
   prerequisites: []

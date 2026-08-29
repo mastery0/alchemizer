@@ -7,21 +7,8 @@ public class ObjectiveUI : MonoBehaviour
 
     public void Setup(questObjective obj)
     {
-        string check = obj.status == questStatus.completed ? "✓" : "□";
-        string objectiveText = string.IsNullOrWhiteSpace(obj.displayText)
-            ? GetDefaultText(obj)
-            : obj.displayText;
-        Debug.Log(check);
-        Debug.Log(objectiveText);
-        text.text =
-            check +
-            " " +
-            objectiveText +
-            " (" +
-            obj.currentAmount +
-            "/" +
-            obj.requiredAmount +
-            ")";
+        string objectiveText = string.IsNullOrWhiteSpace(obj.displayText) ? GetDefaultText(obj) : obj.displayText;
+        text.text =objectiveText + " (" + obj.currentAmount + "/" + obj.requiredAmount +")";
     }
 
     private string GetDefaultText(questObjective obj)

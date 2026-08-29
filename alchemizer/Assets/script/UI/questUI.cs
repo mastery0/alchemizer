@@ -84,9 +84,7 @@ public class QuestUI : MonoBehaviour
             objectiveUI.Setup(objective);
         }
 
-        rewardText.text = string.IsNullOrWhiteSpace(q.rewardText)
-            ? GetAutomaticRewardText(q)
-            : q.rewardText;
+        rewardText.text = string.IsNullOrWhiteSpace(q.rewardText) ? GetAutomaticRewardText(q) : q.rewardText;
     }
 
     private string GetAutomaticRewardText(quest q)
