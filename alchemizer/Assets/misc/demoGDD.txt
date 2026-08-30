@@ -70,6 +70,89 @@ fine cutscene
 
 
 
+dialoghi
+frame1: era una giornata tranquilla e xxx era indaffarato a cercare qualcosa da mangiare 
+
+frame2 quando d improvviso sente un forte boato provenire dalla sua cantina e decide di andare a controllare cosa sia succcesso 
+
+frame3 mentre corre a vedere cosa sia successo vede un aura viola provenire dalla sia cantina 
+
+frame5 mentre corre a vedere cosa sia successo vede un aura viola provenire dalla sia cantina 
+
+frame6 appena sceso in cantina nota che quest aura proviene da un baule presente nella sua cantina
+
+frame7 e decide di voler avvicinarsi per vedere cosa contiene quel forziere
+
+frame8 aprendo il forziere trova un papiro e un catalizzatore 
+
+frame9 NO MESSAGGIO 
+
+frame10 messaggio scritto nel papiro: 
+
+frame11 improvvisamente la terra inizia a tremare
+
+frame12 il nostro xxx cade durante il terremoto 
+
+frame13 e come per magia compare una porta con due luchetti magici da sbloccare
+
+frame14 NO MESSAGGIO 
+
+frame15 il nostro xxx corre il piu velocemente possibile al piano di sopra per paura che gli cada qualcosa in testa 
+
+frame16 il nostro xxx corre il piu velocemente possibile al piano di sopra per paura che gli cada qualcosa in testa 
+
+frame17 appena uscito dal seminterrato dietro di lui cadono travi e detriti bloccando l ingresso al seminterrato 
+
+frame18 decide quindi di uscire dalla sua casa e capire cosa sia successo fuori
+
+frame19 NO MESSAGGIO 
+
+frame20 NO MESSAGGIO 
+
+
+
+
+ENGLISH VERSION DIALOGUE
+Frame 1: It was a quiet day, and xxx was busy looking for something to eat.
+
+Frame 2: When suddenly, he hears a loud boom coming from his basement and decides to go check what happened.
+
+Frame 3: While running to see what happened, he notices a purple aura coming from his basement.
+
+Frame 5: While running to see what happened, he notices a purple aura coming from his basement.
+
+Frame 6: As soon as he gets down into the basement, he notices that the aura is coming from a chest in his basement.
+
+Frame 7: He decides to get closer to see what the chest contains.
+
+Frame 8: When he opens the chest, he finds a scroll and a catalyst.
+
+Frame 9: NO MESSAGE
+
+Frame 10: Message written on the scroll:
+
+Frame 11: Suddenly, the ground starts to shake.
+
+Frame 12: Our xxx falls during the earthquake.
+
+Frame 13: And, as if by magic, a door appears with two magical locks that need to be unlocked.
+
+Frame 14: NO MESSAGE
+
+Frame 15: Our xxx runs upstairs as fast as possible, afraid that something might fall on his head.
+
+Frame 16: Our xxx runs upstairs as fast as possible, afraid that something might fall on his head.
+
+Frame 17: As soon as he gets out of the basement, beams and debris fall behind him, blocking the entrance to the basement.
+
+Frame 18: He then decides to leave his house and find out what happened outside.
+
+Frame 19: NO MESSAGE
+
+Frame 20: NO MESSAGE
+
+
+
 Esplorazione forestaIncatata
 
 Incontro con Yara
@@ -82,11 +165,6 @@ Completi la seconda quest di Yara
 ti dice che nella palude/bosco puoi trovare un oggetto che ti permette di tornare nel seminterrato di casa
 Accedi alla palude/bosco
 Schermata di chiusura demo
-
-
-
-
-
 
 
 
