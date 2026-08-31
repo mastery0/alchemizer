@@ -223,7 +223,7 @@ MonoBehaviour:
   maxHp: 35
   hp: 0
   speed: 1.5
-  damage: 22
+  damage: 20
   range: 15
   healpercent: 1
   essenceDrop: 01000000
