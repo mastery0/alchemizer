@@ -50,6 +50,8 @@ public abstract class enemy : MonoBehaviour
     protected SpriteRenderer[] sr;
     protected Color[] originalcolors;
     protected bool isFlashing;
+    private bool touchingPlayer;
+    private float cloneSpeed;
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
@@ -59,7 +61,7 @@ public abstract class enemy : MonoBehaviour
         playerScript = player.GetComponent<player>();
         enemyCollider = GetComponent<Collider2D>();
         sr=GetComponentsInChildren<SpriteRenderer>();
-
+        cloneSpeed = speed;
         originalcolors=new Color[sr.Length];
         for(int i=0; i<sr.Length; i++)originalcolors[i]=sr[i].color;
         hp = maxHp;
@@ -150,6 +152,14 @@ public abstract class enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerScript.takeDamage(damage);
+            speed = 0;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            speed=cloneSpeed;
         }
     }
     public void hasSight()

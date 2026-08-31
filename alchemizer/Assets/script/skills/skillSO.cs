@@ -44,12 +44,50 @@ public class skillSO : ScriptableObject
         public bool airDash = false;
         public bool glider=false;
         public bool enemyHeals=false;
+
+    [Header("cost settings")]
+
+    public Vector2Int costSprites=new Vector2Int(-1,-1); //if y=-1 only 1 essence
+    public int cost1;
+    public int cost2;
     [HideInInspector]
     public bool isUnlocked = false;
 
     private void OnEnable()
     {
+        //0 air 1 fire 2 water 3 light 4 dark
+        int n = 0;
+        foreach (essence s in essences)
+        {
+            n++;
+            switch (s.type)
+            {
+                case essenceTypes.air:
+                    if (costSprites.x == -1) { costSprites.x = 0; cost1 = s.amount; }
+                    else { costSprites.y = 0; cost2 = s.amount; }
+                    break;
+                case essenceTypes.fire:
+                    if (costSprites.x == -1) { costSprites.x = 1; cost1 = s.amount; }
+                    else { costSprites.y = 1; cost2 = s.amount; }
+                    break;
+                case essenceTypes.water:
+                    if (costSprites.x == -1) { costSprites.x = 2; cost1 = s.amount; }
+                    else { costSprites.y = 2; cost2 = s.amount; }
+                    break;
+                case essenceTypes.light:
+                    if (costSprites.x == -1) { costSprites.x = 3; cost1 = s.amount; }
+                    else { costSprites.y = 3; cost2 = s.amount; }
+                    break;
+                case essenceTypes.dark:
+                    if (costSprites.x == -1) { costSprites.x = 4; cost1 = s.amount; }
+                    else
+                    { costSprites.y = 4; cost2 = s.amount; }
+                    break;
+            }
+        }
+        if (n == 1) costSprites.y = -1;
         isUnlocked = false;
+        if (skillID == 0) {costSprites.x = -1;isUnlocked = true;}
     }
     public void Unlock()
     {
