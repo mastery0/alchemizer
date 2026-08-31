@@ -201,3 +201,22 @@ salto e carica verso il player
 Golem delle radici: da ribilanciare e animare
 corpo fatto di tronchi con crepe viola sui punti di giuntura e muschio che copre la schiena
 pugno a terra che fa comparire delle radici che vanno verso il player e colpo melee quando il player � vicino
+
+
+
+13 essenze elementali spaciali
+27 essenze totali dark
+21 essenze ligth
+
+9 spore
+3 cinghiali
+8 cani 
+
+1.5*8=12
+4*3=12 
+note: serve avere un po di fortuna per avere tutto oppure riuccidere almeno un nemico in piu 
+
+
+note: da capire se serve buffare swift step dal 10 al 15 percento la velocita del player
+il boss root ha troppo poco range nell attacco base e lo puoi spammare se vuoi
+il primo cane su quella piattaforma e sbagliato perche si mette nel bordo e ti danneggia sempre

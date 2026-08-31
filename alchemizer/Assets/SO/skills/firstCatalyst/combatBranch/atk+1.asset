@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::skillSO
   skillID: 1
   skillName: Alchemist's Strength
-  skillDescription: Increases attack dmg by 10%
+  skillDescription: Increases attack dmg by 20%
   skillBG: {fileID: 0}
   skillMenuImg: {fileID: 21300000, guid: 8b2c6544af14e424491ff362ef35dc55, type: 3}
   requiredSkill:
@@ -24,7 +24,7 @@ MonoBehaviour:
   - type: 1
     amount: 3
   hpMult: 1
-  atkMult: 1.1
+  atkMult: 1.2
   dashMult: 1
   essenceMult: 1
   rangMult: 1

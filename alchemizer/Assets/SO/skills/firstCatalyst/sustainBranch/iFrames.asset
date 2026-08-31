@@ -22,10 +22,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 34cdfd286472971489800c04e57b431d, type: 2}
   skipRequirement: 0
   essences:
-  - type: 0
+  - type: 2
     amount: 5
-  - type: 3
-    amount: 5
+  - type: 4
+    amount: 2
   hpMult: 1
   atkMult: 1
   dashMult: 1

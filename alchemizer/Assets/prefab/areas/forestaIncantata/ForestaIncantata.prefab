@@ -4036,8 +4036,8 @@ MonoBehaviour:
   damage: 15
   range: 10
   healpercent: 1
-  essenceDrop: 
-  minMaxEssence: {x: 0, y: 0}
+  essenceDrop: 04000000
+  minMaxEssence: {x: 17, y: 17}
   heals: {fileID: 0}
   flashDuration: 0.3
   flashColor: {r: 1, g: 1, b: 1, a: 1}
@@ -4067,6 +4067,10 @@ MonoBehaviour:
   jumpMult: 1.5
   jumpDuration: 0.7
   jumpHeight: 4
+  groundCheck: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 0
   dashMult: 1.8
   dashDuration: 0.6
   dashSpeed: 20

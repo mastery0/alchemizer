@@ -23,8 +23,8 @@ MonoBehaviour:
   essences:
   - type: 0
     amount: 5
-  - type: 3
-    amount: 5
+  - type: 4
+    amount: 2
   hpMult: 1
   atkMult: 1
   dashMult: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
   rangMult: 1
   atkCDmult: 1
   speedMult: 1
-  dashCDmult: 1.2
+  dashCDmult: 1.25
   dashCount: 0
   iFrames: 0
   healMult: 0

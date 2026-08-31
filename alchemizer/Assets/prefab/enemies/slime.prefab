@@ -266,14 +266,14 @@ MonoBehaviour:
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
   enemyID: slime
-  maxHp: 15
+  maxHp: 17
   hp: 0
   speed: 2
-  damage: 30
+  damage: 15
   range: 15
   healpercent: 1
   essenceDrop: 02000000
-  minMaxEssence: {x: 0, y: 2}
+  minMaxEssence: {x: 1, y: 3}
   heals: {fileID: 6333241049486431584, guid: 8be2b9e261f2efc4eafdc5a2cfb3ebd4, type: 3}
   flashDuration: 0.3
   flashColor: {r: 1, g: 1, b: 1, a: 1}
