@@ -5874,10 +5874,10 @@ MonoBehaviour:
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
   enemyID: rootGolemBoss
-  maxHp: 500
+  maxHp: 210
   hp: 0
   speed: 7
-  damage: 22
+  damage: 25
   range: 10
   healpercent: 1
   essenceDrop: 04000000
@@ -15591,11 +15591,11 @@ MonoBehaviour:
   dashTime: 0.2
   dashCooldown: 1
   glideFallSpeed: 2
-  hp: 9999
-  maxHp: 9999
+  hp: 0
+  maxHp: 100
   healMult: 1
   defense: 0.5
-  attackDamage: 500
+  attackDamage: 5
   attackRange: 5
   attackCooldown: 0.5
   iFrames: 0.1
@@ -79013,6 +79013,14 @@ PrefabInstance:
     - target: {fileID: 3907722470786409733, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: m_Tiles.Array.data[3358].second.m_TileSpriteIndex
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162301855649347128, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
+      propertyPath: maxHp
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162301855649347128, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
+      propertyPath: damage
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4162301855649347128, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: bossName
