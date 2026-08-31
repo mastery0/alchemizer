@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eac9b5390904cee48a7343f4618c67f6, type: 3}
+  m_Script: {fileID: 0}
   m_Name: yaraQuest2
   m_EditorClassIdentifier: Assembly-CSharp::quest
   questID: yaraQuest2
   questName: Defeat The Root Golem
   questStatus: 1
-  questDescription: "The Root Golem is threatening the entrance to the Swamp,go and\n   
-    kill him"
+  questDescription: The Root Golem is threatening the entrance to the Swamp,go and
+    kill him
   objectives:
   - type: 0
     status: 1
@@ -35,4 +35,4 @@ MonoBehaviour:
   essenceRewardAmount: 0
   itemRewards: []
   potionRewardID: ragePotion
-  rewardText: Unlock rage Potion
+  rewardText: 'Unlock rage Potion '

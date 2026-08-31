@@ -6613,7 +6613,7 @@ MonoBehaviour:
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
   enemyID: rootGolemBoss
-  maxHp: 150
+  maxHp: 210
   hp: 0
   speed: 7
   damage: 25
@@ -16850,7 +16850,7 @@ Transform:
   m_GameObject: {fileID: 1645553675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -134.78, y: -24.14, z: 0}
+  m_LocalPosition: {x: -13.37, y: -14.91, z: 0}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16870,7 +16870,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 9999
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 6
@@ -16924,7 +16924,7 @@ MonoBehaviour:
   maxHp: 100
   healMult: 1
   defense: 0.5
-  attackDamage: 5
+  attackDamage: 1000
   attackRange: 3.2
   attackCooldown: 0.5
   iFrames: 0.1
@@ -80856,7 +80856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4162301855649347128, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: maxHp
-      value: 120
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4162301855649347128, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: damage
@@ -87257,6 +87257,10 @@ PrefabInstance:
     - target: {fileID: 7267475490426224668, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 16.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471758145702983717, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7537651964969691611, guid: 8076190d0108eb542a8dec0202744f0b, type: 3}
       propertyPath: m_Size.x
