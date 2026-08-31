@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f0e6f2e149bd65f4db9a81b77067165d
+guid: c380d6f845568be4493b1cbf43c1e882
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8020284071092010953
-    second: pressureMid_0
+      213: -5442682140323737519
+    second: menu_potions_buttons_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pressureMid_0
+      name: menu_potions_buttons_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 9
-        width: 26
-        height: 54
+        x: 0
+        y: 0
+        width: 480
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73046d0712a32b090800000000000000
-      internalID: -8020284071092010953
+      spriteID: 15014a01e65b774b0800000000000000
+      internalID: -5442682140323737519
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pressureMid_0: -8020284071092010953
+      menu_potions_buttons_0: -5442682140323737519
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

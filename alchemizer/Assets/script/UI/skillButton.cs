@@ -39,6 +39,7 @@ public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
     public void OnPointerExit(PointerEventData data)
     {
+        //costPrefab.SetActive(false);
         skillTreeManager.overMenu.gameObject.SetActive(false);
     }
     void ConjureMenu()
@@ -46,8 +47,36 @@ public class skillButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         skillTreeManager.overMenu.transform.position = transform.position + new Vector3(200, -10, 0);
         skillTreeManager.overMenu.skillName.text = skill.skillName;
         skillTreeManager.overMenu.skillDescription.text = skill.skillDescription;
-        skillTreeManager.overMenu.skillImage.sprite=skill.skillMenuImg;
+        skillTreeManager.overMenu.skillImage.sprite = skill.skillMenuImg;
         skillTreeManager.overMenu.skill = skill;
+        if (skill.costSprites.y == -1 && skill.costSprites.x == -1)
+        {
+            skillTreeManager.overMenu.costIMG1.gameObject.SetActive(false);
+            skillTreeManager.overMenu.costTXT1.gameObject.SetActive(false);
+            skillTreeManager.overMenu.costIMG2.gameObject.SetActive(false);
+            skillTreeManager.overMenu.costTXT2.gameObject.SetActive(false);
+        }
+        else
+        if (skill.costSprites.y == -1)
+        {
+            skillTreeManager.overMenu.costIMG1.gameObject.SetActive(true);
+            skillTreeManager.overMenu.costTXT1.gameObject.SetActive(true);
+            skillTreeManager.overMenu.costIMG2.gameObject.SetActive(false);
+            skillTreeManager.overMenu.costTXT2.gameObject.SetActive(false);
+            skillTreeManager.overMenu.costIMG1.sprite = skillTreeManager.overMenu.essencesSprites[skill.costSprites.x];
+            skillTreeManager.overMenu.costTXT1.text = skill.cost1.ToString();
+        }
+        else
+        {
+            skillTreeManager.overMenu.costIMG1.gameObject.SetActive(true);
+            skillTreeManager.overMenu.costTXT1.gameObject.SetActive(true);
+            skillTreeManager.overMenu.costIMG2.gameObject.SetActive(true);
+            skillTreeManager.overMenu.costTXT2.gameObject.SetActive(true);
+            skillTreeManager.overMenu.costIMG1.sprite = skillTreeManager.overMenu.essencesSprites[skill.costSprites.x];
+            skillTreeManager.overMenu.costTXT1.text = skill.cost1.ToString();
+            skillTreeManager.overMenu.costIMG2.sprite = skillTreeManager.overMenu.essencesSprites[skill.costSprites.y];
+            skillTreeManager.overMenu.costTXT2.text = skill.cost2.ToString();
+        }
         skillTreeManager.overMenu.Spawn();
     }
 }

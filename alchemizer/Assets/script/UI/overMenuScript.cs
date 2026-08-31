@@ -32,6 +32,13 @@ public class overMenuScript : MonoBehaviour
     [Header("Back Ground Menus")]
     public backGround[] bgList;
 
+    [Header("cost settings")]
+    [Tooltip("0 air 1 fire 2 water 3 light 4 dark")]
+    public Sprite[] essencesSprites;//0 air 1 fire 2 water 3 light 4 dark
+    public Image costIMG1;
+    public TMP_Text costTXT1;
+    public Image costIMG2;
+    public TMP_Text costTXT2;
 
     private void Awake()
     {
@@ -50,11 +57,6 @@ public class overMenuScript : MonoBehaviour
         {
             screenPadding = 12f;
         }
-    }
-
-    private void Start()
-    {
-        gameObject.SetActive(false);
     }
     private void OnEnable()
     {

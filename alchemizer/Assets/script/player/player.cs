@@ -112,8 +112,7 @@ public class player : MonoBehaviour
     {
         faceTarget();
         if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
-
-            grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground);
+        grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground);
         if (grounded) { currentDash = dashCount; currentJump = jumpAmount; }
         glide();
         
@@ -124,6 +123,21 @@ public class player : MonoBehaviour
         else if(Mathf.Approximately(prb.linearVelocity.y, 0f)) setWalking(false);
         if (prb.linearVelocity.y < 0f&&!grounded) setFalling(true);
         else setFalling(false);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log("b");
+        if (((1 << collision.gameObject.layer) & enemyLayer) == 0) return;
+        Debug.Log("a");
+        foreach(ContactPoint2D contact in collision.contacts)
+        {
+            if (Mathf.Abs(contact.normal.x) > 0.5f)
+            {
+                prb.linearVelocity = new Vector2(0f, prb.linearVelocity.y);
+                break;
+            }
+        }
     }
     protected void faceTarget()
     {
@@ -211,11 +225,11 @@ public class player : MonoBehaviour
     }
     public bool dashCheck()
     {
-        if (!hasDash) {Debug.Log("1"); return false;}
-        if (isDashing) { Debug.Log("2"); return false; }
-        if (!grounded) if(!airDash) { Debug.Log("3"); return false; }
-        if (dashCD) { Debug.Log("4"); return false; }
-        if (currentDash<=0) { Debug.Log("5"); return false; }
+        if (!hasDash) {return false;}
+        if (isDashing) {return false; }
+        if (!grounded) if(!airDash) {return false; }
+        if (dashCD) {return false; }
+        if (currentDash<=0) {return false; }
         return true;
     }
     public void jump()
