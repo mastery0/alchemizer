@@ -74,7 +74,6 @@ public class player : MonoBehaviour
     private Vector2 facingDirection;
     private LineRenderer rayEffect;
     private bool canMove = true;
-
     private void Awake()
     {
         // Keep the Animator reference valid even if it was not assigned in the
@@ -111,7 +110,10 @@ public class player : MonoBehaviour
     void FixedUpdate()
     {
         faceTarget();
-        if (!isDashing) prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
+        if (!isDashing)
+        {
+                prb.linearVelocity = new Vector2(moveX * moveSpeed, prb.linearVelocityY);
+        }
         grounded = Physics2D.OverlapCircle(groundCheck.transform.position, 0.1f, ground);
         if (grounded) { currentDash = dashCount; currentJump = jumpAmount; }
         glide();
@@ -127,10 +129,9 @@ public class player : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log("b");
         if (((1 << collision.gameObject.layer) & enemyLayer) == 0) return;
-        Debug.Log("a");
-        foreach(ContactPoint2D contact in collision.contacts)
+
+        foreach (ContactPoint2D contact in collision.contacts)
         {
             if (Mathf.Abs(contact.normal.x) > 0.5f)
             {
@@ -138,6 +139,10 @@ public class player : MonoBehaviour
                 break;
             }
         }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (((1 << collision.gameObject.layer) & enemyLayer) == 0) return;
     }
     protected void faceTarget()
     {
