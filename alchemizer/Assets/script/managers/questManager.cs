@@ -11,16 +11,16 @@ public class questSaveData
 public class questManager : MonoBehaviour
 {
     public static questManager instance;
-    public List<quest> questDB=new List<quest>();
+    public List<questSO> questDB=new List<questSO>();
 
     // QuestUI integration:
     // - use getActiveQuests()/getCompletedQuests() to build the journal
     // - subscribe to onQuestStarted/onQuestUpdated/onQuestCompleted and refresh visible rows
     // - read questName, questDescription, objectives, Essencereward and itemRewards from quest
     // - call completeQuest(quest) again if rewards failed because the inventory was full
-    public System.Action<quest> onQuestStarted;
-    public System.Action<quest> onQuestUpdated;
-    public System.Action<quest> onQuestCompleted;
+    public System.Action<questSO> onQuestStarted;
+    public System.Action<questSO> onQuestUpdated;
+    public System.Action<questSO> onQuestCompleted;
 
     private void Awake()
     {
@@ -30,12 +30,14 @@ public class questManager : MonoBehaviour
     private void Start()
     {
         // Supports scenes or saves where a quest was already marked complete.
-        foreach (quest quest in questDB)
+        Debug.Log(questDB!=null);
+        foreach (questSO quest in questDB)
         {
+            Debug.Log(quest!=null);
             if (quest.questStatus == questStatus.completed) unlockQuestPotion(quest);
         }
     }
-    public void startQuest(quest quest)
+    public void startQuest(questSO quest)
     {
         if (quest == null) return;
         if(!quest.canStartQuest())return;
@@ -72,7 +74,7 @@ public class questManager : MonoBehaviour
         }
     }
 
-    public bool completeQuest(quest quest)
+    public bool completeQuest(questSO quest)
     {
         if (quest == null) return false;
         if (!quest.completeAndReward()) return false;
@@ -84,7 +86,7 @@ public class questManager : MonoBehaviour
         return true;
     }
 
-    public quest getQuest(string questID)
+    public questSO getQuest(string questID)
     {
         foreach(var item in questDB)
         {
@@ -93,9 +95,9 @@ public class questManager : MonoBehaviour
         return null;
     }
 
-    public List<quest> getActiveQuests()
+    public List<questSO> getActiveQuests()
     {
-        List<quest> activeQuests = new List<quest>();
+        List<questSO> activeQuests = new List<questSO>();
         foreach(var item in questDB)
         {
             if (item.questStatus == questStatus.inProgress) activeQuests.Add(item);
@@ -103,9 +105,9 @@ public class questManager : MonoBehaviour
         return activeQuests;
     }
 
-    public List<quest> getCompletedQuests()
+    public List<questSO> getCompletedQuests()
     {
-        List<quest> completedQuests = new List<quest>();
+        List<questSO> completedQuests = new List<questSO>();
         foreach (var item in questDB)
         {
             if (item.questStatus == questStatus.completed) completedQuests.Add(item);
@@ -138,7 +140,7 @@ public class questManager : MonoBehaviour
 
         foreach(string questID in completedQuestsID)
         {
-            quest quest = getQuest(questID);
+            questSO quest = getQuest(questID);
             if (quest == null) continue;
             quest.questStatus = questStatus.completed;
             foreach(var objective in quest.objectives)
@@ -151,7 +153,7 @@ public class questManager : MonoBehaviour
 
         foreach(string questID in activeQuestsID)
         {
-            quest quest = getQuest(questID);
+            questSO quest = getQuest(questID);
             if (quest == null) continue;
 
             quest.questStatus = questStatus.inProgress;
@@ -192,7 +194,7 @@ public class questManager : MonoBehaviour
         return data.objectiveProgress[objectiveIndex];
     }
 
-    private void unlockQuestPotion(quest quest)
+    private void unlockQuestPotion(questSO quest)
     {
         if (quest == null || healManager.instance == null) return;
         healManager.instance.unlockPotion(quest.potionRewardID);

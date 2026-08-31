@@ -7,12 +7,12 @@ public class QuestUIEntry : MonoBehaviour
     public TMP_Text title;
     public TMP_Text status;
 
-    private quest quest;
+    private questSO quest;
     private QuestUI ui;
 
     public Button button;
 
-    public void Setup(quest q, QuestUI questUI)
+    public void Setup(questSO q, QuestUI questUI)
     {
         quest = q;
         ui = questUI;

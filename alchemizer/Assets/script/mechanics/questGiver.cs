@@ -8,7 +8,7 @@ public class DialogueQuestAssignment
     public string dialogueID;
 
     [Tooltip("Quest assegnata quando viene avviato il dialogo indicato.")]
-    public quest quest;
+    public questSO quest;
 }
 
 public class questGiver : MonoBehaviour

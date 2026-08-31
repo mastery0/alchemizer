@@ -29,7 +29,7 @@ public class Dialogue
 
     [Header("Objective requirement")]
     [Tooltip("Quest che contiene l'obiettivo da completare prima di rendere disponibile questo dialogo. Lascia vuoto per non richiedere alcun obiettivo.")]
-    public quest requiredCompletedObjectiveQuest;
+    public questSO requiredCompletedObjectiveQuest;
 
     [Min(0)]
     [Tooltip("Indice dell'obiettivo nella quest selezionata (0 = primo obiettivo).")]
