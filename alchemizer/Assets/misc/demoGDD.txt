@@ -217,9 +217,7 @@ pugno a terra che fa comparire delle radici che vanno verso il player e colpo me
 note: serve avere un po di fortuna per avere tutto oppure riuccidere almeno un nemico in piu 
 
 
-note: da capire se serve buffare swift step dal 10 al 15 percento la velocita del player
-il boss root ha troppo poco range nell attacco base e lo puoi spammare se vuoi
-il primo cane su quella piattaforma e sbagliato perche si mette nel bordo e ti danneggia sempre
+note:il boss root ha troppo poco range nell attacco base e lo puoi spammare se vuoi
 
 
 
@@ -239,3 +237,5 @@ He decided to leave the house to find out what had happened outside
 
 
 frame10 il papiro: 
+ogni tipologia di nemico da un tipo di essenza diversa,con le essenza puoi aprendo il menu dello skill tree (con ESC)
+acquistare potenziamenti e abilita uniche per il tuo personaggio
