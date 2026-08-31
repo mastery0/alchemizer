@@ -484,7 +484,7 @@ public class slimeBoss : boss
         while (true)
         {
             state = animator.GetCurrentAnimatorStateInfo(0);
-            erb.linearVelocity = new Vector2(0, erb.linearVelocity.y);
+            speed = 0;
             if (state.IsName("deathAnim") && state.normalizedTime >= 1f)break;
 
             yield return null;
