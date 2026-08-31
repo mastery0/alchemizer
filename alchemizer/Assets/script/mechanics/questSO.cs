@@ -45,14 +45,14 @@ public class questObjective
     }
 }
 [CreateAssetMenu(menuName = "Alchemizer/Quest")]
-public class quest : ScriptableObject
+public class questSO : ScriptableObject
 {
     public string questID;
     public string questName;
     public questStatus questStatus;
     [TextArea] public string questDescription;
     public questObjective[] objectives;
-    public quest[] prerequisites;
+    public questSO[] prerequisites;
     public essenceManager.essenceTypes[] Essencereward;
     public int essenceRewardAmount;
     public itemStack[] itemRewards;

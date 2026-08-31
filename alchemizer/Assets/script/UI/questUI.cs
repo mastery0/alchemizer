@@ -17,7 +17,7 @@ public class QuestUI : MonoBehaviour
     public Transform objectiveParent;
     public GameObject objectivePrefab;
 
-    private quest selectedQuest;
+    private questSO selectedQuest;
 
     void Start()
     {
@@ -37,7 +37,7 @@ public class QuestUI : MonoBehaviour
         questManager.instance.onQuestCompleted -= Refresh;
     }
 
-    void Refresh(quest q)
+    void Refresh(questSO q)
     {
         BuildQuestList();
 
@@ -50,12 +50,12 @@ public class QuestUI : MonoBehaviour
         foreach (Transform child in questListParent)
             Destroy(child.gameObject);
 
-        List<quest> quests = new List<quest>();
+        List<questSO> quests = new List<questSO>();
 
         quests.AddRange(questManager.instance.getActiveQuests());
         quests.AddRange(questManager.instance.getCompletedQuests());
 
-        foreach (quest q in quests)
+        foreach (questSO q in quests)
         {
             GameObject obj = Instantiate(questEntryPrefab, questListParent);
 
@@ -65,7 +65,7 @@ public class QuestUI : MonoBehaviour
         }
     }
 
-    public void ShowQuest(quest q)
+    public void ShowQuest(questSO q)
     {
         selectedQuest = q;
 
@@ -87,7 +87,7 @@ public class QuestUI : MonoBehaviour
         rewardText.text = string.IsNullOrWhiteSpace(q.rewardText) ? GetAutomaticRewardText(q) : q.rewardText;
     }
 
-    private string GetAutomaticRewardText(quest q)
+    private string GetAutomaticRewardText(questSO q)
     {
         string rewards = "";
 
