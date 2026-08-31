@@ -220,3 +220,22 @@ note: serve avere un po di fortuna per avere tutto oppure riuccidere almeno un n
 note: da capire se serve buffare swift step dal 10 al 15 percento la velocita del player
 il boss root ha troppo poco range nell attacco base e lo puoi spammare se vuoi
 il primo cane su quella piattaforma e sbagliato perche si mette nel bordo e ti danneggia sempre
+
+
+
+It was a quiet day, and chyme was looking for something to eat
+Suddenly, he heard a loud boom coming from the basement and rushed to see what had happened
+As he ran downstairs, he noticed a strange purple aura glowing from below
+Reaching the basement, he saw the aura was coming from an old chest
+Curious, he stepped closer to see what it held
+Inside, he found a scroll and a catalyst
+Suddenly, the ground began to shake
+The tremor knocked chyme off his feet
+As if by magic, a sealed door appeared, locked by two enchanted mechanisms
+He scrambled back upstairs as fast as he could, afraid the ceiling might collapse on him
+The moment he got out, beams and debris crashed down behind him, sealing the entrance
+He decided to leave the house to find out what had happened outside
+
+
+
+frame10 il papiro: 

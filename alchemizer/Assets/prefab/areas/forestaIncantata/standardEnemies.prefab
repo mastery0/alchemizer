@@ -1140,10 +1140,10 @@ MonoBehaviour:
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
   enemyID: charger
-  maxHp: 35
+  maxHp: 30
   hp: 0
   speed: 1.5
-  damage: 22
+  damage: 20
   range: 15
   healpercent: 1
   essenceDrop: 01000000
@@ -3250,10 +3250,10 @@ MonoBehaviour:
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
   enemyID: charger
-  maxHp: 35
+  maxHp: 30
   hp: 0
   speed: 1.5
-  damage: 22
+  damage: 20
   range: 17
   healpercent: 1
   essenceDrop: 01000000
@@ -4356,10 +4356,10 @@ MonoBehaviour:
   edgeCheckAhead: 0.45
   footCheckOffset: 0.05
   enemyID: charger
-  maxHp: 35
+  maxHp: 30
   hp: 0
   speed: 1.5
-  damage: 22
+  damage: 20
   range: 15
   healpercent: 1
   essenceDrop: 01000000
