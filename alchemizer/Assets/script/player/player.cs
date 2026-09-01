@@ -42,19 +42,26 @@ public class player : MonoBehaviour
     public float attackDamage = 10f;
     public float attackRange = 1f;
     public float attackCooldown = 1f;
-    public float iFrames = 0.1f;
+    public float iFrames = 0.2f;
 
     public float raySpeed;
 
+    [Header("Sounds")]
+    public AudioClip attackSFX;
+    public AudioClip hurtSFX;
+    public AudioClip healSFX;
+    public AudioClip jumpSFX;
+    public AudioClip orbSFX;
+
     //unlocks
     [System.NonSerialized] public bool hasDash = true;
-    [System.NonSerialized] public bool coreInstability = true;
+    [System.NonSerialized] public bool coreInstability = false;
     [System.NonSerialized] public bool dashInvincibility = false;
-    [System.NonSerialized] public bool airDash = true;
+    [System.NonSerialized] public bool airDash = false;
     [System.NonSerialized] public int dashCount = 1;
     [System.NonSerialized] public bool enemiesHeal = false;
-    [System.NonSerialized] public bool hasDoubleJump = true;//to set false before ship
-    public bool hasGlider = true;
+    [System.NonSerialized] public bool hasDoubleJump = false;//to set false before ship
+    public bool hasGlider = false;
 
     private float moveX;
     private bool jumpHeld;
@@ -215,6 +222,7 @@ public class player : MonoBehaviour
     //movement
     private IEnumerator Dash()
     {
+        if (!airDash && !grounded) yield break;
         prb.gravityScale = 0;
         isDashing = true;
         dashCD = true;
@@ -239,6 +247,7 @@ public class player : MonoBehaviour
     }
     public void jump()
     {
+        audioManager.instance.playSFX(jumpSFX);
         jumpAnim();
         prb.linearVelocity=new Vector2( prb.linearVelocityX, jumpForce);
     }
@@ -265,6 +274,7 @@ public class player : MonoBehaviour
     {
         if (!isAlive) return;
         if (isInvicible) return;
+        audioManager.instance.playSFX(hurtSFX);
         hp -= damage-damage*defense;
         hpBar.setAmount(hp,maxHp);
         timeSinceHit = 0f;
@@ -343,6 +353,7 @@ public class player : MonoBehaviour
         moveX = 0;
 
         attackAnim();
+        audioManager.instance.playSFX(attackSFX);
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, attackRange, enemyLayer);
 
         if (hit.collider != null)
@@ -395,6 +406,7 @@ public class player : MonoBehaviour
             hp = maxHp;
             overflow = (hp + amount) - maxHp;
         }
+        audioManager.instance.playSFX(healSFX);
         hpBar.setAmount(hp,maxHp);
     }
     public void removeEssence()

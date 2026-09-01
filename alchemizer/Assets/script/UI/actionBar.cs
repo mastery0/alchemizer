@@ -18,6 +18,7 @@ public class actionBar : MonoBehaviour
     public GameObject questMenu;
     public GameObject potionMenu;
 
+    public AudioClip clickSFX;
     public void Awake()
     {
         instance = this;
@@ -82,6 +83,7 @@ public class actionBar : MonoBehaviour
     }
     public void OpenSkillTree()
     {
+        audioManager.instance.playSFX(clickSFX);
         skillTree.SetActive(true);
         inventory.SetActive(false);
         pauseMenu.SetActive(false);
@@ -91,6 +93,7 @@ public class actionBar : MonoBehaviour
     }
     public void OpenInventory()
     {
+        audioManager.instance.playSFX(clickSFX);
         skillTree.SetActive(false);
         inventory.SetActive(true);
         pauseMenu.SetActive(false);
@@ -99,6 +102,7 @@ public class actionBar : MonoBehaviour
     }
     public void OpenPauseMenu()
     {
+        audioManager.instance.playSFX(clickSFX);
         skillTree.SetActive(false);
         inventory.SetActive(false);
         pauseMenu.SetActive(true);
@@ -108,6 +112,7 @@ public class actionBar : MonoBehaviour
     }
     public void OpenQuestMenu()
     {
+        audioManager.instance.playSFX(clickSFX);
         skillTree.SetActive(false);
         inventory.SetActive(false);
         pauseMenu.SetActive(false);
@@ -117,6 +122,7 @@ public class actionBar : MonoBehaviour
     }
     public void OpenPotionMenu()
     {
+        audioManager.instance.playSFX(clickSFX);
         skillTree.SetActive(false);
         inventory.SetActive(false);
         pauseMenu.SetActive(false);
@@ -126,6 +132,7 @@ public class actionBar : MonoBehaviour
     }
     public void closeActionBar()
     {
+        audioManager.instance.playSFX(clickSFX);
         gameObject.SetActive(false);
     }
 }

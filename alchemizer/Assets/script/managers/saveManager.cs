@@ -8,6 +8,7 @@ using JetBrains.Annotations;
 [DefaultExecutionOrder(-1)]
 public class saveManager : MonoBehaviour
 {
+    public AudioClip saveSFX;
     public skillSO[] allSkills;
     public static saveManager instance;
     private static SaveData pendingLoadData;
@@ -147,6 +148,7 @@ public class saveManager : MonoBehaviour
     [ContextMenu("save")]
     public void save()
     {
+        audioManager.instance.playSFX(saveSFX);
         SaveData data = new SaveData();
         // Player stats are rebuilt by the saved skills when loading.
         // maxHp is retained in SaveData only to keep old save files compatible.

@@ -95,6 +95,7 @@ public class skillSO : ScriptableObject
         {
             payEssences();
             applyEffects();
+            audioManager.instance.playSFX(skillTreeManager.instance.levelUpSFX);
         }
     }
     public bool canUnlock()

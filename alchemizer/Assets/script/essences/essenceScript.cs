@@ -9,6 +9,7 @@ public class essenceScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             essenceManager.instance.modifyAmount(essenceType, amount);
+            audioManager.instance.playSFX(player.instance.orbSFX);
             Destroy(gameObject);
         }
     }

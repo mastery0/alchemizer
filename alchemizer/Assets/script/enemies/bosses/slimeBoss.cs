@@ -485,6 +485,8 @@ public class slimeBoss : boss
         {
             state = animator.GetCurrentAnimatorStateInfo(0);
             speed = 0;
+            dashSpeed = 0;
+            bullSpeed = 0;
             if (state.IsName("deathAnim") && state.normalizedTime >= 1f)break;
 
             yield return null;

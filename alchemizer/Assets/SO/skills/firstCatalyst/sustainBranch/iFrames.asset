@@ -35,12 +35,15 @@ MonoBehaviour:
   speedMult: 1
   dashCDmult: 1
   dashCount: 0
-  iFrames: 0
-  healMult: 1
+  iFrames: 0.2
+  healMult: 0
   dashInv: 0
   coreinstability: 0
   glassCannon: 0
   airDash: 0
   glider: 0
   enemyHeals: 0
+  costSprites: {x: 2, y: 4}
+  cost1: 5
+  cost2: 2
   isUnlocked: 0
