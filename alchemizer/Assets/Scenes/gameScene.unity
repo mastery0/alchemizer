@@ -3071,11 +3071,11 @@ MonoBehaviour:
     enemies: {fileID: 5692405516621507662, guid: 08de5556f8a40de40a6c2dbd846ef0fb, type: 3}
     enemiesPosition: {x: -109, y: -29, z: 0}
   starterArea:
-    areaName: forestaIncantata
-    areaPrefab: {fileID: 1480477253}
-    enemies: {fileID: 5692405516621507662, guid: 08de5556f8a40de40a6c2dbd846ef0fb, type: 3}
-    enemiesPosition: {x: -109, y: -29, z: 0}
-  currentArea: forestaIncatata
+    areaName: house
+    areaPrefab: {fileID: 5109409768030650442}
+    enemies: {fileID: 8593137622623613792, guid: fa18ee6fdab0f7243bccec98d92c34a3, type: 3}
+    enemiesPosition: {x: 0, y: 0, z: 0}
+  currentArea: house
 --- !u!1 &311878544
 GameObject:
   m_ObjectHideFlags: 0
@@ -6011,6 +6011,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613160161}
   m_CullTransparentMesh: 1
+--- !u!1 &621307029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621307030}
+  m_Layer: 0
+  m_Name: standardEnemies(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621307030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621307029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &624917414
 GameObject:
   m_ObjectHideFlags: 0
@@ -17573,7 +17604,7 @@ Transform:
   m_GameObject: {fileID: 1645553675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -213.21, y: -32.08, z: 0}
+  m_LocalPosition: {x: -217.76, y: -32, z: 0}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20138,7 +20169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1883618426
 Transform:
   m_ObjectHideFlags: 0
@@ -21837,6 +21868,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2341734989128752473, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3534612913704235648, guid: a3278f277e4c4154583182b1d81879b8, type: 3}
       propertyPath: m_Name
       value: checkpoint
@@ -22199,6 +22234,10 @@ PrefabInstance:
     - target: {fileID: 6993134345858682415, guid: dec99b2c860502c498580919e50a1579, type: 3}
       propertyPath: m_Name
       value: toForest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197926945599884048, guid: dec99b2c860502c498580919e50a1579, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -90210,3 +90249,4 @@ SceneRoots:
   - {fileID: 543565604081726636}
   - {fileID: 542276842}
   - {fileID: 1086252438}
+  - {fileID: 621307030}

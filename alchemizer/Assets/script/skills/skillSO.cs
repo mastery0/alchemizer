@@ -50,7 +50,6 @@ public class skillSO : ScriptableObject
     public Vector2Int costSprites=new Vector2Int(-1,-1); //if y=-1 only 1 essence
     public int cost1;
     public int cost2;
-    [HideInInspector]
     public bool isUnlocked = false;
 
     private void OnEnable()
