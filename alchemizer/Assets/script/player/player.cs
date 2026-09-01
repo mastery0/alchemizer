@@ -101,10 +101,6 @@ public class player : MonoBehaviour
         core = prb.GetComponent<coreInstability>();
         hp=maxHp;
         hpBar.setAmount(hp, maxHp);
-        if (saveManager.instance != null)
-        {
-            saveManager.instance.applyPendingLoad();
-        }
         hpBar.setAmount(hp, maxHp);
         Image img = bp.GetComponent<Image>();
         Color c = img.color;
@@ -132,6 +128,14 @@ public class player : MonoBehaviour
         else if(Mathf.Approximately(prb.linearVelocity.y, 0f)) setWalking(false);
         if (prb.linearVelocity.y < 0f&&!grounded) setFalling(true);
         else setFalling(false);
+    }
+
+    private void Update()
+    {
+        if (Time.timeScale == 0f)
+        {
+            clearMovementInput();
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -163,6 +167,12 @@ public class player : MonoBehaviour
     // Input System
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0f)
+        {
+            clearMovementInput();
+            return;
+        }
+
         Debug.Log(canMove);  
         if (!isAlive) return;
         if (!canMove && context.canceled) moveXClone = 0;
@@ -193,6 +203,7 @@ public class player : MonoBehaviour
     }
     public void OnDash(InputAction.CallbackContext context)
     {
+        if (Time.timeScale == 0f) return;
         if (!isAlive) return;
         if (context.started && dashCheck())
         {
@@ -219,6 +230,14 @@ public class player : MonoBehaviour
         healManager.instance.searchEquipped();
         if(healManager.instance.remainingUse>0)healManager.instance.equipped.OnUse();
     }
+
+    private void clearMovementInput()
+    {
+        moveX = 0f;
+        moveXClone = 0f;
+        jumpHeld = false;
+    }
+
     //movement
     private IEnumerator Dash()
     {

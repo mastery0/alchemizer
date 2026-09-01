@@ -8,6 +8,9 @@ using JetBrains.Annotations;
 [DefaultExecutionOrder(-1)]
 public class saveManager : MonoBehaviour
 {
+    private const string SaveFileName = "save.json";
+    private const string DefaultGameplaySceneName = "gameScene";
+
     public AudioClip saveSFX;
     public skillSO[] allSkills;
     public static saveManager instance;
@@ -35,6 +38,7 @@ public class saveManager : MonoBehaviour
         public float maxHp;
         public Vector2 respawnAltar;
         public int respawnscene;
+        public string respawnSceneName;
 
         public int airEss;
         public int waterEss;
@@ -63,10 +67,32 @@ public class saveManager : MonoBehaviour
 
     private void Start()
     {
-        if (pendingLoadData != null)
+        if (pendingLoadData == null)
         {
-            StartCoroutine(ApplyPendingLoadWhenReady());
+            tryReadSaveFromDisk();
         }
+
+        if (pendingLoadData == null) return;
+
+        string savedSceneName = getSavedSceneName(pendingLoadData);
+        if (string.IsNullOrEmpty(savedSceneName))
+        {
+            pendingLoadData = null;
+            return;
+        }
+
+        if (SceneManager.GetActiveScene().name != savedSceneName)
+        {
+            SceneManager.LoadScene(savedSceneName);
+            return;
+        }
+
+        StartCoroutine(ApplyPendingLoadWhenReady());
+    }
+
+    private void OnApplicationQuit()
+    {
+        saveWithoutFeedback();
     }
     public bool hasSeenDialogue(string dialogueID)
     {
@@ -148,12 +174,28 @@ public class saveManager : MonoBehaviour
     [ContextMenu("save")]
     public void save()
     {
-        audioManager.instance.playSFX(saveSFX);
+        save(true);
+    }
+
+    private void save(bool playFeedback)
+    {
+        if (!canSave())
+        {
+            Debug.LogWarning("Save skipped because the game state is not ready.");
+            return;
+        }
+
+        if (playFeedback && audioManager.instance != null && saveSFX != null)
+        {
+            audioManager.instance.playSFX(saveSFX);
+        }
+
         SaveData data = new SaveData();
         // Player stats are rebuilt by the saved skills when loading.
         // maxHp is retained in SaveData only to keep old save files compatible.
         data.respawnAltar=player.instance.respawnAltar;
         data.respawnscene=player.instance.respawnScene;
+        data.respawnSceneName = SceneManager.GetActiveScene().name;
 
         data.airEss = essenceManager.instance.essenceInv[essenceManager.essenceTypes.air];
         data.waterEss = essenceManager.instance.essenceInv[essenceManager.essenceTypes.water];
@@ -162,11 +204,14 @@ public class saveManager : MonoBehaviour
         data.darkEss = essenceManager.instance.essenceInv[essenceManager.essenceTypes.dark];
 
         List<int> unlocked = new List<int>();
-        foreach (skillSO skill in allSkills)
+        if (allSkills != null)
         {
-            if (skill.isUnlocked)
+            foreach (skillSO skill in allSkills)
             {
-                unlocked.Add(skill.skillID);
+                if (skill != null && skill.isUnlocked)
+                {
+                    unlocked.Add(skill.skillID);
+                }
             }
         }
         data.unlockedSkillIDs = unlocked.ToArray();
@@ -200,27 +245,22 @@ public class saveManager : MonoBehaviour
             ? currentArea
             : areaManager.instance.currentArea;
         string json = JsonUtility.ToJson(data);
-        File.WriteAllText(Application.persistentDataPath + "/save.json", json);
+        File.WriteAllText(getSavePath(), json);
     }
 
     [ContextMenu("load")]
     public void load()
     {
-        string path = Application.persistentDataPath + "/save.json";
-        Debug.Log("Loading save data from: " + path);
-        if (File.Exists(path))
+        if (!tryReadSaveFromDisk()) return;
+        string savedSceneName = getSavedSceneName(pendingLoadData);
+        if (string.IsNullOrEmpty(savedSceneName))
         {
-            string json = File.ReadAllText(path);
-            SaveData data = JsonUtility.FromJson<SaveData>(json);
-            if (data == null)
-            {
-                Debug.LogWarning("Save file could not be read.");
-                return;
-            }
-            pendingLoadData = data;
-            Time.timeScale = 1f;
-            SceneManager.LoadScene(data.respawnscene);
+            pendingLoadData = null;
+            return;
         }
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(savedSceneName);
     }
 
     public void applyPendingLoad()
@@ -234,6 +274,9 @@ public class saveManager : MonoBehaviour
 
     private IEnumerator ApplyPendingLoadWhenReady()
     {
+        // Wait until every Start method has finished before restoring UI and runtime state.
+        yield return null;
+
         while (pendingLoadData != null && !CanApplyData())
         {
             yield return null;
@@ -248,9 +291,69 @@ public class saveManager : MonoBehaviour
             global::inventory.instance != null && areaManager.instance != null && healManager.instance != null;
     }
 
+    private bool canSave()
+    {
+        return player.instance != null && essenceManager.instance != null && areaManager.instance != null;
+    }
+
+    private void saveWithoutFeedback()
+    {
+        if (!canSave()) return;
+        save(false);
+    }
+
+    private string getSavePath()
+    {
+        return Path.Combine(Application.persistentDataPath, SaveFileName);
+    }
+
+    private bool tryReadSaveFromDisk()
+    {
+        string path = getSavePath();
+        if (!File.Exists(path)) return false;
+
+        try
+        {
+            string json = File.ReadAllText(path);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+            if (data == null)
+            {
+                Debug.LogWarning("Save file could not be read.");
+                return false;
+            }
+
+            pendingLoadData = data;
+            return true;
+        }
+        catch (System.Exception exception)
+        {
+            Debug.LogWarning("Failed to read save file: " + exception.Message);
+            return false;
+        }
+    }
+
+    private string getSavedSceneName(SaveData data)
+    {
+        if (!string.IsNullOrEmpty(data.respawnSceneName) && Application.CanStreamedLevelBeLoaded(data.respawnSceneName))
+        {
+            return data.respawnSceneName;
+        }
+
+        // Older save files only stored a build index. gameScene used to be index 0,
+        // but index 0 is now mainMenu, so loading that legacy value would create a loop.
+        if (Application.CanStreamedLevelBeLoaded(DefaultGameplaySceneName))
+        {
+            Debug.Log("Migrating legacy save to the gameScene scene name.");
+            return DefaultGameplaySceneName;
+        }
+
+        Debug.LogWarning("Saved scene is not available in Build Settings. Starting without loading the save.");
+        return null;
+    }
+
     private void ApplyData(SaveData data)
     {
-        player.instance.respawnScene = data.respawnscene;
+        player.instance.respawnScene = SceneManager.GetActiveScene().buildIndex;
         player.instance.respawnAltar = data.respawnAltar;
         player.instance.transform.position = data.respawnAltar;
         player.instance.isAlive = true;
