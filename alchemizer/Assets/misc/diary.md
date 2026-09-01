@@ -559,76 +559,45 @@ Ramo Cura:
 
 ### Giorno 69 
 
-- implemntazione sprites
-## Stato Attuale & Prossimi Passi (fine Giorno 32)
+- implementazione sprites
 
-**Sistemi completi e funzionanti:** movimento, combat base, essenze, Skill Tree (rami offensivo/movimento/cura), Save/Load ristrutturato, checkpoint e respawn, morte con fade e perdita essenze, Dialogue System, Main/Esc menu, Inventory (ridotto a chiavi/oggetti chiave, con locked chest), Quest System (backend + UI placeholder + NPC di test), sistema effetti di stato riorganizzato, sistema pozioni completo (superclasse, pozione base, UI, binding, swap), nemici: Crusher, Archer, Spora, Sanguisuga.
+### Giorno 70
+- implementazione animazioni
 
-**In corso / prossimi step immediati:**
-- Completare il level design della Foresta Incantata (avviato al Giorno 31)
-- Aggiungere i due nemici di zona ancora mancanti rispetto al GDD: Lupo Corrotto e Cinghiale Contaminato
-- Implementare NPC e boss della Foresta Incantata: erborista, slime gigante (main), golem delle radici (secondario), alchimista corrotto (secondario)
-- Costruire la sequenza di apertura Prologo/Casa-lab, propedeutica a tutta la trama successiva
+### Giorno 71
 
-**Decisioni aperte:**
-- Migliorare visivamente il raggio d'attacco (LineRenderer), nota dal Giorno 11 mai più affrontata.
-- Ricompense/potenziamenti ottenibili esplorando la Palude di Grovigli: il GDD la segna come opzionale ma lascia i vantaggi "da stabilire".
-- Se e come includere la romance quest tra due NPC — il GDD la segna come eventuale ("solo se ci sta bene").
-- Come funziona l'acquisto delle pozioni dall'erborista: il GDD parla sia di pozioni "comprate" sia di pozioni ottenute completando i suoi incarichi — va chiarito se è lo stesso canale o due cose distinte, ed eventualmente con quale valuta/risorsa si comprano.
-- Cosa deve succedere perché il Catalizzatore salga al secondo tier dello Skill Tree (il GDD lo lascia come roadmap, senza trigger specifico).
-- Dove/come si ottengono nel mondo `doubleJump` e `groundSlam` (il GDD specifica solo che il wall jump è nascosto nel Bosco Profondo).
-- Il boss "alchimista corrotto" sbloccherebbe "il dash" — da chiarire se è lo stesso dash già disponibile dal Giorno 1 o un'abilità distinta, per evitare un conflitto di disponibilità.
+- ui fixes
 
----
+### Giorno 72
 
-## To-Do List — Tutto Ciò Che Manca per la Demo Completa
+- soundManager
 
-Costruita confrontando il GDD con lo stato del progetto a fine Giorno 32. Non include ciò che è già fatto (es. Spora, Sanguisuga d'essenza, sistema pozioni base).
+### Giorno 73
 
-### Sistemi di gioco
-- [ ] Secondo tier dello Skill Tree (al momento esiste solo `Catalyst Base`)
-- [ ] Abilità metroidvania da esplorazione: `doubleJump`, `wallJump`, `groundSlam` — nessuna delle tre risulta ancora implementata
-- [ ] Sistema di acquisto pozioni dall'erborista (valuta/risorsa da definire) + relativa UI negozio
-- [ ] Ricarica pozioni ai checkpoint — verificare se già coperta dalla UI checkpoint del Giorno 24 o da implementare esplicitamente
-- [ ] Porta del seminterrato a Casa apribile con i due item ottenuti da Torre del Guardiano e Laboratorio Sepolto, per accedere al Nucleo della Corruzione
+- player stats balancing
 
-### Zone / Level Design
-- [ ] Prologo / Casa-lab: scena introduttiva completa (boato, seminterrato, cassa con catalizzatore + libro, ricerca e salvataggio della sorella, ritorno a casa)
-- [ ] Palude di Grovigli: zona opzionale da costruire, con meccanica di debuff da permanenza in zona
-- [ ] Bosco Profondo: zona verticale da costruire (piattaforme mobili, radici che bloccano il passaggio, wall jump nascosto)
-- [ ] Torre del Guardiano: zona da costruire
-- [ ] Laboratorio Sepolto: zona da costruire, con puzzle e pericoli ambientali
-- [ ] Nucleo della Corruzione: zona finale da costruire, stile onirico/staccato
+### Giorno 74
 
-### Nemici mancanti
-- [ ] Ricercatore corrotto — Palude di Grovigli
-- [ ] Falco delle cime — Bosco Profondo *(il movimento base in volo — patrol/follow — risulta già abbozzato da un lavoro precedente su nemici aerei; da verificare se riutilizzabile)*
-- [ ] Ombra — Bosco Profondo
-- [ ] Radice Incantata — Bosco Profondo
-- [ ] Golem Sentinella — Torre del Guardiano
-- [ ] Costrutto metallico — Torre del Guardiano
-- [ ] Sbaglio Alchemico "Alfio" — Laboratorio Sepolto
-- [ ] Costrutto instabile — Laboratorio Sepolto
+- enemy balance changes
 
+### Giorno 75
 
-### Boss
-- [ ] Golem delle radici — Foresta Incantata (secondario)
-- [ ] Alchimista corrotto — Foresta Incantata (secondario)
-- [ ] Ricercatore fuso con essenze corrotte — Palude di Grovigli (main)
-- [ ] Boss immobile del Bosco Profondo (main)
-- [ ] Guardiano costrutto — Torre del Guardiano (main)
-- [ ] Creazione fallita — Laboratorio Sepolto (main)
-- [ ] Mid-boss finale — Nucleo della Corruzione
+- vari fix
 
-### NPC e Narrativa
-- [ ] Erborista — Foresta Incantata
-- [ ] Rampicatore — Bosco Profondo
-- [ ] Quest reali collegate agli NPC (finora solo dati placeholder e NPC di test, Giorno 19)
-- [ ] Scrittura e integrazione della trama in ogni zona (rivelazioni di lore, dialoghi legati a boss/NPC)
-- [ ] Eventuale romance quest tra due NPC (vedi decisioni aperte)
-- [ ] Finale della demo (mid boss fight con suspance) al Nucleo della Corruzione
+#### Giorno 76
 
-### Comparto Artistico e Audio
-- [ ] Art pass per ogni zona coerente con le palette del GDD (casa consumata, foresta viva/corrotta, palude marcia, bosco freddo e nebbioso, torre in rovina, laboratorio con corruzione, nucleo onirico)
-- [ ] Sprite e animazioni per tutti i nemici e boss elencati sopra
-- [ ] Comparto audio (musiche e SFX) — al momento non risulta ancora avviato
+- fix
+
+#### Giorno 76
+
+- prima build
+
+### Giorno 77
+
+- readme and itch.io page
+
+### Giorno 78
+ - final rush and small fix
+
+### Giorno 79
+polishing and shipping
