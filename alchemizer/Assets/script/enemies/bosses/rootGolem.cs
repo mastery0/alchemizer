@@ -1,7 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor.XR;
-using JetBrains.Annotations;
 
 public enum  dmgTypeGolem
 {
