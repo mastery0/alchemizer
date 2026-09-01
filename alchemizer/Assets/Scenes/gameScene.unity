@@ -3066,7 +3066,7 @@ MonoBehaviour:
     areaPrefab: {fileID: 5109409768030650442}
     enemies: {fileID: 8593137622623613792, guid: fa18ee6fdab0f7243bccec98d92c34a3, type: 3}
     enemiesPosition: {x: 0, y: 0, z: 0}
-  - areaName: forestaIncantata
+  - areaName: Enchanted Forest
     areaPrefab: {fileID: 1480477253}
     enemies: {fileID: 5692405516621507662, guid: 08de5556f8a40de40a6c2dbd846ef0fb, type: 3}
     enemiesPosition: {x: -109, y: -29, z: 0}
@@ -4793,7 +4793,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2554802629886536599, guid: 9628a1283a7f90244aa72aad4c85fdda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12538,8 +12538,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -429.99997, y: 257.49997}
-  m_SizeDelta: {x: 1060, y: 565}
+  m_AnchoredPosition: {x: -387.5008, y: 248.78415}
+  m_SizeDelta: {x: 975.002, y: 497.568}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080493345
 MonoBehaviour:
@@ -12588,7 +12588,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 370.05
+  m_fontSize: 347.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12627,7 +12627,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -863.5935, w: 0}
+  m_margin: {x: 0, y: 0, z: -833.53, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -22195,6 +22195,10 @@ PrefabInstance:
       propertyPath: Canvasrect
       value: 
       objectReference: {fileID: 362030115}
+    - target: {fileID: 4091710424875830305, guid: dec99b2c860502c498580919e50a1579, type: 3}
+      propertyPath: targetArea
+      value: Enchanted Forest
+      objectReference: {fileID: 0}
     - target: {fileID: 4091710424875830305, guid: dec99b2c860502c498580919e50a1579, type: 3}
       propertyPath: targetCoords.x
       value: -127
