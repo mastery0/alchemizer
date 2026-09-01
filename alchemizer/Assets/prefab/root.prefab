@@ -49,7 +49,6 @@ MonoBehaviour:
   emergeDuration: 0.25
   emergeHeight: 0.6
   col: {fileID: 1831103038989697160}
-  speed: 1
   lifetime: 1.5
 --- !u!61 &1831103038989697160
 BoxCollider2D:
@@ -89,7 +88,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -146,7 +145,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -401547468, guid: 502cd9592a57188428c2a8b1316c7be1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d85dc0daf61663a4086b4c23149addc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
