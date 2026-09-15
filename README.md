@@ -2,7 +2,7 @@
 
 **Alchemizer** is a 2D metroidvania platformer made with Unity. Explore corrupted areas, defeat hostile creatures, collect elemental essences, and build a setup focused on aggressive and precise combat.
 
-![Screenshot]()
+![Screenshot](./public/logo_game.png)
 
 ## Gameplay at a glance
 
@@ -20,6 +20,8 @@ The current gameplay loop is focused on exploration and deliberate risk manageme
 * The **Pressure** system, called *Core Instability*. Pressure increases by 10 when the player hits an enemy or takes damage; when the player avoids both for three seconds, Pressure decreases by 10 every half-second.
 
 At 30 and 60 Pressure, the system increases its tier and the colors of the system also change. Each tier increases attack damage by 15% and defense by 10%. Pressure changes are displayed through its bar, located on the right side of the screen, with color variations based on the current Pressure level.
+
+![Screenshot](./public/pressure.png)
 
 ## Movement and Traversal Abilities
 
@@ -52,15 +54,17 @@ The Catalyst is a three-branch skill tree that can be upgraded using essences. S
 | **Movement** | Swift Step (+10% movement speed) | Wind Flow (reduced dash cooldown) | Air Dash (you can dash in air)  | Gale Step (one additional dash charge) |
 | **Sustain**  | Vitality (+30% maximum health) | Flowing Health (stronger healing) | Fluid Body, which extends your invulnerability | Blooming Heals (chance for defeated enemies to spawn healing spheres)|
 
+![Screenshot](./public/skill_tree.png)
+
 ## Potions and Yara's Quests
 
 Only one potion can be equipped at a time. Checkpoints allow the player to change the equipped potion and replenish its available uses.
 
-| Potions | Uses per checkpoint | Effect | How to obtain
-| -- |-- | -- | -- |
-| **Base Potion**  | 3 | Restores 40% of maximum health and resets Pressure | The potion obtained at the beginning of the game |
-| **Ember Potion** | 5   | Restores 25% of maximum health without resetting Pressure | Unlocked by Yara's *Clear the Spores* quest|
-| **Rage Potion**  | 2  | Sacrifices 5% of current health, increases Pressure by one level, and increases attack damage by 20% for 10 seconds | Unlocked by Yara's *Defeat The Root Golem* quest |
+| Potions | Uses per checkpoint | Effect | How to obtain | picture 
+| -- |-- | -- | -- | -- |
+| **Base Potion**  | 3 | Restores 40% of maximum health and resets Pressure | The potion obtained at the beginning of the game | ![Screenshot](./public/potions_heal_v2.png)
+| **Ember Potion** | 5   | Restores 25% of maximum health without resetting Pressure | Unlocked by Yara's *Clear the Spores* quest| ![Screenshot](./public/potions_ember.png)
+| **Rage Potion**  | 2  | Sacrifices 5% of current health, increases Pressure by one level, and increases attack damage by 20% for 10 seconds | Unlocked by Yara's *Defeat The Root Golem* quest | ![Screenshot](./public/potions_rage.png)
 
 Yara is the quest giver and can be found outside her house in the Enchanted Forest. Her first quest asks the player to eliminate 10 spores; completing it unlocks the Ember Potion. Her second quest culminates in the Root Golem encounter and unlocks the Rage Potion.
 
@@ -73,7 +77,12 @@ Boss battle features:
 * Once defeated, the boss places a checkpoint inside the arena, allowing the player to save and change potions.
 
 1. **Giant Slime:** its attacks are jumping, dashing, and charging, depending on the player's distance.
+
+![Screenshot](./public/slime.png)
+
 2. **Root Golem:** its attacks are a short-range attack and a medium-range attack that launches roots which deal heavy damage.
+
+![Screenshot](./public/golem.png)
 
 ## Current Areas
 
