@@ -2,7 +2,6 @@
 
 **Alchemizer** is a 2D metroidvania platformer made with Unity. Explore corrupted areas, defeat hostile creatures, collect elemental essences, and build a setup focused on aggressive and precise combat.
 
-![Screenshot]()
 
 ## Gameplay at a glance
 
@@ -148,7 +147,7 @@ public void applyEffects()
 
 Download the executable file from the repository or visit the itch.io page and download the game from there.
 
-[Download on Itch]()
+[Download on Itch](https://blackhole-studio.itch.io/alchemizer)
 
 # AI Usage Disclosure
 
